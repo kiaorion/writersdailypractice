@@ -21,50 +21,6 @@
   <meta name="twitter:description" content="Your stat sheet is airtight. Your story has no pulse. Daily reflections for LitRPG and GameLit writers who know the specific grind of building worlds that run on rules.">
   <meta name="twitter:image" content="https://writersdailypractice.com/images/og/futuristic.jpg">
 
-  <!-- Book Schema (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Book",
-    "name": "The Writer's Daily Practice",
-    "subtitle": "365 Reflections to Build Your Writing Habit and Strengthen Your Craft",
-    "author": {
-      "@type": "Person",
-      "name": "Kia Orion"
-    },
-    "url": "https://a.co/d/0aZhyb86",
-    "workExample": [
-      {
-        "@type": "Book",
-        "isbn": "",
-        "bookFormat": "https://schema.org/Paperback",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.99",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        }
-      },
-      {
-        "@type": "Book",
-        "bookFormat": "https://schema.org/EBook",
-        "offers": {
-          "@type": "Offer",
-          "price": "9.99",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "200",
-      "bestRating": "5"
-    }
-  }
-  </script>
-
   <!-- FAQ Schema (JSON-LD) -->
   <script type="application/ld+json">
   {
@@ -152,13 +108,6 @@
       -moz-osx-font-smoothing: grayscale;
     }
     *, *::before, *::after { box-sizing: border-box; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(-2deg); }
-      50% { transform: translateY(-16px) rotate(-2deg); }
-    }
-    .book-float { animation: float 6s ease-in-out infinite; }
-    .book-glow { filter: drop-shadow(0 0 60px rgba(232, 185, 49, 0.3)) drop-shadow(0 20px 40px rgba(0,0,0,0.4)); }
 
     .gradient-text {
       background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
@@ -253,7 +202,7 @@
         </div>
       </div>
       <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
-        Join Free
+        Start Free
       </a>
     </div>
   </nav>
@@ -274,11 +223,11 @@
         <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
         <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
         <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
-          Join Free &rarr;
+          Start My Daily Practice &rarr;
         </button>
       </form>
       <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
-      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">From the Amazon #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
     </div>
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
   </section>
@@ -311,7 +260,7 @@
   <!-- ========== 5. SAMPLE REFLECTION ========== -->
   <section class="py-24 md:py-32">
     <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
-      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample reflection from the book</p>
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
       <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
         <div class="border-b border-gray-100 pb-6 mb-8">
           <p class="text-midGray text-sm font-medium mb-2">September 5th</p>
@@ -334,7 +283,7 @@
         </div>
       </div>
       <div class="text-center mt-10" id="signup">
-        <p class="text-midGray text-base mb-2 font-medium">That was 1 of 365.</p>
+        <p class="text-midGray text-base mb-2 font-medium">Here's what lands in your inbox every morning.</p>
         <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
           Want this in your inbox every morning?
         </p>
@@ -346,7 +295,7 @@
           <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
           <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
           <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
-            Join Free
+            Start My Daily Practice
           </button>
         </form>
         <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
@@ -354,167 +303,24 @@
     </div>
   </section>
 
-  <!-- ========== 6. BOOK OVERVIEW ========== -->
-  <section class="py-24 md:py-32 bg-warmWhite">
-    <div class="max-w-[1200px] mx-auto px-6">
-      <div class="flex flex-col md:flex-row gap-16 items-start">
-        <div class="flex-1" data-aos="fade-right">
-          <h2 class="font-serif text-[32px] md:text-[40px] leading-[1.12] font-bold text-dark mb-8">
-            A daily writing ritual that compounds over time.
-          </h2>
-          <p class="text-midGray text-base leading-relaxed mb-6">
-            <strong class="font-semibold text-bodyText">The Writer's Daily Practice</strong> pairs a thought-provoking quote from a literary master with an original reflection, every single day for a year. No prompts. No exercises. Just the words you need to hear before you sit down to write.
-          </p>
-          <p class="text-midGray text-base leading-relaxed mb-10">
-            Start your morning with Ray Bradbury's infectious enthusiasm. Gain perspective from Zadie Smith's practical wisdom. Find solace in James Baldwin's reflections on the writer's responsibility.
-          </p>
-          <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base">
-            Join Free &rarr;
-          </a>
-          <p class="text-midGray text-xs mt-3 font-medium">Free. Every morning. From the Amazon #1 Bestselling book.</p>
-        </div>
-        <div class="flex-1" data-aos="fade-left" data-aos-delay="200">
-          <div class="bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
-            <div class="space-y-6">
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                </div>
-                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">365 daily entries</strong> for every single day of the year</p>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                </div>
-                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Curated quotes</strong> from Bradbury, Baldwin, Smith, Hemingway &amp; more</p>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                </div>
-                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Original reflections</strong> that connect timeless wisdom to your daily practice</p>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                </div>
-                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Monthly themes:</strong> Inspiration, Discipline, Voice, Revision, and more</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <!-- ========== 7. CREDIBILITY BAR ========== -->
   <section class="py-16 md:py-20" data-aos="fade-up">
-    <div class="max-w-[1000px] mx-auto px-6">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
       <div class="flex items-center justify-center gap-3 mb-5">
         <p class="text-gold text-lg tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
         <p class="text-bodyText text-sm font-semibold">4.8 average</p>
         <span class="text-midGray text-sm">&middot;</span>
-        <p class="text-midGray text-sm font-medium">200+ five-star reviews across platforms</p>
+        <p class="text-midGray text-sm font-medium">200+ reviews</p>
       </div>
-      <p class="text-center text-xs uppercase tracking-[0.2em] text-midGray font-semibold mb-5">Amazon #1 Bestseller in 3 Categories</p>
-      <p class="text-center text-primary font-serif text-lg font-semibold italic mb-12">
+      <p class="text-center text-primary font-serif text-lg font-semibold italic mb-8">
         For fans of Zogarth, Dakota Krout, and Cale Plamann.
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[900px] mx-auto mb-12">
-        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
-          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
-            <span class="text-white text-2xl font-black font-serif">#1</span>
-          </div>
-          <p class="font-serif text-lg font-bold text-dark mb-1">Journal Writing</p>
-          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
-        </div>
-        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
-          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
-            <span class="text-white text-2xl font-black font-serif">#1</span>
-          </div>
-          <p class="font-serif text-lg font-bold text-dark mb-1">Composition</p>
-          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
-        </div>
-        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
-          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
-            <span class="text-white text-2xl font-black font-serif">#1</span>
-          </div>
-          <p class="font-serif text-lg font-bold text-dark mb-1">Writing Skills</p>
-          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
-        </div>
-      </div>
-      <!-- Review quote -->
-      <div class="max-w-[680px] mx-auto text-center relative quote-mark">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
         <div class="relative z-10">
-          <p class="text-gold text-lg mb-4 tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p class="font-review text-xl italic text-bodyText leading-relaxed mb-4">
-            "I keep this on my desk and read it every morning before I write. Some days the reflection hits so close to home it's like the book was written just for me."
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I read this every morning before I write. Some days the reflection hits so close to home it feels like it was written just for me."
           </p>
-          <p class="text-sm text-midGray font-medium">Rachel T., writing coach &middot; Amazon Verified Review</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 8. WHAT'S INSIDE ========== -->
-  <section class="py-24 md:py-32 bg-warmWhite">
-    <div class="max-w-[800px] mx-auto px-6">
-      <div data-aos="fade-up">
-        <h2 class="font-serif text-[32px] md:text-[38px] leading-[1.12] font-bold text-dark mb-4">
-          What a year with this book looks like:
-        </h2>
-        <p class="text-midGray text-base leading-relaxed mb-14">
-          12 months. 12 themes. 365 moments of clarity.
-        </p>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">January</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Inspiration</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">February</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Consistency</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">March</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Perfectionism</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">April</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Conviction</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">May</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Doubt</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">June</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Comparison</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">July</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Uncertainty</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">August</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Imposter Syndrome</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">September</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Writer's Block</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">October</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Procrastination</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">November</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Rejection</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">December</p>
-          <p class="font-serif font-bold text-dark text-[15px]">Patience</p>
+          <p class="text-sm text-midGray font-medium">Rachel T., writing coach</p>
         </div>
       </div>
     </div>
@@ -534,16 +340,10 @@
         <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
         <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
         <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
-          Join Free
+          Start My Daily Practice &rarr;
         </button>
       </form>
-      <p class="text-white/40 text-xs font-medium mb-8">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
-      <div class="pt-6 border-t border-white/10">
-        <p class="text-white/30 text-xs font-medium mb-2">Want the full 365-day collection on your desk?</p>
-        <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors underline">
-          Get the book &rarr;
-        </a>
-      </div>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
     </div>
   </section>
 
@@ -618,7 +418,7 @@
   <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
     <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
       <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
-      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; 365 Reflections for Writers</p>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
       <div class="flex justify-center gap-6 mb-6">
         <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
         <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
