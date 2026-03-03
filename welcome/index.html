@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're In | The Writer's Daily Practice</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .font-review { font-family: 'Lora', Georgia, serif; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Confirmation -->
+  <section class="relative min-h-[70vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[700px] mx-auto px-6 py-24 text-center relative z-10" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-16 h-16 mx-auto mb-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/30">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+      </div>
+      <h1 class="font-serif text-[38px] md:text-[52px] leading-[1.08] font-bold text-white mb-6">
+        You're in.
+      </h1>
+      <p class="text-white/80 text-xl leading-relaxed mb-3 font-light max-w-[500px] mx-auto">
+        Check your inbox tomorrow morning for your first reflection.
+      </p>
+      <p class="text-white/50 text-base leading-relaxed font-light max-w-[480px] mx-auto">
+        One quote from a literary master. One original reflection. Every morning, waiting for you before you write.
+      </p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[700px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-4" data-aos="fade-up">
+        What to expect
+      </h2>
+      <p class="text-midGray text-base leading-relaxed mb-12" data-aos="fade-up">
+        Your first 7 days are extra special. Here's what's coming:
+      </p>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <span class="text-white text-xs font-bold">1</span>
+          </div>
+          <div>
+            <p class="font-semibold text-dark text-[15px]">Welcome + your first reflection</p>
+            <p class="text-midGray text-sm leading-relaxed">Meet Kia, learn why he built this, and get your first dose of clarity.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <span class="text-white text-xs font-bold">2-6</span>
+          </div>
+          <div>
+            <p class="font-semibold text-dark text-[15px]">Five hand-picked reflections</p>
+            <p class="text-midGray text-sm leading-relaxed">The best reflections from the book, covering writer's block, imposter syndrome, finding your voice, and more.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <span class="text-white text-xs font-bold">7</span>
+          </div>
+          <div>
+            <p class="font-semibold text-dark text-[15px]">Day 7: your writing practice is taking shape</p>
+            <p class="text-midGray text-sm leading-relaxed">By now you'll know if this daily practice is for you. Most people can't stop.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <span class="text-white text-xs font-bold">8+</span>
+          </div>
+          <div>
+            <p class="font-semibold text-dark text-[15px]">A new reflection every morning, indefinitely</p>
+            <p class="text-midGray text-sm leading-relaxed">365 reflections. One per day. The clarity compounds.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="py-16 bg-warmWhite" data-aos="fade-up">
+    <div class="max-w-[700px] mx-auto px-6 text-center">
+      <div class="flex items-center justify-center gap-3 mb-5">
+        <p class="text-gold text-lg tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="text-bodyText text-sm font-semibold">4.8 average</p>
+        <span class="text-midGray text-sm">&middot;</span>
+        <p class="text-midGray text-sm font-medium">200+ five-star reviews</p>
+      </div>
+      <p class="font-review text-lg italic text-bodyText leading-relaxed mb-4 max-w-[560px] mx-auto">
+        "I keep this on my desk and read it every morning before I write. Some days the reflection hits so close to home it's like the book was written just for me."
+      </p>
+      <p class="text-sm text-midGray font-medium">Rachel T., writing coach</p>
+    </div>
+  </section>
+
+  <!-- Book Soft Sell -->
+  <section class="py-24 md:py-32" data-aos="fade-up">
+    <div class="max-w-[700px] mx-auto px-6 text-center">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-4">
+        Want the full collection on your desk?
+      </h2>
+      <p class="text-midGray text-base leading-relaxed mb-8 max-w-[500px] mx-auto">
+        The Writer's Daily Practice book has all 365 reflections organized by month, with themes like Inspiration, Consistency, Perfectionism, and more. Amazon #1 Bestseller.
+      </p>
+      <a href="/book/" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base">
+        Get the Book &rarr;
+      </a>
+      <p class="text-midGray text-xs mt-3 font-medium">Paperback $16.99 &middot; Kindle $9.99</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
