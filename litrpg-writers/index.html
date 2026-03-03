@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LitRPG Writing Practice | Daily Reflections for Writers</title>
+  <meta name="description" content="Daily reflections for LitRPG and GameLit writers — on building progression systems that hold, writing the grind without losing your reader, and facing the blank page.">
+  <link rel="canonical" href="https://writersdailypractice.com/litrpg-writers/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="For LitRPG Writers: A Daily Practice That Matches the Grind">
+  <meta property="og:description" content="Your stat sheet is airtight. Your story has no pulse. Daily reflections for LitRPG and GameLit writers who know the specific grind of building worlds that run on rules.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/futuristic.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/litrpg-writers/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="For LitRPG Writers: A Daily Practice That Matches the Grind">
+  <meta name="twitter:description" content="Your stat sheet is airtight. Your story has no pulse. Daily reflections for LitRPG and GameLit writers who know the specific grind of building worlds that run on rules.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/futuristic.jpg">
+
+  <!-- Book Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "The Writer's Daily Practice",
+    "subtitle": "365 Reflections to Build Your Writing Habit and Strengthen Your Craft",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion"
+    },
+    "url": "https://a.co/d/0aZhyb86",
+    "workExample": [
+      {
+        "@type": "Book",
+        "isbn": "",
+        "bookFormat": "https://schema.org/Paperback",
+        "offers": {
+          "@type": "Offer",
+          "price": "16.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Book",
+        "bookFormat": "https://schema.org/EBook",
+        "offers": {
+          "@type": "Offer",
+          "price": "9.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "200",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I build a progression system that doesn't collapse under its own weight?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most durable progression systems in LitRPG are built around one central constraint — a single rule the protagonist cannot break without consequence. Everything else, the skill trees, the stat thresholds, the level-up caps, should serve that constraint rather than expand endlessly around it. Power scaling breaks down when writers add mechanics to solve narrative problems instead of letting the story's emotional stakes do that work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I keep readers who don't play games engaged in a LitRPG story?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non-gamer readers don't disengage because they don't understand status windows — they disengage because they stop caring about the character inside the stat sheet. Ground every level-up and skill acquisition in emotional consequence: what does gaining this ability cost the protagonist, and what does it make them afraid they're becoming. The dungeon diving and tower climbing are the setting; the character's interior is the story."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I write an overpowered protagonist without losing narrative tension?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An OP protagonist loses tension not from raw power but from the absence of meaningful stakes. The fix isn't to introduce an even stronger boss fight — it's to make the protagonist's internal world as complex as their external power. What they cannot level-up out of: grief, identity, the cost of the grind itself. Readers will follow an overpowered protagonist anywhere if they believe the character still has something left to lose."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I write the grind — the repetitive leveling and dungeon runs — without boring my reader?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The grind bores readers when XP accumulation is the only thing changing. In every dungeon run, cultivation session, or tower climb, something in the protagonist's understanding of themselves should shift — even slightly. Vary the emotional register of each grinding sequence: let some feel triumphant, some hollow, some quietly terrifying. The mechanics are the container; the meaning is what fills it."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(-2deg); }
+      50% { transform: translateY(-16px) rotate(-2deg); }
+    }
+    .book-float { animation: float 6s ease-in-out infinite; }
+    .book-glow { filter: drop-shadow(0 0 60px rgba(232, 185, 49, 0.3)) drop-shadow(0 20px 40px rgba(0,0,0,0.4)); }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* Drop cap for reflection */
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/#whats-inside" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">What's Inside</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+          <a href="/#reviews" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Reviews</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Join Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[85vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 70% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[1200px] mx-auto px-6 pt-24 pb-16 flex flex-col md:flex-row items-center gap-16 relative z-10">
+      <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
+        <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">For LitRPG / GameLit Writers</span>
+        <h1 class="font-serif text-[38px] md:text-[52px] leading-[1.08] font-bold mb-8 text-white">
+          Your LitRPG stat system is airtight. <span class='gradient-text'>Your story has no pulse.</span>
+        </h1>
+        <p class="text-white/85 text-lg leading-relaxed mb-8 max-w-[520px] font-light">
+          You can map the skill tree in your sleep. You know exactly how your protagonist's mana scales through each dungeon tier. What you haven't solved yet is why any of it should make a reader feel something. The Writer's Daily Practice is a year of daily reflections — written for the writer staring at a perfect stat sheet wondering where the story went.
+        </p>
+        <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base mb-4">
+          Start Your Daily Practice &mdash; Free &rarr;
+        </a>
+        <p class="text-white/70 text-sm font-medium mb-2">Free. Every morning. Join 1,000+ writers.</p>
+        <p class="text-white/40 text-xs font-medium tracking-wide">From the Amazon #1 Bestselling book in Journal Writing, Composition &amp; Writing Skills</p>
+      </div>
+      <div class="flex-1 flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="relative">
+          <div class="absolute -inset-8 bg-gold/10 rounded-full blur-3xl"></div>
+          <img src="/images/DAILY PRACTICE 3D BOOK COVER.png" alt="The Writer's Daily Practice by Kia Orion — daily writing companion for litrpg writers" class="relative w-[280px] md:w-[380px] book-float book-glow">
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. PAIN POINTS SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-8" data-aos="fade-up">The truth about writing litrpg</p>
+      <div class="space-y-3 mb-8" data-aos="fade-up" data-aos-delay="100">
+        <p class="font-serif text-[28px] md:text-[36px] font-bold text-dark leading-snug">You built a progression system your protagonist can't outgrow. Now you need to build a character who can.</p>
+        <p class="font-serif text-[28px] md:text-[36px] font-bold text-dark leading-snug">The dungeon boss has three phases, perfect telegraphing, and a tragic backstory. Your reader still doesn't care if the protagonist survives.</p>
+        <p class="font-serif text-[28px] md:text-[36px] font-bold text-dark leading-snug">Your cultivation arc is internally consistent, beautifully structured, and somehow completely inert.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <p class="text-bodyText text-lg leading-relaxed font-medium">LitRPG is a genre built on earned progress — on the satisfaction of watching someone grind XP, climb the tower floor by floor, and emerge transformed. The mechanics are the promise. But a status window that updates every chapter and a skill tree with seventeen branches will not, on their own, make a reader feel the weight of what your protagonist is trading away to level up. Power scaling without emotional cost is just arithmetic.</p>
+        <p class="text-bodyText text-lg leading-relaxed font-medium mt-4">The writers who crack it — who make dungeon diving feel like it matters, who make the overpowered protagonist feel like a tragedy unfolding instead of a fantasy fulfilled — are the ones who treat each level-up as a story beat first and a game mechanic second. The cultivation is the surface. The transformation underneath it is the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. THE BRIDGE ========== -->
+  <section class="py-16 bg-warmWhite relative quote-mark" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center relative z-10">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Why this reflection matters for litrpg writers</p>
+      <p class="font-review text-xl text-bodyText leading-relaxed">
+        Red Smith's instruction to open your veins and bleed is the oldest version of the LitRPG grind there is. Every draft is a dungeon run you didn't prepare for. Every revision is a boss fight that wipes you before you reach the second phase. The blank page is the floor of the tower you've been circling for months — you know what's up there, you know it's going to cost you, and you sit down anyway. The protagonist who grinds through the low-level zones until their hands shake has the same relationship to XP that a writer has to the daily word count: it compounds slowly, it is often ugly, and it is the only path to the next floor. You don't level up by studying the skill tree. You level up by clearing the dungeon, bleeding through the fight, and showing up the next morning to do it again.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== 5. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample reflection from the book</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">September 5th</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">PLAY THE HAND YOU HAVE</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"You simply sit down at the typewriter, open your veins, and bleed."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">&mdash; Walter Wellesley "Red" Smith</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4">
+          <p>Remember the scene in Rocky when he's taking those hits in the ring?</p>
+          <p>That's writing.</p>
+          <p>You get knocked down. You get back up. You go down again. And up. Rinse. Repeat.</p>
+          <p>When you're staring at that blank page, it feels like your back is on the canvas.</p>
+          <p>The words won't come. You're down. Beaten.</p>
+          <p>Yet, you don't give up. You keep spilling your thoughts. Writing like it's the last round.</p>
+          <p>Sure, it's scary. And you'll get knocked down more times than you can count.</p>
+          <p>But you're creating something real here.</p>
+          <p>So take a second to collect yourself. Then get up. Get in the ring. And give 'em hell.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="text-midGray text-base mb-2 font-medium">That was 1 of 365.</p>
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice &mdash; a free daily reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="litrpg-writers">
+          <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Join Free
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. BOOK OVERVIEW ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="flex flex-col md:flex-row gap-16 items-start">
+        <div class="flex-1" data-aos="fade-right">
+          <h2 class="font-serif text-[32px] md:text-[40px] leading-[1.12] font-bold text-dark mb-8">
+            A daily writing ritual that compounds over time.
+          </h2>
+          <p class="text-midGray text-base leading-relaxed mb-6">
+            <strong class="font-semibold text-bodyText">The Writer's Daily Practice</strong> pairs a thought-provoking quote from a literary master with an original reflection — every single day for a year. No prompts. No exercises. Just the words you need to hear before you sit down to write.
+          </p>
+          <p class="text-midGray text-base leading-relaxed mb-10">
+            Start your morning with Ray Bradbury's infectious enthusiasm. Gain perspective from Zadie Smith's practical wisdom. Find solace in James Baldwin's reflections on the writer's responsibility.
+          </p>
+          <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base">
+            Join Free &rarr;
+          </a>
+          <p class="text-midGray text-xs mt-3 font-medium">Free. Every morning. From the Amazon #1 Bestselling book.</p>
+        </div>
+        <div class="flex-1" data-aos="fade-left" data-aos-delay="200">
+          <div class="bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">365 daily entries</strong> for every single day of the year</p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Curated quotes</strong> from Bradbury, Baldwin, Smith, Hemingway &amp; more</p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Original reflections</strong> that connect timeless wisdom to your daily practice</p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Monthly themes:</strong> Inspiration, Discipline, Voice, Revision, and more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[1000px] mx-auto px-6">
+      <div class="flex items-center justify-center gap-3 mb-5">
+        <p class="text-gold text-lg tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="text-bodyText text-sm font-semibold">4.8 average</p>
+        <span class="text-midGray text-sm">&middot;</span>
+        <p class="text-midGray text-sm font-medium">200+ five-star reviews across platforms</p>
+      </div>
+      <p class="text-center text-xs uppercase tracking-[0.2em] text-midGray font-semibold mb-5">Amazon #1 Bestseller in 3 Categories</p>
+      <p class="text-center text-primary font-serif text-lg font-semibold italic mb-12">
+        For fans of Zogarth, Dakota Krout, and Cale Plamann.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[900px] mx-auto mb-12">
+        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
+            <span class="text-white text-2xl font-black font-serif">#1</span>
+          </div>
+          <p class="font-serif text-lg font-bold text-dark mb-1">Journal Writing</p>
+          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+        </div>
+        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
+            <span class="text-white text-2xl font-black font-serif">#1</span>
+          </div>
+          <p class="font-serif text-lg font-bold text-dark mb-1">Composition</p>
+          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+        </div>
+        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
+            <span class="text-white text-2xl font-black font-serif">#1</span>
+          </div>
+          <p class="font-serif text-lg font-bold text-dark mb-1">Writing Skills</p>
+          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+        </div>
+      </div>
+      <!-- Review quote -->
+      <div class="max-w-[680px] mx-auto text-center relative quote-mark">
+        <div class="relative z-10">
+          <p class="text-gold text-lg mb-4 tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="font-review text-xl italic text-bodyText leading-relaxed mb-4">
+            "I keep this on my desk and read it every morning before I write. Some days the reflection hits so close to home it's like the book was written just for me."
+          </p>
+          <p class="text-sm text-midGray font-medium">Rachel T., writing coach &middot; Amazon Verified Review</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. WHAT'S INSIDE ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <div data-aos="fade-up">
+        <h2 class="font-serif text-[32px] md:text-[38px] leading-[1.12] font-bold text-dark mb-4">
+          What a year with this book looks like:
+        </h2>
+        <p class="text-midGray text-base leading-relaxed mb-14">
+          12 months. 12 themes. 365 moments of clarity.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">January</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Inspiration</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">February</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Consistency</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">March</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Perfectionism</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">April</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Conviction</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">May</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Doubt</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">June</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Comparison</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">July</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Uncertainty</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">August</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Imposter Syndrome</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">September</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Writer's Block</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">October</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Procrastination</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">November</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Rejection</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">December</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Patience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 9. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page.<br><span class="gradient-text">Start writing with purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection for LitRPG and GameLit writers — on building progression systems that feel earned, writing the dungeon grind without losing your reader's emotional investment, and showing up to the blank page when the XP bar feels permanently stuck. Delivered every morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="litrpg-writers">
+        <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Join Free
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium mb-8">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      <div class="pt-6 border-t border-white/10">
+        <p class="text-white/30 text-xs font-medium mb-2">Want the full 365-day collection on your desk?</p>
+        <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors underline">
+          Get the book &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 11. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I build a progression system that doesn't collapse under its own weight?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">The most durable progression systems in LitRPG are built around one central constraint — a single rule the protagonist cannot break without consequence. Everything else, the skill trees, the stat thresholds, the level-up caps, should serve that constraint rather than expand endlessly around it. Power scaling breaks down when writers add mechanics to solve narrative problems instead of letting the story's emotional stakes do that work.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I keep readers who don't play games engaged in a LitRPG story?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Non-gamer readers don't disengage because they don't understand status windows — they disengage because they stop caring about the character inside the stat sheet. Ground every level-up and skill acquisition in emotional consequence: what does gaining this ability cost the protagonist, and what does it make them afraid they're becoming. The dungeon diving and tower climbing are the setting; the character's interior is the story.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I write an overpowered protagonist without losing narrative tension?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">An OP protagonist loses tension not from raw power but from the absence of meaningful stakes. The fix isn't to introduce an even stronger boss fight — it's to make the protagonist's internal world as complex as their external power. What they cannot level-up out of: grief, identity, the cost of the grind itself. Readers will follow an overpowered protagonist anywhere if they believe the character still has something left to lose.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I write the grind — the repetitive leveling and dungeon runs — without boring my reader?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">The grind bores readers when XP accumulation is the only thing changing. In every dungeon run, cultivation session, or tower climb, something in the protagonist's understanding of themselves should shift — even slightly. Vary the emotional register of each grinding sequence: let some feel triumphant, some hollow, some quietly terrifying. The mechanics are the container; the meaning is what fills it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 12. RELATED PAGES + FOOTER ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">You might also like</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/epic-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Epic Fantasy Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/hard-science-fiction-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Hard Sci-Fi Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/young-adult-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Young Adult Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; 365 Reflections for Writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romantasy Writing | The Writer's Daily Practice</title>
+  <meta name="description" content="A daily practice for romantasy writers who know the slow burn, the enemies-to-lovers arc, and the weight of building a world where love has real stakes.">
+  <link rel="canonical" href="https://writersdailypractice.com/romantasy-writers/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="For Romantasy Writers | The Writer's Daily Practice">
+  <meta property="og:description" content="Your romance and your fantasy both deserve to land. A daily practice for writers weaving slow burn, fated mates, and world-ending stakes into one story.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/romantasy-writers/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="For Romantasy Writers | The Writer's Daily Practice">
+  <meta name="twitter:description" content="Your romance and your fantasy both deserve to land. A daily practice for writers weaving slow burn, fated mates, and world-ending stakes into one story.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+
+  <!-- Book Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "The Writer's Daily Practice",
+    "subtitle": "365 Reflections to Build Your Writing Habit and Strengthen Your Craft",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion"
+    },
+    "url": "https://a.co/d/0aZhyb86",
+    "workExample": [
+      {
+        "@type": "Book",
+        "isbn": "",
+        "bookFormat": "https://schema.org/Paperback",
+        "offers": {
+          "@type": "Offer",
+          "price": "16.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Book",
+        "bookFormat": "https://schema.org/EBook",
+        "offers": {
+          "@type": "Offer",
+          "price": "9.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "200",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I keep the romance and the fantasy in balance without one overtaking the other?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The balance rarely comes from plotting both strands equally from the start — it comes from finding where they're actually the same strand. When the magic system creates the specific tension between your two leads, or when the court intrigue is the thing keeping them apart, the romance and the fantasy stop competing. They become one story, each making the other hit harder."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My slow burn keeps stalling out across a long fantasy arc. How do I sustain the tension?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Slow burn stalls when the only thing keeping the characters apart is circumstance. The tension has to live inside the characters themselves — in what they believe, what they're afraid to want, what they've decided they can't have. Every scene that advances your world-building should simultaneously tighten something between them, even if nothing is said."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I write a morally grey love interest without making readers lose faith in the HEA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Readers will follow a morally grey love interest very far into the dark, as long as they understand his interior logic. The HEA doesn't require him to become good — it requires him to choose, clearly and at cost, the person he loves over the thing that made him grey. The transformation has to be earned inside the fantasy stakes, not bolted on at the end."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will The Writer's Daily Practice help me with world-building and magic system craft specifically?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The book works at the level beneath craft mechanics — the resistance, the self-doubt, the paralysis that stops you from finishing the chapter where the magic and the relationship finally intersect. It's a daily practice designed to keep you in the chair and in the work, building the consistency that romantasy writing across a long arc actually requires."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(-2deg); }
+      50% { transform: translateY(-16px) rotate(-2deg); }
+    }
+    .book-float { animation: float 6s ease-in-out infinite; }
+    .book-glow { filter: drop-shadow(0 0 60px rgba(232, 185, 49, 0.3)) drop-shadow(0 20px 40px rgba(0,0,0,0.4)); }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* Drop cap for reflection */
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/#whats-inside" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">What's Inside</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+          <a href="/#reviews" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Reviews</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Join Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[85vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 70% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[1200px] mx-auto px-6 pt-24 pb-16 flex flex-col md:flex-row items-center gap-16 relative z-10">
+      <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
+        <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">For Romantasy Writers</span>
+        <h1 class="font-serif text-[38px] md:text-[52px] leading-[1.08] font-bold mb-8 text-white">
+          Your Romantasy world is vivid. <span class='gradient-text'>The love story keeps losing the thread.</span>
+        </h1>
+        <p class="text-white/85 text-lg leading-relaxed mb-8 max-w-[520px] font-light">
+          You can feel the tension of the enemies-to-lovers arc, the weight of the forbidden love, the slow burn stretching across 600 pages of court intrigue and dark magic. The problem isn't the world. It's staying in it every day long enough to let the emotional payoff land the way it deserves.
+        </p>
+        <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base mb-4">
+          Start Your Daily Practice &mdash; Free &rarr;
+        </a>
+        <p class="text-white/70 text-sm font-medium mb-2">Free. Every morning. Join 1,000+ writers.</p>
+        <p class="text-white/40 text-xs font-medium tracking-wide">From the Amazon #1 Bestselling book in Journal Writing, Composition &amp; Writing Skills</p>
+      </div>
+      <div class="flex-1 flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="relative">
+          <div class="absolute -inset-8 bg-gold/10 rounded-full blur-3xl"></div>
+          <img src="/images/DAILY PRACTICE 3D BOOK COVER.png" alt="The Writer's Daily Practice by Kia Orion — daily writing companion for romantasy writers" class="relative w-[280px] md:w-[380px] book-float book-glow">
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. PAIN POINTS SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-8" data-aos="fade-up">The truth about writing romantasy</p>
+      <div class="space-y-3 mb-8" data-aos="fade-up" data-aos-delay="100">
+        <p class="font-serif text-[28px] md:text-[36px] font-bold text-dark leading-snug">The fantasy is strong. But the romance keeps collapsing under its weight.</p>
+        <p class="font-serif text-[28px] md:text-[36px] font-bold text-dark leading-snug">You've built a world with real stakes. Now the HEA feels unearned inside it.</p>
+        <p class="font-serif text-[28px] md:text-[36px] font-bold text-dark leading-snug">The slow burn needs 600 pages to breathe. You're not sure you can hold the tension that long.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <p class="text-bodyText text-lg leading-relaxed font-medium">Romantasy is one of the most demanding genres on BookTok and beyond — not because the tropes are hard to understand, but because executing them at full power requires two things to be true at once. The magic system has to matter to the relationship. The enemies-to-lovers arc has to earn its moment inside a world where the stakes are actually world-ending. Most romantasy writers don't fail at the ideas. They fail at the daily consistency that lets those ideas compound into something complete.</p>
+        <p class="text-bodyText text-lg leading-relaxed font-medium">The morally grey love interest needs more than one good chapter to be believable. The fated mates trope only lands when the reader has been made to feel the inevitability across the entire arc. The forbidden love has to stay forbidden long enough that when it breaks open, it feels like it cost something real. None of that happens in a single sitting. It happens in the daily practice of showing up to the page — and having the right words waiting when you do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. THE BRIDGE ========== -->
+  <section class="py-16 bg-warmWhite relative quote-mark" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center relative z-10">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Why this reflection matters for romantasy writers</p>
+      <p class="font-review text-xl text-bodyText leading-relaxed">
+        Van Gogh didn't wait until his technique was flawless to start painting, and he didn't wait until the light was perfect to pick up the brush. Romantasy writers do something similar: they wait until the world-building is "done enough" to start the love story, or until the romantic arc is "strong enough" to introduce real stakes. The story you're not writing yet has no Starry Night moment — no scene where the magic and the longing collide in a way that earns the slow burn, no enemies-to-lovers payoff that lands because you built toward it across 400 pages. The time you spend waiting for the world to be ready is the time the emotional tension dissipates. Start now. Write the chapter where the magic costs them something. The HEA finds its weight in the doing.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== 5. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample reflection from the book</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">October 2nd</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">PREPARE FOR TOMORROW'S HARVEST</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"One day you will wake up and...there won't be any more time to do the things you've always wanted. Do it now."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">&mdash; Paulo Coelho</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4">
+          <p>Vincent van Gogh painted over 900 works in less than a decade. His life was cut short at 37. Imagine if he'd waited for the "perfect moment" to begin. We'd have no Starry Night. No Sunflowers. Just never-realized potential.</p>
+          <p>Writers do this too. We tell ourselves that we still have time. We'll feel more inspired later. Tomorrow will be much better. But tomorrow isn't promised. And time doesn't wait.</p>
+          <p>You don't have forever. The longer you put it off, the gap between what you want and what you achieve becomes greater.</p>
+          <p>Find a way to close it.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="text-midGray text-base mb-2 font-medium">That was 1 of 365.</p>
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice &mdash; a free daily reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="romantasy-writers">
+          <input type="hidden" name="fields[genre]" value="Romantasy">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Join Free
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. BOOK OVERVIEW ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="flex flex-col md:flex-row gap-16 items-start">
+        <div class="flex-1" data-aos="fade-right">
+          <h2 class="font-serif text-[32px] md:text-[40px] leading-[1.12] font-bold text-dark mb-8">
+            A daily writing ritual that compounds over time.
+          </h2>
+          <p class="text-midGray text-base leading-relaxed mb-6">
+            <strong class="font-semibold text-bodyText">The Writer's Daily Practice</strong> pairs a thought-provoking quote from a literary master with an original reflection — every single day for a year. No prompts. No exercises. Just the words you need to hear before you sit down to write.
+          </p>
+          <p class="text-midGray text-base leading-relaxed mb-10">
+            Start your morning with Ray Bradbury's infectious enthusiasm. Gain perspective from Zadie Smith's practical wisdom. Find solace in James Baldwin's reflections on the writer's responsibility.
+          </p>
+          <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base">
+            Join Free &rarr;
+          </a>
+          <p class="text-midGray text-xs mt-3 font-medium">Free. Every morning. From the Amazon #1 Bestselling book.</p>
+        </div>
+        <div class="flex-1" data-aos="fade-left" data-aos-delay="200">
+          <div class="bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">365 daily entries</strong> for every single day of the year</p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Curated quotes</strong> from Bradbury, Baldwin, Smith, Hemingway &amp; more</p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Original reflections</strong> that connect timeless wisdom to your daily practice</p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <p class="text-[15px] text-bodyText leading-relaxed"><strong class="font-semibold">Monthly themes:</strong> Inspiration, Discipline, Voice, Revision, and more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[1000px] mx-auto px-6">
+      <div class="flex items-center justify-center gap-3 mb-5">
+        <p class="text-gold text-lg tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="text-bodyText text-sm font-semibold">4.8 average</p>
+        <span class="text-midGray text-sm">&middot;</span>
+        <p class="text-midGray text-sm font-medium">200+ five-star reviews across platforms</p>
+      </div>
+      <p class="text-center text-xs uppercase tracking-[0.2em] text-midGray font-semibold mb-5">Amazon #1 Bestseller in 3 Categories</p>
+      <p class="text-center text-primary font-serif text-lg font-semibold italic mb-12">
+        For fans of Sue Lynn Tan, Thea Guanzon, and Claire Legrand.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[900px] mx-auto mb-12">
+        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
+            <span class="text-white text-2xl font-black font-serif">#1</span>
+          </div>
+          <p class="font-serif text-lg font-bold text-dark mb-1">Journal Writing</p>
+          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+        </div>
+        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
+            <span class="text-white text-2xl font-black font-serif">#1</span>
+          </div>
+          <p class="font-serif text-lg font-bold text-dark mb-1">Composition</p>
+          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+        </div>
+        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
+            <span class="text-white text-2xl font-black font-serif">#1</span>
+          </div>
+          <p class="font-serif text-lg font-bold text-dark mb-1">Writing Skills</p>
+          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+        </div>
+      </div>
+      <!-- Review quote -->
+      <div class="max-w-[680px] mx-auto text-center relative quote-mark">
+        <div class="relative z-10">
+          <p class="text-gold text-lg mb-4 tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="font-review text-xl italic text-bodyText leading-relaxed mb-4">
+            "I keep this on my desk and read it every morning before I write. Some days the reflection hits so close to home it's like the book was written just for me."
+          </p>
+          <p class="text-sm text-midGray font-medium">Rachel T., writing coach &middot; Amazon Verified Review</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. WHAT'S INSIDE ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <div data-aos="fade-up">
+        <h2 class="font-serif text-[32px] md:text-[38px] leading-[1.12] font-bold text-dark mb-4">
+          What a year with this book looks like:
+        </h2>
+        <p class="text-midGray text-base leading-relaxed mb-14">
+          12 months. 12 themes. 365 moments of clarity.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">January</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Inspiration</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">February</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Consistency</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">March</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Perfectionism</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">April</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Conviction</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">May</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Doubt</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">June</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Comparison</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">July</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Uncertainty</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">August</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Imposter Syndrome</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">September</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Writer's Block</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">October</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Procrastination</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">November</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Rejection</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">December</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Patience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 9. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page.<br><span class="gradient-text">Start writing with purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A daily reflection delivered to your inbox every morning — written for the romantasy writer who needs to sustain the slow burn, earn the HEA, and keep the magic system and the love story pulling in the same direction.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="romantasy-writers">
+        <input type="hidden" name="fields[genre]" value="Romantasy">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Join Free
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium mb-8">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      <div class="pt-6 border-t border-white/10">
+        <p class="text-white/30 text-xs font-medium mb-2">Want the full 365-day collection on your desk?</p>
+        <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors underline">
+          Get the book &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 11. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I keep the romance and the fantasy in balance without one overtaking the other?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">The balance rarely comes from plotting both strands equally from the start — it comes from finding where they're actually the same strand. When the magic system creates the specific tension between your two leads, or when the court intrigue is the thing keeping them apart, the romance and the fantasy stop competing. They become one story, each making the other hit harder.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">My slow burn keeps stalling out across a long fantasy arc. How do I sustain the tension?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Slow burn stalls when the only thing keeping the characters apart is circumstance. The tension has to live inside the characters themselves — in what they believe, what they're afraid to want, what they've decided they can't have. Every scene that advances your world-building should simultaneously tighten something between them, even if nothing is said.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I write a morally grey love interest without making readers lose faith in the HEA?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Readers will follow a morally grey love interest very far into the dark, as long as they understand his interior logic. The HEA doesn't require him to become good — it requires him to choose, clearly and at cost, the person he loves over the thing that made him grey. The transformation has to be earned inside the fantasy stakes, not bolted on at the end.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Will The Writer's Daily Practice help me with world-building and magic system craft specifically?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">The book works at the level beneath craft mechanics — the resistance, the self-doubt, the paralysis that stops you from finishing the chapter where the magic and the relationship finally intersect. It's a daily practice designed to keep you in the chair and in the work, building the consistency that romantasy writing across a long arc actually requires.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 12. RELATED PAGES + FOOTER ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">You might also like</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/epic-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Epic Fantasy Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/paranormal-romance-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Paranormal Romance Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/urban-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Urban Fantasy Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; 365 Reflections for Writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+      });
+    });
+  </script>
+
+</body>
+</html>
