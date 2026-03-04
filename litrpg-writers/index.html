@@ -187,6 +187,12 @@
       font-weight: 700;
     }
   </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
 </head>
 <body>
 
@@ -218,7 +224,7 @@
       <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
         You can map the skill tree in your sleep. You know exactly how your protagonist's mana scales through each dungeon tier. What you haven't solved yet is why any of it should make a reader feel something. The Writer's Daily Practice is a year of daily reflections, written for the writer staring at a perfect stat sheet wondering where the story went.
       </p>
-      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'litrpg-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
         <input type="hidden" name="fields[source_page]" value="litrpg-writers">
         <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
         <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
@@ -294,7 +300,7 @@
         <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
           Join The Writer's Daily Practice - a free daily reflection from literary masters, delivered to writers like you every morning.
         </p>
-        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'litrpg-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
           <input type="hidden" name="fields[source_page]" value="litrpg-writers">
           <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
           <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
@@ -333,7 +339,7 @@
       <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
         A free daily reflection for LitRPG and GameLit writers, on building progression systems that feel earned, writing the dungeon grind without losing your reader's emotional investment, and showing up to the blank page when the XP bar feels permanently stuck. Delivered every morning.
       </p>
-      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'litrpg-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
         <input type="hidden" name="fields[source_page]" value="litrpg-writers">
         <input type="hidden" name="fields[genre]" value="LitRPG / GameLit">
         <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
