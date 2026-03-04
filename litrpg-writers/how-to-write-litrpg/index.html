@@ -374,10 +374,28 @@
 
       <p>That's what we send writers every morning. One reflection to sit with before you open the draft.</p>
 
-      <p><a href="/litrpg-writers/">Get tomorrow's reflection free.</a></p>
-
     </div>
   </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[580px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          That's what we send writers every morning. One reflection to sit with before you open the draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'litrpg-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="litrpg-writers/how-to-write-litrpg">
+          <input type="hidden" name="fields[genre]" value="LitRPG">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ========== AUTHOR BIO ========== -->
   <section class="py-12 border-t border-gray-100">
