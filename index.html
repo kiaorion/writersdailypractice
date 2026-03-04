@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Writer's Daily Practice | Free Daily Reflections for Writers</title>
-  <meta name="description" content="A free daily reflection from literary masters, delivered to your inbox every morning. From the Amazon #1 Bestselling book by Kia Orion.">
+  <meta name="description" content="A free daily reflection from literary masters, delivered to your inbox every morning. Based on the #1 Bestselling book by Kia Orion.">
   <link rel="canonical" href="https://writersdailypractice.com/">
 
   <!-- Open Graph -->
@@ -59,20 +59,6 @@
     }
     *, *::before, *::after {
       box-sizing: border-box;
-    }
-
-    /* Floating book animation */
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(-2deg); }
-      50% { transform: translateY(-16px) rotate(-2deg); }
-    }
-    .book-float {
-      animation: float 6s ease-in-out infinite;
-    }
-
-    /* Glow effect behind book */
-    .book-glow {
-      filter: drop-shadow(0 0 60px rgba(232, 185, 49, 0.3)) drop-shadow(0 20px 40px rgba(0,0,0,0.4));
     }
 
     /* Gradient text */
@@ -195,39 +181,22 @@
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
     <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 70% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
-    <div class="max-w-[1200px] mx-auto px-6 pt-24 pb-16 flex flex-col md:flex-row items-center gap-16 relative z-10">
-      <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
-        <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Free Daily Reflections for Writers</span>
-        <h1 class="font-serif text-[42px] md:text-[56px] leading-[1.08] font-bold mb-8 text-white">
-          Lost in the maze of writer's block? <span class="gradient-text">The path forward starts here.</span>
-        </h1>
-        <p class="text-white/85 text-lg leading-relaxed mb-5 max-w-[520px] font-light">
-          Every morning, you get a quote from a literary master, an original reflection, and a writing prompt to start your day. Delivered to your inbox. Completely free.
-        </p>
-        <p class="text-white font-semibold text-xl mb-10 max-w-[500px] font-serif italic">
-          One reflection. One prompt. Every morning.
-        </p>
-        <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base mb-4">
-          Start Your Free Daily Practice &rarr;
-        </a>
-        <p class="text-white/70 text-sm font-medium mb-2">Free. Every morning. Join 1,000+ writers.</p>
-        <p class="text-white/40 text-xs font-medium tracking-wide">From the Amazon #1 Bestselling book in Journal Writing, Composition &amp; Writing Skills</p>
-      </div>
-      <div class="flex-1 flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-        <div class="relative">
-          <div class="absolute -inset-8 bg-gold/10 rounded-full blur-3xl"></div>
-          <!-- PLACEHOLDER: Replace this image with your custom daily email product image -->
-          <img src="images/DAILY PRACTICE 3D BOOK COVER.png" alt="The Writer's Daily Practice: a free daily reflection for writers, delivered to your inbox every morning" class="relative w-[320px] md:w-[420px] book-float book-glow" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="w-[280px] md:w-[360px] h-[480px] bg-white/5 rounded-lg border border-white/10 flex-col items-center justify-center p-8 hidden backdrop-blur-sm">
-            <p class="text-white/60 text-xs uppercase tracking-widest mb-3">The Writer's</p>
-            <h3 class="gradient-text text-4xl font-black text-center leading-tight mb-1 font-serif">DAILY</h3>
-            <h3 class="text-white text-3xl font-bold text-center leading-tight mb-4 font-serif">PRACTICE</h3>
-            <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mb-4"></div>
-            <p class="text-white/70 text-xs text-center leading-relaxed mb-6">A free daily reflection for writers, delivered to your inbox every morning</p>
-            <p class="text-white/50 text-xs font-bold uppercase tracking-wider">Kia Orion</p>
-          </div>
-        </div>
-      </div>
+    <div class="max-w-[700px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Free Daily Reflections for Writers</span>
+      <h1 class="font-serif text-[42px] md:text-[56px] leading-[1.08] font-bold mb-8 text-white">
+        Lost in the maze of writer's block? <span class="gradient-text">The path forward starts here.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-5 font-light">
+        Every morning, you get a quote from a literary master, an original reflection, and a writing prompt to start your day. Delivered to your inbox. Completely free.
+      </p>
+      <p class="text-white font-semibold text-xl mb-10 font-serif italic">
+        One reflection. One prompt. Every morning.
+      </p>
+      <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base mb-4">
+        Start Your Free Daily Practice &rarr;
+      </a>
+      <p class="text-white/70 text-sm font-medium mb-2">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
     </div>
     <!-- Bottom gradient fade -->
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
@@ -284,7 +253,7 @@
           <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base">
             Join Free &rarr;
           </a>
-          <p class="text-midGray text-xs mt-3 font-medium">Free. Every morning. From the Amazon #1 Bestselling book.</p>
+          <p class="text-midGray text-xs mt-3 font-medium">Free. Every morning. Based on the #1 Bestselling book.</p>
         </div>
         <div class="flex-1" data-aos="fade-left" data-aos-delay="200">
           <div class="bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
@@ -406,7 +375,7 @@
         One reflection.<br>One prompt.<br><span class="gradient-text">Every morning. Free.</span>
       </h2>
       <p class="text-white/60 text-base leading-relaxed max-w-[480px] mx-auto font-light mb-8">
-        A quote from a literary master, an original reflection, and a writing prompt to get you on the page. From the content behind the Amazon #1 Bestselling book.
+        A quote from a literary master, an original reflection, and a writing prompt to get you on the page. Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills.
       </p>
       <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
         <input type="hidden" name="fields[source_page]" value="homepage">
@@ -448,40 +417,358 @@
     </div>
   </section>
 
-  <!-- Amazon #1 Bestseller Social Proof -->
-  <section class="py-16 md:py-20" data-aos="fade-up">
-    <div class="max-w-[1000px] mx-auto px-6">
-      <div class="flex items-center justify-center gap-3 mb-5">
-        <p class="text-gold text-lg tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-        <p class="text-bodyText text-sm font-semibold">4.8 average</p>
-        <span class="text-midGray text-sm">&middot;</span>
-        <p class="text-midGray text-sm font-medium">200+ five-star reviews across platforms</p>
+  <!-- ========== WRITING PROMPT GENERATOR ========== -->
+  <section id="prompt-generator" class="py-24 md:py-32 bg-warmWhite">
+    <style>
+      .pg-mode-btn {
+        padding: 0.45rem 1.1rem;
+        border-radius: 9999px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        font-family: 'Inter', system-ui, sans-serif;
+        border: 1.5px solid #e5e7eb;
+        color: #6B7280;
+        background: white;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        line-height: 1.4;
+      }
+      .pg-mode-btn:hover { border-color: #1565C0; color: #1565C0; }
+      .pg-mode-btn.active {
+        background: linear-gradient(to right, #E8B931, #F5D060);
+        border-color: transparent;
+        color: #111111;
+      }
+      @keyframes pgFadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .pg-fade { animation: pgFadeIn 0.35s ease forwards; }
+    </style>
+
+    <div class="max-w-[660px] mx-auto px-6">
+
+      <!-- Header -->
+      <div data-aos="fade-up" class="text-center mb-10">
+        <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-4">Try One Right Now</p>
+        <h2 class="font-serif text-[30px] md:text-[38px] leading-[1.12] font-bold text-dark mb-3">Pull a writing prompt.</h2>
+        <p class="text-midGray text-[15px] max-w-[400px] mx-auto">52 prompts for every stage of the writing journey. Free. No signup required.</p>
       </div>
-      <p class="text-center text-xs uppercase tracking-[0.2em] text-midGray font-semibold mb-12">Based on the Amazon #1 Bestseller in 3 Categories</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[900px] mx-auto">
-        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
-          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
-            <span class="text-white text-2xl font-black font-serif">#1</span>
-          </div>
-          <p class="font-serif text-lg font-bold text-dark mb-1">Journal Writing</p>
-          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+
+      <!-- Mode tabs -->
+      <div data-aos="fade-up" data-aos-delay="50">
+        <div class="flex flex-wrap justify-center gap-2 mb-3" id="pg-modes">
+          <button class="pg-mode-btn active" data-mode="spark">Spark</button>
+          <button class="pg-mode-btn" data-mode="voice">Voice</button>
+          <button class="pg-mode-btn" data-mode="craft">Craft</button>
+          <button class="pg-mode-btn" data-mode="revision">Revision</button>
+          <button class="pg-mode-btn" data-mode="all">Surprise me</button>
         </div>
-        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
-          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
-            <span class="text-white text-2xl font-black font-serif">#1</span>
-          </div>
-          <p class="font-serif text-lg font-bold text-dark mb-1">Composition</p>
-          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
-        </div>
-        <div class="card-lift text-center bg-white rounded-2xl p-8 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
-          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-lg shadow-gold/20">
-            <span class="text-white text-2xl font-black font-serif">#1</span>
-          </div>
-          <p class="font-serif text-lg font-bold text-dark mb-1">Writing Skills</p>
-          <p class="text-xs text-midGray font-medium uppercase tracking-wider">Amazon Bestseller</p>
+        <p class="text-center text-[11px] text-midGray mb-2">Blank page &rarr; Spark &nbsp;&middot;&nbsp; Hollow writing &rarr; Voice &nbsp;&middot;&nbsp; Mid-draft &rarr; Craft &nbsp;&middot;&nbsp; Editing &rarr; Revision</p>
+
+        <!-- Already subscribed link -->
+        <p class="text-center mb-7">
+          <button id="pg-already-link" class="text-[11px] text-midGray hover:text-primary underline underline-offset-2 transition-colors">Already get the daily email? Unlock here</button>
+        </p>
+
+        <!-- Already subscribed inline panel (hidden) -->
+        <div id="pg-already-panel" class="hidden mb-7 bg-white rounded-xl border border-gray-200 p-4 max-w-[440px] mx-auto">
+          <p class="text-sm text-bodyText mb-3 font-medium">Enter your email to unlock:</p>
+          <form id="pg-already-form" class="flex gap-2">
+            <input type="email" id="pg-already-email" placeholder="your@email.com" required
+              class="flex-1 px-4 py-2.5 rounded-full border border-gray-200 text-bodyText text-sm placeholder-midGray focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+            <button type="submit"
+              class="bg-primary text-white font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-primaryDark transition-colors whitespace-nowrap">Unlock</button>
+          </form>
         </div>
       </div>
+
+      <!-- Prompt card -->
+      <div id="pg-card" class="card-lift bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.08)] border border-gray-100 p-8 md:p-10 mb-5" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Normal prompt view -->
+        <div id="pg-prompt-view" class="pg-fade">
+          <p id="pg-mode-label" class="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">Spark</p>
+          <h3 id="pg-card-name" class="font-serif text-[26px] md:text-[30px] font-bold text-dark mb-4 leading-tight"></h3>
+          <p id="pg-instruction" class="text-bodyText text-[16px] leading-relaxed"></p>
+        </div>
+
+        <!-- Gate view (hidden) -->
+        <div id="pg-gate-view" class="hidden">
+          <h3 class="font-serif text-[24px] md:text-[28px] font-bold text-dark mb-2 leading-tight">You've got the hang of it.</h3>
+          <p class="text-midGray text-base leading-relaxed mb-6">Get a fresh prompt every morning — free. That's the whole deal.</p>
+          <form id="pg-gate-form" class="flex flex-col sm:flex-row gap-3">
+            <input type="email" id="pg-email" placeholder="Your email address" required
+              class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-bodyText text-sm placeholder-midGray focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+            <button type="submit" id="pg-gate-submit"
+              class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-7 py-3.5 rounded-full text-sm whitespace-nowrap">Send me today's prompt &rarr;</button>
+          </form>
+        </div>
+
+        <!-- Success view (hidden) -->
+        <div id="pg-success-view" class="hidden text-center py-4">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center mx-auto mb-4">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="font-semibold text-dark text-lg mb-1">Check your inbox.</p>
+          <p class="text-midGray text-sm">Your first prompt is on its way.</p>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div id="pg-actions" class="flex flex-wrap items-center justify-center gap-3 mb-6">
+        <button id="pg-generate" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm">Generate another &rarr;</button>
+        <button id="pg-copy" class="text-sm text-midGray border border-gray-200 bg-white px-5 py-3.5 rounded-full hover:border-primary hover:text-primary transition-all font-medium">Copy</button>
+        <button id="pg-share" class="text-sm text-midGray border border-gray-200 bg-white px-5 py-3.5 rounded-full hover:border-primary hover:text-primary transition-all font-medium">Share on X</button>
+      </div>
+
+      <!-- The Chain cross-mention -->
+      <p class="text-center text-[12px] text-midGray">
+        Tracking your writing streak? &rarr; <a href="#" class="text-primary hover:underline font-medium">The Chain</a>
+      </p>
     </div>
+
+    <!-- Hidden iframe for silent ConvertKit submission (avoids CORS redirect) -->
+    <iframe name="pg-submit-frame" style="display:none;" aria-hidden="true"></iframe>
+
+    <script>
+    (function () {
+      var PROMPTS = [
+        // SPARK
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The First Line', instruction: 'Write an opening sentence that drops us into the middle of an action. No setup. No context. Just go.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Stolen Moment', instruction: 'Write about something you witnessed but never told anyone about. Keep it specific. Keep it true.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Other Side', instruction: "Write a scene from your antagonist's point of view. They're the hero of their own story. Show us why." },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Ordinary Made Strange', instruction: 'Pick the most mundane object near you right now. Write a scene where it is terrifying.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Letter Never Sent', instruction: "Write a letter from one character to another that will never be delivered. Say everything they couldn't say in person." },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Before', instruction: 'Write the scene that happened directly before your story begins. The moment everything was still normal.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Memory Thief', instruction: 'Write a vivid memory — but write it as if it belongs to someone entirely different from you.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Last Thing', instruction: 'Write the last conversation your character had before everything in their life changed.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Lie They Tell Themselves', instruction: "Write a character's internal justification for something they know is wrong. Make it almost convincing." },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Room', instruction: 'Describe a room that tells us everything about the person who lives in it. That person never appears.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The What If', instruction: 'Take one real event from your own life. Change one thing about it. Write what happens next.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Voice Drop', instruction: 'Write an entire scene using only dialogue. No action tags. No description. Let the voices carry it.' },
+        { mode: 'spark', modeLabel: 'SPARK', name: 'The Opening Image', instruction: 'Write the first image a reader will encounter in your story. Make it so specific they can smell it.' },
+        // VOICE
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Wound', instruction: "Write about a wound — physical or emotional — that never fully healed. Don't explain it. Just show it." },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Unsayable', instruction: 'Write what you are most afraid to put in your work. The thing you keep editing out. Put it in.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Contradiction', instruction: 'Write a character who wants two things that cannot coexist. Let them want both equally.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Specific Detail', instruction: 'Take one paragraph from your current work. Replace every general noun with a specific one. A dog becomes a three-legged beagle. A car becomes a rusted Civic.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Confession', instruction: 'Write as if no one will ever read it. Write the true thing. The thing underneath the thing you usually write.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: "The Child's Eye", instruction: 'Rewrite a scene from your work through the perspective of a child. What do they notice that adults have stopped seeing?' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Sensory Memory', instruction: 'Pick one smell from your childhood. Without naming the memory, write where that smell takes you.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Stakes', instruction: 'What does your character stand to lose? Write the scene where they almost lose it.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Subtext', instruction: 'Write a conversation between two characters where they are talking about one thing and meaning something else entirely. Neither one says what they mean.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Embarrassing Thing', instruction: "Write about something that embarrasses you. Don't soften it. Don't make yourself look better than you were." },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Love Letter', instruction: 'Your protagonist writes a love letter. Not to a person. To the thing they love most in the world.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The Fear', instruction: 'Write a scene in which your character is afraid. You are not allowed to name the fear or use the word "fear" or "scared." Show it only through the body and the surroundings.' },
+        { mode: 'voice', modeLabel: 'VOICE', name: 'The True North', instruction: "What does your character believe that almost no one else believes? Write a scene that proves they're right." },
+        // CRAFT
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Pace Change', instruction: "Find your slowest scene. Cut it in half by removing every sentence that doesn't change something. See if it breathes better or worse." },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Scene Test', instruction: 'Ask of your current scene: does something change here — in the situation, the relationship, or the character? If the answer is no, cut it or rewrite it until the answer is yes.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Clock', instruction: 'Add a time constraint to a scene that currently has none. Give someone a deadline. Watch the tension appear.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The White Space', instruction: 'Find your longest paragraph. Break it into smaller units. Read it again. Notice what the breathing room does.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Verb Audit', instruction: 'Take one full page. Underline every verb. Replace every weak or vague verb with one that is more precise and more alive.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Chapter Hook', instruction: 'Write the final line of your current chapter three different ways. Pick the one that makes it hardest to put the book down.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Midpoint', instruction: "Identify the exact middle of your story. Something significant must change at this point. If it doesn't, you've found your structural problem." },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Supporting Character', instruction: 'Pick a minor character. Give them a secret that has nothing to do with the main plot. Let that secret quietly affect one scene.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Show/Tell Swap', instruction: 'Find a sentence in your current work that tells the reader something. Rewrite it so it shows the same thing. Compare them. Keep the better one.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Setting as Character', instruction: 'Your current setting should be doing emotional work. Rewrite one scene so the location reflects the emotional state of the scene — not just as backdrop, but as participant.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Invisible Transition', instruction: "Write a transition between two scenes that makes a jump in time or place feel seamless. The reader should barely notice they've moved." },
+        { mode: 'craft', modeLabel: 'CRAFT', name: 'The Foreshadow', instruction: 'Go back to an earlier scene. Plant one detail that will pay off later. It should be invisible on first read.' },
+        { mode: 'craft', modeLabel: 'CRAFT', name: "The Reader's Question", instruction: 'Identify the central question your reader needs answered to keep turning pages. Confirm that question is asked clearly within your first chapter. If not, ask it.' },
+        // REVISION
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Adverb Purge', instruction: 'Search your manuscript for every word ending in "-ly." Delete at least half of them. For each one you delete, find a stronger verb to replace the construction.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Dialogue Isolation', instruction: 'Copy out only the dialogue from one scene — no action tags, no description. Read it aloud. Can you tell who is speaking without the tags? Do they all sound like different people?' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The First Page Test', instruction: "Your first page has exactly one job: make the reader read the second page. Read your first page with a stranger's eyes. Does it do its job?" },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Sensory Grounding', instruction: 'Find your most important scene. Confirm that at least three of the five senses are actively present. Not referenced — active. The reader should smell, hear, and feel it.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Was Hunt', instruction: 'Search for every instance of "was" and "were." For each one, ask: is this passive? If yes, rewrite it in the active voice.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Filter Word Pass', instruction: 'Search for: "she saw," "he noticed," "she heard," "he felt," "she realized." Delete the filter. Put the reader directly inside the experience instead of watching the character experience it.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Pet Word List', instruction: "List your five most overused words. Search for them. Every time one appears, ask if it's the best word for that moment. Replace at least half." },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Read Aloud', instruction: 'Read your current chapter aloud at a natural pace. Every time you stumble, trip, or slow down — mark it. Those marks are your edits.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Said Audit', instruction: 'Go through your dialogue tags. Replace anything that isn\'t "said" or "asked" unless it genuinely earns its place. "Hissed," "spat," "laughed" — most of them don\'t earn it.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The 10% Cut', instruction: 'Take your weakest chapter. Cut 10% of the word count without losing any meaning. It is always possible. Always.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Opening Audit', instruction: 'Rewrite your first line three different ways. Compare all four versions. If one of the new ones is better, use it. If not, you\'ve confirmed your original was right.' },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Ending Check', instruction: "Does your ending deliver on the emotional promise of your opening? Hold both in your head at once. If they don't resonate with each other, revise one of them." },
+        { mode: 'revision', modeLabel: 'REVISION', name: 'The Final Pass', instruction: 'Read your entire manuscript purely for pleasure. Make no edits as you go. Just mark the moments where you stop believing. Those are the only things left to fix.' }
+      ];
+
+      // --- Cookie helpers ---
+      function getCookie(name) {
+        var m = document.cookie.match('(?:^|;\\s*)' + name + '=([^;]*)');
+        return m ? decodeURIComponent(m[1]) : null;
+      }
+      function setCookie(name, val, days) {
+        var d = new Date(); d.setDate(d.getDate() + days);
+        document.cookie = name + '=' + encodeURIComponent(val) + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
+      }
+
+      // --- State ---
+      var currentMode = 'spark';
+      var shuffleState = {};
+
+      function getPool() {
+        return currentMode === 'all' ? PROMPTS : PROMPTS.filter(function(p) { return p.mode === currentMode; });
+      }
+      function nextPrompt() {
+        var pool = getPool();
+        var key = currentMode;
+        if (!shuffleState[key] || shuffleState[key].pos >= shuffleState[key].deck.length) {
+          shuffleState[key] = { deck: pool.slice().sort(function() { return Math.random() - 0.5; }), pos: 0 };
+        }
+        return shuffleState[key].deck[shuffleState[key].pos++];
+      }
+
+      // --- DOM refs ---
+      var modeLabel    = document.getElementById('pg-mode-label');
+      var cardName     = document.getElementById('pg-card-name');
+      var instr        = document.getElementById('pg-instruction');
+      var promptView   = document.getElementById('pg-prompt-view');
+      var gateView     = document.getElementById('pg-gate-view');
+      var successView  = document.getElementById('pg-success-view');
+      var actionsDiv   = document.getElementById('pg-actions');
+      var generateBtn  = document.getElementById('pg-generate');
+      var copyBtn      = document.getElementById('pg-copy');
+      var shareBtn     = document.getElementById('pg-share');
+      var gateForm     = document.getElementById('pg-gate-form');
+      var gateEmail    = document.getElementById('pg-email');
+      var gateSubmit   = document.getElementById('pg-gate-submit');
+      var alreadyLink  = document.getElementById('pg-already-link');
+      var alreadyPanel = document.getElementById('pg-already-panel');
+      var alreadyForm  = document.getElementById('pg-already-form');
+      var modeBtns     = document.querySelectorAll('.pg-mode-btn');
+
+      var currentPromptData = null;
+
+      function isUnlocked() { return getCookie('wdp_unlocked') === '1'; }
+      function getUses()    { return parseInt(getCookie('wdp_uses') || '0', 10); }
+      function track(evt, props) { if (window.plausible) window.plausible(evt, { props: props || {} }); }
+
+      function displayPrompt(p) {
+        currentPromptData = p;
+        modeLabel.textContent = p.modeLabel;
+        cardName.textContent  = p.name;
+        instr.textContent     = p.instruction;
+        promptView.classList.remove('hidden');
+        promptView.classList.add('pg-fade');
+        gateView.classList.add('hidden');
+        successView.classList.add('hidden');
+        actionsDiv.classList.remove('hidden');
+        track('prompt_generated', { mode: p.mode });
+      }
+
+      function displayGate() {
+        promptView.classList.add('hidden');
+        gateView.classList.remove('hidden');
+        gateView.classList.add('pg-fade');
+        successView.classList.add('hidden');
+        actionsDiv.classList.add('hidden');
+        track('gate_shown');
+      }
+
+      // --- Silent ConvertKit submit via hidden iframe ---
+      function submitToConvertKit(email) {
+        var f = document.createElement('form');
+        f.action = 'https://app.convertkit.com/forms/9155962/subscriptions';
+        f.method = 'POST';
+        f.target = 'pg-submit-frame';
+        f.style.display = 'none';
+        var addField = function(name, val) {
+          var i = document.createElement('input');
+          i.type = 'hidden'; i.name = name; i.value = val;
+          f.appendChild(i);
+        };
+        addField('email_address', email);
+        addField('fields[source_page]', 'prompt-generator');
+        document.body.appendChild(f);
+        f.submit();
+        document.body.removeChild(f);
+      }
+
+      // --- Init: show first prompt ---
+      displayPrompt(nextPrompt());
+
+      // --- Mode switching ---
+      modeBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          currentMode = btn.dataset.mode;
+          modeBtns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          track('prompt_mode_changed', { mode: currentMode });
+          if (!isUnlocked() && getUses() >= 3) { displayGate(); }
+          else { displayPrompt(nextPrompt()); }
+        });
+      });
+
+      // --- Generate button ---
+      generateBtn.addEventListener('click', function() {
+        if (!isUnlocked() && getUses() >= 3) { displayGate(); return; }
+        displayPrompt(nextPrompt());
+        if (!isUnlocked()) setCookie('wdp_uses', getUses() + 1, 7);
+      });
+
+      // --- Gate form ---
+      gateForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = gateEmail.value.trim();
+        if (!email) return;
+        gateSubmit.textContent = 'Sending...';
+        gateSubmit.disabled = true;
+        submitToConvertKit(email);
+        setCookie('wdp_unlocked', '1', 30);
+        track('gate_subscribed');
+        gateView.classList.add('hidden');
+        successView.classList.remove('hidden');
+        successView.classList.add('pg-fade');
+        setTimeout(function() {
+          successView.classList.add('hidden');
+          actionsDiv.classList.remove('hidden');
+          displayPrompt(nextPrompt());
+        }, 2200);
+      });
+
+      // --- Already subscribed ---
+      alreadyLink.addEventListener('click', function() {
+        alreadyPanel.classList.toggle('hidden');
+      });
+      alreadyForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        setCookie('wdp_unlocked', '1', 30);
+        alreadyPanel.classList.add('hidden');
+        track('gate_already_subscribed');
+        displayPrompt(nextPrompt());
+      });
+
+      // --- Copy ---
+      copyBtn.addEventListener('click', function() {
+        if (!currentPromptData) return;
+        var text = currentPromptData.name + '\n\n' + currentPromptData.instruction;
+        track('prompt_copied');
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(text).then(function() {
+            copyBtn.textContent = 'Copied!';
+            setTimeout(function() { copyBtn.textContent = 'Copy'; }, 2000);
+          });
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select();
+          try { document.execCommand('copy'); } catch(e) {}
+          document.body.removeChild(ta);
+          copyBtn.textContent = 'Copied!';
+          setTimeout(function() { copyBtn.textContent = 'Copy'; }, 2000);
+        }
+      });
+
+      // --- Share ---
+      shareBtn.addEventListener('click', function() {
+        if (!currentPromptData) return;
+        var tweet = 'Today\'s writing prompt:\n\n"' + currentPromptData.instruction + '"\n\nGet a free prompt every morning \u2192 writersdailypractice.com';
+        window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet), '_blank', 'noopener,noreferrer');
+        track('prompt_shared');
+      });
+
+    })();
+    </script>
   </section>
 
   <!-- ========== SECOND EMAIL SIGNUP FORM ========== -->
