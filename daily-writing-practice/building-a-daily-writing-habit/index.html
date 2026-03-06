@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Building a Daily Writing Habit Taught Me | The Writer's Daily Practice</title>
+  <meta name="description" content="Five things I learned from building a daily writing habit, after failing at it six times first. Lessons from Graham Greene, Flannery O'Connor, and Stephen King.">
+  <link rel="canonical" href="https://writersdailypractice.com/daily-writing-practice/building-a-daily-writing-habit/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What Building a Daily Writing Habit Taught Me">
+  <meta property="og:description" content="Five things nobody told me about building a daily writing habit, and what actually changed once one stuck.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/daily-writing-practice/building-a-daily-writing-habit/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Building a Daily Writing Habit Taught Me">
+  <meta name="twitter:description" content="Five things nobody told me about building a daily writing habit, and what actually changed once one stuck.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Building a Daily Writing Habit Taught Me",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-04",
+    "dateModified": "2026-03-04",
+    "description": "Five things I learned from building a daily writing habit, after failing at it six times first. Lessons from Graham Greene, Flannery O'Connor, and Stephen King.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/daily-writing-practice/building-a-daily-writing-habit/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Daily Writing Practice",
+        "item": "https://writersdailypractice.com/daily-writing-practice/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "What Building a Daily Writing Habit Taught Me"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/daily-writing-practice/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Daily Writing Practice</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/daily-writing-practice/" class="hover:text-primary transition-colors">Daily Writing Practice</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Writing Practice</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        What Building a Daily Writing Habit Taught Me
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-04">March 4, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>5 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+
+      <p>I tried to build a daily writing habit maybe seven or eight times before one actually stuck. The first six attempts all ended the same way: skip a morning, feel guilty about it, skip another morning, quietly pretend the whole experiment had never happened.</p>
+
+      <p>A few things I've figured out since then:</p>
+
+      <hr>
+
+      <h2>The First Ten Minutes Are Always a Lie</h2>
+
+      <p>The feeling you have when you first sit down, that heavy conviction that you have nothing worth saying today, passes. Give it ten minutes.</p>
+
+      <p>Graham Greene wrote exactly 500 words every day. He'd stop mid-sentence if he hit the number. He talked about hating the first few minutes of every single session, even decades into his career. The resistance never left. He just stopped treating it as a signal.</p>
+
+      <p>I notice this in my own practice constantly. The first paragraph of the morning is almost always throat-clearing. Stiff, cautious, over-explained. By the third or fourth paragraph, something loosens. The voice shows up. But you can't get to paragraph four without slogging through the bad ones first, and the bad ones always feel like evidence that you shouldn't be writing today.</p>
+
+      <hr>
+
+      <h2>The Dangerous Day Is Always the Second One You Skip</h2>
+
+      <p>Missing one morning doesn't do much. Everybody misses a morning. The habit is durable enough to absorb a single gap.</p>
+
+      <p>The problem is what happens the next day. You wake up and your brain has already built a story about why skipping was fine, actually, and maybe you needed the break, and maybe you'll start fresh on Monday. That second skip is the one that kills the habit, because it transforms a missed day into an identity shift. You go from "someone who writes every day and happened to miss one" to "someone who used to write every day."</p>
+
+      <p>I've seen this pattern in exercise research too. The biggest predictor of maintaining any habit, according to most habit research, isn't motivation or willpower. It's what you do immediately after you fail. The people who bounce back the next day almost always sustain the habit long-term. The people who let two days pass rarely recover it.</p>
+
+      <hr>
+
+      <h2>The Good Sentences Hide Behind the Bad Ones</h2>
+
+      <p>This might be the most useful thing I've learned from writing daily. You can't access your best work without producing a certain amount of bad work first. That's how the process works.</p>
+
+      <p>Flannery O'Connor sat at her desk every morning for two hours whether anything came or not. Some mornings, by her own account, nothing did. She sat there anyway. When asked about her routine she didn't describe it as productive or rewarding. She described it as showing up.</p>
+
+      <p>There's a version of this in jazz, where musicians talk about "blowing" before the real improvisation starts. You play scales, you play familiar riffs, you warm up the instrument and your fingers and your ear, and then at some point the music starts coming from somewhere less rehearsed. The warm-up isn't separate from the performance. It's the tunnel you walk through to get there.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          This is the kind of thing we think about every morning. One honest thought before you open the draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'daily-writing-practice-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="daily-writing-practice/building-a-daily-writing-habit">
+          <input type="hidden" name="fields[genre]" value="Writing Practice">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <h2>What the Habit Actually Builds Is Tolerance for Uncertainty</h2>
+
+      <p>Most advice about daily writing habits focuses on productivity. Word counts, streaks, time blocks. All of that is fine, but it misses what actually changes when you write every day for long enough.</p>
+
+      <p>What changes is your ability to sit with not knowing. You start sentences before you know how they'll end. You write into topics you haven't figured out yet, and somewhere in the writing, the figuring-out happens rather than before you sit down. Haruki Murakami has talked about this in interviews. His daily routine is famously rigid, almost monastic, but when you listen to how he describes the actual writing, it's full of uncertainty. He doesn't outline his novels. He sits down and discovers what the story is by writing it, and he's said he finds this genuinely frightening even after decades of doing it. The routine is the container that makes the uncertainty survivable.</p>
+
+      <hr>
+
+      <h2>Small Sessions Compound in Ways That Marathons Can't</h2>
+
+      <p>I used to think a real writing practice meant long sessions. Three hours, four hours. So I'd wait for a Saturday morning with nothing scheduled, sit down for a marathon, burn out by noon, and call it progress.</p>
+
+      <p>What I've found, and I'm not entirely sure why the math works this way, is that fifteen focused minutes every morning produces more usable writing over a month than a single four-hour weekend session. The short daily session keeps the project warm in your head. You're never starting cold. You never spend the first hour trying to remember where you left off and what you were trying to say.</p>
+
+      <p>Stephen King writes about this in <em>On Writing</em>. His daily target is 2,000 words, but he's clear that the consistency matters more than the count. A writer doing 200 words every single day will outproduce a writer doing 2,000 words twice a month, and the daily writer's prose will be tighter because they're always inside the work, always warm, always a few hours away from the last time they heard their own voice on the page.</p>
+
+      <hr>
+
+      <p>I keep coming back to the same thought when I sit down in the morning. You spend all this time worrying about what you're going to write, but the habit is quietly building something underneath all of that. The kind of writer who can sit with uncertainty and work through it. That takes longer than any single project and matters more than any given morning's output.</p>
+
+      <p>That's what we send writers every morning. One thought to sit with before you open the draft.</p>
+
+      <p><a href="../">Get tomorrow's reflection free.</a></p>
+
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Every morning, one reflection about writing. Something to carry into the work.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'daily-writing-practice-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="daily-writing-practice/building-a-daily-writing-habit">
+          <input type="hidden" name="fields[genre]" value="Writing Practice">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to hub -->
+        <a href="/daily-writing-practice/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Practice</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/daily-writing-practice/what-happens-when-you-write-every-day/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Practice</p>
+          <p class="font-serif font-bold text-dark text-[15px]">What Happens When You Write Every Day &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'daily-writing-practice-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="daily-writing-practice/building-a-daily-writing-habit">
+        <input type="hidden" name="fields[genre]" value="Writing Practice">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>

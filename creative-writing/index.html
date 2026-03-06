@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Writing | Exercises, Tips & Practice for Writers</title>
+  <meta name="description" content="Craft-driven creative writing exercises, tips, and practice drawn from Chekhov, Didion, Hemingway, and the writers who spent decades at their desks. Plus a free daily prompt delivered every morning.">
+  <link rel="canonical" href="https://writersdailypractice.com/creative-writing/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Creative Writing | The Writer's Daily Practice">
+  <meta property="og:description" content="Craft-driven creative writing exercises and tips from the writers who figured it out. A free daily prompt delivered to writers every morning.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/creative-writing/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Creative Writing | The Writer's Daily Practice">
+  <meta name="twitter:description" content="Craft-driven creative writing exercises and tips from the writers who figured it out. A free daily prompt delivered to writers every morning.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is creative writing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Creative writing is any writing where the goal is to make something rather than report something. Fiction, poetry, memoir, personal essays, literary nonfiction, screenwriting, and song lyrics all count. The common thread is that the writer makes choices about language, structure, and form that go beyond conveying information. A news article tells you what happened. A short story makes you feel what it was like to be there."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you start creative writing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dorothea Brande's advice from 1934 still holds: set your alarm for thirty minutes earlier than usual and write before you do anything else. Don't plan what to write. Don't read first. Just open the notebook and go. If that feels like too much, try ten minutes with a single exercise. Write about the room you're sitting in. Describe a stranger you saw yesterday. Copy a paragraph from a writer you admire and keep writing in their rhythm. The start doesn't need to be grand. It needs to be consistent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes creative writing good?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chekhov wrote in a letter to his brother: don't tell me the moonlight is shining, show me the glint of light on broken glass. That's still the best one-sentence answer. Good creative writing replaces abstraction with specificity. It trusts the reader to feel what the details imply rather than spelling out the emotion. Beyond that, good writing has a voice that sounds like a particular person wrote it, not like anyone could have. It's honest about what it doesn't know."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can creative writing be learned?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Toni Morrison published her first novel at 39. Raymond Carver's early stories were almost unrecognizable compared to the stripped-down prose he became known for. Octavia Butler kept a journal where she wrote affirmations about becoming a published author years before it happened. The myth of natural talent doesn't survive contact with the biographies. Every writer you admire was, at some point, a beginner who wrote badly and kept going. The skill is real, and it responds to practice the way any skill does."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Creative Writing"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Creative Writing</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        The practice behind the writing. <span class="gradient-text block mt-3">Before the draft is ready.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        Exercises, tips, and craft lessons drawn from Chekhov, Didion, Hemingway, and the writers who spent decades at their desks. Plus a free daily prompt delivered to your inbox every morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'creative-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="creative-writing">
+        <input type="hidden" name="fields[genre]" value="Creative Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A craft-driven writing exercise</strong> with context explaining what the exercise trains and which authors used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. EXERCISE SAMPLER ========== -->
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">Five to try right now</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">
+        Exercises from our collection
+      </h2>
+
+      <div class="space-y-10">
+
+        <!-- Exercise 1: Observation (Welty) -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Describe a room you'll never enter again. Include only what you could touch.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Eudora Welty built scenes by cataloguing the physical world. Limiting yourself to tactile detail forces you past the easy visual description and into the kind of specificity that makes a reader feel present.</p>
+        </div>
+
+        <!-- Exercise 2: Subtext (Hemingway) -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Write a conversation between two people who are both lying. The reader should be able to tell, but neither character says it directly.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Hemingway's iceberg theory in practice. The tension lives in the gap between what's said and what's meant. "Hills Like White Elephants" is the most famous example, but you'll find the same technique running through Carver and Munro.</p>
+        </div>
+
+        <!-- Exercise 3: Perspective (Rhys/Kurosawa) -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Take the last paragraph of a story you love and rewrite it from a different character's perspective.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Jean Rhys rewrote the entire backstory of Jane Eyre from the perspective of Bertha Mason and produced Wide Sargasso Sea. Kurosawa built Rashomon around four people describing the same event. Shifting the lens changes what the story means.</p>
+        </div>
+
+        <!-- Exercise 4: Attention (McPhee) -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Write about something boring until it becomes interesting. A parking lot. A Tuesday afternoon. A doorknob.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">John McPhee wrote 70,000 words about oranges. The subject doesn't determine whether the writing is interesting. The writer's attention does. This exercise trains you to find the story inside the ordinary.</p>
+        </div>
+
+        <!-- Exercise 5: Constraint (Oulipo) -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Set a timer for eight minutes. Write a scene that takes place entirely in the time it takes to ride an elevator.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">The Oulipo movement built an entire literary tradition around arbitrary constraints. Georges Perec wrote a 300-page novel without using the letter "e." The constraint isn't the point. What the constraint forces you to discover is the point.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These are five exercises from our full collection.</p>
+        <p class="text-midGray text-sm leading-relaxed">For twenty more organized by the skill they train, start with <a href="creative-writing-exercises/" class="text-primary font-medium hover:underline">the complete list</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. BLOG POSTS ========== -->
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On creative writing</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="creative-writing-exercises/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Creative Writing Exercises That Actually Teach You Something</p>
+          <p class="text-midGray text-sm leading-relaxed">20 exercises organized by what they train, with craft context from Chekhov, Goldberg, and Hemingway. &rarr;</p>
+        </a>
+        <a href="creative-writing-tips/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Creative Writing Tips from the Writers Who Figured It Out</p>
+          <p class="text-midGray text-sm leading-relaxed">Five tips distilled from the working habits of writers who got better over decades. &rarr;</p>
+        </a>
+        <a href="creative-writing-for-beginners/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Creative Writing for Beginners: Where to Actually Start</p>
+          <p class="text-midGray text-sm leading-relaxed">You don't need talent, a degree, or a plan. You need ten minutes and one honest sentence. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">March 22nd</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">THE SENTENCE YOU ALMOST THREW AWAY</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"I write one page of master text to every three pages of draft manuscript. I try to hold a full picture of the piece in my head, and when I get a feeling about where it is going, I let that guide me through the draft."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Toni Morrison</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4">
+          <p>Morrison kept notebooks full of sentences she wasn't sure about. Lines that didn't fit the paragraph she was working on, fragments of dialogue she'd overheard, descriptions that arrived at the wrong time. She didn't throw them away. She moved them somewhere else and waited.</p>
+          <p>Most of the material in those notebooks never made it into a published book. But the practice of saving rather than discarding changed the way she wrote. She stopped treating each sentence as a test. The ones that didn't work today might work in a year. The ones that never worked taught her something about rhythm she couldn't have learned any other way.</p>
+          <p>Today's exercise: open something you wrote recently and find the sentence you almost deleted. Write three new paragraphs starting from that sentence. Let it lead somewhere you didn't plan.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'creative-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="creative-writing">
+          <input type="hidden" name="fields[genre]" value="Creative Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Get Your Daily Prompt
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I used to read writing tips and nod along without actually changing anything. These exercises gave me something concrete to do every morning. After two months, I started noticing sentences in my draft that I wouldn't have written before."
+          </p>
+          <p class="text-sm text-midGray font-medium">Sarah K., short story writer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        One exercise a day. <span class="gradient-text">Every morning.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily creative writing exercise delivered to writers every morning. Craft context explaining what the exercise trains, a quote from a literary master, and an original reflection. Two minutes to read. A full session to write from.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'creative-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="creative-writing">
+        <input type="hidden" name="fields[genre]" value="Creative Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is creative writing?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Creative writing is any writing where the goal is to make something rather than report something. Fiction, poetry, memoir, personal essays, literary nonfiction, screenwriting, and song lyrics all count. The common thread is that the writer makes choices about language, structure, and form that go beyond conveying information. A news article tells you what happened. A short story makes you feel what it was like to be there.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do you start creative writing?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Dorothea Brande's advice from 1934 still holds: set your alarm for thirty minutes earlier than usual and write before you do anything else. Don't plan what to write. Don't read first. Just open the notebook and go. If that feels like too much, try ten minutes with a single exercise. Write about the room you're sitting in. Describe a stranger you saw yesterday. Copy a paragraph from a writer you admire and keep writing in their rhythm. The start doesn't need to be grand. It needs to be consistent.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What makes creative writing good?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Chekhov wrote in a letter to his brother: don't tell me the moonlight is shining, show me the glint of light on broken glass. That's still the best one-sentence answer. Good creative writing replaces abstraction with specificity. It trusts the reader to feel what the details imply rather than spelling out the emotion. Beyond that, good writing has a voice that sounds like a particular person wrote it, not like anyone could have. It's honest about what it doesn't know.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Can creative writing be learned?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Toni Morrison published her first novel at 39. Raymond Carver's early stories were almost unrecognizable compared to the stripped-down prose he became known for. Octavia Butler kept a journal where she wrote affirmations about becoming a published author years before it happened. The myth of natural talent doesn't survive contact with the biographies. Every writer you admire was, at some point, a beginner who wrote badly and kept going. The skill is real, and it responds to practice the way any skill does.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. RELATED PAGES ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/writing-prompts/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Prompts</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Try a prompt &rarr;</p>
+        </a>
+        <a href="/free-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Free Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Write without stopping &rarr;</p>
+        </a>
+        <a href="/finding-your-writing-voice/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Voice</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Find your sound &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>
