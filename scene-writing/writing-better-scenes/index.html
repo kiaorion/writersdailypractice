@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things I've Noticed About Scenes That Work | The Writer's Daily Practice</title>
+  <meta name="description" content="Observations on writing better scenes, collected from reading too many short stories and marking up too many drafts. Scene writing tips from Munro, Johnson, Saunders, Hempel, and Chekhov.">
+  <link rel="canonical" href="https://writersdailypractice.com/scene-writing/writing-better-scenes/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Things I've Noticed About Scenes That Work | The Writer's Daily Practice">
+  <meta property="og:description" content="Observations on writing better scenes, collected from reading too many short stories and marking up too many drafts. Scene writing tips from Munro, Johnson, Saunders, Hempel, and Chekhov.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/scene-writing/writing-better-scenes/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Things I've Noticed About Scenes That Work | The Writer's Daily Practice">
+  <meta name="twitter:description" content="Observations on writing better scenes, collected from reading too many short stories and marking up too many drafts. Scene writing tips from Munro, Johnson, Saunders, Hempel, and Chekhov.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Things I've Noticed About Scenes That Work",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "Observations on writing better scenes, collected from reading too many short stories and marking up too many drafts. Scene writing tips from Munro, Johnson, Saunders, Hempel, and Chekhov.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/scene-writing/writing-better-scenes/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Scene Writing",
+        "item": "https://writersdailypractice.com/scene-writing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Things I've Noticed About Scenes That Work"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+
+    .drop-cap::first-letter {
+      font-size: 3.2em;
+      font-weight: 700;
+      float: left;
+      line-height: 0.8;
+      padding-right: 0.1em;
+      margin-top: 0.1em;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/scene-writing/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Scene Writing</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/scene-writing/" class="hover:text-primary transition-colors">Scene Writing</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Scene Writing</span>
+
+      <!-- Title: Use &nbsp; between last two words to prevent orphan words -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        Things I've Noticed About Scenes That&nbsp;Work
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>9 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+      <p class="drop-cap">Some observations about scenes, collected from reading too many short stories and marking up too many drafts:</p>
+
+      <hr>
+
+      <p>The first sentence of a scene is doing more work than you think. It sets the clock. It tells the reader where they are in time, in space, in emotional register. Get that sentence wrong and the reader spends the next paragraph orienting themselves instead of inhabiting the story.</p>
+
+      <hr>
+
+      <p>Alice Munro can cover twenty years in a single paragraph and then spend three pages on one dinner conversation. The ratio tells you what matters. She's not summarizing because she's lazy. She's compressing time so that when she finally slows down, the deceleration itself becomes a signal: pay attention, this is the scene that counts.</p>
+
+      <hr>
+
+      <p>Most scenes go on about two paragraphs too long. The impulse to explain what just happened, to make sure the reader got it, is almost always the impulse to not trust your reader. Cut the last paragraph of your scene. Read it again. Nine times out of ten, the scene got better.</p>
+
+      <hr>
+
+      <p>Denis Johnson's narrator in "Emergency" from <em>Jesus' Son</em> doesn't understand half of what's happening around him. He's high, or coming down, or dissociating, and the scene works because his confusion is specific rather than vague. He notices the baby rabbits, he notices the hitchhiker, but he doesn't connect them to anything meaningful, and that refusal to interpret is what makes the reader interpret everything.</p>
+
+      <hr>
+
+      <p>A scene ending is stronger when it raises a question than when it answers one.</p>
+
+      <hr>
+
+      <p>Chekhov's advice was to remove the first and last paragraphs of every story. I've tried it on individual scenes and it works there too, maybe even better. The instinct to warm up at the beginning and sum up at the end is the same instinct, and it's almost always wrong.</p>
+
+      <hr>
+
+      <p>The worst thing you can do in a scene is have two characters agree with each other for more than a sentence. Agreement is the end of tension. Even if your characters are allies, even if they love each other, something in the scene needs to pull in a different direction or the reader's attention will wander to whatever's in the next room.</p>
+
+      <hr>
+
+      <p>George Saunders cuts to black like a filmmaker. His scenes end one beat before the character processes what just happened, and that missing beat is where the reader's own emotional response floods in. He trusts the gap. Most writers fill it.</p>
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Scenes are where writing practice becomes writing. One prompt every morning to help you build the&nbsp;habit.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'scene-writing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="scene-writing/writing-better-scenes">
+          <input type="hidden" name="fields[genre]" value="Scene Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <p>"I cut my stories very much the way I cut my films. I cut and cut and cut." That's Raymond Carver, talking about revision, and it applies to scenes more than anything else he wrote about. A scene that's been cut three times reads differently than one that was written well on the first pass. The cut version has a kind of density, a compression that the reader can feel even if they can't name it.</p>
+
+      <hr>
+
+      <p>Amy Hempel's "In the Cemetery Where Al Jolson Is Buried" is fourteen pages long and contains maybe five actual scenes. The rest is white space, fragments, disconnected facts about animals and trivia. The grief lives in what she left out. The scenes she does write are so short they feel like someone flinching away from a memory before it fully arrives, and that flinch is the whole story.</p>
+
+      <hr>
+
+      <p>Weather in a scene changes everything and it costs you nothing. Rain slows characters down, heat makes them irritable, cold makes dialogue shorter. A scene set on a gray Tuesday afternoon in November reads completely differently than the same scene set on a bright Saturday morning, even if you change nothing else. It's free characterization that most writers forget to use.</p>
+
+      <hr>
+
+      <p>A scene that starts late and ends early almost always reads better than one that arrives on time. I'm not sure why more writing advice doesn't just say this and stop. You can spend years studying scene structure or you can cut your first paragraph, cut your last paragraph, and see if the thing still holds. It usually does and it usually reads faster and more alive.</p>
+
+      <hr>
+
+      <p>If two scenes in a row have the same emotional register, one of them can probably be cut. This is something I'm still not confident about, because sometimes the repetition is the point, sometimes that sustained note is what the story needs. But more often than not, when I go back through a draft and find two quiet scenes side by side or two tense scenes stacked together, I can lose one and the manuscript thanks me for it.</p>
+
+      <hr>
+
+      <p>Chekhov wrote scenes where nothing happens. A family eats dinner. Someone looks out a window. Two people talk about selling an orchard. And inside those scenes where nothing happens, everything is happening, just slowly and below the surface and in the silences between lines of dialogue that sound ordinary until you realize one character has been trying to say something for three pages and keeps losing their nerve.</p>
+
+      <hr>
+
+      <p>The best scenes I've read this year all had one thing in common: they made me forget I was reading. I can't tell you exactly how that works or what the mechanism is, and I'm suspicious of anyone who claims they can. But I think it has something to do with sensory detail arriving at the right moment, at the moment where the reader's attention would otherwise drift, and pulling them back into the room with a sound or a texture or the specific quality of light coming through a window that the character would actually notice.</p>
+
+      <hr>
+
+      <p>Every scene is a small argument for why the reader should keep going. That's all it is, really. Not a unit of plot or a container for dialogue or a building block of structure. It's a promise that says: stay here, this next part matters, something is about to shift that you won't want to miss. And the scenes that work are the ones that keep that promise without ever having to state it out loud.</p>
+
+      <hr>
+
+      <p>Pick one scene from something you've written recently. Cut the first two sentences and the last two sentences. Read what's left. If it still works, those sentences were scaffolding, and the scene was always underneath them, waiting to be&nbsp;found.</p>
+
+      <p>That's something worth practicing. <a href="/scene-writing/">More on writing better&nbsp;scenes.</a></p>
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Pick any observation above. Write one scene that tests it. That's practice for&nbsp;today.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'scene-writing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="scene-writing/writing-better-scenes">
+          <input type="hidden" name="fields[genre]" value="Scene Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/scene-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Scene Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Scene writing hub &rarr;</p>
+        </a>
+        <a href="/scene-writing/scene-structure/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Scene Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Scene Structure &rarr;</p>
+        </a>
+        <a href="/scene-writing/how-to-write-action-scenes/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Scene Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Writing Action Scenes &rarr;</p>
+        </a>
+        <a href="/creative-writing/creative-writing-exercises/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing exercises &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'scene-writing-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="scene-writing/writing-better-scenes">
+        <input type="hidden" name="fields[genre]" value="Scene Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>

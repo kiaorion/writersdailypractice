@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scene Structure: What Every Scene Needs to Earn Its Place | The Writer's Daily Practice</title>
+  <meta name="description" content="How to structure a scene using lessons from Dwight Swain's scene-and-sequel method, Robert McKee's beats, Flannery O'Connor's revelations, and Raymond Carver's invisible architecture.">
+  <link rel="canonical" href="https://writersdailypractice.com/scene-writing/scene-structure/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Scene Structure: What Every Scene Needs to Earn Its Place | The Writer's Daily Practice">
+  <meta property="og:description" content="How to structure a scene using lessons from Dwight Swain's scene-and-sequel method, Robert McKee's beats, Flannery O'Connor's revelations, and Raymond Carver's invisible architecture.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/scene-writing/scene-structure/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Scene Structure: What Every Scene Needs to Earn Its Place | The Writer's Daily Practice">
+  <meta name="twitter:description" content="How to structure a scene using lessons from Dwight Swain's scene-and-sequel method, Robert McKee's beats, Flannery O'Connor's revelations, and Raymond Carver's invisible architecture.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Scene Structure: What Every Scene Needs to Earn Its Place",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "How to structure a scene using lessons from Dwight Swain's scene-and-sequel method, Robert McKee's beats, Flannery O'Connor's revelations, and Raymond Carver's invisible architecture.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/scene-writing/scene-structure/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Scene Writing",
+        "item": "https://writersdailypractice.com/scene-writing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Scene Structure: What Every Scene Needs to Earn Its Place"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+
+    .drop-cap::first-letter {
+      font-size: 3.2em;
+      font-weight: 700;
+      float: left;
+      line-height: 0.8;
+      padding-right: 0.1em;
+      margin-top: 0.1em;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/scene-writing/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Scene Writing</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/scene-writing/" class="hover:text-primary transition-colors">Scene Writing</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Scene Writing</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        Scene Structure: What Every Scene Needs to Earn Its&nbsp;Place
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>10 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+      <p class="drop-cap">Scenes are the only unit of fiction that readers actually experience in real time. Not chapters, not acts, not the story arc you outlined on index cards. The scene is where the contract between writer and reader gets enforced, sentence by sentence. A few things I've figured out about what makes them work:</p>
+
+      <h2>Every Scene Needs a Character Who Wants Something They Can't Easily&nbsp;Get</h2>
+
+      <p>Dwight Swain broke scene structure into a framework so clean it almost feels too simple. A scene, he argued in <em>Techniques of the Selling Writer</em>, has three moving parts: goal, conflict, disaster. A character walks in wanting something. Something gets in the way. And then things go worse than expected.</p>
+
+      <p>The mistake most writers make with this framework is treating it like a checklist. Goal: check. Conflict: check. Disaster: check. But Swain's real insight wasn't the three parts themselves. It was the idea that a scene without a wanting character is just description with dialogue stapled to it. The goal doesn't have to be spoken aloud. The character doesn't have to announce it. But the writer has to know what it is, and the reader has to feel it pulling the scene forward like a current under still water.</p>
+
+      <p>Raymond Carver's "Cathedral" is useful here. On the surface, the narrator doesn't want anything. He's sitting in his living room. His wife's blind friend is visiting. He's drinking and being vaguely unpleasant about the whole situation. If you ran Swain's framework over it like a template, you might say there's no goal. But there is. The narrator wants to not be changed. He wants to stay exactly where he is, in his comfortable smallness, in his suspicion of anything that asks him to see differently. That's a goal. It's a negative goal, a goal of resistance, but it generates just as much scene tension as a character storming a castle.</p>
+
+      <p>The conflict in "Cathedral" comes from the blind man's quiet refusal to be what the narrator expects. And the disaster, if you can call it that, is that the narrator ends up drawing a cathedral with his eyes closed, connected to another human being in a way he didn't want and can't explain. Swain's framework holds. It just looks different when Carver's the one building it.</p>
+
+      <h2>The Sequel Is Where the Real Work&nbsp;Happens</h2>
+
+      <p>This is the part of Swain that most people skip, and I think it's the more useful half.</p>
+
+      <p>After the scene (goal, conflict, disaster), Swain describes a sequel: reaction, dilemma, decision. The character absorbs what just happened. They sit with the consequences and weigh their options. And then they choose what to do next, which sends them into the next scene.</p>
+
+      <p>Most writers, especially early on, are drawn to the scene half. The confrontation, the door slamming, the argument escalating, the twist that changes everything. That's the fun part to write. But when you read a novel that feels rushed, that skips across the surface of its own story, what's usually missing is the sequel. The character never gets to react. The reader never gets to watch someone sit with what just happened and decide what it means.</p>
+
+      <p>I'm not entirely sure why the sequel is so hard to write. Part of it might be that we've trained ourselves to think of pacing as speed, when pacing is really about rhythm, the alternation between fast and slow, between happening and processing. A novel that's all scenes with no sequels reads like a montage. Things keep happening, but none of it accumulates, because nobody on the page is absorbing any of it and the reader, taking cues from the characters, doesn't absorb it either.</p>
+
+      <p>The sequel is where character happens. A person's character shows itself in what they do with the space between events. What do they notice first? What do they rationalize away? Which option do they refuse to even consider? The sequel, that quiet stretch of reaction and dilemma and decision, is where a character becomes a person on the page.</p>
+
+      <h2>Robert McKee's Idea About Beats Changed How I Read Every&nbsp;Scene</h2>
+
+      <p>McKee uses the word "beat" in <em>Story</em> to mean something specific. A beat, for McKee, is the smallest unit of change in a scene. One exchange, one moment, where the balance of power shifts from one character to another. Someone gains a small advantage. Someone loses ground. The emotional charge of the scene flips from positive to negative or negative to positive, even if only slightly.</p>
+
+      <p>A scene, in McKee's framework, is a series of beats. And the scene itself has an overall arc, a value charge that starts in one place and ends in another. If a scene starts with two characters in harmony and ends with them in harmony, McKee would say nothing happened. The scene didn't turn. It sat there.</p>
+
+      <p>Once I started reading scenes this way, counting the beats, tracking where the power moves, I couldn't stop. You pick up a novel and read a conversation between two characters and you can feel it: beat, beat, beat. She says something that puts him on the defensive. He recovers with a question that shifts the pressure back to her. She deflects with humor but loses a little ground. He presses the advantage and overplays it. She goes quiet, and the silence is its own beat, maybe the most telling one.</p>
+
+      <p>When a scene feels flat, when you can tell something isn't working but you can't name it, it's often because the beats have stalled. The characters are talking but the power isn't moving. Nobody is gaining or losing anything. The scene is spinning in place, generating noise without change. McKee's framework gives you a way to diagnose that. Count the beats. If the charge isn't shifting, the scene isn't earning its place.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Scene structure shapes every page you write. One prompt every morning to practice building scenes that&nbsp;work.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'scene-writing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="scene-writing/scene-structure">
+          <input type="hidden" name="fields[genre]" value="Scene Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+      <h2>Flannery O'Connor's Scenes Build to a Moment the Character Can't Take&nbsp;Back</h2>
+
+      <p>O'Connor structured her scenes like controlled detonations. Everything in the scene, every line of dialogue, every description of the Georgia heat, every small social interaction, points toward a single moment of arrival. And that moment, when it comes, is irreversible.</p>
+
+      <p>In "A Good Man Is Hard to Find," the grandmother chatters through the car ride. She talks about the plantation she remembers. She smuggles the cat into the car. She manipulates her son into taking a detour. Every beat of the scene is the grandmother performing her version of herself, the genteel Southern lady, the moral authority, the person who knows best. And O'Connor lets her perform for pages, lets the reader settle into the rhythm of this woman's self-presentation, until The Misfit shows up and the performance runs out of room.</p>
+
+      <p>The grandmother's final gesture, reaching out to touch The Misfit and calling him one of her own children, is the structural payoff O'Connor spent the entire story building toward. That moment only works because of everything that came before it. Every scene in the story narrows the space between who the grandmother pretends to be and who she actually is, and the final scene collapses that space entirely. The structure isn't visible. You don't feel the architecture, you just feel the floor give way.</p>
+
+      <p>What O'Connor understood about scene structure is that a scene can be a fuse. You can build it to burn slowly. You can fill it with ordinary conversation and ordinary detail. But every element should be quietly feeding the same endpoint. When the scene arrives at its moment, the reader should feel like it was always going to happen, that the scene was never going anywhere else, even though they didn't see it coming.</p>
+
+      <h2>The Best Scenes Look Nothing Like&nbsp;Formulas</h2>
+
+      <p>Carver again. "What We Talk About When We Talk About Love." Four people sit at a kitchen table drinking gin. Two couples. They talk about love. That's the whole scene. There's no door kicked in, no revelation screamed across the room, no disaster in the Swain sense.</p>
+
+      <p>But the structure is there. Mel, the cardiologist, wants to define love. That's his goal. He keeps trying to pin it down, to say something true about it, and the conversation keeps slipping away from him. His examples get darker. He talks about an old couple in a car wreck, the old man devastated not by his injuries but by the fact that he couldn't turn his head to see his wife in the next bed. Mel is reaching for something he can't quite hold, and the gin is making it both more urgent and more impossible, and the other three characters are watching him try and failing to help and the light in the kitchen is changing, Carver actually tracks the light through the window as the afternoon passes, and by the end of the scene they're sitting in the dark and nobody is talking and Mel never got his answer.</p>
+
+      <p>Goal, conflict, disaster. Wanting, obstacle, change. It's all there. But Carver buried it so deep that the scene reads like life, like four people just sitting around a table getting drunk on a Tuesday afternoon. The structure is invisible because Carver trusted it enough to hide it. He didn't need the reader to see the scaffolding. He needed the reader to feel the building.</p>
+
+      <p>I think that's the thing worth remembering about scene structure. The frameworks, Swain's scene and sequel, McKee's beats, O'Connor's controlled detonations, they're not prescriptions. They're descriptions of what's already happening in scenes that work. You can learn them, internalize them, use them to diagnose problems in your drafts. But the goal isn't to write a scene that looks like a framework. The goal is to write a scene where a reader forgets they're reading.</p>
+
+      <hr>
+
+      <p>Scene structure is something you get better at by paying attention. Not just when you're writing, but when you're reading. Pick up a story you love and read a single scene with your pencil in hand. Where does the wanting start? Where does the charge shift? What changes between the first sentence and the last? You'll find the structure. It's always there, even when, especially when, the writer has done the work of making it disappear.</p>
+
+      <p>That's the daily practice of it. Read one scene with your full attention. Then write one scene where someone wants something they can't easily get. Don't worry about making the structure invisible yet. Just make it present. The hiding comes later, after you've built enough scenes to trust that the architecture will hold even when nobody can see it.</p>
+
+      <hr>
+
+      <p>More on writing scenes that earn their place on the&nbsp;page <a href="/scene-writing/">here</a>.</p>
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Write a scene where a character wants something they won't ask for directly. Notice what&nbsp;happens.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'scene-writing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="scene-writing/scene-structure">
+          <input type="hidden" name="fields[genre]" value="Scene Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="/scene-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Scene Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Scene writing hub &rarr;</p>
+        </a>
+        <a href="/scene-writing/how-to-write-action-scenes/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Scene Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Writing Action Scenes &rarr;</p>
+        </a>
+        <a href="/scene-writing/writing-better-scenes/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Scene Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Things About Scenes That Work &rarr;</p>
+        </a>
+        <a href="/writing-craft/tension-in-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Building tension on the page &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'scene-writing-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="scene-writing/scene-structure">
+        <input type="hidden" name="fields[genre]" value="Scene Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
