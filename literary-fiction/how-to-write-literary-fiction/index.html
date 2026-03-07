@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Write Literary Fiction | The Writer's Daily Practice</title>
+  <meta name="description" content="How to write literary fiction that lives in its sentences. Lessons from Morrison, Ishiguro, and Woolf on prose, character, and trusting the reader.">
+  <link rel="canonical" href="https://writersdailypractice.com/literary-fiction/how-to-write-literary-fiction/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Write Literary Fiction (When the Plot Lives Between the Lines)">
+  <meta property="og:description" content="Lessons from Morrison, Ishiguro, and Woolf on literary fiction writing that trusts its sentences and its readers.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/literary-fiction/how-to-write-literary-fiction/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Write Literary Fiction (When the Plot Lives Between the Lines)">
+  <meta name="twitter:description" content="Lessons from Morrison, Ishiguro, and Woolf on literary fiction writing that trusts its sentences and its readers.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Write Literary Fiction (When the Plot Lives Between the&nbsp;Lines)",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "How to write literary fiction that lives in its sentences. Lessons from Morrison, Ishiguro, and Woolf on prose, character, and trusting the reader.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/literary-fiction/how-to-write-literary-fiction/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Literary Fiction Writers",
+        "item": "https://writersdailypractice.com/literary-fiction/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Write Literary Fiction (When the Plot Lives Between the Lines)"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3.5em;
+      float: left;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.07em;
+      font-weight: 700;
+      color: #111111;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/literary-fiction/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Literary Fiction Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/literary-fiction/" class="hover:text-primary transition-colors">Literary Fiction Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Literary Fiction</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        How to Write Literary Fiction (When the Plot Lives Between the&nbsp;Lines)
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>10 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+
+      <p class="drop-cap">Toni Morrison wrote <em>Beloved</em> in fragments. She'd wake at 4 a.m., sit at her desk in the dark, and write for two or three hours before heading to her editing job at Random House. She did this for years. The book came together in pieces, sometimes a paragraph a week, sometimes less, and when she finally finished, it was rejected by several early reviewers who didn't know what to make of it. The prose was too dense, the structure too fractured. It asked too much of the person reading it.</p>
+
+      <p>Then it won the Pulitzer Prize in 1988.</p>
+
+      <p>Morrison had this idea that stayed with her throughout her career: the reader is a creative partner. She didn't think of the audience as someone who receives a story. She thought of them as someone who finishes it. And that belief shaped every sentence she ever wrote, because if you're writing for a collaborator, you can afford to leave things out. You can trust the silence between words to carry weight. Literary fiction writing, at its core, is built on that kind of trust. Here's what I've come to understand about how to write literary fiction by studying the writers who did it best.</p>
+
+      <h2>The sentence carries more weight than&nbsp;the&nbsp;scene</h2>
+
+      <p>The opening line of <em>Beloved</em> is four words: "124 was spiteful."</p>
+
+      <p>There's no setup. No context. No explanation of who lives in this house or why the house has a number for a name. Morrison drops you into the middle of something already in motion and trusts you to feel the strangeness before you understand it. That's the sentence doing the work of an entire chapter.</p>
+
+      <p>This is how Morrison built emotional density. She loaded individual sentences until they could barely hold their own meaning. Rhythm mattered to her the way it matters to a poet. She'd read her work aloud, listening for places where the language slowed or sped up, where syllables clustered together or fell apart. She cared about omission, about the weight of what wasn't said, sometimes more than what was on the page.</p>
+
+      <p>If you're working on literary fiction writing and your scenes feel flat, the instinct is usually to add more. Morrison's instinct was the opposite. She'd strip a sentence back until it vibrated. "124 was spiteful" doesn't describe the house. It <em>names</em> the house. And the difference between describing and naming is the difference between a sentence that informs and a sentence that haunts.</p>
+
+      <h2>Character is what people fail to say about&nbsp;themselves</h2>
+
+      <p>Kazuo Ishiguro won the Nobel Prize in Literature in 2017, and during his acceptance speech he described his work as exploring "how we try to protect ourselves from the knowledge of what we're really feeling." I don't think there's a better one-sentence summary of what his fiction does.</p>
+
+      <p>Take Stevens, the butler in <em>The Remains of the Day</em>. Stevens narrates the entire novel in this precise, buttoned-up voice. He talks about the proper way to serve at a dinner table, what constitutes a "great" butler, the silver polish. And the entire time, the reader is watching his emotional life leak through the cracks, because Stevens is in love with Miss Kenton and can't bring himself to acknowledge it, and possibly can't even see it himself.</p>
+
+      <p>Ishiguro does something similar with Kathy H. in <em>Never Let Me Go</em>. Kathy narrates her own tragedy with calm detachment, recounting memories of Hailsham and the slow revelation of what they were created for, and she never once breaks the surface of her own composure, and somehow that restraint is more devastating than any outburst could be because you realize you're feeling the grief she won't let herself feel.</p>
+
+      <p>The gap between what a character says and what a character means is where literary fiction lives. When I think about how to write literary fiction that stays with people, I keep coming back to this: your narrator doesn't have to understand themselves. In fact, it's often better if they don't.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          This is the kind of thing we think about every morning. One sentence, one observation, one question about what your prose is actually doing. Before you open the&nbsp;draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'literary-fiction-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="literary-fiction/how-to-write-literary-fiction">
+          <input type="hidden" name="fields[genre]" value="Literary Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <h2>Interior life is a valid&nbsp;plot</h2>
+
+      <p>Virginia Woolf's <em>Mrs. Dalloway</em> takes place in a single day. Clarissa Dalloway is preparing for a party. That's the entire external plot. She buys flowers. She mends a dress. Guests arrive. And yet the novel spans decades, because Clarissa's mind moves through time the way real minds do, catching on old memories, circling back to a summer when she was eighteen, replaying a kiss she can't stop thinking about thirty years later.</p>
+
+      <p>Woolf called her technique "tunneling." She'd dig caves behind her characters, she said, until each one was connected to the others by underground passages that the reader could feel even if they couldn't see them. The surface events of the novel were almost incidental. What mattered was the subjective experience of being alive in a given moment, what she called "the thing itself."</p>
+
+      <p>I'm honestly not sure how to teach this. I think Woolf could write internal movement that felt like story because she genuinely believed that consciousness was the most interesting event happening at any given time. Maybe she was right. When I read <em>Mrs. Dalloway</em>, I don't feel like the plot is missing. I feel like the plot is Clarissa's attention, the way it returns without warning to Peter Walsh standing in her doorway decades ago. You don't need a car chase. You just need a mind worth following.</p>
+
+      <h2>The reader finishes the&nbsp;work</h2>
+
+      <p>Back to Morrison. The last line of <em>Beloved</em> is "This is not a story to pass on." Scholars have been arguing about what that means since 1987. Is she saying don't repeat this story, or don't skip over it, don't pass it on the road without stopping? Morrison wanted the reader to sit with that line and decide for themselves, because the decision would reveal something about what they needed the story to be.</p>
+
+      <p>Ishiguro does this too. <em>Never Let Me Go</em> ends with Kathy standing at a fence in Norfolk, looking across a flat field, imagining that the things she's lost might wash up there someday. She accepts her fate. And you, the reader, have to decide whether that acceptance is peaceful or whether it's the saddest thing you've ever read. The novel doesn't tell you. It gives you the scene and steps back.</p>
+
+      <p>This is maybe the hardest thing about literary fiction writing. You have to resist the urge to close every door. You have to leave a sentence like that open, even though part of you wants to add a clarifying paragraph that pins the meaning down. The work lives in the gap between what you wrote and what the reader understood.</p>
+
+      <hr>
+
+      <p>I keep thinking about Morrison at that desk at 4 a.m., building <em>Beloved</em> a paragraph at a time before going to her day job. She wrote literary fiction because she believed the reader would show up and do their part. That the silences would land. That four words could hold an entire haunted house.</p>
+
+      <p>When you sit down to write literary fiction, that's the bet you're making. You're betting on the reader. And most mornings, before the draft opens, it helps to remember that.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          If you're writing literary fiction, having that daily anchor helps. One reflection, one question, before the blank page&nbsp;wins.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'literary-fiction-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="literary-fiction/how-to-write-literary-fiction">
+          <input type="hidden" name="fields[genre]" value="Literary Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/literary-fiction/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Literary Fiction Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <!-- Related post 1 -->
+        <a href="/literary-fiction/literary-fiction-techniques/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Ideas</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Literary Fiction Techniques: Ideas That Changed How I Think About Prose &rarr;</p>
+        </a>
+        <!-- Related post 2 -->
+        <a href="/literary-fiction/literary-vs-genre-fiction/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Observations</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Things I've Noticed About the Line Between Literary and Genre Fiction &rarr;</p>
+        </a>
+        <!-- Related post 3 -->
+        <a href="/writing-craft/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Show, tell, and everything between &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'literary-fiction-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="literary-fiction/how-to-write-literary-fiction">
+        <input type="hidden" name="fields[genre]" value="Literary Fiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>

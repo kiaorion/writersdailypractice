@@ -1001,6 +1001,32 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Literary Fiction cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/literary-fiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/literary-fiction/how-to-write-literary-fiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/literary-fiction/literary-fiction-techniques/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/literary-fiction/literary-vs-genre-fiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Historical Fiction cluster -->
   <url>
     <loc>https://writersdailypractice.com/historical-fiction/</loc>

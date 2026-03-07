@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Literary Fiction Writing | How to Write Literary Fiction That Stays With Readers</title>
+  <meta name="description" content="Literary fiction writing guide: prose, character, and the difference between a story that entertains and one that haunts. Lessons from Morrison, Ishiguro, Robinson, and Saunders.">
+  <link rel="canonical" href="https://writersdailypractice.com/literary-fiction/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Literary Fiction Writing | The Writer's Daily Practice">
+  <meta property="og:description" content="How to write literary fiction that stays with readers. Lessons from Toni Morrison, Kazuo Ishiguro, Marilynne Robinson, and George Saunders on prose, character, and depth.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/literary-fiction/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Literary Fiction Writing | The Writer's Daily Practice">
+  <meta name="twitter:description" content="How to write literary fiction that stays with readers. Lessons from Toni Morrison, Kazuo Ishiguro, Marilynne Robinson, and George Saunders on prose, character, and depth.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is literary fiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fiction that prioritizes language, character, and thematic depth over plot mechanics. The emphasis is on how a story is told as much as what happens. Toni Morrison's Beloved, Kazuo Ishiguro's Never Let Me Go, and Marilynne Robinson's Gilead all qualify. The category is loose and always shifting, which is probably the point."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is literary fiction different from genre fiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Genre fiction follows conventions: mystery has a crime to solve, romance has a love story to resolve. Literary fiction defines its own rules each time. But the line is increasingly blurred. Cormac McCarthy writes westerns and horror that are taught in universities. Margaret Atwood writes speculative fiction that wins literary prizes. The distinction matters less than people think."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does literary fiction need a plot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but the plot often lives in the character's inner life rather than in external events. Ishiguro's Never Let Me Go has a plot, but the real story is Kathy's coming to terms with what she already knows. Robinson's Gilead is a letter from a dying father to his young son. The events are memories and observations. Something is always happening in good literary fiction, just not always loudly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can literary fiction sell well?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some of the best-selling novels of the past twenty years are literary fiction: The Goldfinch, A Little Life, Beautiful World Where Are You, Lessons in Chemistry. The assumption that literary fiction doesn't sell comes from conflating literary with difficult. The literary novels that sell are the ones that combine precise prose with emotional accessibility. Morrison won the Nobel Prize and sold millions of copies."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Literary Fiction Writing"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Literary Fiction</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        Literary Fiction. <span class="gradient-text block mt-3">Write sentences that outlive their&nbsp;stories.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        What Morrison, Ishiguro, Robinson, and Saunders understood about prose that lingers: the sentence as unit of meaning, character as the real plot, and the difference between a story that entertains and one that haunts. Plus a free daily prompt delivered every&nbsp;morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'literary-fiction'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="literary-fiction">
+        <input type="hidden" name="fields[genre]" value="Literary Fiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every&nbsp;morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A craft-driven writing exercise</strong> with context explaining what the exercise trains and which authors used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. FIVE THINGS SAMPLER ========== -->
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">The architecture of attention</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">
+        Five things literary fiction writers figure out by the second&nbsp;draft
+      </h2>
+
+      <div class="space-y-10">
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The sentence is doing more work than the plot, and it always was.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Toni Morrison could write a sentence that made you set the book down and stare at the ceiling. The first line of <em>Beloved</em>, "124 was spiteful," does more worldbuilding in four words than most novels do in a chapter. George Saunders builds entire emotional landscapes one clause at a time. In literary fiction, the sentence is the unit of meaning. The plot is what happens when enough sentences accumulate into pressure.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Character is revealed through what people notice, not what they say about themselves.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Kazuo Ishiguro's narrators are famous for what they don't say. Stevens in <em>The Remains of the Day</em> tells you he's content with his life while every detail he includes quietly screams otherwise. The reader knows him better than he knows himself. That gap between a character's self-presentation and their actual inner life is where literary fiction lives. You build it by choosing what your character pays attention to, because attention is character.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The best literary fiction trusts the reader completely.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Marilynne Robinson's <em>Gilead</em> is a quiet novel about a dying pastor writing a letter to his young son. Nothing explodes. Nobody gets murdered. The tension comes entirely from the accumulation of small, precise observations about faith, mortality, and fatherhood. Robinson doesn't explain what the novel means. She trusts that a reader who pays attention will find it. That trust is terrifying for the writer and deeply satisfying for the reader.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Genre conventions are tools, and the best literary writers use them freely.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Cormac McCarthy wrote blood-soaked westerns and post-apocalyptic survival stories that are taught alongside Joyce and Faulkner. Margaret Atwood has always insisted <em>The Handmaid's Tale</em> is speculative fiction, not science fiction, and the distinction matters less with every passing year. The line between literary and genre fiction was always drawn in pencil. The writers who produce lasting work tend to ignore it.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The ending doesn't need to resolve. It needs to resonate.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">George Saunders's short stories often end mid-breath, in a moment of clarity that doesn't fix anything but changes how you see everything that came before. Ishiguro's <em>Never Let Me Go</em> ends exactly where you feared it would, and the sadness comes from the fact that the characters knew all along. Literary fiction endings earn their weight by being inevitable in retrospect. The reader closes the book and realizes the ending was already happening on page three.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These patterns show up in literary fiction that readers press into strangers' hands.</p>
+        <p class="text-midGray text-sm leading-relaxed">For a closer look, start with <a href="how-to-write-literary-fiction/" class="text-primary font-medium hover:underline">how to write literary&nbsp;fiction</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. BLOG POSTS ========== -->
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On literary fiction</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="how-to-write-literary-fiction/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Craft</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write Literary Fiction (When the Plot Lives Between the Lines)</p>
+          <p class="text-midGray text-sm leading-relaxed">Morrison, Ishiguro, and Woolf on prose, attention, and the sentence as the real story. &rarr;</p>
+        </a>
+        <a href="literary-fiction-techniques/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Ideas</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Literary Fiction Techniques: Ideas That Changed How I Think About Prose</p>
+          <p class="text-midGray text-sm leading-relaxed">Saunders, Robinson, Cusk, and Johnson on what literary fiction actually does differently. &rarr;</p>
+        </a>
+        <a href="literary-vs-genre-fiction/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Observations</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Things I've Noticed About the Line Between Literary and Genre Fiction</p>
+          <p class="text-midGray text-sm leading-relaxed">Observations on where the line lives now, and why it keeps moving. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">May 1st</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">SHARE YOUR LIGHT</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"The greater the artist the greater the doubt; perfect confidence is granted to the less talented as a consolation prize."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Robert Hughes</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4" style="font-family: 'Lora', Georgia, serif;">
+          <p>Harper Lee, the author of the timeless classic <em>To Kill a Mockingbird</em>, published little else after her masterpiece. The fame burned too bright. The spotlight too hot. Was it the overwhelming success of her debut? Or the fear of never again living up to its brilliance?</p>
+          <p>Her silence speaks volumes of the crippling self-doubt that accompanies the life of a creative. There's the dread that what you're writing isn't as great as you think it is. The quiet, nagging voice that whispers: this is garbage. Who are you to try?</p>
+          <p>Whether we're facing doubt working on our first manuscript or dealing with the weight of expectations from our last, there's no escaping fear. No matter how successful we are. Lee's silence is a reminder that even the most celebrated artists can fall prey to their inner critic. The question is whether you'll let it hold the pen.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every&nbsp;morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'literary-fiction'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="literary-fiction">
+          <input type="hidden" name="fields[genre]" value="Literary Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Get Your Daily Prompt
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I've tried every writing course and productivity system out there. This is the first thing that actually got me writing every day. Two months in, I finally started the novel I'd been thinking about for three years."
+          </p>
+          <p class="text-sm text-midGray font-medium">David M., first-time novelist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'literary-fiction'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="literary-fiction">
+        <input type="hidden" name="fields[genre]" value="Literary Fiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked&nbsp;questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is literary fiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Fiction that prioritizes language, character, and thematic depth over plot mechanics. The emphasis is on how a story is told as much as what happens. Toni Morrison's <em>Beloved</em>, Kazuo Ishiguro's <em>Never Let Me Go</em>, and Marilynne Robinson's <em>Gilead</em> all qualify. The category is loose and always shifting, which is probably the point.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How is literary fiction different from genre fiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Genre fiction follows conventions: mystery has a crime to solve, romance has a love story to resolve. Literary fiction defines its own rules each time. But the line is increasingly blurred. Cormac McCarthy writes westerns and horror that are taught in universities. Margaret Atwood writes speculative fiction that wins literary prizes. The distinction matters less than people think.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Does literary fiction need a plot?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Yes, but the plot often lives in the character's inner life rather than in external events. Ishiguro's <em>Never Let Me Go</em> has a plot, but the real story is Kathy's coming to terms with what she already knows. Robinson's <em>Gilead</em> is a letter from a dying father to his young son. The events are memories and observations. Something is always happening in good literary fiction, just not always loudly.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Can literary fiction sell well?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Some of the best-selling novels of the past twenty years are literary fiction: <em>The Goldfinch</em>, <em>A Little Life</em>, <em>Beautiful World Where Are You</em>, <em>Lessons in Chemistry</em>. The assumption that literary fiction doesn't sell comes from conflating literary with difficult. The literary novels that sell are the ones that combine precise prose with emotional accessibility. Morrison won the Nobel Prize and sold millions of copies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. RELATED PAGES ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Exercises, tips, and where to start &rarr;</p>
+        </a>
+        <a href="/writing-craft/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Show, tell, and everything between &rarr;</p>
+        </a>
+        <a href="/finding-your-writing-voice/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Voice</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Finding the voice that's yours &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>
