@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Teenage Characters | The Writer's Daily Practice</title>
+  <meta name="description" content="Four ideas about writing teenage characters that actually changed how I approach the young adult protagonist. Voice, interiority, want vs. need, and adults who fail.">
+  <link rel="canonical" href="https://writersdailypractice.com/ya-fiction/writing-teenage-characters/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Writing Teenage Characters That Feel Like Actual People">
+  <meta property="og:description" content="Four ideas about writing teenage characters that actually changed how I approach the young adult protagonist. Voice, interiority, want vs. need, and adults who fail.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/ya-fiction.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/ya-fiction/writing-teenage-characters/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Writing Teenage Characters That Feel Like Actual People">
+  <meta name="twitter:description" content="Four ideas about writing teenage characters that actually changed how I approach the young adult protagonist. Voice, interiority, want vs. need, and adults who fail.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/ya-fiction.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Writing Teenage Characters That Feel Like Actual People",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "Four ideas about writing teenage characters that actually changed how I approach the young adult protagonist. Voice, interiority, want vs. need, and adults who fail.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/ya-fiction/writing-teenage-characters/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "YA Fiction Writers",
+        "item": "https://writersdailypractice.com/ya-fiction/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Writing Teenage Characters That Feel Like Actual People"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+
+    /* Drop cap styling */
+    .drop-cap::first-letter {
+      font-size: 3em;
+      font-weight: 700;
+      float: left;
+      line-height: 0.8;
+      margin-right: 0.1em;
+      padding-top: 0.2em;
+      color: #1565C0;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/ya-fiction/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">YA Fiction Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/ya-fiction/" class="hover:text-primary transition-colors">YA Fiction Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Writing Teenage Characters</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">YA Fiction</span>
+
+      <!-- Title: Use &nbsp; between last two words to prevent orphan words -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        Writing Teenage Characters That Feel Like Actual&nbsp;People
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>5 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+      <p class="drop-cap">Most advice about writing teenage characters boils down to "remember what it was like." But memory is a liar. You remember the facts of being fifteen, maybe, but you've long since lost the tempo of it. The way every single thing felt like it was happening for the first and last time.</p>
+
+      <h2>Teenagers Think in Extremes, and the Prose Should Match That&nbsp;Register</h2>
+      <p>Holden Caulfield says "everybody is a phony" and he means it completely. That's not Salinger editorializing or setting up some later revelation where Holden learns nuance. It's the voice itself. Teenagers genuinely experience the world in high contrast, and writing teenage characters well means resisting the urge to modulate those extremes into something adult and measured. The emotional logic inside the absolute statement is the point. When a sixteen-year-old says "I will literally die if I can't go," there's a version of that sentence that's truer than any calm adult paraphrase could be.</p>
+
+      <p>S.E. Hinton wrote <em>The Outsiders</em> when she was sixteen years old, and the emotions in that book are operatic on purpose. Greasers and Socs and sunsets and switchblades and loyalty unto death. You can feel the draft coming through the pages, the total absence of ironic distance. That's what being sixteen actually is. Everything matters more than it should and the mattering is the whole experience.</p>
+
+      <p>I think the mistake a lot of adult writers make is treating teenage intensity as something to be explained or contextualized, when really it just needs to be inhabited. You don't need the narrator to step back and tell us why Ponyboy cares so much about the sunset. The caring is self-evident if you've committed to the register.</p>
+
+      <h2>The Internal Life Has to Outpace the External&nbsp;Action</h2>
+      <p>The reader needs to be deeper inside a teenage character's head than they are with most adult characters, and the reason is almost structural. Teenagers are in the process of building their inner life in real time. They're making meaning out of raw experience at a pace that adults have mostly abandoned, because adults have settled into interpretive frameworks they no longer question. A teenager hasn't settled into anything yet.</p>
+
+      <p>John Green's characters think obsessively. They connect everything to everything, make grand theories about how the world works, quote philosophers they half-understand and assign cosmic significance to a text message. This reads as authentic because it is. The internal monologue of a teenager is relentless and self-serious and occasionally brilliant in ways the teenager won't appreciate for another decade.</p>
+
+      <p>Look at the way <em>The Fault in Our Stars</em> moves. The illness is the external action, the plot-level machinery. But the real story is Hazel's mind working through what it means to be a person who will end, what it means to love someone who will also end, what it means to want to matter when mattering seems like a cruel joke the universe is playing. The thinking outpaces the events by a wide margin, and that's what makes it feel like a teenage consciousness rather than an adult one wearing a costume.</p>
+
+      <p>I'm honestly not sure whether this is something you can learn to do mechanically or whether it requires a kind of surrender, a willingness to let the character's internal processing take up more space than feels proportional. But I think that disproportion is the whole trick.</p>
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Understanding your teenage character's voice, interiority, and inner conflict changes everything about how you write YA. Read more about writing the young adult protagonist well.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'ya-fiction-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="ya-fiction/writing-teenage-characters">
+          <input type="hidden" name="fields[genre]" value="YA Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+      <h2>What a Teenage Character Wants and Needs Are Almost Always the Same Thing at Different&nbsp;Depths</h2>
+      <p>The want is specific and immediate. To be popular. To get the guy. To make the team. To survive the arena. The need is the deeper version of the same impulse: to be seen, to be loved, to matter, to believe survival is worth something. In the best YA fiction, the gap between want and need is the story, and that gap tends to be narrower than it is in adult fiction but somehow more painful because the character can almost see across it.</p>
+
+      <p>Katniss volunteers for the Hunger Games because she wants her sister to live. That's the want. Suzanne Collins could have written a competent survival thriller on that want alone. But what Katniss needs, the thing the trilogy is actually about, is to believe that survival means something beyond just not dying. The want gets her into the arena. The need is what makes the reader stay.</p>
+
+      <p>Think of want and need in a teenage character the way you'd think about an <a href="/character-writing/character-arc/">character arc</a>. The want is the visible portion above the waterline, the thing the plot tracks and the character can articulate. The need is the submerged mass beneath, the thing the reader carries with them after the book is closed. One is manageable. The other is where the weight lives.</p>
+
+      <h2>The Adults in YA Are Defined by Their Absence or Their&nbsp;Failure</h2>
+      <p>The parent who doesn't see what's happening. The teacher who should intervene and doesn't. The adult who gives advice that misses the point entirely because the adult is answering a question the teenager stopped asking two years ago. Some readers find this cynical about adults, but the structural reason it keeps appearing is simple: if the nearest adult reliably solved the problem, there'd be no story for the teenager to inhabit.</p>
+
+      <p>Dumbledore withholds information that costs Harry everything he loves. He does it for reasons that are arguably wise and arguably selfish and the books never fully resolve which, but the function is clear: for Harry to grow, the obstacles can't be cleared by the nearest adult. The mentor has to be flawed or absent or both. The ceiling has to be low enough that the teenager is forced to stand on their own, even when standing on their own means getting things wrong.</p>
+
+      <p>Sherman Alexie's <em>The Absolutely True Diary of a Part-Time Indian</em> does something with this that I think about often. The adults in Junior's life are sometimes good people who are simply too broken by their own circumstances to protect him from his. The failure is the way damage passes between generations like weather.</p>
+
+      <p>That quiet structural absence is, I think, what separates YA that lasts from YA that sells for a season and disappears.</p>
+
+      <!-- Cross-links section -->
+      <p style="margin-top: 2.5em; margin-bottom: 1.5em;">
+        For more on crafting YA protagonists, explore our guides on <a href="/ya-fiction/how-to-write-ya/">how to write YA fiction</a>, <a href="/ya-fiction/ya-tropes/">YA fiction tropes</a>, and the craft of <a href="/character-writing/character-arc/">character arc</a> development.
+      </p>
+
+      <!-- Bridge paragraph -->
+      <p style="margin-top: 2.5em; font-style: italic; color: #4a4a4a;">The books about teenagers that endured, the ones people re-read at thirty and forty and discover they still work, all seem to share a common architecture. The voice runs hot. The thinking outpaces the plot. The wanting hides a deeper needing. And somewhere in the background, the adults have stepped away or fallen short, leaving exactly enough room for a young person to become themselves in the only way that counts, which is imperfectly and without permission.</p>
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          The Writer's Daily Practice sends one free prompt every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'ya-fiction-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="ya-fiction/writing-teenage-characters">
+          <input type="hidden" name="fields[genre]" value="YA Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/ya-fiction/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">YA Fiction Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'ya-fiction-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="ya-fiction/writing-teenage-characters">
+        <input type="hidden" name="fields[genre]" value="YA Fiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice · A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
