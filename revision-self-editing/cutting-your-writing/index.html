@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Cut Words From Your Writing | The Writer's Daily Practice</title>
+  <meta name="description" content="Observations on cutting your writing without losing what matters. Lessons from Elmore Leonard, Strunk, Capote, and Orwell on tightening prose.">
+  <link rel="canonical" href="https://writersdailypractice.com/revision-self-editing/cutting-your-writing/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Cut Words From Your Writing | The Writer's Daily Practice">
+  <meta property="og:description" content="Observations on cutting your writing without losing what matters. Lessons from Elmore Leonard, Strunk, Capote, and Orwell on tightening prose.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/revision-self-editing/cutting-your-writing/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Cut Words From Your Writing | The Writer's Daily Practice">
+  <meta name="twitter:description" content="Observations on cutting your writing without losing what matters. Lessons from Elmore Leonard, Strunk, Capote, and Orwell on tightening prose.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "A Guide to Cutting Your Writing (Without Cutting What Makes It Yours)",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "Observations on cutting your writing without losing what matters. Lessons from Elmore Leonard, Strunk, Capote, and Orwell on tightening prose.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/revision-self-editing/cutting-your-writing/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Revision & Self-Editing",
+        "item": "https://writersdailypractice.com/revision-self-editing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "A Guide to Cutting Your Writing (Without Cutting What Makes It Yours)"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+
+    .drop-cap::first-letter {
+      font-size: 3.2em;
+      font-weight: 700;
+      float: left;
+      line-height: 0.8;
+      padding-right: 0.1em;
+      margin-top: 0.1em;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/revision-self-editing/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Revision &amp; Self-Editing</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/revision-self-editing/" class="hover:text-primary transition-colors">Revision &amp; Self-Editing</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Revision &amp; Self-Editing</span>
+
+      <!-- Title: Use &nbsp; between last two words to prevent orphan words -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        A Guide to Cutting Your Writing (Without Cutting What Makes&nbsp;It&nbsp;Yours)
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>9 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+      <p class="drop-cap">Some observations about cutting, after spending too many years learning which words earn their&nbsp;place:</p>
+
+      <hr>
+
+      <p>The word "very" is almost always covering for a weaker word behind it. Strunk's rule in <em>The Elements of Style</em> says to omit it. But the better fix is usually one layer deeper: find the adjective that doesn't need the crutch. "Very tired" becomes "exhausted." "Very sad" becomes "grief-stricken." The problem was never "very." The problem was the word that needed it.</p>
+
+      <hr>
+
+      <p>Elmore Leonard wrote ten rules for writing, and the one that stuck with me is rule ten: "Try to leave out the part that readers tend to skip." It sounds simple. The hard part is figuring out which parts those are when you're the person who wrote all of them and you think every single one is essential because you remember why you put it there.</p>
+
+      <hr>
+
+      <p>There's a difference between a sentence that's long because it needs all of its clauses, because the thought genuinely requires that much room to unfold, and a sentence that's long because you wrote it in one pass and never went back to ask whether it could lose thirty percent and still say the same thing.</p>
+
+      <hr>
+
+      <p>Adverbs are a flag. They're a signal that the verb isn't carrying the weight. "She walked quickly" means you haven't found the right verb yet. "She rushed" or "she bolted" does the work in one word. This doesn't mean adverbs are always wrong. It means they're always worth questioning.</p>
+
+      <hr>
+
+      <p>Capote claimed he cut 60 to 80 percent of his first drafts when writing <em>In Cold Blood</em>. I've never been sure whether those numbers were accurate or whether Capote, who was a performer as much as a writer, was exaggerating for effect. But the underlying principle holds regardless: most of what you write in a first draft is scaffolding. It was necessary for you to get to the real thing. It's not the real thing.</p>
+
+      <hr>
+
+      <p>George Orwell, in "Politics and the English Language," wrote six rules for clear prose. The one I come back to: "Never use a long word where a short one will do." The instinct to reach for the longer word, the more academic-sounding word, is almost always the instinct to sound like you know more than you're saying. Which is the instinct to hide.</p>
+
+      <hr>
+
+      <p>Stage directions in dialogue. "She said, picking up the cup." "He replied, running a hand through his hair." Cut almost all of them. If the dialogue is doing its work, the reader doesn't need to know what the character's hands were doing while they talked.</p>
+
+      <hr>
+
+      <p>I cut a paragraph from an essay last month and reread the piece without it and it was better, noticeably better, and I sat there for a while trying to understand what that meant about all the paragraphs I've left in other pieces over the years, all the paragraphs that were maybe there for me and not for whoever was reading.</p>
+
+      <hr>
+
+      <p>Strunk put it plainly: "Omit needless words." Three words that contain an entire editing philosophy. The question, of course, is which words are needless. That's the part Strunk can't answer for you. That's the part that takes years.</p>
+
+      <!-- END PART 1 (~10 observations) -->
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Tightening prose is a daily practice. One reflection every morning to sharpen the way you&nbsp;write.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'revision-self-editing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="revision-self-editing/cutting-your-writing">
+          <input type="hidden" name="fields[genre]" value="Revision &amp; Self-Editing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <p>Reading your work backward, sentence by sentence, starting from the last one. It's an old copy-editing trick but it works for cutting too. When you read forward, momentum carries you past the weak spots. When you read backward, each sentence has to justify itself alone, without the context of the sentence before it propping it up.</p>
+
+      <hr>
+
+      <p>Cutting changes the rhythm of a paragraph. Sometimes you remove a sentence that was fine on its own and the paragraph gets better because the two sentences on either side of it now sit next to each other and the music of that pairing is tighter and more direct. You didn't cut a bad sentence. You cut a good sentence that was in the way of a better rhythm.</p>
+
+      <hr>
+
+      <p>The strange experience of deleting a line you love and watching everything around it improve. It's like removing a piece of furniture from a room that you didn't realize was crowded until you could see the floor again.</p>
+
+      <hr>
+
+      <p>Beginning writers tend to add words because they're afraid the reader won't understand. They explain the metaphor after the metaphor. They restate the point a second time in plainer language. Experienced writers cut because they've learned to trust the reader to close the gap. The gap is where the reader participates. Take that away and you take away the thing that makes reading feel like a conversation instead of a lecture.</p>
+
+      <hr>
+
+      <p>Orwell's sixth rule: "Break any of these rules sooner than say anything outright barbarous." Which means even the rules about cutting have limits. Sometimes the long word is the right word. Sometimes the extra clause earns its place. You can tighten prose until there's nothing left to feel. The question is always whether each word is deliberate, which is different from whether each word is necessary.</p>
+
+      <hr>
+
+      <p>I don't know if there's a reliable rule for when to stop cutting. I've over-cut pieces before, trimmed them until they felt skeletal, all bone and no warmth. And I've under-cut pieces too, left in the comfortable padding because I couldn't tell the difference between what was essential and what was just familiar. If there's a principle here, I haven't found it. Maybe the best you can do is cut until something starts to feel missing, then add back the last thing you removed.</p>
+
+      <hr>
+
+      <p>The hardest part of cutting is trusting that what's left will be enough. That the paragraph can hold together without the sentence you removed. That the reader will stay with you even though you gave them less. It's the same trust you need every morning when you sit down to write in the first place: that something will come, and that whatever comes will be worth the chair.</p>
+
+      <hr>
+
+      <p>That's what we send writers every morning. One reflection to sit with before you open the&nbsp;draft.</p>
+
+      <p><a href="/revision-self-editing/">Get tomorrow's reflection&nbsp;free.</a></p>
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Open a recent draft. Find one sentence you can cut without losing meaning. Notice what&nbsp;improves.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'revision-self-editing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="revision-self-editing/cutting-your-writing">
+          <input type="hidden" name="fields[genre]" value="Revision &amp; Self-Editing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/revision-self-editing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Revision &amp; Self-Editing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Revision &amp; Self-Editing hub &rarr;</p>
+        </a>
+        <a href="/revision-self-editing/how-to-edit-your-own-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Revision &amp; Self-Editing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">How to Edit Your Own Writing &rarr;</p>
+        </a>
+        <a href="/revision-self-editing/revision-process/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Revision &amp; Self-Editing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">The Revision Process &rarr;</p>
+        </a>
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Creative Writing &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'revision-self-editing-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="revision-self-editing/cutting-your-writing">
+        <input type="hidden" name="fields[genre]" value="Revision &amp; Self-Editing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
