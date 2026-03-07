@@ -920,6 +920,32 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Memoir Writing cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/memoir-writing/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/memoir-writing/how-to-write-a-memoir/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/memoir-writing/memoir-writing-tips/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/memoir-writing/memoir-vs-autobiography/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Short Story Writing cluster -->
   <url>
     <loc>https://writersdailypractice.com/short-story-writing/</loc>
