@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy Mystery Writing | The Writer's Daily Practice</title>
+  <meta name="description" content="Daily writing reflections for cozy mystery writers. Build the puzzle, earn the warmth, and keep readers coming back to your small corner of the world.">
+  <link rel="canonical" href="https://writersdailypractice.com/cozy-mystery-writers/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="For Cozy Mystery Writers, The Writer's Daily Practice">
+  <meta property="og:description" content="The puzzle is the surface. The community is the story. A daily practice for cozy mystery writers who take both seriously.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm-cozy.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/cozy-mystery-writers/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="For Cozy Mystery Writers, The Writer's Daily Practice">
+  <meta name="twitter:description" content="The puzzle is the surface. The community is the story. A daily practice for cozy mystery writers who take both seriously.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm-cozy.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes a cozy mystery different from other mystery subgenres?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cozy mystery centers an amateur sleuth rather than a professional detective, keeps violence off the page, and grounds the investigation in a community the reader has come to care about. The warmth and the puzzle are equally load-bearing. Pull either one out and you've left the genre. Most cozy mysteries also carry a personal arc for the sleuth that runs alongside the mystery, which is what makes readers return across a series."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I write an amateur sleuth readers will follow through a long series?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your sleuth needs three things working at once: a specific competency she brings to investigation (a day job or skill that shapes how she sees the world), a genuine role in the community that gives her access and standing, and a personal arc with its own stakes that progress across books. The mystery in each book is the mechanism. The sleuth's life is the content. Readers who come back for book seven are coming back for the character, not just the puzzle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a cozy mystery have to be set in a village or small town?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The setting has to feel bounded, meaning everyone knows everyone and secrets have nowhere to go. That can be a village, a retirement community, a ship, a neighborhood, a knitting circle. Richard Osman set The Thursday Murder Club in a luxury retirement village and it became the fastest-selling debut crime novel in UK publishing history. The small town is one version of bounded. The genre requires the concept, not the geography."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How dark can a cozy mystery actually go?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Violence stays off the page. Death happens but is not dwelt on graphically. What cozy mystery can do is run the emotional stakes quite high through secrets, betrayal, and the kinds of harm people do to each other in close communities over long periods of time. The darkness is relational, not visceral. Readers trust the contract: the body won't be described in graphic detail, and the world will be restored to something like warmth by the end."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Cozy Mystery Writing",
+        "item": "https://writersdailypractice.com/cozy-mystery-writers/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+    }
+    *, *::before, *::after { box-sizing: inherit; }
+    .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .btn-premium {
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(232,185,49,0.25);
+    }
+    .btn-premium:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(232,185,49,0.35);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931, #F5D060);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-lift {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-lift:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .drop-cap p:first-child::first-letter {
+      float: left;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3.5rem;
+      line-height: 0.85;
+      margin-right: 0.08em;
+      margin-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 8rem;
+      color: #E8B931;
+      opacity: 0.15;
+      position: absolute;
+      top: -1.5rem;
+      left: -1.5rem;
+      line-height: 1;
+      pointer-events: none;
+    }
+    h1, h2, h3 { text-wrap: balance; }
+    .font-review { font-family: 'Lora', Georgia, serif; }
+  </style>
+
+  <!-- Plausible Analytics -->
+  <script defer data-domain="writersdailypractice.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body class="bg-white font-sans antialiased">
+
+  <!-- ========== 1. NAV ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/#whats-inside" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">What's Inside</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+          <a href="/#reviews" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Reviews</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[700px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">For Cozy Mystery Writers</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        The puzzle is the surface. <span class='gradient-text'>The community is the&nbsp;story.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        Cozy mystery requires two things at once: a puzzle rigorous enough that the solution satisfies, and a world warm enough that readers want to come back. Neither can be faked. A daily practice for cozy mystery writers who take both seriously.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'cozy-mystery-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="cozy-mystery-writers">
+        <input type="hidden" name="fields[genre]" value="Cozy Mystery">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[600px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> that connects the quote to your real life as a writer</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A writing prompt</strong> to get you on the page before the day gets away from you</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">January 28th</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">GO SLOWLY</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"Show up, show up, show up, and after a while the muse shows up, too. If she doesn't show up invited, eventually she just shows up."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Isabel Allende</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4">
+          <p>Margaret Atwood wrote The Handmaid's Tale in West Berlin. It was the mid-1980s, and the political tension of the Cold War surrounded everything she was doing. She could have waited for better circumstances.</p>
+          <p>She didn't. She worked while life unfolded chaotically all around her. She showed up. She engaged. She wrote.</p>
+          <p>And the muse showed up.</p>
+          <p>We often think inspiration will magically appear. An epiphany. A perfect morning. A stretch of uninterrupted quiet. But that's rarely how it works for serious writers.</p>
+          <p>You don't wait for the muse. You call it by spilling ink on the pages first. You show up to the desk, even on the days when showing up is the whole of what you have to offer.</p>
+          <p>The page you write today becomes the foundation for the page you write tomorrow. The sleuth you're building, one morning at a time, becomes someone readers will follow for ten books.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="text-midGray text-base mb-2 font-medium">Here's what lands in your inbox every morning.</p>
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every&nbsp;morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'cozy-mystery-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="cozy-mystery-writers">
+          <input type="hidden" name="fields[genre]" value="Cozy Mystery">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <p class="text-center text-primary font-serif text-lg font-semibold italic mb-8">
+        For fans of Agatha Christie, Richard Osman, and M.C. Beaton.
+      </p>
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I read this every morning before I write. Some days the reflection hits so close to home it feels like it was written just for me."
+          </p>
+          <p class="text-sm text-midGray font-medium">Rachel T., writing coach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. BLOG POSTS ========== -->
+  <section class="py-20 md:py-24 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3" data-aos="fade-up">From the blog</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight" data-aos="fade-up">
+        Cozy mystery craft, in&nbsp;depth
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5" data-aos="fade-up" data-aos-delay="100">
+        <a href="/cozy-mystery-writers/cozy-mystery-tropes/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Craft</p>
+          <p class="font-serif font-bold text-dark text-[17px] leading-snug mb-2">Cozy Mystery Tropes That Actually Work &rarr;</p>
+          <p class="text-midGray text-sm leading-relaxed">Craft observations on amateur sleuths, community settings, the body in the bakery, and what makes the genre's signature moves land.</p>
+        </a>
+        <a href="/cozy-mystery-writers/how-to-write-cozy-mystery/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Craft</p>
+          <p class="font-serif font-bold text-dark text-[17px] leading-snug mb-2">How to Write a Cozy Mystery (And Why It's Harder Than It Looks) &rarr;</p>
+          <p class="text-midGray text-sm leading-relaxed">The ideas behind the genre that most writing guides skim over, from building the world before the body arrives to earning the final reveal.</p>
+        </a>
+        <a href="/cozy-mystery-writers/cozy-mystery-amateur-sleuth/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Character</p>
+          <p class="font-serif font-bold text-dark text-[17px] leading-snug mb-2">The Cozy Mystery Amateur Sleuth Most Writers Get Wrong &rarr;</p>
+          <p class="text-midGray text-sm leading-relaxed">Why the amateur sleuth is harder to write than she looks, and what makes readers follow her through ten books and counting.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 9. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A daily reflection for cozy mystery writers, drawn from literary masters, shaped for the particular work of building a puzzle that satisfies, a community that breathes, and a sleuth readers will follow across a shelf of books. Free, every morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'cozy-mystery-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="cozy-mystery-writers">
+        <input type="hidden" name="fields[genre]" value="Cozy Mystery">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 11. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What makes a cozy mystery different from other mystery subgenres?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Cozy mystery centers an amateur sleuth rather than a professional detective, keeps violence off the page, and grounds the investigation in a community the reader has come to care about. The warmth and the puzzle are equally load-bearing. Pull either one out and you've left the genre. Most cozy mysteries also carry a personal arc for the sleuth that runs alongside the mystery, which is what makes readers return across a series.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I write an amateur sleuth readers will follow through a long series?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Your sleuth needs three things working at once: a specific competency she brings to investigation, a genuine role in the community that gives her access and standing, and a personal arc with its own stakes that progress across books. The mystery in each book is the mechanism. The sleuth's life is the content. Readers who come back for book seven are coming back for the character, not just the puzzle.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Does a cozy mystery have to be set in a village or small town?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">The setting has to feel bounded, meaning everyone knows everyone and secrets have nowhere to go. That can be a village, a retirement community, a ship, a neighborhood, a knitting circle. Richard Osman set The Thursday Murder Club in a luxury retirement village and it became the fastest-selling debut crime novel in UK publishing history. The small town is one version of bounded. The genre requires the concept, not the geography.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How dark can a cozy mystery actually go?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Violence stays off the page. Death happens but is not dwelt on graphically. What cozy mystery can do is run the emotional stakes quite high through secrets, betrayal, and the kinds of harm people do to each other in close communities over long periods of time. The darkness is relational, not visceral. Readers trust the contract: the body won't be described in graphic detail, and the world will be restored to something like warmth by the end.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 12. RELATED PAGES + FOOTER ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">You might also like</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/cozy-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Cozy Fantasy Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/writing-craft/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Craft guides for all writers &rarr;</p>
+        </a>
+        <a href="/worldbuilding/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Worldbuilding</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Build worlds that breathe &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+      });
+    });
+  </script>
+</body>
+</html>
