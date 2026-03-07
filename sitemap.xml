@@ -1053,4 +1053,30 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Dystopian Fiction cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/dystopian-fiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/dystopian-fiction/how-to-write-dystopian-fiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/dystopian-fiction/dystopian-worldbuilding/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/dystopian-fiction/dystopian-fiction-tropes/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
