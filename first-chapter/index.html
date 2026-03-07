@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Chapter Writing | Get Readers Past Page One</title>
+  <meta name="description" content="A practice-first guide to writing first chapters. Opening lines, voice, the question your chapter needs to answer, and the daily habit that builds the craft. Free daily prompts.">
+  <link rel="canonical" href="https://writersdailypractice.com/first-chapter/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="First Chapter Writing | The Writer's Daily Practice">
+  <meta property="og:description" content="A practice-first guide to writing first chapters. Opening lines, voice, and the question your chapter needs to answer.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/writing-dark.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/first-chapter/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="First Chapter Writing | The Writer's Daily Practice">
+  <meta name="twitter:description" content="A practice-first guide to writing first chapters. Opening lines, voice, and the question your chapter needs to answer.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/writing-dark.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes a good first chapter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A first chapter needs to do one thing well: plant a question the reader needs answered. Characters can be introduced, the world can be established, but none of that is the goal. The goal is to create a gap between what the reader knows and what they need to know, and to make that gap feel urgent. Donna Tartt tells you who died in the first sentence of The Secret History. Toni Morrison tells you the house is haunted. Both are still being read decades later."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you write an opening line?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stop trying to write the best sentence you've ever written. The opening line's job is to establish a relationship between the narrator and the reader. Salinger does it by having Holden signal he doesn't particularly want to tell you anything. Du Maurier does it in twelve words ('Last night I dreamt I went to Manderley again'). The best opening lines feel like the first honest thing the narrator has said. Write the book first if you have to, then go back and write the opening last."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the most common first chapter mistakes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Starting with weather, opening dream sequences, extended backstory, and too many characters introduced by name in the first few pages. All of them share the same problem: the story hasn't started yet. The writer is still preparing. The reader can feel that preparation, even if they can't name it. The best diagnostic: if you can remove the first chapter and start with chapter two without losing anything essential, the first chapter hasn't started."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long should a first chapter be?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Long enough to establish voice and give the reader a question worth turning pages to answer. Most commercial fiction first chapters run 2,000-5,000 words, but the length matters much less than whether the chapter ends with the reader needing to know what happens next. Tartt's first chapter of The Secret History is short. Morrison's opening of Beloved is three sentences. The right length is whatever it takes to establish the relationship between the narrator and the reader."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "First Chapter Writing"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">First Chapter Writing</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        First chapter writing. <span class="gradient-text block mt-3">Get readers past page&nbsp;one.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        The writers who got this right understood one thing most craft guides skip: the first chapter's job is to plant a question the reader can't put down without answering. Here's the practice-first approach to first chapters, with prompts delivered to your inbox every morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'first-chapter'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="first-chapter">
+        <input type="hidden" name="fields[genre]" value="First Chapter">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A writing exercise focused on first chapters and opening lines</strong> with context explaining what the exercise trains and which authors used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. FIVE THINGS SAMPLER ========== -->
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">A few things worth knowing</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">
+        Five things about first chapters that actually&nbsp;matter
+      </h2>
+
+      <div class="space-y-10">
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The first chapter's job is to create a question, not answer one.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Donna Tartt opens <em>The Secret History</em> by telling you who died, and somehow that makes you more desperate to read on. She's set up a question that has nothing to do with the murder itself. The question is: how did these people come to understand what they'd done? A good first chapter creates a gap between what the reader knows and what the reader needs to know, and makes that gap feel urgent. The information can be right there on the page. Tartt tells you everything. The urgency comes from the question underneath the facts.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Voice arrives in the first paragraph or it arrives too late.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">The relationship between the narrator and the reader is established before any fact is. Holden Caulfield signals in the first sentence that he doesn't particularly want to tell you anything, and that relationship shapes everything that follows. Most writers find their narrator only after they've been living with them for a while. That's fine. Just go back to page one when you finally know who this person is, and let them speak from the start.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The story has to already be in motion when the reader arrives.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Toni Morrison opens <em>Beloved</em> with "124 was spiteful. Full of a baby's venom." The house is already haunted. The family has already been living with something terrible for years. Morrison doesn't build to it or ease you in. The story was running before you got there, and that sense of arriving in the middle of something already real is what compels you to stay. The writer who is still preparing when the reader arrives has already lost them.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Backstory in chapter one is explanation, not evidence.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Readers don't care about a character's past before they care about the character. The backstory that arrives in chapter one, the traumatic childhood, the history of how things got this way, is almost always the writer explaining why you should care. The evidence that makes you care is the character in the present moment, acting in a way that's specific enough to be real. Show them in motion first. The past can wait.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The first chapter you write is usually not the first chapter the reader needs.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Tartt spent ten years writing <em>The Secret History</em>. What she understood, after all that time inside the manuscript, was that the opening line needed to tell you the ending. You can't write that kind of first chapter at the beginning. You write it at the end, when you finally know what the book became. Most writers discover their first chapter by finishing their last one.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These ideas come from paying close attention to what the best writers actually did on page one.</p>
+        <p class="text-midGray text-sm leading-relaxed">For a deeper look, start with <a href="/first-chapter/how-to-write-a-first-chapter/" class="text-primary font-medium hover:underline">how to write a first chapter</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. BLOG POSTS ========== -->
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On first chapter writing</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/first-chapter/how-to-write-a-first-chapter/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">First Chapter</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write a First Chapter</p>
+          <p class="text-midGray text-sm leading-relaxed">What Donna Tartt, McEwan, Ishiguro, and Morrison understood about opening chapters that most craft guides skip. &rarr;</p>
+        </a>
+        <a href="/first-chapter/how-to-write-an-opening-line/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">First Chapter</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write an Opening Line</p>
+          <p class="text-midGray text-sm leading-relaxed">Four ideas about first sentences, drawn from Austen, Kafka, du Maurier, Orwell, Hinton, and Nabokov. &rarr;</p>
+        </a>
+        <a href="/first-chapter/first-chapter-mistakes/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">First Chapter</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Things I've Noticed About First Chapter Mistakes</p>
+          <p class="text-midGray text-sm leading-relaxed">Seventeen observations about common first chapter mistakes, after reading probably too many of them. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">March 8th</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">TURNING PRO</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"You can always edit a bad page. You can't edit a blank page."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Nora Roberts</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4" style="font-family: 'Lora', Georgia, serif;">
+          <p>The blank page is often our worst enemy. Pristine and intimidating, it whispers doubts and amplifies insecurities. We stare at it longing for the impeccable opening line, the unblemished paragraph to arrive in a moment of inspiration we're not sure will come.</p>
+          <p>The first draft, the raw outpouring of ideas, is rarely elegant or polished. It might be garbage. But it's alive. The blank page, however pristine, holds nothing a writer can work with. Get something down. Let the process begin.</p>
+          <p>Today's exercise: write the first paragraph of a chapter you've been afraid to start. Don't try to make it good. Just get something on the page. Remember Roberts: you can always edit a bad page.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'first-chapter'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="first-chapter">
+          <input type="hidden" name="fields[genre]" value="First Chapter">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Get Your Daily Prompt
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I've tried every writing course and productivity system out there. This is the first thing that actually got me writing every day. Two months in, I finally started the novel I'd been thinking about for three years."
+          </p>
+          <p class="text-sm text-midGray font-medium">David M., first-time novelist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        One exercise a day. <span class="gradient-text">Every morning.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily writing exercise delivered to writers every morning. Craft context from the writers who figured it out, a quote worth sitting with, and an original reflection. Two minutes to read. A full session to write from.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'first-chapter'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="first-chapter">
+        <input type="hidden" name="fields[genre]" value="First Chapter">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What makes a good first chapter?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">A first chapter needs to do one thing well: plant a question the reader needs answered. Characters can be introduced, the world can be established, but none of that is the goal. The goal is to create a gap between what the reader knows and what they need to know, and to make that gap feel urgent. Donna Tartt tells you who died in the first sentence of <em>The Secret History</em>. Toni Morrison tells you the house is haunted. Both are still being read decades later.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do you write an opening line?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Stop trying to write the best sentence you've ever written. The opening line's job is to establish a relationship between the narrator and the reader. Salinger does it by having Holden signal he doesn't particularly want to tell you anything. Du Maurier does it in twelve words ("Last night I dreamt I went to Manderley again"). The best opening lines feel like the first honest thing the narrator has said. Write the book first if you have to, then go back and write the opening last.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What are the most common first chapter mistakes?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Starting with weather, opening dream sequences, extended backstory, and too many characters introduced by name in the first few pages. All of them share the same problem: the story hasn't started yet. The writer is still preparing. The reader can feel that preparation, even if they can't name it. The best diagnostic: if you can remove the first chapter and start with chapter two without losing anything essential, the first chapter hasn't started.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How long should a first chapter be?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Long enough to establish voice and give the reader a question worth turning pages to answer. Most commercial fiction first chapters run 2,000-5,000 words, but the length matters much less than whether the chapter ends with the reader needing to know what happens next. Tartt's first chapter of <em>The Secret History</em> is short. Morrison's opening of <em>Beloved</em> is three sentences. The right length is whatever it takes to establish the relationship between the narrator and the reader.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. RELATED PAGES ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily practice for all writers &rarr;</p>
+        </a>
+        <a href="/thriller-writing/how-to-write-a-thriller/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Thriller Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">How to write a thriller &rarr;</p>
+        </a>
+        <a href="/character-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Character Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Write characters readers follow &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>
