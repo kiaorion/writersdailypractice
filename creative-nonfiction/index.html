@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Nonfiction Writing | How to Write True Stories That Read Like Literature</title>
+  <meta name="description" content="Creative nonfiction writing guide: personal essay, narrative nonfiction, and the craft of turning real life into literature. Lessons from Didion, Dillard, Baldwin, and McPhee.">
+  <link rel="canonical" href="https://writersdailypractice.com/creative-nonfiction/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Creative Nonfiction Writing | The Writer's Daily Practice">
+  <meta property="og:description" content="How to write creative nonfiction that reads like literature. Lessons from Didion, Dillard, Baldwin, and McPhee on turning real life into lasting prose.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/creative-nonfiction/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Creative Nonfiction Writing | The Writer's Daily Practice">
+  <meta name="twitter:description" content="How to write creative nonfiction that reads like literature. Lessons from Didion, Dillard, Baldwin, and McPhee on turning real life into lasting prose.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is creative nonfiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nonfiction that uses literary techniques to tell true stories. It includes personal essays, memoir, literary journalism, nature writing, and narrative nonfiction. The facts are real but the craft is borrowed from fiction: scene, dialogue, structure, voice. Didion's Slouching Towards Bethlehem, Baldwin's Notes of a Native Son, and Dillard's Pilgrim at Tinker Creek are foundational examples."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is creative nonfiction different from journalism?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Journalism reports. Creative nonfiction renders. Both deal in facts, but creative nonfiction uses scene, voice, and narrative structure to make those facts feel lived-in. Gay Talese's profile of Frank Sinatra reads like a short story. John McPhee's geology books read like adventure novels. The information is accurate; the approach is literary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you use fictional techniques in creative nonfiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, with one constraint: you can't make things up. You can use scene construction, dialogue (from memory or transcription), narrative structure, metaphor, and all the tools of fiction. What you can't do is invent events or composite characters without disclosure. Truman Capote called In Cold Blood a nonfiction novel. The techniques were fictional. The facts were not."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the main types of creative nonfiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Personal essay (Baldwin, Didion, Jamison), memoir (Karr, Strayed, Coates), literary journalism (Talese, Wolfe, Orlean), nature and science writing (Dillard, McPhee, Carson), and cultural criticism (Sontag, Solnit, Rankine). The boundaries between these categories are porous. Most working creative nonfiction writers move between them freely."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Creative Nonfiction Writing"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Creative Nonfiction</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        Creative Nonfiction. <span class="gradient-text block mt-3">Write true stories that read like&nbsp;literature.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        What Didion, Dillard, Baldwin, and McPhee understood about turning real life into prose worth rereading: scene over summary, the writer as character, and the sentence that earns its truth. Plus a free daily prompt delivered every&nbsp;morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'creative-nonfiction'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="creative-nonfiction">
+        <input type="hidden" name="fields[genre]" value="Creative Nonfiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every&nbsp;morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A craft-driven writing exercise</strong> with context explaining what the exercise trains and which authors used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. FIVE THINGS SAMPLER ========== -->
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">The craft of true stories</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">
+        Five things creative nonfiction writers figure out by the second&nbsp;draft
+      </h2>
+
+      <div class="space-y-10">
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The facts are the floor, not the ceiling.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Joan Didion wrote about the Santa Ana winds, the Manson murders, and her own grief with the same precision a novelist brings to invented worlds. The facts were always accurate. But the prose did something reporting can't: it made you feel the temperature in the room. Creative nonfiction starts with what happened and then asks what it meant, and that second question is where the writing lives.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>You are a character in your own story, whether you like it or not.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">James Baldwin wrote about race in America, but the essays worked because he put himself inside the argument. <em>Notes of a Native Son</em> is about his father's funeral and the Harlem riots and the author's own rage, all woven together. The personal isn't a distraction from the subject. In creative nonfiction, the writer's presence is the lens that gives the subject its specific color and weight.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Scene beats summary every time.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">John McPhee could make a geology lecture feel like a thriller. His secret was scene construction: putting the reader on a specific road, with a specific geologist, pointing at a specific rock formation that tells a specific story about 400 million years. He didn't summarize plate tectonics. He drove you to the outcrop. The reader who sees the detail remembers the idea.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The constraint of truth makes the writing harder and better.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">A novelist can invent the perfect ending. A creative nonfiction writer has to find it in what actually happened. Annie Dillard spent months watching a creek for <em>Pilgrim at Tinker Creek</em>, and the book's best moments are things she genuinely witnessed: a frog deflating as a water bug drained it, a mockingbird diving off a roof for no apparent reason. You can't make that up, and the fact that it's real gives it a weight fiction has to earn differently.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The essay discovers its argument by being written.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Didion said she wrote to find out what she was thinking. Most creative nonfiction doesn't start with a thesis. It starts with an image, a memory, an observation that won't leave the writer alone. The structure emerges from the act of writing, not from an outline. This is terrifying for writers trained in five-paragraph essays, and it's also the reason creative nonfiction can feel so alive on the page. The reader is watching the thinking happen in real time.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These patterns show up in creative nonfiction that readers carry around for years.</p>
+        <p class="text-midGray text-sm leading-relaxed">For a closer look, start with <a href="how-to-write-creative-nonfiction/" class="text-primary font-medium hover:underline">how to write creative&nbsp;nonfiction</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. BLOG POSTS ========== -->
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On creative nonfiction</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="how-to-write-creative-nonfiction/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Craft</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write Creative Nonfiction (When the Truth Needs a Better Story)</p>
+          <p class="text-midGray text-sm leading-relaxed">Didion, Talese, and Orlean on turning fact into literature. &rarr;</p>
+        </a>
+        <a href="creative-nonfiction-techniques/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Ideas</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Creative Nonfiction Techniques: Ideas That Changed How I Think About True Stories</p>
+          <p class="text-midGray text-sm leading-relaxed">Dillard, Solnit, Jamison, and Nelson on the craft of the real. &rarr;</p>
+        </a>
+        <a href="personal-essay-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Observations</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Things I've Noticed About Writing Personal Essays</p>
+          <p class="text-midGray text-sm leading-relaxed">Observations on what the personal essay does that no other form can. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">June 14th</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">RESILIENCE TO REJECTION</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"One of the few things I know about writing is this: spend it all, shoot it, play it, lose it, all, right away, every time. Do not hoard what seems good for a later place in the book, or for another book; give it, give it all, give it now."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Annie Dillard</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4" style="font-family: 'Lora', Georgia, serif;">
+          <p>A half-hearted paragraph lands like a feather. But words written with full force can crack concrete. Writing demands total commitment. Every sharp insight. Every fragment of truth you've gathered along the way.</p>
+          <p>When Joan Didion wrote <em>The Year of Magical Thinking</em>, she poured out her grief on the page just months after losing her husband. She didn't wait until the memories were softened. Or until the pain was more manageable. She wrote through the fog of loss. Trusting that holding back would only dilute what needed to be said.</p>
+          <p>Conviction means emptying the tank with each piece. Believing that creativity isn't a finite resource to be rationed. Your next blank page isn't a threat. It's an invitation.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every&nbsp;morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'creative-nonfiction'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="creative-nonfiction">
+          <input type="hidden" name="fields[genre]" value="Creative Nonfiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Get Your Daily Prompt
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I've tried every writing course and productivity system out there. This is the first thing that actually got me writing every day. Two months in, I finally started the novel I'd been thinking about for three years."
+          </p>
+          <p class="text-sm text-midGray font-medium">David M., first-time novelist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'creative-nonfiction'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="creative-nonfiction">
+        <input type="hidden" name="fields[genre]" value="Creative Nonfiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked&nbsp;questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is creative nonfiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Nonfiction that uses literary techniques to tell true stories. It includes personal essays, memoir, literary journalism, nature writing, and narrative nonfiction. The facts are real but the craft is borrowed from fiction: scene, dialogue, structure, voice. Didion's <em>Slouching Towards Bethlehem</em>, Baldwin's <em>Notes of a Native Son</em>, and Dillard's <em>Pilgrim at Tinker Creek</em> are foundational examples.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How is creative nonfiction different from journalism?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Journalism reports. Creative nonfiction renders. Both deal in facts, but creative nonfiction uses scene, voice, and narrative structure to make those facts feel lived-in. Gay Talese's profile of Frank Sinatra reads like a short story. John McPhee's geology books read like adventure novels. The information is accurate; the approach is literary.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Can you use fictional techniques in creative nonfiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Yes, with one constraint: you can't make things up. You can use scene construction, dialogue (from memory or transcription), narrative structure, metaphor, and all the tools of fiction. What you can't do is invent events or composite characters without disclosure. Truman Capote called <em>In Cold Blood</em> a "nonfiction novel." The techniques were fictional. The facts were not.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What are the main types of creative nonfiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Personal essay (Baldwin, Didion, Jamison), memoir (Karr, Strayed, Coates), literary journalism (Talese, Wolfe, Orlean), nature and science writing (Dillard, McPhee, Carson), and cultural criticism (Sontag, Solnit, Rankine). The boundaries between these categories are porous. Most working creative nonfiction writers move between them freely.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. RELATED PAGES ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/memoir-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Memoir Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Writing your life as literature &rarr;</p>
+        </a>
+        <a href="/literary-fiction/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Literary Fiction</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Prose, character, and sentences that linger &rarr;</p>
+        </a>
+        <a href="/journaling/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Journaling</p>
+          <p class="font-serif font-bold text-dark text-[15px]">What journaling does to your writing &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>

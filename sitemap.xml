@@ -1053,6 +1053,32 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Creative Nonfiction cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/creative-nonfiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/creative-nonfiction/how-to-write-creative-nonfiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/creative-nonfiction/creative-nonfiction-techniques/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/creative-nonfiction/personal-essay-writing/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Dystopian Fiction cluster -->
   <url>
     <loc>https://writersdailypractice.com/dystopian-fiction/</loc>
