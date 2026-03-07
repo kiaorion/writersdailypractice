@@ -862,4 +862,33 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- POV Writing cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/pov-writing/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/pov-writing/first-person-vs-third-person/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/pov-writing/multiple-pov-writing/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/pov-writing/unreliable-narrator/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

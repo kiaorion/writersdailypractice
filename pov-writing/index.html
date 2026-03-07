@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Point of View in Writing | How POV Shapes Everything Your Reader Experiences</title>
+  <meta name="description" content="How to choose and control point of view in fiction: first person vs third person, multiple POV, unreliable narrators, and the structural decisions that shape every sentence. Lessons from Fitzgerald, Eliot, Faulkner, and Ishiguro.">
+  <link rel="canonical" href="https://writersdailypractice.com/pov-writing/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Point of View in Writing | The Writer's Daily Practice">
+  <meta property="og:description" content="How POV shapes everything your reader experiences. Lessons from Fitzgerald, Eliot, Faulkner, and Ishiguro on the most important structural decision in fiction.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/pov-writing/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Point of View in Writing | The Writer's Daily Practice">
+  <meta name="twitter:description" content="How POV shapes everything your reader experiences. Lessons from Fitzgerald, Eliot, Faulkner, and Ishiguro on the most important structural decision in fiction.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is point of view in writing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Point of view is the structural decision that determines whose eyes the reader looks through and how much they're allowed to know. It's the most important choice you make before writing a word, because it governs what can be revealed, what must stay hidden, and how close the reader stands to the emotional center of the story. Fitzgerald chose Nick Carraway's first-person POV for The Great Gatsby specifically to create distance from Gatsby, which is what makes Gatsby feel mythic rather than pathetic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I write in first person or third person?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on whether the story needs the reader inside someone's skull or standing slightly apart. First person gives you voice, intimacy, and the ability to create unreliable narration. Third person gives you scope, the ability to enter multiple minds, and a narrator whose intelligence can become its own presence. Charlotte Bronte needed first person for Jane Eyre because the voice IS the character. George Eliot needed third person omniscient for Middlemarch because the narrator's insight is what holds the novel together."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I write from multiple points of view?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each POV character needs to carry a piece of the story that only they can see. If two characters witness the same event and interpret it the same way, one of them doesn't need to exist on the page. Faulkner gave fifteen narrators in As I Lay Dying fifteen different levels of intelligence, different vocabularies, different blind spots. Martin gives each POV character in A Song of Ice and Fire a different prose register: Cersei's chapters carry a brittle formality, Tyrion's run looser and more observational."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an unreliable narrator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A narrator whose account the reader learns to question. Sometimes the narrator lies deliberately, like Humbert Humbert in Nabokov's Lolita. Sometimes they fail to understand their own life, like Stevens in Ishiguro's The Remains of the Day, who isn't lying so much as he's unable to see himself clearly. The craft challenge is building a narrator the reader trusts enough to follow while planting enough signals that the truth can emerge through the cracks."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Point of View in Writing"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Point of View</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        Point of View. <span class="gradient-text block mt-3">The lens that shapes everything your reader&nbsp;sees.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        How Fitzgerald, Eliot, Faulkner, and Ishiguro use point of view to control what readers know, when they know it, and how close they stand to the story's emotional center. Plus a free daily prompt every&nbsp;morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'pov-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="pov-writing">
+        <input type="hidden" name="fields[genre]" value="POV Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every&nbsp;morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A craft-driven writing exercise</strong> with context explaining what the exercise trains and which authors used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. FIVE THINGS SAMPLER ========== -->
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">The decision that shapes every sentence</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">
+        Five things your POV choice determines about your&nbsp;story
+      </h2>
+
+      <div class="space-y-10">
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>What the reader knows, and when.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">First person means the reader knows nothing the narrator doesn't. Third omniscient means the reader can know everything. Ishiguro's Stevens in <em>The Remains of the Day</em> understands less about his own life than the reader does, and that gap IS the novel. The POV you choose determines when your reader discovers every piece of information in the story.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Whose language shapes the prose.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">In deep POV, the character's vocabulary becomes the author's. Twain's Huck Finn speaks in his own grammar, and the prose IS the character. Third person omniscient gives the narrator their own voice, their own intelligence, their own opinions about the characters. George Eliot's narrator in <em>Middlemarch</em> is arguably the most interesting character in the book.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>How close the reader stands to the emotional center.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">First person puts you inside the chest. Third person distant puts you across the room. Most contemporary fiction lives in third person limited, somewhere between: close enough to feel what the character feels, far enough to see what they miss. The right distance depends on whether you want the reader inside the emotion or watching it from a vantage point that the character can't reach.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Whether the reader trusts the story being told.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">First person narrators can lie. Nabokov's Humbert Humbert lies constantly, and the horror of <em>Lolita</em> is learning to read against the narrator. Third person omniscient is traditionally trusted. But even third person can withhold. Eliot's <em>Middlemarch</em> occasionally tells you what a character doesn't know about themselves, which is its own quiet form of unreliability.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>How many minds the story can enter.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Single POV means one mind, one interpretation. Multiple POVs mean the story fractures into competing truths. Faulkner's <em>As I Lay Dying</em> gives fifteen perspectives on the same events. Martin gives each POV character in <em>A Song of Ice and Fire</em> different prose rhythms, different concerns, different registers. The more minds you enter, the more the reader has to hold.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These decisions happen before the first sentence. They govern every sentence after.</p>
+        <p class="text-midGray text-sm leading-relaxed">Start with the foundational choice: <a href="first-person-vs-third-person/" class="text-primary font-medium hover:underline">first person vs third&nbsp;person</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. BLOG POSTS ========== -->
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On point of view</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="first-person-vs-third-person/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">POV Writing</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">First Person vs Third Person: The Structural Decision That Shapes Everything</p>
+          <p class="text-midGray text-sm leading-relaxed">Fitzgerald, Eliot, Bronte, and Le Guin on why POV is architecture. &rarr;</p>
+        </a>
+        <a href="multiple-pov-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">POV Writing</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write Multiple Points of View Without Losing the Reader</p>
+          <p class="text-midGray text-sm leading-relaxed">Faulkner, Martin, Groff, and Morrison on managing fifteen minds. &rarr;</p>
+        </a>
+        <a href="unreliable-narrator/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">POV Writing</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write an Unreliable Narrator (Without Cheating the Reader)</p>
+          <p class="text-midGray text-sm leading-relaxed">Nabokov, Ishiguro, Flynn, and Christie on narrators who lie. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">January 14th</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">OPEN YOUR EYES</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"The greatest part of a writer's time is spent in reading in order to write. A man will turn over half a library to make a book."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Samuel Johnson</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4" style="font-family: 'Lora', Georgia, serif;">
+          <p>The bustle of a city street is like inspiration. Information and stimuli always streaming. Ideas whizzing by. Some catch your eye for a moment. Most vanish into the crowd.</p>
+          <p>So you have to be intentional where you go and what you observe. Exploring a specific part of town. You visit museums. Attend lectures. Engage in conversations. Expose yourself to people from different walks of life. The more you do it, the more diverse perspectives and experiences become.</p>
+          <p>So visit the quirky boutiques. The hole-in-the-wall cafes. The historic landmarks. Talk to the locals. Learn their stories. The more you engage with the world around you, the more the buzzing in your head will settle. And in the settled quiet, your text adapts and evolves.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every&nbsp;morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'pov-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="pov-writing">
+          <input type="hidden" name="fields[genre]" value="POV Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Get Your Daily Prompt
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I've tried every writing course and productivity system out there. This is the first thing that actually got me writing every day. Two months in, I finally started the novel I'd been thinking about for three years."
+          </p>
+          <p class="text-sm text-midGray font-medium">David M., first-time novelist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'pov-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="pov-writing">
+        <input type="hidden" name="fields[genre]" value="POV Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked&nbsp;questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is point of view in writing?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Point of view is the structural decision that determines whose eyes the reader looks through and how much they're allowed to know. It's the most important choice you make before writing a word, because it governs what can be revealed, what must stay hidden, and how close the reader stands to the emotional center of the story. Fitzgerald chose Nick Carraway's first-person POV for <em>The Great Gatsby</em> specifically to create distance from Gatsby, which is what makes Gatsby feel mythic rather than pathetic.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Should I write in first person or third person?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">It depends on whether the story needs the reader inside someone's skull or standing slightly apart. First person gives you voice, intimacy, and the ability to create unreliable narration. Third person gives you scope, the ability to enter multiple minds, and a narrator whose intelligence can become its own presence. Charlotte Bronte needed first person for <em>Jane Eyre</em> because the voice IS the character. George Eliot needed third person omniscient for <em>Middlemarch</em> because the narrator's insight is what holds the novel together.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I write from multiple points of view?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Each POV character needs to carry a piece of the story that only they can see. If two characters witness the same event and interpret it the same way, one of them doesn't need to exist on the page. Faulkner gave fifteen narrators in <em>As I Lay Dying</em> fifteen different levels of intelligence, different vocabularies, different blind spots. Martin gives each POV character in <em>A Song of Ice and Fire</em> a different prose register: Cersei's chapters carry a brittle formality, Tyrion's run looser and more observational.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is an unreliable narrator?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">A narrator whose account the reader learns to question. Sometimes the narrator lies deliberately, like Humbert Humbert in Nabokov's <em>Lolita</em>. Sometimes they fail to understand their own life, like Stevens in Ishiguro's <em>The Remains of the Day</em>, who isn't lying so much as he's unable to see himself clearly. The craft challenge is building a narrator the reader trusts enough to follow while planting enough signals that the truth can emerge through the cracks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. RELATED PAGES ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/writing-craft/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">The skills beneath every page &rarr;</p>
+        </a>
+        <a href="/character-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Character Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">The people POV brings to life &rarr;</p>
+        </a>
+        <a href="/romance-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Romance Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Where POV shapes desire &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>

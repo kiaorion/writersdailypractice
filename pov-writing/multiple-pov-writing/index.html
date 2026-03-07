@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Write Multiple Points of View Without Losing the Reader | The Writer's Daily Practice</title>
+  <meta name="description" content="How writers like Faulkner, George R.R. Martin, Lauren Groff, and Toni Morrison handle multiple POV characters. Practical lessons on giving each narrator their own intelligence.">
+  <link rel="canonical" href="https://writersdailypractice.com/pov-writing/multiple-pov-writing/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Write Multiple Points of View Without Losing the Reader | The Writer's Daily Practice">
+  <meta property="og:description" content="How writers like Faulkner, George R.R. Martin, Lauren Groff, and Toni Morrison handle multiple POV characters. Practical lessons on giving each narrator their own intelligence.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/pov-writing/multiple-pov-writing/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Write Multiple Points of View Without Losing the Reader | The Writer's Daily Practice">
+  <meta name="twitter:description" content="How writers like Faulkner, George R.R. Martin, Lauren Groff, and Toni Morrison handle multiple POV characters. Practical lessons on giving each narrator their own intelligence.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Write Multiple Points of View Without Losing the Reader",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "How writers like Faulkner, George R.R. Martin, Lauren Groff, and Toni Morrison handle multiple POV characters. Practical lessons on giving each narrator their own intelligence.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/pov-writing/multiple-pov-writing/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "POV Writing",
+        "item": "https://writersdailypractice.com/pov-writing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Write Multiple Points of View Without Losing the Reader"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+
+    .drop-cap::first-letter {
+      font-size: 3.2em;
+      font-weight: 700;
+      float: left;
+      line-height: 0.8;
+      padding-right: 0.1em;
+      margin-top: 0.1em;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/pov-writing/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">POV Writing</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/pov-writing/" class="hover:text-primary transition-colors">POV Writing</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">POV Writing</span>
+
+      <!-- Title: Use &nbsp; between last two words to prevent orphan words -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        How to Write Multiple Points of View Without Losing the&nbsp;Reader
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>10 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+      <p class="drop-cap">In the summer of 1929, William Faulkner was working the night shift at the University of Mississippi power plant. The job was simple: shovel coal into the furnace, keep the electricity running, and stay awake until dawn. He was thirty-one. He'd published two novels that hadn't sold. He was, by most available measures, not a successful writer. What he did have was an overturned wheelbarrow, a pen, and the hours between midnight and 4 AM when nobody bothered him and the only sound was the hum of the generators and the scrape of his own handwriting.</p>
+
+      <p>He wrote <em>As I Lay Dying</em> in six weeks. The novel has fifteen narrators. Fifteen separate people telling the story of carrying Addie Bundren's body across Mississippi to bury her where she wanted to be buried. Some chapters are a single sentence long. Some run for pages. Darl, the second son, sees everything with a strange, almost psychic clarity. Cash, the carpenter, narrates one chapter as a numbered list of reasons why he built the coffin on a bevel. Vardaman, the youngest child, gets a chapter that consists entirely of: "My mother is a fish."</p>
+
+      <p>You can picture Faulkner at that wheelbarrow, switching between voices at two in the morning, the coal furnace going, his hand probably cramping. Fifteen people in his head, all of them looking at the same dead woman and the same flooded river and the same rotting coffin, and every single one of them seeing something different. I don't know what to make of that exactly, the image of a man shoveling coal for a paycheck and writing one of the great American novels in the margins, except that it tells you something about what multiple POV requires. You have to be willing to leave yourself behind. Over and over. You finish one consciousness and you walk into another, and the world has to look genuinely different each time, or the whole thing collapses into one voice wearing different hats.</p>
+
+      <p>That's the real difficulty of writing multiple points of view. The technical problems are manageable. When to switch, how to signal the transition, whether to use first person or third. Those are decisions you can think through. The hard part is giving each character their own way of being intelligent, their own way of being wrong, their own private logic that makes sense from the inside even when it looks bizarre from the outside. Faulkner could do it fifteen times in the same book, between shifts at the power plant. Most of us are going to try it with two or three characters and find that's plenty.</p>
+
+      <h2>Each Character Needs Their Own&nbsp;Intelligence</h2>
+
+      <p>George R.R. Martin's <em>A Song of Ice and Fire</em> runs to thousands of pages across multiple books, and the thing that holds it together, the reason readers will follow thirty-plus POV characters through a fantasy world, isn't the plot. The plot is a mess, honestly, in the best possible way. What holds it together is that every POV character thinks differently.</p>
+
+      <p>Cersei Lannister's chapters have a brittle formality to them. She thinks in terms of power and perception, who is watching her, who is failing to show proper respect, who needs to be reminded of their place. Her prose is controlled, clipped, full of judgments delivered with absolute certainty. Tyrion's chapters are looser. He observes more. He makes jokes, mostly to himself. He notices the gap between what people say and what they mean because he's spent his whole life being underestimated, and that gap is where he lives. Jon Snow's chapters have a younger quality, more earnest, more prone to asking questions that Cersei would never bother asking because she already assumes she knows the answers.</p>
+
+      <p>Martin doesn't just give each character different information, though that matters for the plot. He gives each character a different <em>prose register</em>. The sentences themselves change shape depending on who's thinking them. And you can feel it when you read. You know within a paragraph whose head you're in, even before Martin tells you, because the rhythm of the language shifts. Cersei's prose is tighter. Tyrion's wanders. Jon's reaches for something it can't quite articulate.</p>
+
+      <p>This is what I mean by each character needing their own intelligence. It's the specific way each person processes the world, the details they notice first, the conclusions they leap to, the things they refuse to see. When you're writing multiple POV and every character sounds the same, what you actually have is one mind narrating from different locations. The camera moves, but the eye behind it doesn't change.</p>
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Every character sees the world differently. One prompt every morning to practice writing through different&nbsp;eyes.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'pov-writing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="pov-writing/multiple-pov-writing">
+          <input type="hidden" name="fields[genre]" value="POV Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+      <h2>The Same Event Seen Differently Is the Whole&nbsp;Point</h2>
+
+      <p>Lauren Groff's <em>Fates and Furies</em> splits a marriage down the middle. The first half of the book belongs to Lotto, the husband. He's a playwright, charismatic, a little oblivious, the kind of person who walks through a room and assumes the room is happy to see him. His version of the marriage is golden. He and Mathilde fell in love at first sight. She supports his work. Their life together is a story he tells himself, and it's a good story, warm and self-congratulatory and mostly true if you don't look too carefully at the parts he's not examining.</p>
+
+      <p>Then Groff flips the book. The second half belongs to Mathilde. Same marriage, same events, same dinners and arguments and vacations. And the entire picture changes. Lotto's golden narrative turns out to be a surface that Mathilde has carefully maintained while living a completely different interior life beneath it. She has secrets he never suspected. She has motivations he never bothered to look for. The marriage he thought was effortless was, from her side, an elaborate act of construction, and every moment he remembers as spontaneous and beautiful she remembers as calculated and necessary.</p>
+
+      <p>What Groff understood is that multiple POV becomes an argument about the nature of reality, or at least the nature of relationships. Two people can share a bed for twenty years and be living in different novels. The same dinner conversation means one thing to the person who's performing and another thing entirely to the person who's watching. And neither of them is lying, exactly. They're both telling the truth. They're just telling different truths, and the gap between those truths is where the actual story lives.</p>
+
+      <p>When you write the same event from two perspectives, you're not just offering the reader a second angle. You're asking a question about whether any single perspective can be trusted, and the answer, if you're doing it honestly, is usually no.</p>
+
+      <h2>When POV Fractures on&nbsp;Purpose</h2>
+
+      <p>Toni Morrison's <em>Beloved</em> does something with point of view that I still don't fully understand, even after reading it several times. The novel shifts between Sethe, Denver, Paul D, and Beloved herself, and the shifts don't always follow the conventions of chapter breaks or clear transitions. Sometimes the POV slides between characters within a single scene. Sometimes it fractures entirely, particularly in a sequence near the end where Sethe, Denver, and Beloved seem to speak in a kind of shared interior monologue, their voices overlapping and dissolving into each other, the boundaries between them breaking down.</p>
+
+      <p>Morrison does this because the novel is about trauma, and trauma doesn't respect the boundaries of individual consciousness. Sethe's memories bleed into Denver's fears. Beloved's presence collapses the distinction between past and present. The POV fracturing becomes a formal enactment of what the book is actually about: the way that certain experiences are too large for a single perspective to hold, the way that pain gets passed between people whether they want to carry it or not.</p>
+
+      <p>I'm not suggesting you try to write like Morrison. Very few people can. But her approach to POV reveals something worth remembering: the way you handle perspective should reflect the emotional logic of your story. If your story is about a family keeping secrets from each other, then distinct, well-bounded POV chapters make sense, because each person's perspective is its own sealed container. Celeste Ng does this brilliantly in <em>Everything I Never Told You</em>, where each family member's chapter peels back a different layer of a shared tragedy, and what makes it devastating is how close these people are in physical proximity and how far apart they are in understanding. Each one is carrying a piece of the story that would change everything if they just said it out loud, and none of them do.</p>
+
+      <p>But if your story is about the dissolution of boundaries, about people who can't tell where their own pain ends and someone else's begins, then maybe the POV should dissolve too.</p>
+
+      <h2>Knowing When to&nbsp;Switch</h2>
+
+      <p>There's a practical question underneath all of this, which is: when do you actually move from one character's perspective to another? And the honest answer is that there's no formula, but there are instincts you can develop.</p>
+
+      <p>The worst reason to switch POV is because you're bored with the current character. If you're bored, the reader probably is too, and switching to someone else won't fix that. It'll just mean you have two underdeveloped perspectives instead of one. The best reason to switch is because the current character has reached the limit of what they can see, and the story needs to show the reader something that this character is incapable of noticing. Martin does this constantly, cutting away from one character at exactly the moment when another character's knowledge becomes essential. The reader puts two pieces together that no single character possesses, and that collision of incomplete perspectives generates the story's momentum.</p>
+
+      <p>The other instinct worth developing is knowing what information to withhold during a switch. When you move from one POV to another, there's a temptation to immediately answer whatever question the previous chapter raised. Resist that. The gap between chapters, the moment where the reader doesn't know what happened next because they're suddenly in someone else's head looking at something else entirely, that gap is where the reader does their most active work. They're holding two incomplete pictures simultaneously, trying to fit them together, and that effort is what keeps them reading.</p>
+
+      <hr>
+
+      <p>Writing multiple points of view is, at bottom, an exercise in empathy and in limitation. You have to believe, fully, in each character's version of events while knowing that no single version is complete. You have to be willing to see the world through eyes that aren't yours, and then do it again, and again, each time genuinely, each time without the safety net of a narrator who knows the whole truth and can tell the reader who's right.</p>
+
+      <p>This is something you can practice in small ways, even before you attempt a whole novel with multiple narrators. Write a single scene. A conversation between two people in a kitchen. Then write it again from the other person's perspective. Notice what changes. Notice what each person pays attention to and what they miss. That gap between what one character sees and what the other sees, that's where your story is waiting.</p>
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Write a single scene from two characters' perspectives. Notice what each one&nbsp;misses.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'pov-writing-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="pov-writing/multiple-pov-writing">
+          <input type="hidden" name="fields[genre]" value="POV Writing">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/pov-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">POV Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Point of view hub &rarr;</p>
+        </a>
+        <a href="/pov-writing/first-person-vs-third-person/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">POV Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">First Person vs Third Person &rarr;</p>
+        </a>
+        <a href="/pov-writing/unreliable-narrator/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">POV Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Writing Unreliable Narrators &rarr;</p>
+        </a>
+        <a href="/writing-craft/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">The skills beneath every page &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'pov-writing-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="pov-writing/multiple-pov-writing">
+        <input type="hidden" name="fields[genre]" value="POV Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
