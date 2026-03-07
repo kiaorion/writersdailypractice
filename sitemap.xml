@@ -533,4 +533,30 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- How to Outline a Novel cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/how-to-outline-a-novel/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/how-to-outline-a-novel/novel-outline-methods/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/how-to-outline-a-novel/pantsing-vs-plotting/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/how-to-outline-a-novel/how-to-write-a-novel-outline/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

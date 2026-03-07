@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Outline a Novel | The Writer's Daily Practice</title>
+  <meta name="description" content="A guide to novel outlining built from Irving, Christie, Gabaldon, and the writers who figured out how much structure they actually needed. Five things about outlining, plus a free daily prompt.">
+  <link rel="canonical" href="https://writersdailypractice.com/how-to-outline-a-novel/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Outline a Novel | The Writer's Daily Practice">
+  <meta property="og:description" content="Five things about outlining a novel. Lessons from Irving, Christie, Gabaldon, and Nabokov. Plus a free daily prompt delivered every morning.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/how-to-outline-a-novel/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Outline a Novel | The Writer's Daily Practice">
+  <meta name="twitter:description" content="Five things about outlining a novel. Lessons from Irving, Christie, Gabaldon, and Nabokov. Plus a free daily prompt delivered every morning.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a novel outline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A pre-writing document that maps what happens in a novel before it's written. Outlines range from a single paragraph (Donna Tartt's Goldfinch outline) to elaborate spreadsheets (J.K. Rowling's Order of the Phoenix chapter plan). The function is always the same: to give the writer a working theory of the story before committing to the prose. That theory will change. The point isn't accuracy; it's direction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to outline a novel before writing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Probably not. But you'll likely need some structure somewhere in the process. Stephen King famously doesn't outline, and he calls plotters 'architects.' But he also knows his endings before he starts, which is its own kind of plan. Diana Gabaldon starts with a scene that interests her and discovers the structure as she writes. John Irving knows his last line before his first. None of these are the same method. All of them work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the best way to outline a novel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with what you know. Some writers work from first line to last. Some map scenes on index cards and rearrange them. Some use a single paragraph that captures the book's emotional logic. Nabokov wrote his novels on index cards in nonlinear order, so the outline was already in fragments before it became narrative. The question isn't which method is best; it's which one gets you to the end."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How detailed should a novel outline be?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Detailed enough to give you momentum; loose enough to let the story surprise you. The most common mistake is over-outlining before you've written anything: planning scenes you don't understand yet because you haven't lived with the characters. A two-to-three sentence summary per major beat is usually more useful than a full scene-by-scene breakdown. You'll revise the outline anyway. The second one, written after you've written five chapters, is usually the one that actually helps."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "How to Outline a Novel"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Novel Outlining</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        How to Outline a Novel. <span class="gradient-text block mt-3">The map that serves the&nbsp;territory.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        Lessons from Irving, Christie, Gabaldon, and the writers who figured out how much structure they actually needed. Plus a free daily prompt delivered to your inbox every morning to keep your practice&nbsp;consistent.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'how-to-outline-a-novel'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="how-to-outline-a-novel">
+        <input type="hidden" name="fields[genre]" value="Novel Outlining">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every&nbsp;morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A craft-driven writing exercise</strong> with context explaining what the exercise trains and which authors used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. FIVE THINGS SAMPLER ========== -->
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">What the best outliners know</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">
+        Five things about outlining a&nbsp;novel
+      </h2>
+
+      <div class="space-y-10">
+
+        <!-- Thing 1 -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>An outline is a hypothesis, not a contract.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">The writers who use outlines well treat them as working theories. John Irving knew the last line of <em>A Prayer for Owen Meany</em> before the first. That wasn't a constraint; it was an anchor. The outline told him where he was going, not how he had to feel about the journey.</p>
+        </div>
+
+        <!-- Thing 2 -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The useful outline is smaller than the one you think you need.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Donna Tartt mapped <em>The Goldfinch</em> in a single paragraph. Every other decision followed from that. The impulse to outline more is often the impulse to write less. A two-sentence summary of what each major beat needs to accomplish is usually more useful than a scene-by-scene breakdown.</p>
+        </div>
+
+        <!-- Thing 3 -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The middle is where every outline breaks. Plan for it.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">The first act writes itself. The third act waits. The second act is where the outline reveals whether it was real. Diana Gabaldon has described how characters surprise her mid-book. The outline adjusts; the story continues. This isn't a failure of planning. It's a feature of the form.</p>
+        </div>
+
+        <!-- Thing 4 -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The second outline, after chapter five, is the one that actually matters.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Most writers who abandon their outline do it after they've written enough to know what the story actually is. That's not failure; that's information. Kazuo Ishiguro called his first pass a "crash draft" — a sprint to understand the shape of the thing before he revised it into existence. The second outline has the benefit of what you've already written.</p>
+        </div>
+
+        <!-- Thing 5 -->
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Plotters and pantsers have the same problem, just at different stages.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">The plotter discovers unexpected complexity in the execution. The pantser discovers structure they have to impose in revision. George R.R. Martin once said he can't outline because he'd have to write the book to know what happens. He's not wrong. He's just accepting a certain kind of chaos earlier than most.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These patterns appear across every writer who finishes the book.</p>
+        <p class="text-midGray text-sm leading-relaxed">For a closer look at how working novelists actually approach structure, start with <a href="novel-outline-methods/" class="text-primary font-medium hover:underline">novel outline methods</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. BLOG POSTS ========== -->
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On outlining a novel</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="novel-outline-methods/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Novel Outlining</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Novel Outline Methods: What the Pros Actually Do</p>
+          <p class="text-midGray text-sm leading-relaxed">How Irving, Nabokov, King, and Rowling use structure — and why none of them use it the same way. &rarr;</p>
+        </a>
+        <a href="pantsing-vs-plotting/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Novel Outlining</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">What the Plotter vs. Pantser Debate Gets Wrong</p>
+          <p class="text-midGray text-sm leading-relaxed">The debate misses the real question. What actually separates writers who finish from those who don't. &rarr;</p>
+        </a>
+        <a href="how-to-write-a-novel-outline/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Novel Outlining</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Things I've Noticed About Writing a Novel Outline</p>
+          <p class="text-midGray text-sm leading-relaxed">Sixteen observations on outlines, structure, and what Christie never told you about how she planned her mysteries. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">March 1st</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">LET THE TOWER LEAN</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve that beauty."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Maya Angelou</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4" style="font-family: 'Lora', Georgia, serif;">
+          <p>In 1503, Leonardo da Vinci began the portrait we now know as the Mona Lisa. He worked on it for at least four years, possibly longer. He returned to it. He revised it. He kept it with him until he died, still, apparently, not finished.</p>
+          <p>The painting we see in the Louvre isn't the one Leonardo thought he was painting when he started. The sfumato technique deepened. The background changed. The expression settled into something that has puzzled art historians for five hundred years. What we're looking at is the record of a man who let his work become something he hadn't planned.</p>
+          <p>The outline you begin with is one version of the story. The story you eventually write is another. The distance between those two things isn't failure. It's where the work happens.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every&nbsp;morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'how-to-outline-a-novel'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="how-to-outline-a-novel">
+          <input type="hidden" name="fields[genre]" value="Novel Outlining">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Get Your Daily Prompt
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I've tried every writing course and productivity system out there. This is the first thing that actually got me writing every day. Two months in, I finally started the novel I'd been thinking about for three years."
+          </p>
+          <p class="text-sm text-midGray font-medium">David M., first-time novelist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'how-to-outline-a-novel'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="how-to-outline-a-novel">
+        <input type="hidden" name="fields[genre]" value="Novel Outlining">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked&nbsp;questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is a novel outline?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">A pre-writing document that maps what happens in a novel before it's written. Outlines range from a single paragraph (Donna Tartt's <em>Goldfinch</em> outline) to elaborate spreadsheets (J.K. Rowling's <em>Order of the Phoenix</em> chapter plan). The function is always the same: to give the writer a working theory of the story before committing to the prose. That theory will change. The point isn't accuracy; it's direction.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Do I need to outline a novel before writing?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Probably not. But you'll likely need some structure somewhere in the process. Stephen King famously doesn't outline, and he calls plotters "architects." But he also knows his endings before he starts, which is its own kind of plan. Diana Gabaldon starts with a scene that interests her and discovers the structure as she writes. John Irving knows his last line before his first. None of these are the same method. All of them work.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What's the best way to outline a novel?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Start with what you know. Some writers work from first line to last. Some map scenes on index cards and rearrange them. Some use a single paragraph that captures the book's emotional logic. Nabokov wrote his novels on index cards in nonlinear order, so the outline was already in fragments before it became narrative. The question isn't which method is best; it's which one gets you to the end.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How detailed should a novel outline be?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Detailed enough to give you momentum; loose enough to let the story surprise you. The most common mistake is over-outlining before you've written anything — planning scenes you don't understand yet because you haven't lived with the characters. A two-to-three sentence summary per major beat is usually more useful than a full scene-by-scene breakdown. You'll revise the outline anyway. The second one, written after you've written five chapters, is usually the one that actually helps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. RELATED PAGES ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/how-to-write-a-book/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">How to Write a Book</p>
+          <p class="font-serif font-bold text-dark text-[15px]">The practice-first approach &rarr;</p>
+        </a>
+        <a href="/worldbuilding/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Worldbuilding</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Build your fictional world &rarr;</p>
+        </a>
+        <a href="/science-fiction-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Science Fiction</p>
+          <p class="font-serif font-bold text-dark text-[15px]">The 'what if' that changes everything &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>
