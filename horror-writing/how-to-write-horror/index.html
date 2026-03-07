@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Write Horror Fiction | The Writer's Daily Practice</title>
+  <meta name="description" content="What Stephen King learned from Carrie, why Jackson's haunted house still works, and the craft lessons that separate horror that stays with readers from horror that doesn't." />
+  <link rel="canonical" href="https://writersdailypractice.com/horror-writing/how-to-write-horror/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Write Horror Fiction | The Writer's Daily Practice" />
+  <meta property="og:description" content="What Stephen King learned from Carrie, why Jackson's haunted house still works, and the craft lessons that separate horror that stays with readers from horror that doesn't." />
+  <meta property="og:url" content="https://writersdailypractice.com/horror-writing/how-to-write-horror/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="The Writer's Daily Practice" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Write Horror Fiction | The Writer's Daily Practice" />
+  <meta name="twitter:description" content="What Stephen King learned from Carrie, why Jackson's haunted house still works, and the craft lessons that separate horror that stays with readers from horror that doesn't." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            warmWhite: '#FFFDF7',
+            midGray: '#6B7280',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'Georgia', 'serif'],
+            lora: ['Lora', 'Georgia', 'serif'],
+            inter: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Plausible Analytics -->
+  <script defer data-domain="writersdailypractice.com" src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+
+  <!-- Article Schema + BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Write Horror Fiction",
+      "description": "What Stephen King learned from Carrie, why Jackson's haunted house still works, and the craft lessons that separate horror that stays with readers from horror that doesn't.",
+      "datePublished": "2026-03-07",
+      "dateModified": "2026-03-07",
+      "author": {
+        "@type": "Person",
+        "name": "Kia Orion"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Writer's Daily Practice",
+        "url": "https://writersdailypractice.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://writersdailypractice.com/horror-writing/how-to-write-horror/"
+      },
+      "articleSection": "Horror Writing",
+      "timeRequired": "PT10M"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://writersdailypractice.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Horror Writing",
+          "item": "https://writersdailypractice.com/horror-writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Write Horror Fiction",
+          "item": "https://writersdailypractice.com/horror-writing/how-to-write-horror/"
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #FFFDF7;
+      color: #2a2a2a;
+    }
+    .font-playfair { font-family: 'Playfair Display', Georgia, serif; }
+    .font-lora { font-family: 'Lora', Georgia, serif; }
+    .font-inter { font-family: 'Inter', system-ui, sans-serif; }
+
+    /* Prose styling */
+    .prose-article p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.125rem;
+      line-height: 1.85;
+      color: #2a2a2a;
+      margin-bottom: 1.6rem;
+    }
+    .prose-article h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #111111;
+      margin-top: 3rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.3;
+    }
+    .prose-article em {
+      font-style: italic;
+    }
+    .prose-article strong {
+      font-weight: 600;
+    }
+
+    /* Nav */
+    .nav-link {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #2a2a2a;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-link:hover { color: #1565C0; }
+
+    /* CTA Box */
+    .cta-box {
+      background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb-link {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.8125rem;
+      color: #6B7280;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .breadcrumb-link:hover { color: #1565C0; }
+
+    /* Related card */
+    .related-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-decoration: none;
+      display: block;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .related-card:hover {
+      box-shadow: 0 4px 16px rgba(21,101,192,0.1);
+      border-color: #1565C0;
+    }
+
+    /* Hub card */
+    .hub-card {
+      background: linear-gradient(135deg, #091B3A 0%, #1565C0 100%);
+      border-radius: 12px;
+      padding: 2rem;
+      text-decoration: none;
+      display: block;
+      transition: opacity 0.2s;
+    }
+    .hub-card:hover { opacity: 0.93; }
+
+    /* ConvertKit form reset */
+    .ck-form input[type="email"],
+    .ck-form input[type="text"] {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      border: none;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1rem;
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      outline: none;
+      margin-bottom: 0.75rem;
+    }
+    .ck-form input[type="email"]::placeholder,
+    .ck-form input[type="text"]::placeholder {
+      color: rgba(255,255,255,0.55);
+    }
+    .ck-form input[type="email"]:focus,
+    .ck-form input[type="text"]:focus {
+      background: rgba(255,255,255,0.18);
+    }
+    .ck-submit-btn {
+      width: 100%;
+      background: #E8B931;
+      color: #111111;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.8rem 1rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .ck-submit-btn:hover { background: #F5D060; }
+
+    /* Divider */
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 3rem 0;
+    }
+
+    @media (max-width: 640px) {
+      .prose-article p { font-size: 1rem; }
+      .prose-article h2 { font-size: 1.35rem; }
+      .cta-box { padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body class="bg-warmWhite">
+
+  <!-- NAV -->
+  <nav class="bg-warmWhite border-b border-gray-200 sticky top-0 z-50" style="box-shadow: 0 1px 6px rgba(0,0,0,0.06);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <!-- Logo -->
+      <a href="/" class="font-playfair text-lg font-semibold text-dark no-underline" style="color:#111111; text-decoration:none;">
+        Kia Orion
+      </a>
+      <!-- Links -->
+      <div class="flex items-center gap-5">
+        <a href="/horror-writing/" class="nav-link hidden sm:inline">Horror Writing</a>
+        <a href="/genres/" class="nav-link hidden sm:inline">All Genres</a>
+        <a href="/#subscribe" class="font-inter text-sm font-semibold px-4 py-2 rounded-md text-white no-underline transition-colors" style="background:#1565C0; text-decoration:none;" onmouseover="this.style.background='#0D47A1'" onmouseout="this.style.background='#1565C0'">
+          Start Free
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-5 pb-2">
+    <nav aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 flex-wrap" style="list-style:none; margin:0; padding:0;">
+        <li>
+          <a href="/" class="breadcrumb-link">Home</a>
+        </li>
+        <li style="color:#9CA3AF; font-size:0.75rem;">/</li>
+        <li>
+          <a href="/horror-writing/" class="breadcrumb-link">Horror Writing</a>
+        </li>
+        <li style="color:#9CA3AF; font-size:0.75rem;">/</li>
+        <li style="font-family:'Inter',system-ui,sans-serif; font-size:0.8125rem; color:#6B7280;">
+          How to Write Horror Fiction
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- ARTICLE HEADER -->
+  <header class="max-w-3xl mx-auto px-4 sm:px-6 pt-8 pb-6" data-aos="fade-up">
+    <!-- Genre label -->
+    <div class="mb-4">
+      <a href="/horror-writing/" class="font-inter text-xs font-semibold uppercase tracking-widest no-underline" style="color:#1565C0; text-decoration:none; letter-spacing:0.1em;">
+        Horror Writing
+      </a>
+    </div>
+    <!-- H1 -->
+    <h1 class="font-playfair text-4xl sm:text-5xl font-bold leading-tight mb-5" style="color:#111111;">
+      How to Write Horror&nbsp;Fiction
+    </h1>
+    <!-- Meta row -->
+    <div class="flex items-center gap-4 flex-wrap" style="font-family:'Inter',system-ui,sans-serif; font-size:0.875rem; color:#6B7280;">
+      <span>By <strong style="color:#2a2a2a; font-weight:500;">Kia Orion</strong></span>
+      <span style="color:#d1d5db;">|</span>
+      <time datetime="2026-03-07">March 7, 2026</time>
+      <span style="color:#d1d5db;">|</span>
+      <span>10 min read</span>
+    </div>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+
+    <!-- PART 1: Opening story + insight + H2 1 -->
+    <article class="prose-article" data-aos="fade-up" data-aos-delay="100">
+
+      <p>Stephen King wrote the opening pages of <em>Carrie</em> in 1973, thought they were terrible, and threw them in the trash. The problem, as he saw it, was that he didn't understand teenage girls well enough to write the story convincingly. He was a man in his mid-twenties trying to inhabit the interior life of a high school outcast, and the gap between his experience and hers felt, to him, like a fatal flaw. His wife Tabitha retrieved the pages from the wastebasket, read them, and told him he was wrong. <em>Carrie</em> was published in 1974. It sold 400,000 paperback copies in its first year. King was 26.</p>
+
+      <p>The thing King had actually written, what Tabitha recognized and he didn't, was specific. The opening shower scene works not because it's scary in some abstract, atmospheric way but because it's the particular humiliation of a particular kind of girl in a particular kind of town. Carrie White isn't a horror protagonist in the conventional sense. She's the girl who doesn't know what's happening to her own body, who has no one to ask, who is surrounded by people who have already decided she's a target. The horror is built from things that already happened to real girls in real locker rooms. You don't need the telekinesis to feel it.</p>
+
+      <p>King later described this as the most important lesson he learned early in his career: you can't scare readers by aiming at fear directly. You scare them by building something so specific and inhabited and real that the destruction of it feels like an actual loss. The supernatural is just the accelerant. The fire was already there.</p>
+
+      <p>The craft problem in horror is building something the reader cares about enough that they dread losing it. Aiming directly at fear is the wrong target.</p>
+
+      <h2>The Fear Has to Be Specific to Be Universal</h2>
+
+      <p>The most common mistake in horror fiction is writing vague dread. Generic scary houses. Unnamed threats. A darkness that "seems to pulse." The emotional distance that comes from abstraction is the enemy of fear, because fear is always personal, always rooted in something concrete enough to be felt in the body.</p>
+
+      <p>Shirley Jackson understood this better than almost anyone. <em>The Haunting of Hill House</em>, published in 1959, remains the best haunted house novel written in English, and the reason is architectural. The house is described in specific terms that are wrong. The angles are slightly off. Rooms are designed to disorient. A door swings shut on its own hinges, not because of a ghost but because the doorframe was built at an angle that isn't quite right. Jackson's opening paragraph tells you everything: "No live organism can continue for long to exist sanely under conditions of absolute reality; even larks and katydids are supposed, by some, to dream." The house is not sane. That's specific. That's a claim you can hold in your mind and turn over.</p>
+
+      <p>Now contrast that with a house that is "dark and ominous" with "a malevolent presence lurking within." That second house has no substance. Jackson's house has geometry you can almost draw on paper, and the wrongness of the geometry is what gets under your skin. You can feel something wrong with the proportions even before anything happens. It's like the difference between someone telling you "the food tasted bad" and someone describing the exact texture of something that was slightly off, the way a piece of fish can be wrong in your mouth before your conscious mind has caught up. The body knows first. Horror on the page should work the same way.</p>
+
+    </article>
+
+    <!-- MID-ARTICLE CTA -->
+    <div class="cta-box my-12" data-aos="fade-up" id="subscribe-mid">
+      <p class="font-playfair text-2xl font-semibold text-white mb-2" style="line-height:1.3;">
+        A daily writing practice, delivered every morning.
+      </p>
+      <p class="font-inter text-sm mb-6" style="color:rgba(255,255,255,0.75); line-height:1.7;">
+        One short writing reflection in your inbox every morning. Quotes from literary masters, an original reflection, and a prompt to get you writing.
+      </p>
+      <form
+        action="https://app.convertkit.com/forms/9155962/subscriptions"
+        method="post"
+        class="ck-form"
+        onsubmit="handleFormSubmit(event, this)"
+      >
+        <input type="hidden" name="fields[source]" value="horror-writing-blog" />
+        <input type="hidden" name="fields[source_page]" value="horror-writing/how-to-write-horror" />
+        <input type="hidden" name="fields[genre]" value="Horror Writing" />
+        <input
+          type="text"
+          name="fields[first_name]"
+          placeholder="First name"
+          aria-label="First name"
+        />
+        <input
+          type="email"
+          name="email_address"
+          placeholder="Your email address"
+          required
+          aria-label="Email address"
+        />
+        <button type="submit" class="ck-submit-btn">
+          Start my daily practice — it's free
+        </button>
+        <p class="font-inter text-xs mt-3" style="color:rgba(255,255,255,0.5); text-align:center;">
+          No spam. Unsubscribe anytime.
+        </p>
+      </form>
+    </div>
+
+    <!-- PART 2: H2 2 + H2 3 + bridge -->
+    <article class="prose-article" data-aos="fade-up">
+
+      <h2>The Monster Is More Frightening Before It Appears</h2>
+
+      <p>King wrote about this at length in <em>Danse Macabre</em>, and the central example has become so well-known it's almost a cliche, but most horror writers still get it wrong. The shark in <em>Jaws</em>, the film, is scariest in the first act, before you see it clearly. The moment you make the monster fully visible and concrete, you've given the reader something to evaluate, and usually to dismiss. A rubber shark. A CGI creature. A described monster that the reader's imagination would have done better.</p>
+
+      <p>The principle applies to prose differently than to film, but the core holds. Henry James never confirms whether the ghosts in <em>The Turn of the Screw</em> are real. The governess's account is the only one we have, and James deliberately left enough room for the reader to question her sanity, her motives, her perception of events. The ambiguity is the horror. You finish the novella and you genuinely don't know what happened, and that not-knowing follows you around for days in a way that a clearly defined ghost never would. Peter Straub and Paul Tremblay, two of the best contemporary horror writers, both build on this principle. Tremblay's <em>A Head Full of Ghosts</em> layers unreliable narration so deep that the ground never stabilizes under the reader.</p>
+
+      <p>The most important choice in any horror scene is what the character notices, not what's actually there. You're writing perception, not reality. And perception has gaps. I'm not sure why so many writers resist this, why the impulse is always to explain and reveal and make the threat concrete, but I suspect it's a kind of anxiety, a worry that the reader won't be scared unless you show them exactly what they should be scared of. The opposite is true.</p>
+
+      <h2>Horror Requires You to Build the Ordinary World Before You Destroy It</h2>
+
+      <p>Edgar Allan Poe understood this in "The Fall of the House of Usher." The narrator spends the first pages establishing his friendship with Roderick Usher, the quality of their past relationship, the ordinariness of arriving at a friend's home because you've been asked to visit. The horror is felt against the backdrop of what used to be normal between two people. Without that established normalcy, the collapse of both Roderick and the house itself would be spectacle rather than tragedy.</p>
+
+      <p>Richard Matheson's <em>I Am Legend</em>, published in 1954, runs on the same principle. Robert Neville's routine is the backbone of the novel: going out in daylight, gathering supplies, reinforcing the house before dark, drinking too much in the evenings because there's no one to talk to. Matheson describes this routine in enough detail that the reader knows exactly what Neville is defending, not just his life but a version of daily existence that has been reduced to its most basic elements. The vampires matter less than the routines they threaten to interrupt.</p>
+
+      <p>King has a useful framework for the different registers of horror. He separates them into three levels: the gross-out, the horror, and the terror. The gross-out is the easiest and cheapest, the blood and viscera. The horror is the moment of confrontation with something impossible. The terror is what you feel before the monster appears, when you're still trying to understand what you're looking at, when the shape hasn't resolved yet and your mind is running through possibilities. Terror is the register that lasts, and it can only exist if the reader has a sense of what the ordinary world looks and feels like, because terror is the ordinary world with something wrong in it that you can't yet name.</p>
+
+      <p>These aren't rules. Horror is the genre where rules matter least. Jackson broke almost every conventional horror structure in <em>The Haunting of Hill House</em>, and it remains unsurpassed. But building something specific and the careful construction of the ordinary world keep showing up in the work of the horror writers who stayed in readers' heads. They're patterns worth paying attention to even when you plan to break them.</p>
+
+    </article>
+
+    <hr class="section-divider" />
+
+    <!-- END CTA -->
+    <div class="cta-box" data-aos="fade-up" id="subscribe-end">
+      <p class="font-playfair text-2xl font-semibold text-white mb-2" style="line-height:1.3;">
+        Write horror that stays with readers.
+      </p>
+      <p class="font-inter text-sm mb-6" style="color:rgba(255,255,255,0.75); line-height:1.7;">
+        For writers who want to write horror that stays with readers. Free daily practice, delivered every morning.
+      </p>
+      <form
+        action="https://app.convertkit.com/forms/9155962/subscriptions"
+        method="post"
+        class="ck-form"
+        onsubmit="handleFormSubmit(event, this)"
+      >
+        <input type="hidden" name="fields[source]" value="horror-writing-blog" />
+        <input type="hidden" name="fields[source_page]" value="horror-writing/how-to-write-horror" />
+        <input type="hidden" name="fields[genre]" value="Horror Writing" />
+        <input
+          type="text"
+          name="fields[first_name]"
+          placeholder="First name"
+          aria-label="First name"
+        />
+        <input
+          type="email"
+          name="email_address"
+          placeholder="Your email address"
+          required
+          aria-label="Email address"
+        />
+        <button type="submit" class="ck-submit-btn">
+          Start my daily practice — it's free
+        </button>
+        <p class="font-inter text-xs mt-3" style="color:rgba(255,255,255,0.5); text-align:center;">
+          No spam. Unsubscribe anytime.
+        </p>
+      </form>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- BACK TO HUB CARD -->
+    <div class="mb-10" data-aos="fade-up">
+      <a href="/horror-writing/" class="hub-card">
+        <p class="font-inter text-xs font-semibold uppercase tracking-widest mb-2" style="color:rgba(255,255,255,0.6); letter-spacing:0.1em;">
+          Horror Writing
+        </p>
+        <p class="font-playfair text-xl font-semibold text-white mb-1" style="line-height:1.35;">
+          Explore all Horror Writing guides &rarr;
+        </p>
+        <p class="font-inter text-sm" style="color:rgba(255,255,255,0.65);">
+          Craft guides, writing prompts, and deep dives into what makes horror work.
+        </p>
+      </a>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <div data-aos="fade-up">
+      <h2 class="font-playfair text-xl font-semibold mb-5" style="color:#111111;">
+        Keep reading
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="/horror-writing/horror-atmosphere/" class="related-card">
+          <p class="font-inter text-xs font-semibold uppercase tracking-widest mb-2" style="color:#1565C0; letter-spacing:0.09em;">
+            Horror Writing
+          </p>
+          <p class="font-playfair text-base font-semibold" style="color:#111111; line-height:1.45;">
+            How to write horror atmosphere &rarr;
+          </p>
+        </a>
+        <a href="/horror-writing/horror-tropes/" class="related-card">
+          <p class="font-inter text-xs font-semibold uppercase tracking-widest mb-2" style="color:#1565C0; letter-spacing:0.09em;">
+            Horror Writing
+          </p>
+          <p class="font-playfair text-base font-semibold" style="color:#111111; line-height:1.45;">
+            Things I've noticed about horror tropes &rarr;
+          </p>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200 bg-warmWhite">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <p class="font-playfair text-lg font-semibold" style="color:#111111;">
+            The Writer's Daily Practice
+          </p>
+          <p class="font-inter text-sm mt-1" style="color:#6B7280;">
+            A daily writing habit, built one morning at a time.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-5">
+          <a href="/horror-writing/" class="font-inter text-sm no-underline" style="color:#6B7280; text-decoration:none;" onmouseover="this.style.color='#1565C0'" onmouseout="this.style.color='#6B7280'">Horror Writing</a>
+          <a href="/genres/" class="font-inter text-sm no-underline" style="color:#6B7280; text-decoration:none;" onmouseover="this.style.color='#1565C0'" onmouseout="this.style.color='#6B7280'">All Genres</a>
+          <a href="/about/" class="font-inter text-sm no-underline" style="color:#6B7280; text-decoration:none;" onmouseover="this.style.color='#1565C0'" onmouseout="this.style.color='#6B7280'">About</a>
+        </div>
+      </div>
+      <p class="font-inter text-xs mt-8" style="color:#9CA3AF;">
+        &copy; 2026 The Writer's Daily Practice. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 600,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60,
+    });
+
+    function handleFormSubmit(event, form) {
+      event.preventDefault();
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' },
+      })
+      .then(function(res) {
+        if (res.ok || res.status === 200) {
+          form.innerHTML = '<p class="font-inter text-sm text-center py-4" style="color:rgba(255,255,255,0.9);">You\'re in. Check your inbox to confirm.</p>';
+        } else {
+          form.innerHTML = '<p class="font-inter text-sm text-center py-4" style="color:rgba(255,255,255,0.9);">Something went wrong. Please try again.</p>';
+        }
+      })
+      .catch(function() {
+        form.innerHTML = '<p class="font-inter text-sm text-center py-4" style="color:rgba(255,255,255,0.9);">Something went wrong. Please try again.</p>';
+      });
+    }
+  </script>
+
+</body>
+</html>

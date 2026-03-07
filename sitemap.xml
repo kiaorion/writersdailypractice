@@ -645,4 +645,33 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Horror Writing cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/horror-writing/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/horror-writing/how-to-write-horror/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/horror-writing/horror-atmosphere/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/horror-writing/horror-tropes/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
