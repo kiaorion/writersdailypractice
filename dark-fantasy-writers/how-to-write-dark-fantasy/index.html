@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Write Dark Fantasy | The Writer's Daily Practice</title>
+  <meta name="description" content="Dark fantasy writing tips from Abercrombie, Winter, and Hayes. How to write darkness that carries moral weight and characters who earn their bleakness.">
+  <link rel="canonical" href="https://writersdailypractice.com/dark-fantasy-writers/how-to-write-dark-fantasy/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Write Dark Fantasy (When the Darkness Has to Mean Something)">
+  <meta property="og:description" content="Dark fantasy writing tips from Abercrombie, Winter, and Hayes. How to write darkness that carries moral weight.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/dark-fantasy-writers/how-to-write-dark-fantasy/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Write Dark Fantasy (When the Darkness Has to Mean Something)">
+  <meta name="twitter:description" content="Dark fantasy writing tips from Abercrombie, Winter, and Hayes. How to write darkness that carries moral weight.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Write Dark Fantasy (When the Darkness Has to Mean Something)",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "Dark fantasy writing tips from Abercrombie, Winter, and Hayes. How to write darkness that carries moral weight and characters who earn their bleakness.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/dark-fantasy-writers/how-to-write-dark-fantasy/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dark Fantasy Writers",
+        "item": "https://writersdailypractice.com/dark-fantasy-writers/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Write Dark Fantasy (When the Darkness Has to Mean Something)"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/dark-fantasy-writers/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Dark Fantasy Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/dark-fantasy-writers/" class="hover:text-primary transition-colors">Dark Fantasy Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Dark Fantasy</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        How to Write Dark Fantasy (When the Darkness Has to Mean&nbsp;Something)
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>10 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+
+      <p style="font-size:1.15em">Joe Abercrombie was cutting film trailers for a living when he started writing <em>The Blade Itself</em>. He was a freelance editor, working in a London flat, spending his evenings reading the same epic fantasy he'd loved since childhood. And something had started to bother him. The heroes were too clean. The villains too legible. Every quest ended with the right person holding the right sword for the right reasons, and Abercrombie, who spent his days assembling stories out of raw footage, knew that wasn't how stories actually&nbsp;worked.</p>
+
+      <p>So he wrote Logen Ninefingers, a barbarian who keeps promising he's changed and keeps proving he hasn't. He wrote Glokta, an inquisitor who tortures people for information and also happens to be the funniest, most self-aware character in the book. He wrote Bayaz, a wizard who looks like Gandalf and operates like a hedge fund manager. None of them deserved to win. All of them thought they&nbsp;did.</p>
+
+      <p>Abercrombie didn't set out to write "dark fantasy" as a category. He set out to write fantasy where the moral weight of the violence actually landed, where a sword through someone's chest ruined the person holding the sword too. The darkness wasn't the point. The cost of the darkness was&nbsp;the point.</p>
+
+      <p>That distinction is the thing most dark fantasy writing gets wrong early on. Bleak settings, grim characters, graphic violence. All of it can sit on the page and do nothing. Darkness in fiction only works when it puts pressure on the characters' ability to remain who they thought they were. When it forces a choice that can't be taken back. When it reveals something the reader wasn't ready to see about what people do under&nbsp;pressure.</p>
+
+      <h2>Violence has to cost something the reader can&nbsp;feel</h2>
+
+      <p>There's a fight in <em>The Blade Itself</em> where Logen kills someone in a way that's fast and ugly and then he sits there afterward, breathing hard, staring at what he's done. The scene doesn't linger on the gore. It lingers on Logen's face. On the gap between who he says he is and what his hands just&nbsp;did.</p>
+
+      <p>That's the difference between violence that serves the story and violence that's just there because the genre allows it. When you write a fight scene in dark fantasy, the question worth asking afterward isn't "was that brutal enough." It's "what does this character know about themselves now that they didn't know before the fight started." If the answer is nothing, the scene is&nbsp;decoration.</p>
+
+      <p>I'm not sure why so many early dark fantasy drafts default to escalating the body count when things feel flat. Maybe because it's the most visible lever to pull. More death, more darkness, more stakes. But readers don't actually feel stakes through volume. They feel stakes through specificity. One character losing something they can't get back will always land harder than a hundred nameless&nbsp;casualties.</p>
+
+      <h2>An antihero needs a code, even a&nbsp;broken one</h2>
+
+      <p>Evan Winter's <em>The Rage of Dragons</em> gives you Tau Tafari, a young man whose entire personality becomes revenge after his father is killed. The book is relentless. Tau trains until he's vomiting. He fights anyone who'll stand across from him. He doesn't grow kinder or wiser as the story progresses. He gets sharper and more&nbsp;dangerous.</p>
+
+      <p>But he isn't random. Tau has a code, even if it's a code most people would call self-destructive. He won't stop until the specific people responsible for his father's death are dead. That specificity is what makes him readable instead of exhausting. He isn't cruel for its own sake, he isn't chaos, he's a person operating from a grief so total that it's become the only logic he has left, and the reader can follow that logic even while disagreeing with every choice it produces because they can see where it comes from and they can feel how it narrows his life down to a single burning&nbsp;point.</p>
+
+      <p>When your antihero is just "dark" without a governing principle, readers lose the thread. They don't know what to root for. They don't know what a win looks like for this person, which means they don't know what a loss looks like either. An antihero's code doesn't have to be good. It has to be&nbsp;legible.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Writing dark fantasy means sitting with hard questions before you open the draft. We send one reflection every morning to help you&nbsp;do that.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'dark-fantasy-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="dark-fantasy-writers/how-to-write-dark-fantasy">
+          <input type="hidden" name="fields[genre]" value="Dark Fantasy">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <h2>Darkness works best as a mirror, not a&nbsp;backdrop</h2>
+
+      <p>Rob Hayes wrote the <em>War Eternal</em> trilogy, self-published, and built a following on a premise that sounds almost too bleak to sustain: Eskara Helsene is thrown into the Pit, an underground prison with no daylight and no obvious way out. She can't see. She's surrounded by people who've been broken by years in the&nbsp;dark.</p>
+
+      <p>But Hayes does something smart with that setting. The Pit doesn't just threaten Eskara physically. It strips away every social structure she used to define herself. Her rank, her reputation, her sense of who owed her what. In the dark, none of that matters. She has to build an identity from nothing, and the story is really about what she constructs from the&nbsp;rubble.</p>
+
+      <p>If your dark fantasy world is grim but your characters move through it unchanged, you've built a backdrop, not a story. The setting should be doing something to the people inside it. Corroding them, forcing them to trade pieces of who they were for the chance to keep going.</p>
+
+      <h2>Hope is what makes bleakness&nbsp;bearable</h2>
+
+      <p>This might sound counterintuitive. But the darkest fantasy that actually works, the books people press into friends' hands and stay up too late reading, almost always has a thread of something worth protecting running through&nbsp;it.</p>
+
+      <p>In Abercrombie's trilogy, it's the relationship between Logen and the small group of people who travel with him. They don't fully trust each other. Some of them shouldn't. But there are these quiet moments between the violence where someone cooks a meal or tells a bad joke, and you realize the book has made you care about these people surviving even though you know the story probably won't let all of them. That fragile, uncertain care is what gives the dark moments their weight. Without it, bleakness just becomes monotone.</p>
+
+      <p>You don't need a happy ending. You need something at risk that the reader doesn't want to lose.</p>
+
+      <hr>
+
+      <p>Dark fantasy writing, when it's working, does something that most genres avoid. It looks at what people are capable of and doesn't flinch. But it also doesn't mistake flinching for honesty. The hard part is holding both at once: the willingness to go somewhere difficult and the discipline to make sure the difficulty&nbsp;matters.</p>
+
+      <p>I think about this a lot when it comes to the daily practice of writing. The pages that feel most alive are usually the ones where I let myself write the thing I'd been avoiding. The scene that made me uncomfortable. The line of dialogue I wasn't sure I was allowed to put down. Dark fantasy, at its best, is just that instinct given a world to live&nbsp;in.</p>
+
+      <p>If you're working on something in this genre, or thinking about starting, we send a short reflection to writers every morning. Something to sit with before you open the&nbsp;draft.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          One morning reflection for writers. No filler, no fluff. Just a question worth sitting with before you&nbsp;write.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'dark-fantasy-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="dark-fantasy-writers/how-to-write-dark-fantasy">
+          <input type="hidden" name="fields[genre]" value="Dark Fantasy">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/dark-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Dark Fantasy Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/dark-fantasy-writers/dark-fantasy-techniques/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Ideas</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Dark Fantasy Techniques &rarr;</p>
+        </a>
+        <a href="/dark-fantasy-writers/dark-fantasy-tropes/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Observations</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Things I've Noticed About Dark Fantasy &rarr;</p>
+        </a>
+        <a href="/epic-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Epic Fantasy</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Build worlds that earn their scope &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'dark-fantasy-writers-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="dark-fantasy-writers/how-to-write-dark-fantasy">
+        <input type="hidden" name="fields[genre]" value="Dark Fantasy">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>

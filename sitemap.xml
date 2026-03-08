@@ -1417,4 +1417,30 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Dark Fantasy cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/dark-fantasy-writers/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/dark-fantasy-writers/how-to-write-dark-fantasy/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/dark-fantasy-writers/dark-fantasy-techniques/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/dark-fantasy-writers/dark-fantasy-tropes/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
