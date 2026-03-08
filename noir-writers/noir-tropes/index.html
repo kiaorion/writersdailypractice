@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things I've Noticed About Noir Fiction | The Writer's Daily Practice</title>
+  <meta name="description" content="Observations on noir fiction tropes from Hammett's behavioral prose to Cosby's rural noir. What the genre's recurring patterns reveal about craft and honesty.">
+  <link rel="canonical" href="https://writersdailypractice.com/noir-writers/noir-tropes/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Things I've Noticed About Noir Fiction">
+  <meta property="og:description" content="Observations on noir fiction tropes from Hammett's behavioral prose to Cosby's rural noir. What the genre's recurring patterns reveal about craft and honesty.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/noir-writers/noir-tropes/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Things I've Noticed About Noir Fiction">
+  <meta name="twitter:description" content="Observations on noir fiction tropes from Hammett's behavioral prose to Cosby's rural noir. What the genre's recurring patterns reveal about craft and honesty.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Things I've Noticed About Noir Fiction",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "description": "Observations on noir fiction tropes from Hammett's behavioral prose to Cosby's rural noir. What the genre's recurring patterns reveal about craft and honesty.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/noir-writers/noir-tropes/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Noir Fiction Writers",
+        "item": "https://writersdailypractice.com/noir-writers/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Things I've Noticed About Noir Fiction"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/noir-writers/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Noir Fiction Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/noir-writers/" class="hover:text-primary transition-colors">Noir Fiction Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Noir Fiction</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        Things I've Noticed About Noir&nbsp;Fiction
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-08">March 8, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>5 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+
+      <p style="font-size:1.15em">A few observations about noir fiction tropes after spending too long rereading the wrong people's books:</p>
+
+      <hr>
+
+      <p>Dashiell Hammett was a Pinkerton detective before he became a writer. You can feel it in every sentence he wrote. His prose doesn't describe what characters think or feel. It describes what they do with their hands, where their eyes go, how long they pause before answering. The behavioral surface is the whole story. What's underneath stays underneath, and the reader has to fill it in.</p>
+
+      <hr>
+
+      <p>The difference between hardboiled and noir is simple and it matters more than most craft books acknowledge. In a hardboiled story the detective gets beat up but survives. He walks away bruised and wiser. In noir the protagonist doesn't make it out. Hardboiled is about endurance. Noir is about inevitability.</p>
+
+      <hr>
+
+      <p>S.A. Cosby proved that noir doesn't need cities. <em>Blacktop Wasteland</em> is set in rural Virginia, and the desperation runs hotter there than in any rain-slicked alley in Los Angeles. When your character can't afford to fix his transmission and a crime job pays what six months of honest work won't, the geography becomes irrelevant. The economics are the setting.</p>
+
+      <hr>
+
+      <p>Short sentences are noir's native rhythm. The paragraph breathes in clipped bursts. When a noir sentence runs long, it's usually because the character's composure is unraveling and the syntax is starting to unravel with it.</p>
+
+      <hr>
+
+      <p>Hammett once said, "I stopped writing because I was repeating myself. It is the beginning of the end when you discover you have style." I think about that constantly. The implication is that style is a form of calcification, that once you can hear yourself you've stopped listening to the story. Most writers spend their careers trying to find a voice. Hammett quit the moment he found his.</p>
+
+      <hr>
+
+      <p>The femme fatale is the most misunderstood trope in noir. Brigid O'Shaughnessy in <em>The Maltese Falcon</em> isn't dangerous because she's seductive. She's dangerous because she's smarter than everyone in the room and uses their assumptions about her as cover. The trope works when the woman's intelligence is the threat.</p>
+
+      <hr>
+
+      <p>Noir is the most honest genre in fiction because it starts where other genres pretend you'll never end up. The system is broken. The institutions are corrupt. The people in charge are worse than the people they're chasing. Every other genre lets you believe, at least for a while, that the structure holds. Noir opens with the structure already collapsed.</p>
+
+      <hr>
+
+      <p>In Cosby's <em>Razorblade Tears</em>, two fathers avenge their gay sons' murders. One is Black, one is white. Neither was comfortable with his son's sexuality while they were alive. The noir violence gives them a channel for grief they can't otherwise express, and Cosby never lets the reader forget that the violence is also a way of avoiding the harder conversation they should have had years ago.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          This is the kind of thing we think about every morning. One observation on what the genre asks of you, before you open the&nbsp;draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'noir-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="noir-writers/noir-tropes">
+          <input type="hidden" name="fields[genre]" value="Noir Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <p>I'm genuinely not sure whether noir is pessimistic or just realistic. The pessimism reading says the genre believes people are fundamentally self-interested and moral compromise is inevitable. The realism reading says noir simply refuses to look away from how systems actually function when money and power are involved. I keep going back and forth, and I think the best noir writers would say the question itself is the point.</p>
+
+      <hr>
+
+      <p>Attica Locke sets her novels in East Texas, where the geography shapes the corruption the way a riverbed shapes water. In <em>Bluebird, Bluebird</em>, the small town isn't a backdrop. It's a machine with its own logic, and every character is a moving part whether they want to be or not.</p>
+
+      <hr>
+
+      <p>The moral compromise arc is noir's signature contribution to fiction. No other genre does this as well. Your protagonist starts with a line they won't cross. By the end they've crossed it, and the reader has been standing right next to them the whole time, which means the reader crossed it too.</p>
+
+      <hr>
+
+      <p>Hammett's <em>Red Harvest</em> is built on a single structural idea: the Continental Op cleans up a corrupt mining town by turning the criminal factions against each other, and in doing so he becomes as morally ruined as the people he's dismantling. The method and the cost are the same thing. That's the oldest trick noir ever learned.</p>
+
+      <hr>
+
+      <p>The weather in noir is never just weather, rain and fog and heat are always doing emotional work but the writers who lean on it too hard end up writing atmosphere instead of story. The best noir uses setting the way Hammett uses behavior: as a surface that implies everything it refuses to say directly.</p>
+
+      <hr>
+
+      <p>Cosby's characters don't choose crime. They get funneled toward it by a system that offers no alternatives. That's a different engine than classic noir, where the protagonist's flaw drives the plot. In Cosby's work the flaw is structural. It belongs to the economy, the county, the history. The character just lives inside it.</p>
+
+      <hr>
+
+      <p>There's a reason noir keeps getting rediscovered by every new generation of writers. The tropes refresh themselves because the conditions that produced them never went away. The world keeps generating the same broken systems and rigged outcomes, and noir is the genre that already has the vocabulary for it.</p>
+
+      <hr>
+
+      <p>If you write noir, the tropes aren't formulas. They're lenses. Each one refracts the same dark light at a slightly different angle. And the only way to know which ones sharpen your particular story is to write through them, one draft at a time.</p>
+
+      <p>If you write noir fiction, we send a free daily reflection every morning. One observation to sit with before you open the&nbsp;draft.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          A daily writing reflection, built for noir fiction writers. Quotes from literary masters, an original observation, and a prompt to get you&nbsp;writing.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'noir-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="noir-writers/noir-tropes">
+          <input type="hidden" name="fields[genre]" value="Noir Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/noir-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Noir Fiction Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/noir-writers/how-to-write-noir-fiction/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Noir Fiction</p>
+          <p class="font-serif font-bold text-dark text-[15px]">How to Write Noir Fiction &rarr;</p>
+        </a>
+        <a href="/noir-writers/noir-techniques/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Noir Fiction</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Noir Writing Techniques &rarr;</p>
+        </a>
+        <a href="/dark-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Dark Fantasy</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Dark Fantasy Writing Hub &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'noir-writers-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="noir-writers/noir-tropes">
+        <input type="hidden" name="fields[genre]" value="Noir Fiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
