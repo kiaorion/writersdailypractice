@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things I've Noticed About Flash Fiction | The Writer's Daily Practice</title>
+  <meta name="description" content="Observations on flash fiction from reading too much of it. What the best flash fiction examples teach about compression, silence, and the sentence.">
+  <link rel="canonical" href="https://writersdailypractice.com/flash-fiction/flash-fiction-examples/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Things I've Noticed About Flash Fiction">
+  <meta property="og:description" content="Observations on flash fiction from reading too much of it. What the best flash fiction examples teach about compression, silence, and the sentence.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/literary-elegant.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/flash-fiction/flash-fiction-examples/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Things I've Noticed About Flash Fiction">
+  <meta name="twitter:description" content="Observations on flash fiction from reading too much of it. What the best flash fiction examples teach about compression, silence, and the sentence.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/literary-elegant.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Things I've Noticed About Flash Fiction",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "Observations on flash fiction from reading too much of it. What the best flash fiction examples teach about compression, silence, and the sentence.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/flash-fiction/flash-fiction-examples/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Flash Fiction Writers",
+        "item": "https://writersdailypractice.com/flash-fiction/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Things I've Noticed About Flash Fiction"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/flash-fiction/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Flash Fiction Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/flash-fiction/" class="hover:text-primary transition-colors">Flash Fiction Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Flash Fiction</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        Things I've Noticed About Flash&nbsp;Fiction
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>5 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+
+      <p><span style="float:left; font-family:'Playfair Display',Georgia,serif; font-size:3.2em; line-height:0.8; padding:0.05em 0.12em 0 0; font-weight:700; color:#111;">S</span>ome things I keep coming back to about flash fiction, after reading more of it than is probably healthy:</p>
+
+      <hr>
+
+      <p>The best flash fiction examples I've read don't feel short. They feel complete. There's a difference, and it took me a long time to understand what that difference actually was. A short piece can feel like a fragment. A complete one just stops at the right&nbsp;moment.</p>
+
+      <hr>
+
+      <p>Augusto Monterroso wrote what's often called the shortest story in Spanish literature: "Cuando despert&oacute;, el dinosaurio todav&iacute;a estaba all&iacute;." When he awoke, the dinosaur was still there. Seven words. Entire libraries of interpretation have been built around those seven words, and none of them agree with each other, which might be the whole&nbsp;point.</p>
+
+      <hr>
+
+      <p>Readers of micro fiction are a specific breed. They like re-reading. They like turning a sentence over in their mind for hours. Most people who say they love reading actually love consuming story. Flash fiction readers love the sentence&nbsp;itself.</p>
+
+      <hr>
+
+      <p>A lot of writing advice tells you to cut the first paragraph. In flash fiction, you often cut the first paragraph, the last paragraph, and everything in between that isn't load-bearing.</p>
+
+      <hr>
+
+      <p>Carmen Maria Machado's work in <em>Her Body and Other Parties</em> taught me something I hadn't expected: flash-length prose can carry horror better than a 300-page novel, because there's no room for the reader to catch their breath, no subplot to hide behind, just the dread and nowhere to look&nbsp;away.</p>
+
+      <hr>
+
+      <p>I'm still not sure whether flash fiction is its own genre or a compression technique you can apply to any genre. I've seen people get genuinely angry about this question at literary panels. I don't think there's an answer yet, and maybe that's fine.</p>
+
+      <hr>
+
+      <p>The worst flash fiction reads like a longer story with the middle ripped out.</p>
+
+      <hr>
+
+      <p>Dino Buzzati, the Italian writer, could compress an entire existential crisis into a single page. His parables feel like bad dreams you can't quite shake. He was also a painter and a journalist, and I think you can feel both of those other lives in the way he built his sentences, every word doing double or triple&nbsp;duty.</p>
+
+      <hr>
+
+      <p>If your flash piece needs a twist ending, it probably hasn't earned its length. The stories that stay with me don't twist. They just <em>land</em>.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          We send a short daily reflection to writers every morning. Something to sit with before you open the&nbsp;draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'flash-fiction-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="flash-fiction/flash-fiction-examples">
+          <input type="hidden" name="fields[genre]" value="Flash Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <p>There's a reason flash fiction has exploded online while the traditional short story has struggled. Flash fits the screen. It fits the attention. But I don't think that cheapens it. Sonnets fit a page, and nobody calls those&nbsp;lesser.</p>
+
+      <hr>
+
+      <p>Kali Fajardo-Anstine's <em>Sabrina &amp; Corina</em> contains stories that are technically longer than flash, but they move with the same economy. She'll pack three generations of family history into a paragraph and make it feel like a single held breath. Reading her taught me that compression can be inherited, that some writers carry it in their bones because the communities they come from had to say everything fast, before someone&nbsp;stopped listening.</p>
+
+      <hr>
+
+      <p>Every time I read a flash fiction collection, I notice the same pattern in myself: I read the first three pieces carefully, then I start rushing, then I force myself to slow down again. The form demands a different kind of attention, and my brain keeps forgetting&nbsp;that.</p>
+
+      <hr>
+
+      <p>Jorge Luis Borges once said, "Writing is nothing more than a guided dream." I think about that when I read the best micro fiction, because the pieces that work feel exactly like that, you're inside them before you realize you've entered, and they're over before you know to wake&nbsp;up.</p>
+
+      <hr>
+
+      <p>Titles do at least 30% of the work in flash. Maybe more.</p>
+
+      <hr>
+
+      <p>Most people think writing short means starting with a long piece and cutting it down. Some of the best flash fiction writers I know start short and build <em>inward</em>, adding density rather than&nbsp;length.</p>
+
+      <hr>
+
+      <p>A good flash fiction example teaches you something about patience that a novel never will. You learn to sit inside a single moment and trust that it's enough. You learn that a scene doesn't need to go anywhere if it already <em>is</em>&nbsp;somewhere.</p>
+
+      <hr>
+
+      <p>That's the thing I keep circling back to. The daily practice of writing, at its core, asks the same thing flash fiction asks: can you show up, stay with one idea, and give it your full attention before the morning's&nbsp;over?</p>
+
+      <p>That's what we send writers every morning. One reflection to sit with before you open the&nbsp;draft.</p>
+
+      <p><a href="/flash-fiction/">Join the daily practice for flash fiction writers &rarr;</a></p>
+
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          One quiet prompt, every morning. For writers who want to build the habit before the&nbsp;ambition.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'flash-fiction-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="flash-fiction/flash-fiction-examples">
+          <input type="hidden" name="fields[genre]" value="Flash Fiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/flash-fiction/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Flash Fiction Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/flash-fiction/how-to-write-flash-fiction/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Flash Fiction</p>
+          <p class="font-serif font-bold text-dark text-[15px]">How to write flash fiction &rarr;</p>
+        </a>
+        <a href="/flash-fiction/flash-fiction-techniques/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Flash Fiction</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Flash fiction techniques &rarr;</p>
+        </a>
+        <a href="/short-story-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Short Story Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">When you need more room &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'flash-fiction-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="flash-fiction/flash-fiction-examples">
+        <input type="hidden" name="fields[genre]" value="Flash Fiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>

@@ -1183,4 +1183,30 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Flash Fiction cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/flash-fiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/flash-fiction/how-to-write-flash-fiction/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/flash-fiction/flash-fiction-techniques/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/flash-fiction/flash-fiction-examples/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
