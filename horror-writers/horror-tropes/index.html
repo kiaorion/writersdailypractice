@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things I've Noticed About Horror | The Writer's Daily Practice</title>
+  <meta name="description" content="Observations on horror tropes and horror writing, from haunted houses to ambiguity to the fears that won't stay on the page. Tremblay, Due, and King.">
+  <link rel="canonical" href="https://writersdailypractice.com/horror-writers/horror-tropes/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Things I've Noticed About Horror">
+  <meta property="og:description" content="Observations on horror tropes and horror writing, from haunted houses to ambiguity to the fears that won't stay on the page. Tremblay, Due, and King.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/horror-writers/horror-tropes/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Things I've Noticed About Horror">
+  <meta name="twitter:description" content="Observations on horror tropes and horror writing, from haunted houses to ambiguity to the fears that won't stay on the page. Tremblay, Due, and King.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/dark-moody.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Things I've Noticed About Horror",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "Observations on horror tropes and horror writing, from haunted houses to ambiguity to the fears that won't stay on the page. Tremblay, Due, and King.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/horror-writers/horror-tropes/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Horror Writers",
+        "item": "https://writersdailypractice.com/horror-writers/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Things I've Noticed About Horror"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/horror-writers/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Horror Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/horror-writers/" class="hover:text-primary transition-colors">Horror Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Horror</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        Things I've Noticed About&nbsp;Horror
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>9 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+
+      <p style="font-size:1.15em">A few observations about horror after reading too much of it:</p>
+
+      <hr>
+
+      <p>The best horror tropes don't announce themselves. A haunted house is a trope. A possession story is a trope. The "we shouldn't have moved here" setup is a trope. But when a writer nails the emotional logic underneath, the trope becomes invisible. You stop noticing the scaffolding and start checking the locks on your doors.</p>
+
+      <hr>
+
+      <p>Paul Tremblay's <em>A Head Full of Ghosts</em> is built on a question it refuses to answer: is the teenage girl actually possessed, or is she severely ill while her family falls apart around a reality TV crew? The whole novel runs on that ambiguity. Tremblay teaches math during the day and coached Little League for years, which I think about more than I should. There's something about a person who spends his afternoons keeping score at a kids' baseball game and his mornings writing fiction designed to make you distrust your own perception.</p>
+
+      <hr>
+
+      <p>Horror tropes wear out fastest when the writer uses them as shortcuts. "The lights flickered" is a trope. So is "she felt a chill." So is the thing in the mirror that's there for one frame and then gone. These aren't bad on their own. They're bad when the writer drops them in and moves on, expecting the trope to do the scaring. The trope is just a container. The fear has to come from somewhere specific.</p>
+
+      <hr>
+
+      <p>Tananarive Due once said, "Horror is one of the very best genres for social commentary because it literalizes our worst fears." Her fiction proves this repeatedly. <em>The Good House</em> takes a family's generational trauma and gives it a physical address, a house in a small Florida town where something terrible happened decades ago and never really stopped happening. Due's horror doesn't invent its darkness. It finds the darkness that's already there in the historical record and gives it teeth.</p>
+
+      <hr>
+
+      <p>The "don't go in there" problem is real, and most horror writers solve it wrong. Characters who walk into obvious danger for no reason break the spell. Characters who walk into danger because they have a reason that makes sense to them, because the kid is still inside, because they don't believe the threat is real, because leaving means admitting something they can't face, those characters pull you in with them.</p>
+
+      <hr>
+
+      <p>I've started to think that horror and tragedy are closer than either genre would like to admit. Both depend on a sense of inevitability. Both ask the reader to watch something go wrong that can't be stopped. The difference might just be speed. Tragedy takes its time. Horror tends to sprint.</p>
+
+      <hr>
+
+      <p>The scariest moment in most horror novels isn't the reveal. It's the paragraph right before the reveal, when the character knows something is wrong but hasn't turned around yet. That gap between suspicion and confirmation is where dread actually lives. Once you see the monster, you can start problem-solving. Before you see it, you can only wait.</p>
+
+      <hr>
+
+      <p>Ambiguity is harder to write than certainty. Tremblay's <em>The Cabin at the End of the World</em> forces a family to decide whether four strangers at their door are delusional or telling the truth about the apocalypse. The novel ends without confirming either reading. That takes more craft discipline than a clean resolution, because the writer has to build a story that works in both directions simultaneously.</p>
+
+      <hr>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          We send one honest thought about writing every morning. Something to sit with before you open the&nbsp;draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'horror-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="horror-writers/horror-tropes">
+          <input type="hidden" name="fields[genre]" value="Horror">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <p>Stephen King's famous claim is that he's not writing about monsters, he's writing about how ordinary people react when their lives fall apart. I think there's a simpler version of this. The horror tropes that endure are the ones that start with a recognizable life and then break one thing in it. One thing. The couple who just moved in. The mother who hears a sound. The kid who sees something the adults can't. You don't need to break the world. You just need to crack the foundation of one person's safety and let the reader watch the cracks spread.</p>
+
+      <hr>
+
+      <p>I'm not sure whether body horror and psychological horror are actually different categories or just different speeds of the same category. Both are about the loss of control over something you assumed was yours. In one case it's your mind. In the other it's your flesh. The fear underneath both is identical.</p>
+
+      <hr>
+
+      <p>Due's <em>My Soul to Keep</em> has one of the more interesting horror premises I've come across: a woman discovers that her husband is an immortal being who has been killing people for centuries to protect his secret. The horror isn't the violence itself. It's the fact that she's been sleeping next to this person, raising children with him, building a life on top of something she didn't know was there. Domestic horror works because the threat has already been inside the house for years before the story starts.</p>
+
+      <hr>
+
+      <p>Children in horror function differently than adults because children don't have the luxury of denial. An adult character can explain away the strange noise, rationalize the shadow in the hallway, decide they imagined it. A child just sees the thing and says what it is. That's why horror writers keep putting kids at the center. The child is the character who can't lie to themselves yet.</p>
+
+      <hr>
+
+      <p>Shirley Jackson understood something that most horror writers still haven't caught up to: the scariest sentence in a novel can be one that describes something completely ordinary in a tone that suggests it isn't. "Whatever walked there, walked alone." There's nothing frightening about that sentence on its surface. The horror is entirely in the certainty of the delivery.</p>
+
+      <hr>
+
+      <p>Horror tropes recycle because the fears underneath them don't change, and I think this is something young horror writers resist for too long, the idea that a trope can be reused and still feel fresh if the writer's relationship to it is honest and the specifics are their own and the emotional core of the thing hasn't been borrowed from someone else's novel but earned through whatever keeps the writer up at night.</p>
+
+      <hr>
+
+      <p>The jump scare doesn't work in prose. This seems obvious but writers keep trying. In film, a jump scare exploits timing. In prose, the reader controls the pace. They can see the short paragraph coming at the bottom of the page. They know something is about to happen because they can feel the white space. The prose equivalent of a jump scare is the matter-of-fact sentence dropped into the middle of a calm paragraph with no warning. "The chair was empty. The window was open. Someone had set the table for three."</p>
+
+      <hr>
+
+      <p>If you're writing horror, or circling it, or reading it and wondering if you could, the daily practice is where the genre starts to belong to you. You sit down, you write what scares you, you notice which horror tropes pull at something real in your chest and which ones feel borrowed. That's the work. Not finding the right monster. Finding the fear that's already&nbsp;yours.</p>
+
+      <p><a href="/horror-writers/">Browse the full horror writing&nbsp;collection.</a></p>
+
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          Every morning, one reflection on writing. Something quiet to carry into your&nbsp;work.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'horror-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="horror-writers/horror-tropes">
+          <input type="hidden" name="fields[genre]" value="Horror">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/horror-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Horror Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/horror-writers/how-to-write-horror/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">How to Write Horror &rarr;</p>
+        </a>
+        <a href="/horror-writers/horror-techniques/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Ideas</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Horror Techniques &rarr;</p>
+        </a>
+        <a href="/dark-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Dark Fantasy</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Write the story that doesn't flinch &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'horror-writers-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="horror-writers/horror-tropes">
+        <input type="hidden" name="fields[genre]" value="Horror">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
