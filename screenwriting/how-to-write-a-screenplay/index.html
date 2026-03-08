@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Write a Screenplay | The Writer's Daily Practice</title>
+  <meta name="description" content="Aaron Sorkin wrote his first script on cocktail napkins while bartending. Here's what screenwriting actually looks like when you're starting from zero.">
+  <link rel="canonical" href="https://writersdailypractice.com/screenwriting/how-to-write-a-screenplay/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Write a Screenplay (When You've Never Written One Before)">
+  <meta property="og:description" content="Sorkin didn't know screenplay format. Diablo Cody had zero Hollywood connections. What they had was a story they couldn't stop telling.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/screenwriting/how-to-write-a-screenplay/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Write a Screenplay (When You've Never Written One Before)">
+  <meta name="twitter:description" content="Sorkin didn't know screenplay format. Diablo Cody had zero Hollywood connections. What they had was a story they couldn't stop telling.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Write a Screenplay (When You've Never Written One Before)",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "Aaron Sorkin wrote his first script on cocktail napkins while bartending. Here's what screenwriting actually looks like when you're starting from zero.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/screenwriting/how-to-write-a-screenplay/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Screenwriting Writers",
+        "item": "https://writersdailypractice.com/screenwriting/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Write a Screenplay (When You've Never Written One Before)"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3.5em;
+      float: left;
+      line-height: 0.8;
+      margin-right: 0.08em;
+      margin-top: 0.05em;
+      color: #111111;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/screenwriting/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Screenwriting Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/screenwriting/" class="hover:text-primary transition-colors">Screenwriting Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Screenwriting</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        How to Write a Screenplay (When You've Never Written One&nbsp;Before)
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>5 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+      <p class="drop-cap">Before Aaron Sorkin knew what a screenplay looked like, he wrote <em>A Few Good Men</em> on cocktail napkins. He was bartending at the Palace Theatre on Broadway, pouring drinks between shows, and scribbling dialogue on whatever he could find. He didn't write it as a screenplay first. He wrote it as a play, because that was the form he sort of understood, and when someone told him it could be a movie, he had to figure out what that even meant. The script sold. The movie got made. Jack Nicholson said the line. And Sorkin, by his own telling, still wasn't sure he knew what he was doing.</p>
+
+      <p>He's talked about this in interviews and in his MasterClass, and the thing he keeps coming back to isn't structure or format or three-act theory. It's something simpler: "Intention and obstacle. Somebody wants something, something's standing in their way." That's it. That's the engine. He writes by walking around and talking to himself, muttering lines of dialogue until they sound right, until the rhythm of the scene clicks into place in his mouth before it ever hits the page.</p>
+
+      <p>I bring this up because most screenwriting advice starts with format. Courier 12-point. Slug lines. INT. and EXT. The margin widths for dialogue blocks. And all of that matters eventually. But none of it is where a screenplay actually begins. A screenplay begins the same place every other piece of writing begins: with a person who wants something and can't quite get it.</p>
+
+      <hr>
+
+      <h2>The page looks different but the work&nbsp;doesn't</h2>
+
+      <p>The first time you open a screenplay, it looks alien. All that white space. The capitalized scene headings. Character names centered above their dialogue. It feels like a legal document that somehow contains car chases. And there's a natural assumption that because the form looks so specific, the writing process must be equally technical, that you need to learn the machinery before you're allowed to tell a story.</p>
+
+      <p>Diablo Cody didn't get that memo. Before she wrote <em>Juno</em>, she was a blogger and a former stripper with zero Hollywood connections. No film school. No industry contacts. No one telling her what a proper screenplay was supposed to sound like. She just wrote the way she talked, which happened to be funny and sharp and unlike anything else circulating in agency mailrooms at the time. The script sold itself because the voice on the page was so distinct that readers couldn't put it down. She won the Oscar for Best Original Screenplay, and the lesson there isn't that format doesn't matter. It's that voice matters more.</p>
+
+      <p>If you've been writing regularly, doing daily practice, freewriting, working on fiction or essays or journal entries, you already have a voice. You might not think of it that way. But the rhythms you default to, the way you build a sentence, the kinds of details you notice, that's a voice, and it translates to the screen more directly than you'd think. Screenwriting isn't a departure from the writing you've been doing. It's another container for the same instincts.</p>
+
+      <hr>
+
+      <h2>Write one scene before you write a&nbsp;screenplay</h2>
+
+      <p>There's a reason Barry Jenkins wrote <em>Moonlight</em> in a fever over a few weeks. He wasn't building an outline or hitting plot points on a beat sheet. He was adapting Tarell Alvin McCraney's unpublished play <em>In Moonlight Black Boys Look Blue</em>, and what he cared about most was the feeling of each scene. His action lines read more like poetry than instruction. He writes with color and light, describing not just what happens but how it feels to be in the room when it happens.</p>
+
+      <p>That approach is worth borrowing, especially when you're starting out. Don't try to write a screenplay. Write a scene. One scene. Pick a moment you can see clearly in your head, two people in a room, and write what they say to each other and what they do while they're saying it. Don't worry about format. Don't worry about where it falls in the larger story. Just get the thing on the page.</p>
+
+      <p>Most screenwriting books won't tell you this, but a screenplay is really just a stack of scenes. If you can write one that feels alive, you can write another, and then another, and eventually they start to arrange themselves into something with shape. The shape matters and I'm not saying you can skip structure entirely, but the ability to write a single scene that breathes is the foundational skill, and everything else builds on top of it.</p>
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          This is the kind of thing we think about every morning. One reflection, one question, before you open the&nbsp;draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'screenwriting-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="screenwriting/how-to-write-a-screenplay">
+          <input type="hidden" name="fields[genre]" value="Screenwriting">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+      <h2>Intention and obstacle will carry you further than any&nbsp;template</h2>
+
+      <p>Sorkin's formula, intention and obstacle, is the closest thing screenwriting has to a universal truth. Every scene that works has a character who wants something and something standing in the way. The want can be as large as saving the world or as small as getting through a conversation without crying. The obstacle can be a person, a secret, or just the character's own inability to say what they mean.</p>
+
+      <p>When you're writing your first screenplay and you feel lost, which you will, come back to that question. What does this character want right now, in this scene, and what's stopping them from getting it? If you can answer that, you can write the scene. If you can't, the scene probably doesn't need to exist yet.</p>
+
+      <p>I'm genuinely not sure whether structure is something you learn before writing or something you recognize after. I've read convincing arguments both ways. But I do know that the screenwriters who've talked most honestly about their process, Sorkin pacing hallways and talking to himself, Cody writing in a voice that was entirely her own, Jenkins chasing the feeling of light on skin, none of them started with a template. They started with something they needed to say and figured out how to say it in 90 to 120 pages.</p>
+
+      <hr>
+
+      <h2>The format is the last thing you&nbsp;learn</h2>
+
+      <p>At some point, yes, you need to learn slug lines and action descriptions and how wide your dialogue margins should be. But "at some point" is later than most people think. Formatting a screenplay correctly takes about an afternoon. Software like Highland or WriterDuet will handle most of it for you. The margins are automatic. The character name centering is automatic. INT. COFFEE SHOP - NIGHT isn't hard to learn once you've already written the conversation that happens inside the coffee shop.</p>
+
+      <p>What takes years, or at least months of consistent practice, is learning to write dialogue that sounds like people talking, to describe action without over-directing, to trust the white space. Those are writing skills, not formatting skills, and you build them the same way you build any writing muscle: by writing regularly and paying attention to what works.</p>
+
+      <p>If you're coming to screenwriting from prose or poetry or daily journaling, you're not starting from scratch. You're starting from a different tradition, one that probably taught you to pay attention to detail, to listen to how people actually speak, to notice the gap between what someone says and what they mean. That gap is where screenwriting lives. The rest is just margins.</p>
+
+      <p><a href="/screenwriting/">For more on developing your screenwriting practice, see our screenwriting hub</a>.</p>
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          If you're writing scripts, having that daily anchor&nbsp;helps.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'screenwriting-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="screenwriting/how-to-write-a-screenplay">
+          <input type="hidden" name="fields[genre]" value="Screenwriting">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/screenwriting/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Screenwriting Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/screenwriting/screenwriting-techniques/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Ideas</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Screenwriting Techniques &rarr;</p>
+        </a>
+        <a href="/screenwriting/screenplay-structure/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Observations</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Things I've Noticed About Screenplay Structure &rarr;</p>
+        </a>
+        <a href="/writing-craft/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Show don't tell, dialogue, and structure &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'screenwriting-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="screenwriting/how-to-write-a-screenplay">
+        <input type="hidden" name="fields[genre]" value="Screenwriting">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>

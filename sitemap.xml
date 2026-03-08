@@ -1053,6 +1053,32 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Screenwriting cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/screenwriting/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/screenwriting/how-to-write-a-screenplay/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/screenwriting/screenwriting-techniques/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/screenwriting/screenplay-structure/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Poetry Writing cluster -->
   <url>
     <loc>https://writersdailypractice.com/poetry-writing/</loc>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screenwriting | How to Write Screenplays That Get Read</title>
+  <meta name="description" content="Screenwriting guide: how to write a screenplay, structure, dialogue, and the craft of visual storytelling. Lessons from Sorkin, Kaufman, Ephron, and Wilder.">
+  <link rel="canonical" href="https://writersdailypractice.com/screenwriting/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Screenwriting | The Writer's Daily Practice">
+  <meta property="og:description" content="How to write screenplays that get read. Lessons from Sorkin, Kaufman, Ephron, and Wilder on dialogue, structure, and writing for the screen.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/screenwriting/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Screenwriting | The Writer's Daily Practice">
+  <meta name="twitter:description" content="How to write screenplays that get read. Lessons from Sorkin, Kaufman, Ephron, and Wilder on dialogue, structure, and writing for the screen.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you start writing a screenplay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with a character who wants something badly and can't easily get it. Write a one-page summary of the story before you open screenwriting software. Aaron Sorkin writes extensive outlines before touching dialogue. The biggest mistake new screenwriters make is starting with a cool concept instead of a character with a specific problem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long should a screenplay be?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Feature screenplays run 90-120 pages. The industry standard is roughly one page per minute of screen time. Comedies tend to run shorter (90-100 pages). Dramas can stretch to 120. Anything over 130 pages makes producers nervous. TV pilots run 30 pages (half-hour) or 55-65 pages (hour-long). These aren't arbitrary rules. They're production constraints that shape the writing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is screenplay format?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Screenplays use 12-point Courier font, specific margins, and standardized elements: scene headings (INT. COFFEE SHOP - DAY), action lines (present tense, what the camera sees), character names (centered, all caps before dialogue), dialogue (centered, narrow column), and parentheticals (sparingly). The format exists so that one page roughly equals one minute of screen time. Software like Final Draft, Highland, or the free WriterSolo handles formatting automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you write a screenplay without film school?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Diablo Cody was a blogger and former stripper when she wrote Juno, which won the Academy Award for Best Original Screenplay. Quentin Tarantino worked at a video rental store. The Coen Brothers studied philosophy and film but learned screenwriting by writing screenplays, not in a classroom. What matters is reading produced screenplays and writing constantly. Film school can help with connections, but the craft is learned on the page."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Screenwriting"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      line-height: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.08;
+      color: #1565C0;
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      line-height: 0.8;
+      padding-right: 0.08em;
+      padding-top: 0.05em;
+      color: #1565C0;
+      font-weight: 700;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO SECTION ========== -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Screenwriting</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        Screenwriting. <span class="gradient-text block mt-3">Write stories that move at the speed of&nbsp;watching.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        What Sorkin, Kaufman, Ephron, and Wilder understood about writing for the screen: every scene earns its place, dialogue reveals character under pressure, and structure is the invisible thing the audience feels but never sees. Plus a free daily prompt delivered every&nbsp;morning.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'screenwriting'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="screenwriting">
+        <input type="hidden" name="fields[genre]" value="Screenwriting">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== 3. WHAT YOU GET ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        What lands in your inbox every&nbsp;morning
+      </h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A craft-driven writing exercise</strong> with context explaining what the exercise trains and which screenwriters used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. FIVE THINGS SAMPLER ========== -->
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">Writing for the screen</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">
+        Five things screenwriters figure out by the second&nbsp;draft
+      </h2>
+
+      <div class="space-y-10">
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>You're writing what the camera sees, and that changes everything about how you think.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">A novelist can spend a paragraph inside a character's head. A screenwriter can't. You have to externalize every emotion through action, dialogue, or the objects in a room. Billy Wilder kept a sign above his desk: "How would Lubitsch do it?" His answer was almost always: through behavior, not words. A character who says "I'm nervous" is bad screenwriting. A character who straightens a picture frame that's already straight is good screenwriting.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Dialogue in a screenplay carries two conversations at once.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">The surface conversation (what people are saying) and the actual conversation (what they mean). Aaron Sorkin's characters talk fast, but the speed is misdirection. Underneath every Sorkin monologue, someone is trying to get something from someone else, and the words are the tool they're using to get it. When your dialogue only operates on one level, it reads flat even if the lines are clever.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Structure feels invisible when it works, but the audience can tell instantly when it breaks.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Nora Ephron knew this. <em>When Harry Met Sally</em> follows a clean three-act structure, but you'd never notice while watching it because the scenes are too enjoyable to feel like architecture. Charlie Kaufman's <em>Eternal Sunshine of the Spotless Mind</em> scrambles its timeline, but the emotional logic is perfectly structured. The structure is the thing the audience feels without seeing, like the bones under skin.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Every scene has to change something, or it doesn't belong in the script.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">This is the hardest lesson for writers coming from prose. A novel can afford a beautiful descriptive passage that doesn't advance the plot. A screenplay can't. If the character's situation is the same at the end of the scene as it was at the beginning, the scene didn't earn its pages. Wilder cut ruthlessly. Sorkin rewrites obsessively. The scenes that survive are the ones where something shifts.</p>
+        </div>
+
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The best screenplays read well on the page, and that's a skill most writing programs don't teach.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Before your script becomes a film, it has to survive being read by someone in an office who has 40 other scripts on their desk. White space matters. Short paragraphs. Action lines that create rhythm on the page. Diablo Cody's <em>Juno</em> script reads like a voice you want to keep listening to, and that's part of why it got made. The page is your first audience, and most screenwriters forget that.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These patterns show up in screenplays that get read past page ten.</p>
+        <p class="text-midGray text-sm leading-relaxed">For a closer look, start with <a href="how-to-write-a-screenplay/" class="text-primary font-medium hover:underline">how to write a&nbsp;screenplay</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. BLOG POSTS ========== -->
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On screenwriting</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="how-to-write-a-screenplay/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Craft</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write a Screenplay (When You've Never Written One Before)</p>
+          <p class="text-midGray text-sm leading-relaxed">Sorkin, Cody, and Jenkins on the first draft. &rarr;</p>
+        </a>
+        <a href="screenwriting-techniques/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Ideas</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Screenwriting Techniques: Ideas That Changed How I Think About Scripts</p>
+          <p class="text-midGray text-sm leading-relaxed">Kaufman, Gerwig, Nolan, and Peele on craft that matters. &rarr;</p>
+        </a>
+        <a href="screenplay-structure/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Observations</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Things I've Noticed About Screenplay Structure</p>
+          <p class="text-midGray text-sm leading-relaxed">What three-act structure actually does for your script. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. SAMPLE REFLECTION ========== -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">June 14th</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">EVERY WORD MATTERS</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"Being a writer is a very peculiar sort of job: It's always you versus a blank sheet of paper (or a blank screen) and quite often the blank piece of paper wins."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Neil Gaiman</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4" style="font-family: 'Lora', Georgia, serif;">
+          <p>Blank pages are intimidating. No matter how you spin it. But here's the deal: every great work starts with a single word. You don't write a sentence, you don't get a paragraph. You don't get a paragraph, you don't get a scene.</p>
+          <p>Don't let that blank page win. Even if it feels like it's winning right now. Every word you write is a step forward. The page may be blank, but you're not alone in facing it. Every writer who came before you stood in front of the same empty space.</p>
+          <p>The only difference between a blank page and a finished script is that someone sat down and started typing.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
+          Want this in your inbox every&nbsp;morning?
+        </p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
+          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'screenwriting'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="screenwriting">
+          <input type="hidden" name="fields[genre]" value="Screenwriting">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+            Get Your Daily Prompt
+          </button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. SOCIAL PROOF ========== -->
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">
+            "I've tried every writing course and productivity system out there. This is the first thing that actually got me writing every day. Two months in, I finally started the novel I'd been thinking about for three years."
+          </p>
+          <p class="text-sm text-midGray font-medium">David M., first-time novelist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PRIMARY CTA BLOCK ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'screenwriting'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="screenwriting">
+        <input type="hidden" name="fields[genre]" value="Screenwriting">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== 9. FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">
+        Frequently asked&nbsp;questions
+      </h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do you start writing a screenplay?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Start with a character who wants something badly and can't easily get it. Write a one-page summary of the story before you open screenwriting software. Aaron Sorkin writes extensive outlines before touching dialogue. The biggest mistake new screenwriters make is starting with a cool concept instead of a character with a specific problem.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How long should a screenplay be?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Feature screenplays run 90-120 pages. The industry standard is roughly one page per minute of screen time. Comedies tend to run shorter (90-100 pages). Dramas can stretch to 120. Anything over 130 pages makes producers nervous. TV pilots run 30 pages (half-hour) or 55-65 pages (hour-long). These aren't arbitrary rules. They're production constraints that shape the writing.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is screenplay format?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Screenplays use 12-point Courier font, specific margins, and standardized elements: scene headings (INT. COFFEE SHOP - DAY), action lines (present tense, what the camera sees), character names (centered, all caps before dialogue), dialogue (centered, narrow column), and parentheticals (sparingly). The format exists so that one page roughly equals one minute of screen time. Software like Final Draft, Highland, or the free WriterSolo handles formatting automatically.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Can you write a screenplay without film school?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Yes. Diablo Cody was a blogger and former stripper when she wrote <em>Juno</em>, which won the Academy Award for Best Original Screenplay. Quentin Tarantino worked at a video rental store. The Coen Brothers studied philosophy and film but learned screenwriting by writing screenplays, not in a classroom. What matters is reading produced screenplays and writing constantly. Film school can help with connections, but the craft is learned on the page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. RELATED PAGES ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Exercises, tips, and craft fundamentals &rarr;</p>
+        </a>
+        <a href="/how-to-write-a-book/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Write a Book</p>
+          <p class="font-serif font-bold text-dark text-[15px]">From first draft to finished manuscript &rarr;</p>
+        </a>
+        <a href="/writing-craft/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writing Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Show don't tell, dialogue, and structure &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>
