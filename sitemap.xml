@@ -1053,6 +1053,32 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Poetry Writing cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/poetry-writing/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/poetry-writing/how-to-write-a-poem/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/poetry-writing/poetry-techniques/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/poetry-writing/poetry-forms/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Creative Nonfiction cluster -->
   <url>
     <loc>https://writersdailypractice.com/creative-nonfiction/</loc>
