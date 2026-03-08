@@ -1570,4 +1570,32 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://writersdailypractice.com/historical-romance-writers/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/historical-romance-writers/how-to-write-historical-romance/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/historical-romance-writers/historical-romance-techniques/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/historical-romance-writers/historical-romance-tropes/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
