@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanfiction Writing | The Writer's Daily Practice</title>
+  <meta name="description" content="A daily practice for fanfiction writers building craft through characters they love. Exercises drawn from Clare, Rowell, Novik, and the writers who started in fandom.">
+  <link rel="canonical" href="https://writersdailypractice.com/fanfiction-writers/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="For Fanfiction Writers | The Writer's Daily Practice">
+  <meta property="og:description" content="Write better fanfiction and sharpen your craft. A daily practice for fic writers who take their writing seriously.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm-cozy.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/fanfiction-writers/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="For Fanfiction Writers | The Writer's Daily Practice">
+  <meta name="twitter:description" content="Write better fanfiction and sharpen your craft. A daily practice for fic writers who take their writing seriously.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm-cozy.jpg">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is fanfiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fanfiction is fiction written by fans using characters, settings, or worlds from existing media. It ranges from short character studies to novel-length works and spans every genre. Fanfic has its own publishing ecosystem (Archive of Our Own, Wattpad, FanFiction.net), its own editorial conventions (beta readers, tagging systems, content warnings), and a reader base that numbers in the tens of millions. Several bestselling authors started in fanfiction, including Cassandra Clare, Rainbow Rowell, Naomi Novik, and Ali Hazelwood."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can fanfiction help me become a better writer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Fanfiction provides something most aspiring writers lack: an immediate feedback loop. You publish a chapter, readers respond within hours, and you learn what's working in near real-time. You also get to practice specific craft skills (dialogue, pacing, characterization, serialization) without the overhead of building a world and cast from scratch. Rainbow Rowell has said her years writing fanfiction taught her pacing and voice. Naomi Novik credits fandom with teaching her how to write efficiently and meet deadlines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is fanfiction legal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fanfiction occupies a legal gray area. Most fan works are considered fair use or are tolerated by rights holders, and organizations like the Organization for Transformative Works (which runs Archive of Our Own) actively advocate for fanfiction's legal standing. Some authors and estates actively encourage fan works. Others issue takedowns. The general consensus in publishing is that non-commercial fanfiction is legally defensible, though it hasn't been definitively tested in court in many jurisdictions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I transition from fanfiction to original fiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The biggest shift is worldbuilding and character creation. In fanfiction, you inherit a world and characters with built-in reader attachment. In original fiction, you build both from scratch. Cassandra Clare moved from Harry Potter fanfiction to The Mortal Instruments by developing her own mythology and cast. E.L. James filed the serial numbers off Twilight fan fiction to create Fifty Shades of Grey. The craft skills transfer directly: pacing, dialogue, tension, serialization. What you're adding is the architecture."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Fanfiction Writers"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { -webkit-text-size-adjust: 100%; box-sizing: border-box; color: #2a2a2a; background-color: #fff; min-height: 100%; margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    *, *::before, *::after { box-sizing: border-box; }
+    .gradient-text { background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .btn-premium { position: relative; overflow: hidden; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .btn-premium:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4); }
+    .btn-premium::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: left 0.6s; }
+    .btn-premium:hover::after { left: 100%; }
+    .card-lift { transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .card-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+    .nav-blur { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    .quote-mark::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 80px; line-height: 0; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); opacity: 0.08; color: #1565C0; }
+    .font-review { font-family: 'Lora', Georgia, serif; }
+    .noise-overlay { position: relative; }
+    .noise-overlay::before { content: ''; position: absolute; inset: 0; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); pointer-events: none; }
+    .drop-cap::first-letter { float: left; font-family: 'Playfair Display', serif; font-size: 3.5em; line-height: 0.8; padding-right: 0.08em; padding-top: 0.05em; color: #1565C0; font-weight: 700; }
+  </style>
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">Start Free</a>
+    </div>
+  </nav>
+
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[820px] mx-auto px-6 pt-24 pb-16 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Fanfiction</span>
+      <h1 class="font-serif text-[38px] md:text-[56px] leading-[1.08] font-bold mb-6 text-white">
+        Fanfiction. <span class="gradient-text block mt-3">Where most writers actually&nbsp;start.</span>
+      </h1>
+      <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
+        A daily writing practice for fanfiction writers who take their craft seriously, with lessons drawn from Clare, Rowell, Novik, and the authors who built their skills in fandom before they built their careers.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'fanfiction-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="fanfiction-writers">
+        <input type="hidden" name="fields[genre]" value="Fanfiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Get Your Daily Prompt &rarr;</button>
+      </form>
+      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <p class="text-white/30 text-xs font-medium mt-2 tracking-wide">Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">What lands in your inbox every&nbsp;morning</h2>
+      <div class="space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A craft-driven writing exercise</strong> with context explaining what the exercise trains and which authors used the technique</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">An original reflection</strong> connecting the exercise to a real writing principle you can use today</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong class="font-semibold">A quote from a literary master</strong> to ground your morning in craft, not hustle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-warmWhite">
+    <div class="max-w-[720px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">What fandom teaches</p>
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-12 leading-tight">Five things fanfiction teaches you that writing workshops&nbsp;don't</h2>
+      <div class="space-y-10">
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Characters arrive with emotional history, and that's an advantage.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">When you write fanfiction, you don't have to build reader attachment from scratch. The audience already cares about these people. That frees you to practice the harder skills: subtext, voice, emotional escalation, pacing. Rainbow Rowell has talked about how writing fic for years taught her to write dialogue that sounds overheard rather than composed, because she could focus entirely on the voice without worrying about whether the reader was invested yet. That focus is a training ground most original fiction writers don't get.</p>
+        </div>
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Serialization forces you to write before you're ready.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Fic writers publish chapters as they go. There's no revision period, no polished manuscript sitting in a drawer. You post Chapter 7 on a Tuesday night and Chapter 8 is due next week because your readers are waiting. Anna Todd wrote <em>After</em> this way on Wattpad, chapter by chapter, with millions of readers following along in real time. The serialization pressure teaches you to trust your instincts, fix problems on the fly, and keep momentum even when you're not sure where the story is going. That's a skill most MFA programs never teach.</p>
+        </div>
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>The audience talks back, and that changes how you think about craft.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">A novelist gets reviews months after publication. A fic writer gets comments within hours. The feedback loop is immediate, specific, and brutally honest. Readers tell you which scene landed and which one felt rushed. They quote your own sentences back at you. They argue about your character choices in the comments section. Naomi Novik, who wrote <em>Harry Potter</em> fanfiction before publishing the Temeraire series, has said that this constant reader dialogue taught her more about pacing and tension than any writing class could.</p>
+        </div>
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Trope fluency is a genuine technical skill.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">Fic writers don't just use tropes. They understand them structurally. They know that enemies-to-lovers requires a credible reason for the enmity and that the turn has to feel earned. They know that hurt/comfort is a pacing tool, not just an emotional register. They know that the "five times X happened and one time it didn't" format is a compression technique for showing character change without writing 80,000 words. This literacy transfers directly to original fiction, and it's one of the reasons so many bestselling romance and fantasy authors started in fandom.</p>
+        </div>
+        <div>
+          <p class="text-bodyText text-[16px] leading-relaxed"><strong>Writing in someone else's world teaches you what makes a world feel inhabited.</strong></p>
+          <p class="text-midGray text-[15px] mt-1">When you write fanfiction set in Hogwarts, you learn what Rowling did well and where the gaps are. When you write in the Marvel universe, you notice what the films leave out that the comics included. Cassandra Clare spent years in the Harry Potter fandom before building the Shadowhunter universe, and the density of her worldbuilding, the way her New York feels layered with hidden history, comes directly from having lived inside someone else's world long enough to understand what gives a fictional place texture.</p>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <p class="text-midGray text-sm leading-relaxed mb-1">These observations are drawn from the careers and public statements of bestselling authors who started in fanfiction.</p>
+        <p class="text-midGray text-sm leading-relaxed">For a deeper look, start with <a href="how-to-write-fanfiction/" class="text-primary font-medium hover:underline">how to write fanfiction that sharpens your craft</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-[800px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">On writing fanfiction</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="how-to-write-fanfiction/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Fanfiction</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">How to Write Fanfiction That Sharpens Your Craft</p>
+          <p class="text-midGray text-sm leading-relaxed">What writing in someone else's world teaches you about building your own. &rarr;</p>
+        </a>
+        <a href="fanfiction-techniques/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Fanfiction</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Fanfiction Techniques Worth Studying</p>
+          <p class="text-midGray text-sm leading-relaxed">Ideas from Clare, Novik, and Todd that changed how fandom produces writers. &rarr;</p>
+        </a>
+        <a href="fanfiction-tropes/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-2">Fanfiction</p>
+          <p class="font-serif font-bold text-dark text-[17px] mb-2">Fanfiction Tropes That Actually Work</p>
+          <p class="text-midGray text-sm leading-relaxed">Observations about the tropes fic readers love and what makes them land. &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6" data-aos="fade-up">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-10">A sample from your daily email</p>
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_40px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="border-b border-gray-100 pb-6 mb-8">
+          <p class="text-midGray text-sm font-medium mb-2">April 8th</p>
+          <h3 class="font-serif text-[28px] md:text-[34px] font-bold text-dark leading-tight">FALL TO RISE AGAIN</h3>
+        </div>
+        <blockquote class="border-l-4 border-gold pl-6 mb-8">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed">"To escape criticism: Do nothing, say nothing, be nothing."</p>
+          <p class="text-sm text-midGray mt-3 font-medium">- Elbert Hubbard</p>
+        </blockquote>
+        <div class="drop-cap text-bodyText text-[17px] leading-[1.75] space-y-4">
+          <p>Hubbard was a writer, publisher, and philosopher who understood something about creative work that most advice columns skip: the only way to avoid criticism is to produce nothing at all. For fanfiction writers, this lands differently than it does for most. You're writing in public, often under a pseudonym, in a space where readers feel ownership over the characters you're borrowing. The criticism isn't abstract. It shows up in your comments section, sometimes within hours of posting.</p>
+          <p>But the writers who improve fastest are the ones who post anyway. The ones who write the unpopular ship, the AU nobody asked for, the 90,000-word slow burn that only twelve people are reading. Because the practice is in the writing, and the courage is in the sharing, and neither one happens if you're waiting for permission to begin.</p>
+          <p>Today's exercise: write a scene from the perspective of a character you've been avoiding. The one whose voice feels hard to get right. Give them 500 words. Don't worry about getting it perfect. Worry about getting it down.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" id="signup">
+        <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">Want this in your inbox every&nbsp;morning?</p>
+        <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.</p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'fanfiction-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
+          <input type="hidden" name="fields[source_page]" value="fanfiction-writers">
+          <input type="hidden" name="fields[genre]" value="Fanfiction">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Get Your Daily Prompt</button>
+        </form>
+        <p class="text-midGray text-xs mt-4">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20" data-aos="fade-up">
+    <div class="max-w-[680px] mx-auto px-6 text-center">
+      <div class="max-w-[540px] mx-auto relative quote-mark">
+        <div class="relative z-10">
+          <p class="font-review text-lg italic text-bodyText leading-relaxed mb-3">"I've tried every writing course and productivity system out there. This is the first thing that actually got me writing every day. Two months in, I finally started the novel I'd been thinking about for three years."</p>
+          <p class="text-sm text-midGray font-medium">David M., first-time novelist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span></h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.</p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'fanfiction-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="fanfiction-writers">
+        <input type="hidden" name="fields[genre]" value="Fanfiction">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Start My Daily Practice &rarr;</button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12" data-aos="fade-up">Frequently asked questions</h2>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What is fanfiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4"><p class="text-midGray text-[15px] leading-relaxed">Fanfiction is fiction written by fans using characters, settings, or worlds from existing media. It ranges from short character studies to novel-length works and spans every genre. Fanfic has its own publishing ecosystem (Archive of Our Own, Wattpad, FanFiction.net), its own editorial conventions (beta readers, tagging systems, content warnings), and a reader base that numbers in the tens of millions. Several bestselling authors started in fanfiction, including Cassandra Clare, Rainbow Rowell, Naomi Novik, and Ali Hazelwood.</p></div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Can fanfiction help me become a better writer?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4"><p class="text-midGray text-[15px] leading-relaxed">Yes. Fanfiction provides something most aspiring writers lack: an immediate feedback loop. You publish a chapter, readers respond within hours, and you learn what's working in near real-time. You also get to practice specific craft skills (dialogue, pacing, characterization, serialization) without the overhead of building a world and cast from scratch. Rainbow Rowell has said her years writing fanfiction taught her pacing and voice. Naomi Novik credits fandom with teaching her how to write efficiently and meet deadlines.</p></div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Is fanfiction legal?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4"><p class="text-midGray text-[15px] leading-relaxed">Fanfiction occupies a legal gray area. Most fan works are considered fair use or are tolerated by rights holders, and organizations like the Organization for Transformative Works (which runs Archive of Our Own) actively advocate for fanfiction's legal standing. Some authors and estates actively encourage fan works. Others issue takedowns. The general consensus in publishing is that non-commercial fanfiction is legally defensible, though it hasn't been definitively tested in court in many jurisdictions.</p></div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I transition from fanfiction to original fiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4"><p class="text-midGray text-[15px] leading-relaxed">The biggest shift is worldbuilding and character creation. In fanfiction, you inherit a world and characters with built-in reader attachment. In original fiction, you build both from scratch. Cassandra Clare moved from Harry Potter fanfiction to The Mortal Instruments by developing her own mythology and cast. E.L. James filed the serial numbers off Twilight fan fiction to create Fifty Shades of Grey. The craft skills transfer directly: pacing, dialogue, tension, serialization. What you're adding is the architecture.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/short-story-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Short Stories</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Short story writing &rarr;</p>
+        </a>
+        <a href="/flash-fiction-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Flash Fiction</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Flash fiction writing &rarr;</p>
+        </a>
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Creative writing practice &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic', offset: 80 });
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+      });
+    });
+  </script>
+
+</body>
+</html>
