@@ -1131,6 +1131,32 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- True Crime Writing cluster -->
+  <url>
+    <loc>https://writersdailypractice.com/true-crime-writing/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/true-crime-writing/how-to-write-true-crime/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/true-crime-writing/true-crime-research/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://writersdailypractice.com/true-crime-writing/true-crime-techniques/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Dystopian Fiction cluster -->
   <url>
     <loc>https://writersdailypractice.com/dystopian-fiction/</loc>
