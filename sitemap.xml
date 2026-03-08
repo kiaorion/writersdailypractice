@@ -1640,4 +1640,32 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://writersdailypractice.com/progression-fantasy-writers/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/progression-fantasy-writers/how-to-write-progression-fantasy/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/progression-fantasy-writers/progression-fantasy-techniques/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/progression-fantasy-writers/progression-fantasy-tropes/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
