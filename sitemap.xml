@@ -1668,4 +1668,32 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://writersdailypractice.com/contemporary-romance-writers/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/contemporary-romance-writers/how-to-write-contemporary-romance/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/contemporary-romance-writers/contemporary-romance-techniques/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://writersdailypractice.com/contemporary-romance-writers/contemporary-romance-tropes/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
