@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Write Epic Fantasy | The Writer's Daily Practice</title>
+  <meta name="description" content="What the best epic fantasy writers know about scope, patience, and starting small. Lessons from Jordan, Kuang, and McClellan.">
+  <link rel="canonical" href="https://writersdailypractice.com/epic-fantasy-writers/how-to-write-epic-fantasy/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Write Epic Fantasy">
+  <meta property="og:description" content="What the best epic fantasy writers know about scope, patience, and starting small.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/adventurous.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/epic-fantasy-writers/how-to-write-epic-fantasy/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Write Epic Fantasy">
+  <meta name="twitter:description" content="What the best epic fantasy writers know about scope, patience, and starting small.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/adventurous.jpg">
+
+  <!-- Article Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Write Epic Fantasy",
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/"
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "description": "What the best epic fantasy writers know about scope, patience, and starting small. Lessons from Jordan, Kuang, and McClellan.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://writersdailypractice.com/epic-fantasy-writers/how-to-write-epic-fantasy/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Epic Fantasy Writers",
+        "item": "https://writersdailypractice.com/epic-fantasy-writers/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Write Epic Fantasy"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1565C0',
+            primaryDark: '#0D47A1',
+            primaryDeep: '#091B3A',
+            gold: '#E8B931',
+            goldLight: '#F5D060',
+            dark: '#111111',
+            bodyText: '#2a2a2a',
+            lightGray: '#FAFAFA',
+            midGray: '#6B7280',
+            warmWhite: '#FFFDF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Lora', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .font-review { font-family: 'Lora', Georgia, serif; }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Article typography */
+    .article-body p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 1.5em;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #111111;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    @media (min-width: 768px) {
+      .article-body h2 {
+        font-size: 28px;
+      }
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #E8B931;
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    .article-body blockquote p {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    .article-body strong {
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .article-body em {
+      font-style: italic;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5em 0;
+    }
+
+    .article-body a {
+      color: #1565C0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: #0D47A1;
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/epic-fantasy-writers/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Epic Fantasy Writers</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">All Genres</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HEADER ========== -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/epic-fantasy-writers/" class="hover:text-primary transition-colors">Epic Fantasy Writers</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Article</li>
+        </ol>
+      </nav>
+
+      <!-- Genre Tag -->
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">EPIC FANTASY</span>
+
+      <!-- Title -->
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">
+        How to Write Epic&nbsp;Fantasy
+      </h1>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-03-07">March 7, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>5 min read</span>
+      </div>
+
+      <!-- Accent line -->
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ========== ARTICLE BODY (PART 1) ========== -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body" data-aos="fade-up" data-aos-duration="800">
+
+      <p style="font-size:1.15em">Robert Jordan served two tours in Vietnam as a helicopter door gunner. He came home, studied physics, worked for the Navy, and then sat down to write a fantasy novel about a farm boy in a small village. <em>The Eye of the World</em> came out in 1990. The first book starts quiet. One village, one point of view, a handful of people the reader can hold in both hands.</p>
+
+      <p>By the time the series reached its full scope, <em>The Wheel of Time</em> had grown to fourteen books, thousands of named characters, and a continent's worth of political intrigue that Jordan tracked with handwritten notes and an encyclopedic memory his editors found slightly terrifying. He said once that Vietnam taught him how to write battle scenes, that most people who hadn't been in combat wrote it too clean. He wanted the confusion. The way you can't tell who's winning while it's happening.</p>
+
+      <p>Jordan died in 2007, three books from the end. He'd left extensive notes. His wife and editor, Harriet McDougal, chose Brandon Sanderson to finish the series. Sanderson was thirty-one. He'd grown up reading Jordan. He wrote the final three volumes with Jordan's notes in one hand and his own instincts in the other, and the series concluded in 2013, twenty-three years after it began.</p>
+
+      <p>There's something in that timeline worth sitting with. Twenty-three years. One story. A writer who didn't live to see the end of his own work, and a younger writer who loved it enough to carry it home.</p>
+
+      <p>That's the weight of epic fantasy. The genre asks you to build something so large that finishing it becomes an act of endurance, and the readers who follow you into it are making a commitment that resembles faith more than entertainment. What makes that commitment worth honoring has less to do with how big your world is and more to do with how carefully you control the&nbsp;scope.</p>
+
+      <hr>
+
+      <h2>Start with one window into the&nbsp;world</h2>
+
+      <p>Jordan understood something about scale that most first-time epic fantasy writers get backwards. <em>The Eye of the World</em> doesn't open with a map of the continent or a prologue about ancient wars between gods. It opens with Rand al'Thor on a country road, cold wind at his back, watching the trees. One kid. One road. The reader enters a world the size of a village and the story expands outward from there, one concentric circle at a time.</p>
+
+      <p>The instinct for most writers tackling epic fantasy is to prove the world is big immediately. Prologues set thousands of years before the main story. Three POV characters introduced in the first chapter. A magic system explained before the reader has any reason to care how it works.</p>
+
+      <p>But scope isn't proven by showing everything at once. It's felt when the reader realizes, forty pages in, that the village they thought was the whole world is a speck on a map they haven't seen yet.</p>
+
+      <h2>Your history has to bleed into the&nbsp;present</h2>
+
+      <p>R.F. Kuang was twenty-two when <em>The Poppy War</em> came out. She'd built the novel's world on the bones of real Chinese history, specifically the Second Sino-Japanese War and the Rape of Nanjing, and the book reads the way it does because that history isn't backdrop. It's fuel. The violence in the third act hits the way it does because Kuang didn't soften what actually happened. She used fantasy to make a reader feel something that a history textbook can describe but rarely transmits.</p>
+
+      <p>Kuang has a PhD from Yale in East Asian languages and literatures. I don't know how much that academic grounding shows up consciously in her fiction, but there's a density to the worldbuilding in the <em>Poppy War</em> trilogy that feels researched in a way most epic fantasy doesn't. The cultures aren't invented from scratch. They're rooted in something real, then refracted through a fantasy lens, and the result is a world that carries weight because it's drawing on centuries of actual human memory.</p>
+
+      <p>That's a useful thing to think about when you're building your own history. The question isn't how many ages and dynasties you can stack up. It's whether your history has left marks that your characters can still feel.</p>
+
+    </div>
+  </article>
+
+  <!-- ========== MID-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          This is the kind of thing we think about every morning. One reflection, one question, before you open the&nbsp;draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'epic-fantasy-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="epic-fantasy-writers/how-to-write-epic-fantasy">
+          <input type="hidden" name="fields[genre]" value="Epic Fantasy">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY (PART 2) ========== -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <h2>Epic fantasy doesn't require a medieval&nbsp;setting</h2>
+
+      <p>Brian McClellan studied under Brandon Sanderson at BYU. His debut, <em>Promise of Blood</em>, is set during a revolution inspired by the French Revolution. The magic system runs on gunpowder. Certain people called Powder Mages can ingest it, burn it in their blood, and use it to bend bullets or enhance their senses. The setting has muskets and bayonets and artillery officers arguing over field positions.</p>
+
+      <p>McClellan proved something the genre needed proving: that epic fantasy can live outside castles and swordfights and still carry the same narrative weight. The scope is there. The political complexity is there. The large-cast, multi-POV structure is there. But the furniture is different, and that difference opened doors for a whole wave of writers who wanted the ambition of epic fantasy without the Tolkien&nbsp;aesthetic.</p>
+
+      <h2>POV shifts are how epic fantasy creates dramatic&nbsp;irony</h2>
+
+      <p>Jordan used POV shifts the way a thriller writer uses information control. You'd spend three chapters with one character who's convinced they understand the political situation, then switch to a character on the other side of the continent who has a piece of information that changes everything, and the tension isn't in what's happening but in the gap between what different characters know and what the reader, holding all the threads, can see forming that none of them can.</p>
+
+      <p>I'm not sure this gets talked about enough in epic fantasy writing guides. The multi-POV structure isn't just a way to cover more geography. It's a tool for creating a specific kind of tension that single-POV stories can't generate. The reader becomes the only person in the room who sees the full picture, and that feeling, that almost anxious awareness of converging storylines, is a huge part of what keeps people reading a 400,000-word series across a decade of their lives.</p>
+
+      <p>If your POV shifts only show the reader more of the same situation from a different angle, you're not using the structure. You're just moving the camera.</p>
+
+      <hr>
+
+      <p>I think about this a lot when it comes to daily writing practice. Epic fantasy writers are building something that won't be finished for years, sometimes decades. The stamina required for that kind of project doesn't come from inspiration. It comes from the habit of sitting down every morning and adding another layer, even when you can't see the whole shape yet, even when you're not sure the thing you're building will hold.</p>
+
+      <p>That's what we send writers every morning. One reflection to sit with before you open the&nbsp;draft.</p>
+
+      <p><a href="/epic-fantasy-writers/">Get tomorrow's reflection&nbsp;free.</a></p>
+
+    </div>
+  </article>
+
+  <!-- ========== END-OF-ARTICLE CTA ========== -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">
+          One reflection, every morning, before you open the&nbsp;draft.
+        </p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'epic-fantasy-writers-blog'}})">
+          <input type="hidden" name="fields[source_page]" value="epic-fantasy-writers/how-to-write-epic-fantasy">
+          <input type="hidden" name="fields[genre]" value="Epic Fantasy">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">
+            Start My Daily Practice
+          </button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTHOR BIO ========== -->
+  <section class="py-12 border-t border-gray-100">
+    <div class="max-w-[680px] mx-auto px-6">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primaryDark flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-serif font-bold text-xl">K</span>
+        </div>
+        <div>
+          <p class="font-semibold text-dark text-base mb-1">Kia Orion</p>
+          <p class="text-midGray text-sm leading-relaxed">
+            Author of <a href="/book/" class="text-primary hover:text-primaryDark transition-colors">The Writer's Daily Practice</a>, the #1 Bestselling book in Journal Writing and Writing Skills. He writes a free daily reflection for writers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED POSTS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">Keep reading</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Back to genre hub -->
+        <a href="/epic-fantasy-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Epic Fantasy Writers</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
+        </a>
+        <a href="/epic-fantasy-writers/epic-fantasy-techniques/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Epic Fantasy</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Epic Fantasy Techniques &rarr;</p>
+        </a>
+        <a href="/epic-fantasy-writers/epic-fantasy-tropes/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Epic Fantasy</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Epic Fantasy Tropes &rarr;</p>
+        </a>
+        <a href="/worldbuilding/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Worldbuilding Guide &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM CTA ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
+        Stop staring at the blank page. <span class="gradient-text">Start writing with&nbsp;purpose.</span>
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
+        A free daily reflection delivered to writers every morning. Quotes from literary masters, an original reflection, and a prompt to get you&nbsp;writing.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'epic-fantasy-writers-blog'}})">
+        <input type="hidden" name="fields[source_page]" value="epic-fantasy-writers/how-to-write-epic-fantasy">
+        <input type="hidden" name="fields[genre]" value="Epic Fantasy">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start My Daily Practice &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
