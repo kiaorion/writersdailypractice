@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://writersdailypractice.com/sitemap.xml
+Sitemap: https://writersdailypractice.com/sitemap-index.xml

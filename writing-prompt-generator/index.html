@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Prompt Generator | Free Random Writing Prompts</title>
+  <meta name="description" content="Get a random writing prompt with one click. 360+ craft-driven prompts for fiction writers, poets, and journalers. Free, no signup required.">
+  <link rel="canonical" href="https://writersdailypractice.com/writing-prompt-generator/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Writing Prompt Generator | Free Random Writing Prompts">
+  <meta property="og:description" content="Get a random writing prompt with one click. 360+ craft-driven prompts for fiction writers, poets, and journalers.">
+  <meta property="og:url" content="https://writersdailypractice.com/writing-prompt-generator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after {
+      left: 100%;
+    }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .noise-overlay {
+      position: relative;
+    }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .filter-btn {
+      padding: 0.45rem 1.1rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: 'Inter', system-ui, sans-serif;
+      border: 1.5px solid #e5e7eb;
+      color: #6B7280;
+      background: white;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      line-height: 1.4;
+    }
+    .filter-btn:hover { border-color: #1565C0; color: #1565C0; }
+    .filter-btn.active {
+      background: linear-gradient(to right, #E8B931, #F5D060);
+      border-color: transparent;
+      color: #111111;
+    }
+
+    @keyframes promptFade {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .prompt-fade { animation: promptFade 0.35s ease forwards; }
+
+    .prompt-card {
+      background: linear-gradient(145deg, #ffffff 0%, #fafaf8 100%);
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    .quote-accent {
+      position: relative;
+    }
+    .quote-accent::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 120px;
+      line-height: 0;
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      opacity: 0.04;
+      color: #1565C0;
+      pointer-events: none;
+    }
+
+    .font-review {
+      font-family: 'Lora', Georgia, serif;
+    }
+
+    .copied-toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #111;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 100;
+      pointer-events: none;
+    }
+    .copied-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Writing Prompt Generator",
+    "url": "https://writersdailypractice.com/writing-prompt-generator/",
+    "description": "Free random writing prompt generator with 360+ craft-driven prompts for fiction writers, poets, and journalers.",
+    "applicationCategory": "Writing Tool",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/about/"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the writing prompt generator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Click the Get a Prompt button to receive a random writing prompt from our database of 360+ prompts. Each prompt includes a title, a quote from a literary master, and the author. You can filter by theme or click again for a new one. No signup required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these writing prompts really free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, completely free. No account, no paywall, no limits. You can generate as many prompts as you want."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of writing prompts are these?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "These are craft-driven prompts rooted in the real writing struggles every writer faces: writer's block, self-doubt, perfectionism, procrastination, impostor syndrome, and more. Each one is paired with a quote from a literary master like Hemingway, Baldwin, Didion, or Pressfield."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these prompts for my writing group or classroom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Share individual prompts with your group, use them as warm-ups in workshops, or pull one at the start of class. The share and copy buttons make it easy to pass them along."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/writing-prompts/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Writing Prompts</a>
+          <a href="/creative-writing/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Creative Writing</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Get Daily Prompts
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero / Tool Section -->
+  <section class="pt-28 pb-16 md:pt-32 md:pb-20">
+    <div class="max-w-[720px] mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h1 class="font-serif text-[36px] md:text-[48px] leading-[1.1] font-bold text-dark mb-4">
+          Writing Prompt Generator
+        </h1>
+        <p class="text-midGray text-lg max-w-[520px] mx-auto">
+          360+ prompts drawn from real literary wisdom. Hit the button, get a prompt, start writing.
+        </p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="flex flex-wrap justify-center gap-2 mb-6" id="filters">
+        <button class="filter-btn active" data-cat="all">All Themes</button>
+        <button class="filter-btn" data-cat="Inspiration">Inspiration</button>
+        <button class="filter-btn" data-cat="Writer's Block">Writer's Block</button>
+        <button class="filter-btn" data-cat="Procrastination">Procrastination</button>
+        <button class="filter-btn" data-cat="Doubt">Doubt</button>
+        <button class="filter-btn" data-cat="Imposter Syndrome">Impostor Syndrome</button>
+        <button class="filter-btn" data-cat="Perfectionism">Perfectionism</button>
+        <button class="filter-btn" data-cat="Consistency">Consistency</button>
+        <button class="filter-btn" data-cat="Patience">Patience</button>
+        <button class="filter-btn" data-cat="Rejection">Rejection</button>
+        <button class="filter-btn" data-cat="Conviction">Conviction</button>
+        <button class="filter-btn" data-cat="Comparison">Comparison</button>
+        <button class="filter-btn" data-cat="Uncertainty">Uncertainty</button>
+      </div>
+
+      <!-- Prompt Card -->
+      <div id="prompt-card" class="prompt-card quote-accent rounded-2xl p-8 md:p-12 mb-6 min-h-[240px] flex flex-col justify-center">
+        <p id="prompt-theme" class="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-4"></p>
+        <h2 id="prompt-title" class="font-serif text-[24px] md:text-[30px] font-bold text-dark mb-5 leading-tight"></h2>
+        <blockquote class="mb-3">
+          <p id="prompt-quote" class="font-review text-[17px] md:text-[19px] italic text-bodyText leading-relaxed"></p>
+        </blockquote>
+        <p id="prompt-author" class="text-sm text-midGray font-medium"></p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-4">
+        <button id="btn-generate" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm">
+          Get Another Prompt
+        </button>
+        <button id="btn-copy" class="text-sm text-midGray border border-gray-200 bg-white px-5 py-3.5 rounded-full hover:border-primary hover:text-primary transition-all font-medium">
+          Copy
+        </button>
+        <button id="btn-twitter" class="text-sm text-midGray border border-gray-200 bg-white px-5 py-3.5 rounded-full hover:border-primary hover:text-primary transition-all font-medium">
+          Share on X
+        </button>
+        <button id="btn-pinterest" class="text-sm text-midGray border border-gray-200 bg-white px-5 py-3.5 rounded-full hover:border-primary hover:text-primary transition-all font-medium">
+          Pin It
+        </button>
+      </div>
+
+      <p class="text-center text-[13px] text-midGray">
+        <span id="prompt-count">360</span> prompts across 12 themes. Completely free.
+      </p>
+    </div>
+  </section>
+
+  <!-- What Makes These Different -->
+  <section class="py-16 md:py-24 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.15] font-bold text-dark mb-6">What makes these prompts different?</h2>
+
+      <div class="space-y-5 text-bodyText text-[16px] leading-relaxed">
+        <p>
+          Most writing prompt generators give you surface-level scenarios. "Write about a rainy day." "Describe your childhood home." They're fine for killing five minutes, but they won't push your writing anywhere interesting.
+        </p>
+        <p>
+          These prompts are built from the actual struggles writers face: procrastination, perfectionism, self-doubt, the paralysis of comparing yourself to someone further along. Each one is paired with a quote from a writer who wrestled with the same thing. Hemingway on discipline. Baldwin on honesty. Anne Rice on refusing to water it down.
+        </p>
+        <p>
+          The result is a prompt that doesn't just tell you what to write. It reframes how you think about writing. Pull one before your morning session and let it set the tone. Use it as a warm-up. Share it with your writing group. Come back tomorrow and pull another.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Signup CTA -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-20 md:py-28 max-w-[560px] mx-auto px-6 text-center relative z-10">
+      <h2 class="font-serif text-[30px] md:text-[40px] leading-[1.1] font-bold text-white mb-4">
+        Get a prompt like this every morning, free.
+      </h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[460px] mx-auto font-light mb-8">
+        A quote from a literary master, an original reflection, and a writing prompt. Delivered to your inbox before you sit down to write.
+      </p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="if(window.plausible)plausible('signup',{props:{source:'writing-prompt-generator'}})">
+        <input type="hidden" name="fields[source_page]" value="writing-prompt-generator">
+        <input type="hidden" name="fields[genre]" value="Writing Prompts">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Start Free
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- More for Writers -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.15] font-bold text-dark mb-8 text-center">More for Writers</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <a href="/writing-prompts/" class="card-lift block bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:border-primary/30 transition-all">
+          <p class="font-semibold text-dark text-[16px] mb-1">Writing Prompts</p>
+          <p class="text-[14px] text-midGray leading-relaxed">Curated prompts organized by theme and writing stage.</p>
+        </a>
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:border-primary/30 transition-all">
+          <p class="font-semibold text-dark text-[16px] mb-1">Creative Writing</p>
+          <p class="text-[14px] text-midGray leading-relaxed">Guides, techniques, and exercises to sharpen your craft.</p>
+        </a>
+        <a href="/writers-block/" class="card-lift block bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:border-primary/30 transition-all">
+          <p class="font-semibold text-dark text-[16px] mb-1">Writer's Block</p>
+          <p class="text-[14px] text-midGray leading-relaxed">What actually causes it and how to break through.</p>
+        </a>
+        <a href="/free-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:border-primary/30 transition-all">
+          <p class="font-semibold text-dark text-[16px] mb-1">Free Writing</p>
+          <p class="text-[14px] text-midGray leading-relaxed">The simplest writing practice that actually works.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 md:py-24 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.15] font-bold text-dark mb-10 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <details class="group bg-white rounded-xl border border-gray-100 shadow-sm" open>
+          <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-dark text-[16px]">
+            How does the writing prompt generator work?
+            <svg class="w-5 h-5 text-midGray group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-6 pb-6 text-[15px] text-midGray leading-relaxed">
+            Click the "Get Another Prompt" button to receive a random writing prompt. Each prompt includes a title, a quote from a well-known writer, and the author's name. You can filter by theme (writer's block, perfectionism, doubt, etc.) or leave it on "All Themes" for a surprise. No signup, no limits.
+          </div>
+        </details>
+        <details class="group bg-white rounded-xl border border-gray-100 shadow-sm">
+          <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-dark text-[16px]">
+            Are these writing prompts free?
+            <svg class="w-5 h-5 text-midGray group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-6 pb-6 text-[15px] text-midGray leading-relaxed">
+            Yes, completely free. No account needed, no paywall, no limits on how many you can generate. Use them as much as you want.
+          </div>
+        </details>
+        <details class="group bg-white rounded-xl border border-gray-100 shadow-sm">
+          <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-dark text-[16px]">
+            What kind of writing prompts are these?
+            <svg class="w-5 h-5 text-midGray group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-6 pb-6 text-[15px] text-midGray leading-relaxed">
+            These are craft-driven prompts rooted in the real struggles every writer faces: writer's block, self-doubt, perfectionism, procrastination, impostor syndrome, and more. Each one comes with a quote from a literary master like Hemingway, Baldwin, Didion, or Pressfield. They're designed to reframe how you think about writing, not just give you a topic.
+          </div>
+        </details>
+        <details class="group bg-white rounded-xl border border-gray-100 shadow-sm">
+          <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-dark text-[16px]">
+            Can I use these prompts for my writing group or classroom?
+            <svg class="w-5 h-5 text-midGray group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-6 pb-6 text-[15px] text-midGray leading-relaxed">
+            Absolutely. Share individual prompts with your group, use them as warm-ups in workshops, or pull one at the start of class. The copy and share buttons make it easy to pass them along.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-20 md:py-24 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <h3 class="text-white font-serif text-[28px] md:text-[36px] font-bold mb-4 leading-tight">The clarity you seek starts here.</h3>
+      <p class="text-white/50 text-base mb-8 font-light">A free daily reflection and writing prompt that makes you want to sit down and write.</p>
+      <a href="#signup" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base mb-4">
+        Get Daily Prompts Free
+      </a>
+      <p class="text-white/50 text-sm font-medium mb-8">Join 1,000+ writers. Free. Every morning.</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/writing-prompts/" class="text-white/50 text-sm hover:text-white transition-colors">Writing Prompts</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </section>
+
+  <!-- Copied Toast -->
+  <div id="copied-toast" class="copied-toast">Copied to clipboard</div>
+
+  <script>
+  (function() {
+    // --- Prompt Database (360 entries) ---
+    var P = [
+{t:'IT\'S NEVER TOO LATE',q:'Start before you\'re ready.',a:'Steven Pressfield',c:'Inspiration'},
+{t:'TALENT IS OVERRATED',q:'Serious writers write, inspired or not. Over time they discover that routine is a better friend than inspiration.',a:'Ralph Keyes',c:'Inspiration'},
+{t:'TREAT IT LIKE A 9—5',q:'Inspiration usually comes during work, rather than before it.',a:'Madeleine L\'Engle',c:'Inspiration'},
+{t:'THINK OF THE FISHERMAN',q:'The more I want to get something done, the less I call it work.',a:'Richard Bach',c:'Inspiration'},
+{t:'GET IN THE KITCHEN',q:'I learned never to empty the well of my writing, but always to stop when there was still something there in the deep part of the well, and let it refill at night from the springs that fed it.',a:'Ernest Hemingway',c:'Inspiration'},
+{t:'BREW YOUR INSPIRATION',q:'We must be patient, and believe that inspiration will come to those who can master their disinclination.',a:'Pyotr Ilyich Tchaikovsky',c:'Inspiration'},
+{t:'DON\'T WAIT FOR LIGHTNING',q:'Life shrinks or expands in proportion to one\'s courage.',a:'Anaïs Nin',c:'Inspiration'},
+{t:'LIVE COURAGEOUSLY',q:'The proper function of man is to live, not to exist. I shall not waste my days in trying to prolong them. I shall use my time.',a:'Jack London',c:'Inspiration'},
+{t:'BLUNT FORCE REQUIRED',q:'Don\'t bend; don\'t water it down; don\'t try to make it logical; don\'t edit your own soul according to the fashion. Rather, follow your most intense obsessions mercilessly.',a:'Anne Rice',c:'Inspiration'},
+{t:'THE OUTSIDERS\' ADV ANTAGE',q:'Resistance in my experience always kicks in when you\'re trying to move from a lower level to a higher level or to identify with a braver part of yourself or your higher nature. So it\'s that negative repelling force. It\'s kind of the dragon that we have to slay every day if we\'re artists or entrepreneurs.',a:'Steven Pressfield',c:'Inspiration'},
+{t:'THE DRAGON CAN BE BEATEN',q:'Instructions for living a life. Pay attention. Be astonished. Tell about it.',a:'Mary Oliver',c:'Inspiration'},
+{t:'PAY ATTENTION',q:'I must write it all out, at any cost. Writing is thinking. It is more than living, for it is being conscious of living.',a:'Anne Morrow Lindbergh',c:'Inspiration'},
+{t:'TUNE OUT',q:'The world is full of magical things, patiently waiting for our senses to grow sharper.',a:'Eden Phillpotts',c:'Inspiration'},
+{t:'OPEN YOUR EYES',q:'The greatest part of a writer\'s time is spent in reading in order to write. A man will turn over half a library to make a book.',a:'Samuel Johnson',c:'Inspiration'},
+{t:'IDEAS LAND ON A CALM MIND',q:'A word after a word after a word is power.',a:'Margaret Atwood',c:'Inspiration'},
+{t:'EVERY WORD MATTERS',q:'Being a writer is a very peculiar sort of job: It\'s always you versus a blank sheet of paper (or a blank screen) and quite often the blank piece of paper wins.',a:'Neil Gaiman',c:'Inspiration'},
+{t:'THE GAME IS RIGGED',q:'With everything that has happened to you, you can either feel sorry for yourself or treat what has happened as a gift. Everything is either an opportunity to grow or an obstacle to keep you from growing. You get to choose.',a:'Dr. Wayne Dyer',c:'Inspiration'},
+{t:'WRITE YOUR OWN ENDING',q:'Write freely and as rapidly as possible and throw the whole thing on paper.',a:'John Steinbeck',c:'Inspiration'},
+{t:'DANCE WITH YOUR IDEAS',q:'Motivation is when you get hold of an idea and carry it through to its conclusion, inspiration is the reverse. An idea gets hold of you and carries you where you are intended to go.',a:'Dr. Wayne Dyer',c:'Inspiration'},
+{t:'STOKE THE FLAME',q:'Just as anyone who listens to the muse will hear, you can write out of your own intention or out of inspiration. There is such a thing. It comes up and talks. And those who have heard deeply the rhythms and hymns of the gods, can recite those hymns in such a way that the gods will be attracted.',a:'Joseph Campbell',c:'Inspiration'},
+{t:'BE A TRANSLATOR',q:'Fill your paper with the breathings of your heart.',a:'William Wordsworth',c:'Inspiration'},
+{t:'IT\'LL BE THERE',q:'The role of the writer is not to say what we can all say but what we are unable to say.',a:'Anaïs Nin',c:'Inspiration'},
+{t:'V AGUE MADE VIVID',q:'You never have to change anything you got up in the middle of the night to write.',a:'Saul Bellow',c:'Inspiration'},
+{t:'DON\'T WAIT FOR DAYLIGHT',q:'If there\'s a book that you want to read, but it hasn\'t been written yet, then you must write it.',a:'Toni Morrison',c:'Inspiration'},
+{t:'SURVIV AL',q:'All you have to do is write one true sentence. Write the truest sentence that you know.',a:'Ernest Hemingway',c:'Inspiration'},
+{t:'KEEP IT SIMPLE',q:'We write to taste life twice, in the moment, and in retrospection.',a:'Anaïs Nin',c:'Inspiration'},
+{t:'YOUR STORY IS WAITING',q:'To accomplish great things, we must not only act, but also dream; not only plan, but also believe.',a:'Anatole France',c:'Inspiration'},
+{t:'GO SLOWLY',q:'Show up, show up, show up, and after a while the muse shows up, too. If she doesn\'t show up invited, eventually she just shows up.',a:'Isabel Allende',c:'Inspiration'},
+{t:'SPILL THE INK',q:'The only Zen you find on the tops of mountains is the Zen you bring up there.',a:'Robert M. Pirsig',c:'Inspiration'},
+{t:'LEAD THE HERO',q:'You could be writing the book that changes your life.',a:'Brandon Sanderson',c:'Inspiration'},
+{t:'IT ONLY TAKES ONE',q:'Don\'t bother just to be better than your contemporaries or predecessors. Try to be better than yourself.',a:'William Faulkner',c:'Comparison'},
+{t:'THE SCARIEST PART',q:'At first glance it may appear too hard. Look again. Always look again.',a:'Mary Anne Radmacher',c:'Consistency'},
+{t:'THEY\'RE NOT SPECIAL',q:'Writers like teeth are divided into incisors and grinders.',a:'Walter Bagehot',c:'Consistency'},
+{t:'STAY TRUE',q:'In writing, habit seems to be a much stronger force than either willpower or inspiration.',a:'John Steinbeck',c:'Consistency'},
+{t:'CONSISTENCY',q:'Motivation gets you going, but discipline keeps you growing. That\'s the Law of Consistency. It doesn\'t matter how talented you are. It doesn\'t matter how many opportunities you receive. If you want to grow, consistency is key.',a:'John C. Maxwell',c:'Consistency'},
+{t:'YOU EARNED IT',q:'Understand that writing is like an athletic activity. To play tennis well, you expect to keep practicing, but for some reason with writing, you think you should come out fresh the first time.',a:'Natalie Goldberg',c:'Consistency'},
+{t:'WORK YOUR MUSCLES',q:'',a:'',c:'Consistency'},
+{t:'STRIP DOWN SUCCESS',q:'Routine, in an intelligent man, is a sign of ambition.',a:'W.H. Auden',c:'Consistency'},
+{t:'RESISTANCE AS OPPORTUNITY',q:'The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will.',a:'Vince Lombardi',c:'Consistency'},
+{t:'CHOOSE WISELY',q:'It is not enough to be industrious; so are the ants. What are you industrious about?',a:'Henry Da Vid Thoreau',c:'Consistency'},
+{t:'PURPOSE IN THE CHAOS',q:'A small daily task, if it be really daily, will beat the labours of a spasmodic Hercules.',a:'Anthony Trollope',c:'Consistency'},
+{t:'WHERE WRITERS ARE MADE OR BROKEN',q:'It doesn\'t seem to me to matter very much whether, at the moment, it is or isn\'t very good. The important thing is to keep going. Probably it\'s impossible to do excellent work while things are so disturbed…Just writing every day is a way of keeping the engine running.',a:'T. S. Eliot',c:'Consistency'},
+{t:'KEEP YOUR WORDS WARM',q:'Be regular and orderly in your life, so that you may be violent and original in your work.',a:'Gusta Ve Flaubert',c:'Consistency'},
+{t:'BE VIOLENT',q:'Success is the sum of small efforts, repeated day in and day out.',a:'Robert Collier',c:'Consistency'},
+{t:'PROTECT YOURSELF',q:'You must act as if everything depended on your individual efforts. The secret of success is constancy of purpose.',a:'Benjamin Disraeli',c:'Consistency'},
+{t:'THE WRITE WAY',q:'Write every day even if it is just a paragraph.',a:'Michael Connelly',c:'Consistency'},
+{t:'HARD TRUTHS',q:'Abandon the idea that you are ever going to finish. Lose track of the 400 pages and write just one page for each day, it helps.',a:'John Steinbeck',c:'Consistency'},
+{t:'MUNDANE AND UNROMANTIC',q:'Character — the willingness to accept responsibility for one\'s own life — is the source from which self-respect springs.',a:'Joan Didion',c:'Consistency'},
+{t:'WRITING IS NO DIFFERENT',q:'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven\'t found it yet, keep looking. Don\'t settle.',a:'Steve Jobs',c:'Consistency'},
+{t:'WE ALL START WITH ZERO',q:'Genius is one percent inspiration and ninety-nine percent perspiration.',a:'Thomas Edison',c:'Consistency'},
+{t:'YOU DON\'T HA VE TO DO IT',q:'One can only forget Time by making use of it.',a:'Charles Baudelaire',c:'Consistency'},
+{t:'WRITE AS RAIN',q:'Success always demands a greater effort. Success is not final, failure is not fatal: It is the courage to continue that counts.',a:'Winston Churchill',c:'Consistency'},
+{t:'A LONG SERIES OF SMALL BATTLES',q:'Success makes us intolerant of failure and failure makes us intolerant of success.',a:'William Feather',c:'Consistency'},
+{t:'YOU DON\'T HA VE TO BE GREAT',q:'',a:'',c:'Consistency'},
+{t:'SWIMMING IN DARK WATERS',q:'One must have a high opinion of a work of art — not the work one is creating at the moment, but of that which one desires to achieve one day. Without this it is not worthwhile working.',a:'Edgar Degas',c:'Consistency'},
+{t:'APPROVE YOURSELF',q:'Work is its own cure. You have to like it better than being loved.',a:'Marge Piercy',c:'Consistency'},
+{t:'WRITE THROUGH THE LABYRINTH',q:'Consistency is the DNA of mastery.',a:'Robin Sharma',c:'Consistency'},
+{t:'STAKE YOUR CLAIM',q:'The only failure in writing is when you stop doing it. Then you fail yourself.',a:'Natalie Goldberg',c:'Consistency'},
+{t:'THE MATH IS SIMPLE',q:'If you give up before your goal has been reached, you are a',a:'',c:'Consistency'},
+{t:'FAIL FORWARD (',q:'A certain type of perfection can only be realized through a limitless accumulation of the imperfect.',a:'Haruki Murakami',c:'Consistency'},
+{t:'LET THE TOWER LEAN',q:'We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve that beauty.',a:'Maya Angelou',c:'Perfectionism'},
+{t:'GIVE YOURSELF GRACE',q:'The first draft plunges on, and about a quarter of the way through it I realise I\'m doing things wrong, so I start rewriting it. What you call the first draft becomes rather like a caterpillar; it is progressing fairly slowly, but there is movement up and down its whole length, the whole story is being changed. I call this draft zero, telling myself how the story is supposed to go.',a:'Terry Pratchett',c:'Perfectionism'},
+{t:'JUST RIDE',q:'Perfectionism is a twenty-ton shield we lug around thinking it will protect us when, in fact, it\'s the thing that\'s really preventing us from taking flight.',a:'Brené Brown',c:'Perfectionism'},
+{t:'DROP THE SHIELD',q:'Perfectionism is the voice of the oppressor, the enemy of the people. It will keep you cramped and insane your whole life, and it is the main obstacle between you and a shitty first draft.',a:'Anne Lamott',c:'Perfectionism'},
+{t:'WRITE TO BE READ',q:'If critics say your work stinks it\'s because they want it to stink and they can make it stink by scaring you into conformity with their comfortable little standards. Standards so low that they can no longer be considered \'dangerous\' but set in place in their compartmental understandings.',a:'Jack Kerouac',c:'Perfectionism'},
+{t:'PERMISSION TO EXIST',q:'All of us failed to match our dreams of perfection.',a:'William Faulkner',c:'Perfectionism'},
+{t:'THE ART OF LETTING GO',q:'A professional writer is an amateur who didn\'t quit.',a:'Richard Bach',c:'Perfectionism'},
+{t:'TURNING PRO',q:'You can always edit a bad page. You can\'t edit a blank page.',a:'Nora Roberts',c:'Perfectionism'},
+{t:'FEAR THE SPECTER',q:'I believe more in the scissors than I do in the pencil.',a:'Truman Capote',c:'Perfectionism'},
+{t:'USE YOUR SCISSORS',q:'Don\'t get it right, get it written.',a:'James Thurber',c:'Perfectionism'},
+{t:'YOU OWE IT TO THE WORK',q:'Perfectionism is slow death.',a:'Hugh Prather',c:'Perfectionism'},
+{t:'JUST RUN',q:'Done is better than perfect. I have tried to embrace this motto and let go of unattainable standards. Aiming for perfection causes frustration at best and paralysis at worst.',a:'Sheryl Sandberg',c:'Perfectionism'},
+{t:'MOVE FAST AND BREAK THINGS',q:'And now that you don\'t have to be perfect, you can be good.',a:'John Steinbeck',c:'Perfectionism'},
+{t:'HA VE THE CONVERSATION',q:'Perfectionism is a self-destructive and addictive belief system…',a:'Brené Brown',c:'Perfectionism'},
+{t:'EVEN IF IT\'S CROOKED',q:'As creators, our pursuit of perfection might be misguided, particularly if it comes at the expense of the things that matter .',a:'Seth Godin',c:'Perfectionism'},
+{t:'BRICK BY BRICK',q:'Better to write for yourself and have no public, than to write for the public and have no self.',a:'Cyril Connolly',c:'Perfectionism'},
+{t:'CREATE OR CONFORM',q:'Perfectionism is not a quest for the best. It is a pursuit of the worst in ourselves, the part that tells us that nothing we do will ever be good enough — that we should try again.',a:'Julia Cameron',c:'Perfectionism'},
+{t:'LOOP TO NOWHERE',q:'Follow the path of your aroused thought, and you will soon meet this infernal inscription: There is nothing so beautiful as that which does not exist.',a:'Paul V Aléry',c:'Perfectionism'},
+{t:'THE PRICE YOU PAY',q:'Writing has laws of perspective, of light and shade, just as painting does, or music. If you are born knowing them, fine. If not, learn them. Then rearrange the rules to suit yourself.',a:'Truman Capote',c:'Perfectionism'},
+{t:'TRUTH AND DARE',q:'There\'s an awful temptation to just keep on researching. There comes a point where you just have to stop, and start writing.',a:'Da Vid McCullough',c:'Perfectionism'},
+{t:'GOOD ENOUGH',q:'Conditions are never just right. People who delay action until all factors are favorable are the kind who do nothing.',a:'William Feather',c:'Perfectionism'},
+{t:'HIT THE ROAD',q:'',a:'',c:'Perfectionism'},
+{t:'REMEMBER GUSTA VE EIFFEL',q:'In the eyes of those who anxiously seek perfection, a work is never truly completed — a word that for them has no sense — but abandoned.',a:'Paul V Aléry',c:'Perfectionism'},
+{t:'LIVE UP TO YOUR CALLING',q:'Perfectionism is an attempt to inhabit an imaginary world in order to avoid experiencing the world in which you live.',a:'Gary Zuka V',c:'Perfectionism'},
+{t:'SET SAIL',q:'Perfection has one grave defect: it is apt to be dull.',a:'W. Somerset Maugham',c:'Perfectionism'},
+{t:'THE RIGHT MOMENT IS NOW',q:'Perfectionism is not as much the desire for excellence, as it is the fear of failure couched in procrastination.',a:'Dan Miller',c:'Perfectionism'},
+{t:'PERFECTION',q:'Perfection, in anything, is unbearably dull. Myself, I prefer a touch of imperfection.',a:'Colleen McCullough',c:'Perfectionism'},
+{t:'WRONG TURNS STILL LEAD SOMEWHERE',q:'An artist\'s only concern is to shoot for some kind of perfection, and on his own terms, not anyone else\'s.',a:'J.D. Salinger',c:'Perfectionism'},
+{t:'THE SWEET SPOT',q:'Who is more to be pitied, a writer bound and gagged by policemen or one living in perfect freedom who has nothing more to say?',a:'Kurt Vonnegut',c:'Perfectionism'},
+{t:'WRITE ANYWAY',q:'Aim at perfection in everything, though in most things it is unattainable; however, they who aim at it, and persevere, will come much nearer it than those whose laziness and despondency makes them give it up as unattainable.',a:'Lord Philip Dormer Stanhope Chesterfield',c:'Perfectionism'},
+{t:'BATTLE-SCARRED FROM THE HEART',q:'Writing is a conviction before it is a craft.',a:'Joshua Cohen',c:'Perfectionism'},
+{t:'CONVICTION DRIVES THE WORK',q:'The purpose of a writer is to keep civilization from destroying itself.',a:'Bernard Malamud',c:'Conviction'},
+{t:'BIRTH OF THE COOL',q:'A writing cook and a cooking writer must be bold at the desk as well as the stove.',a:'M. F. K. Fisher',c:'Conviction'},
+{t:'WRITE WITH GUTS',q:'I write entirely to find out what I\'m thinking, what I\'m looking at, what I see and what it means. What I want and what I fear.',a:'Joan Didion',c:'Conviction'},
+{t:'DIG DEEP',q:'But words are things, and a small drop of ink, Falling like dew, upon a thought, produces That which makes thousands, perhaps millions, think.',a:'Lord Byron',c:'Conviction'},
+{t:'WHISPERS OF WISDOM',q:'Conviction is the conscience of the mind.',a:'Nicolas Chamfort',c:'Conviction'},
+{t:'TRUST YOUR GUT',q:'Loyalty to petrified opinions never yet broke a chain or freed a human soul in this world — and never will.',a:'Mark Twain',c:'Conviction'},
+{t:'RELEASE WITH GRACE',q:'In order to rise from its own ashes, a phoenix first must burn.',a:'Octa Via Butler',c:'Conviction'},
+{t:'FALL TO RISE AGAIN',q:'To escape criticism: Do nothing, say nothing, be nothing.',a:'Elbert Hubbard',c:'Conviction'},
+{t:'DOERS',q:'Without courage, we cannot practice any other virtue with consistency.',a:'Maya Angelou',c:'Conviction'},
+{t:'BECAUSE YOU DO',q:'In my case, I was convinced that there would be a knock on the door, and a man with a clipboard (I don\'t know why he carried a clipboard, in my head, but he did) would be there, to tell me it was all over, and they had caught up with me, and now I would have to go and get a real job…',a:'Neil Gaiman',c:'Doubt'},
+{t:'EVEN UNDER FIRE',q:'The weakest living creature, by concentrating his powers on a single object, can accomplish something.',a:'Thomas Carlyle',c:'Conviction'},
+{t:'ROLL UP YOUR SLEEVES',q:'I write every moment that is humanly possible. I write every day and every night. The only discipline I lack is the discipline to quit.',a:'Barbara Kingsolver',c:'Conviction'},
+{t:'AN HOUR IS GOOD ENOUGH',q:'Start writing, no matter what. The water does not flow until the faucet is turned on.',a:'Louis L\'Amour',c:'Conviction'},
+{t:'RESILIENCE TO REJECTION',q:'One of the few things I know about writing is this: spend it all, shoot it, play it, lose it, all, right away, every time. Do not hoard what seems good for a later place in the book, or for another book; give it, give it all, give it now. . . . Something more will arise for later, something better.',a:'Annie Dillard',c:'Conviction'},
+{t:'GIVE IT ALL',q:'It\'s when you know you\'re licked before you begin, but you begin anyway and see it through no matter what.',a:'Harper Lee',c:'Conviction'},
+{t:'START SMALL',q:'Your writing voice is the deepest possible reflection of who you are. The job of your voice is not to seduce or flatter or make wellshaped sentences. In your voice, your readers should be able to hear the contents of your mind, your heart, your soul.',a:'Meg Rosoff',c:'Conviction'},
+{t:'RAW NERVE LITERATURE',q:'When I sit down to write a book, I do not say to myself, \'I am going to produce a work of art.\' I write it because there is some lie that I want to expose, some fact to which I want to draw attention, and my initial concern is to get a hearing.',a:'George Orwell',c:'Conviction'},
+{t:'YOU CAN DO THE SAME',q:'To write honestly and with all our powers is the least we can do, and the most.',a:'Eudora Welty',c:'Conviction'},
+{t:'THE POWER OF YOUR WORDS',q:'Writing is the only thing that, when I do it, I don\'t feel I should be doing something else.',a:'Gloria Steinem',c:'Conviction'},
+{t:'YOUR STORY',q:'The only way you can write the truth is to assume that what you set down will never be read.',a:'Margaret Atwood',c:'Conviction'},
+{t:'FIND YOUR GOMBE',q:'Miracles come in moments. Be ready and willing.',a:'Dr. Wayne Dyer',c:'Conviction'},
+{t:'ALL YOU NEED IS THE SEED',q:'Strength does not come from physical capacity. It comes from an indomitable will.',a:'Mahatma Gandhi',c:'Conviction'},
+{t:'OF SALT',q:'To sell your soul is the easiest thing in the world. That\'s what everybody does every hour of his life. If I asked you to keep your soul — would you understand why that\'s much harder?',a:'Ayn Rand',c:'Conviction'},
+{t:'DEFY THE TRIBE',q:'But the secret of force in writing lies not so much in the pedigree of nouns and adjectives and verbs, as in having something that you believe in to say, and making the parts of speech vividly conscious of it.',a:'James Russell Lowell',c:'Conviction'},
+{t:'YOU\'RE IN CONTROL',q:'When we are no longer able to change a situation…we are challenged to change ourselves.',a:'Viktor Frankl',c:'Conviction'},
+{t:'NOTHING MORE',q:'I write for the same reason I breathe — because if I didn\'t, I would die.',a:'Isaac Asimov',c:'Conviction'},
+{t:'UNBOUND SACRAFICE',q:'Writers may be disreputable, incorrigible, early to decay or late to bloom but they dare to go it alone.',a:'John Updike',c:'Conviction'},
+{t:'YOU\'RE READY',q:'I began to write in the first place because I expected everything to change, and I wanted to have things in writing the way they had been. Just a little things, of course. A little of my little.',a:'William Saroyan',c:'Conviction'},
+{t:'WHAT MUST BE DONE',q:'You think your pain and your heartbreak are unprecedented in the history of the world, but then you read.',a:'James Baldwin',c:'Conviction'},
+{t:'SHARE YOUR LIGHT',q:'The greater the artist the greater the doubt; perfect confidence is granted to the less talented as a consolation prize.',a:'Robert Hughes',c:'Doubt'},
+{t:'FEAR WILL JOIN YOU',q:'Literature is an occupation in which you have to keep proving your talent to people who have none.',a:'Jules Renard',c:'Doubt'},
+{t:'THE TAX YOU PAY',q:'The oldest and strongest emotion of mankind is fear, and the oldest and strongest kind of fear is fear of the unknown.',a:'H.P. Lovecraft',c:'Doubt'},
+{t:'PUBLISH ANYWAY',q:'The worst enemy to creativity is self-doubt.',a:'Sylvia Plath',c:'Doubt'},
+{t:'THE HONEST PLACE',q:'Writing is a form of therapy; sometimes I wonder how all those who do not write, compose or paint can manage to escape the madness, the melancholia, the panic fear which is inherent in the human condition.',a:'Graham Greene',c:'Doubt'},
+{t:'TRUE HORROR',q:'The greatest limitations you will ever face will be those you place on yourself.',a:'Denis Waitley',c:'Doubt'},
+{t:'THE POWER IS YOURS',q:'Write what disturbs you, what you fear, what you have not been willing to speak about. Go for ten, fifteen, twenty minutes. Be willing to be split open.',a:'Natalie Goldberg',c:'Doubt'},
+{t:'THE DIFFERENCE',q:'The secret of being a bore…is to tell everything.',a:'Voltaire',c:'Doubt'},
+{t:'FRIEND OR FOE',q:'Doubt kills more dreams than failure ever will.',a:'Suzy Kassem',c:'Doubt'},
+{t:'HIGH-WIRE ACT',q:'All good things which exist are the fruits of originality.',a:'John Stuart Mill',c:'Doubt'},
+{t:'GO THROUGH',q:'Our doubts are traitors, and make us lose the good we oft might win by fearing to attempt.',a:'William Shakespeare',c:'Doubt'},
+{t:'PLAGUE',q:'Always be a first-rate version of yourself, instead of a second-rate version of somebody else.',a:'Judy Garland',c:'Doubt'},
+{t:'DON\'T PLAY COPYCAT',q:'Doubt is not a pleasant condition, but certainty is an absurd one.',a:'Voltaire',c:'Doubt'},
+{t:'YOUR FRIEND',q:'Writers are a fascinating breed, because there are so many kinds of them, they are made by so many circumstances, conditions, and mysteries, and there are so many ways for writing to be done.',a:'William Saroyan',c:'Doubt'},
+{t:'LEAN IN',q:'You have no responsibility to live up to what other people think you ought to accomplish. I have no responsibility to be like they expect me to be. It\'s their mistake, not my failing.',a:'Richard P. Feynman',c:'Doubt'},
+{t:'IT ALL COUNTS',q:'Jealousy is the most dreadfully involuntary of all sins.',a:'Iris Murdoch',c:'Comparison'},
+{t:'THE KING OF FEAR',q:'The economy of a novelist is a little like that of a careful housewife who is unwilling to throw away anything that might perhaps serve its turn.',a:'Graham Greene',c:'Doubt'},
+{t:'DANCE WITH IT',q:'Creativity is often blocked by trying to be perfect. Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.',a:'Tony Robbins',c:'Doubt'},
+{t:'COMPETE TO FAIL',q:'I\'m not interested in preserving the status quo; I want to overthrow it.',a:'Newt Gingrich',c:'Doubt'},
+{t:'THE INVISIBLE CRITIC',q:'I write to give myself strength. I write to be the characters that I am not. I write to explore all the things I\'m afraid of.',a:'Joss Whedon',c:'Doubt'},
+{t:'WHAT ARE YOU AFRAID OF',q:'Not everything that is faced can be changed, but nothing can be changed until it is faced.',a:'James Baldwin',c:'Doubt'},
+{t:'BECAUSE IT\'S NECESSARY',q:'Writing is finally about one thing: going into a room alone and doing it…And although you are physically by yourself, the haunting Demon never leaves you...',a:'William Goldman',c:'Doubt'},
+{t:'LET IT CHASE YOU',q:'Attention and activity lead to mistakes as well as to successes; but a life spent in making mistakes is not only more honorable but more useful than a life spent doing nothing.',a:'George Bernard Shaw',c:'Doubt'},
+{t:'TRUE NORTH',q:'Anxiety may be compared with dizziness. He whose eye happens to look down into the yawning abyss becomes dizzy.',a:'Søren Kierkegaard',c:'Doubt'},
+{t:'STEP INTO THE VOID',q:'Twenty years from now you will be more disappointed by the things that you didn\'t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.',a:'H. Jackson Brown, Jr',c:'Doubt'},
+{t:'CERTAINTY VS. POSSIBILITY',q:'Don\'t waste life in doubts and fears; spend yourself on the work before you, well assured that the right performance of this hour\'s duties will be the best preparation for the hours and ages that will follow it.',a:'Ralph Waldo Emerson',c:'Doubt'},
+{t:'THE SIMPLE SOLUTION',q:'They who have conquered doubt and fear have conquered failure.',a:'James Allen',c:'Doubt'},
+{t:'WRITE WHILE IT WATCHES',q:'There is no defeat except from within.',a:'Robert Burns Wilson',c:'Doubt'},
+{t:'BRING IT TO THE LIGHT',q:'Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.',a:'Frank Herbert',c:'Doubt'},
+{t:'THE SUMMIT IS ONLY REACHED IN STEPS',q:'Envy, if surrounded on all sides by the brightness of another\'s prosperity, like the scorpion confined within a circle of fire, will sting itself to death.',a:'Charles Caleb Colton',c:'Doubt'},
+{t:'THERE\'S SPACE FOR YOU',q:'Jealousy is the fear or apprehension of superiority: envy our uneasiness under it.',a:'William Shenstone',c:'Comparison'},
+{t:'WHAT ARE YOU PAYING FOR IT',q:'No need to hurry. No need to sparkle. No need to be anybody but oneself.',a:'Virginia Woolf',c:'Comparison'},
+{t:'THE WORLD IS WAITING',q:'So, the hardest battle you\'re ever going to fight is the battle to be just you.',a:'Leo Buscaglia',c:'Comparison'},
+{t:'ONLY YOU',q:'Remember that there is nothing noble in being superior to some other man. The true nobility is in being superior to your previous self.',a:'Walter Lorenzo Sheldon',c:'Comparison'},
+{t:'DON\'T FORGET WHERE YOU STARTED',q:'One drop of wine is enough to redden a whole glass of water.',a:'Victor Hugo',c:'Comparison'},
+{t:'YOUR ONLY COMPETITION',q:'The only art I\'ll ever study is stuff that I can steal from.',a:'Da Vid Bowie',c:'Comparison'},
+{t:'ARTISTRY AS ALCHEMY',q:'I was not looking for my dreams to interpret my life, but rather for my life to interpret my dreams.',a:'Susan Sontag',c:'Comparison'},
+{t:'THE AERONAUT\'S APPROACH',q:'The reason why so few good books are written is that so few people who can write know anything.',a:'Walter Bagehot',c:'Comparison'},
+{t:'CRUMBLING COLLABORATION',q:'To free us from the expectations of others, to give us back to ourselves — there lies the great, singular power of self-respect.',a:'Joan Didion',c:'Comparison'},
+{t:'BLOOD',q:'It is easier to be wise for others than for oneself.',a:'Francois De La Rochefoucauld',c:'Comparison'},
+{t:'LEA VE A MARK',q:'Comparison is the death of true self-contentment.',a:'John Powell',c:'Comparison'},
+{t:'CHASING SHADOWS',q:'To be what we are, and to become what we are capable of becoming, is the only end of life.',a:'Robert Louis Stevenson',c:'Comparison'},
+{t:'THE BEST PRIZE OF ALL',q:'Beggars do not envy millionaires, though of course they will envy other beggars who are more successful.',a:'Bertrand Russell',c:'Comparison'},
+{t:'IT\'S YOURS TO TELL',q:'Don\'t compare your beginning to someone else\'s middle.',a:'Jon Acuff',c:'Comparison'},
+{t:'BLOOM SLOWLY',q:'While one person hesitates because he feels inferior, the other is busy making mistakes and becoming superior.',a:'Henry C. Link',c:'Comparison'},
+{t:'THE MARATHON OF MASTERY',q:'Every time a friend succeeds, I die a little.',a:'Gore Vidal',c:'Comparison'},
+{t:'BLACK MIRROR',q:'The secret of being miserable is to have leisure to bother about whether you are happy or not. The cure for it is occupation…',a:'George Bernard Shaw',c:'Comparison'},
+{t:'PURE OCCUPATION',q:'Envy is ever joined with the comparing of a man\'s self, and where there is no comparison, no envy…',a:'Francis Bacon',c:'Comparison'},
+{t:'BET ON YOURSELF',q:'You do not determine your success by comparing yourself to others, rather you determine your success by comparing your accomplishments to your capabilities.',a:'Zig Ziglar',c:'Comparison'},
+{t:'THE BEST METRIC',q:'Comparing yourself to others is an act of violence against your authentic self.',a:'Iyanla V Anzant',c:'Comparison'},
+{t:'YOUR ONLY ASSET',q:'The eyes of others our prisons; their thoughts our cages.',a:'Virginia Woolf',c:'Comparison'},
+{t:'BE CAREFUL WHAT YOU WISH FOR',q:'Jealousy is all the fun you think they had.',a:'Erica Jong',c:'Comparison'},
+{t:'THE GRASS ISN\'T ALWAYS GREENER',q:'Happiness is equilibrium. Shift your weight.',a:'Tom Stoppard',c:'Comparison'},
+{t:'SHIFT YOUR WEIGHT',q:'There is neither happiness nor misery in the world; there is only the comparison of one state with another, nothing more.',a:'Alexandre Dumas',c:'Comparison'},
+{t:'WHAT\'S THE RUSH',q:'Comparison is a very foolish attitude, because each person is unique and incomparable. Once this understanding settles in you, jealousy disappears.',a:'Rajneesh (Osho)',c:'Comparison'},
+{t:'YOUR VOICE',q:'That envy is ignorance; that imitation is suicide…',a:'Ralph Waldo Emerson',c:'Comparison'},
+{t:'NO ONE ELSE BUT YOU',q:'Emulation admires and strives to imitate great actions; envy is only moved to malice.',a:'Honore De Balzac',c:'Comparison'},
+{t:'AIM HIGH',q:'The only thing that makes life possible is permanent, intolerable uncertainty; not knowing what comes next.',a:'Ursula K. Le Guin',c:'Comparison'},
+{t:'THE UNYIELDING CURRENT OF LIFE',q:'Uncertainty is the only certainty there is, and knowing how to live with insecurity is the only security.',a:'John Allen Paulos',c:'Uncertainty'},
+{t:'FACE CHAOS',q:'The quest for certainty blocks the search for meaning. Uncertainty is the very condition to impel man to unfold his powers.',a:'Erich Fromm',c:'Uncertainty'},
+{t:'THE PARADOX OF CERTAINTY',q:'Everything may seem to be going wrong, when in reality, it is going right.',a:'Florence Scovel Shinn',c:'Uncertainty'},
+{t:'A SERENDIPITOUS DETOUR',q:'I think it\'s much more interesting to live not knowing than to have answers which might be wrong.',a:'Richard Feynman',c:'Uncertainty'},
+{t:'YOU\'RE NOT LOST',q:'It\'s the best possible time to be alive, when almost everything you thought you knew is wrong.',a:'Tom Stoppard',c:'Uncertainty'},
+{t:'EXPLORE THE UNKNOWN',q:'Virtually nothing comes out right the first time. Failures, repeated failures, are finger posts on the road to achievement.',a:'Charles Kettering',c:'Uncertainty'},
+{t:'BICYCLE DAY',q:'When the uncertain future becomes the past, the past, in turn, becomes uncertain.',a:'Mohsin Hamid',c:'Uncertainty'},
+{t:'TWO SIDES OF THE COIN',q:'One\'s destination is never a place but rather a new way of looking at things.',a:'Henry Miller',c:'Uncertainty'},
+{t:'FORGE YOUR OWN PATH',q:'I don\'t want the world to give me anything for my books except money enough to save me from the temptation to write only for money.',a:'George Eliot',c:'Uncertainty'},
+{t:'YOUR VOICE ISN\'T FOUND',q:'The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function.',a:'F. Scott Fitzgerald',c:'Uncertainty'},
+{t:'TUG OF WAR WITH THE WHITE ABYSS',q:'It\'s like driving a car at night: you never see further than your headlights, but you can make the whole trip that way.',a:'E.L. Doctorow',c:'Uncertainty'},
+{t:'LOW VISIBILITY WRITING',q:'Writers don\'t always know what they mean - that\'s why they write. Their work stands in for them. On the page, the reader meets the authoritative, perfected self; in life, the writer is lumbered with the uncertain, imperfect one.',a:'John Lahr',c:'Uncertainty'},
+{t:'LINE BY LINE',q:'Writing is an exploration. You start from nothing and learn as you go.',a:'E.L. Doctorow',c:'Uncertainty'},
+{t:'LET GO',q:'You write a hit play the same way you write a flop.',a:'William Saroyan',c:'Uncertainty'},
+{t:'THE INVITATION',q:'When the mind is in a state of uncertainty the smallest impulse directs it to either side.',a:'Publius Terentius Afer (Terence)',c:'Uncertainty'},
+{t:'DOWN THE RABBIT HOLE',q:'Only those who will risk going too far can possibly find out how far one can go.',a:'T.S. Eliot',c:'Uncertainty'},
+{t:'DEBT SLOWS ONLY THOSE WHO HA VE GIVEN UP',q:'I should like to know what people fear most: Whatever is contrary to their usual habits, I imagine.',a:'Fyodor Dostoevsky',c:'Uncertainty'},
+{t:'BEYOND THE LAST LIGHT',q:'To any writer: Teach yourself to work in uncertainty…Write, complete, revise. If it doesn\'t work, begin something else.',a:'Bernard Malamud',c:'Uncertainty'},
+{t:'SUBTRACT TO ADD',q:'If you show someone something you\'ve written, you give them a sharpened stake, lie down in your coffin, and say, \'When you\'re ready\'.',a:'Da Vid Mitchell',c:'Uncertainty'},
+{t:'INK-STAINED LIES',q:'I still have trouble writing words that are not dialogue, finding words that I like. But if it were too easy, it wouldn\'t hold my interest.',a:'Joseph Heller',c:'Uncertainty'},
+{t:'BEFORE THE FUNERAL',q:'We must walk consciously only part way toward our goal, and then leap in the dark to our success.',a:'Henry Da Vid Thoreau',c:'Uncertainty'},
+{t:'TINY STEPS TO GIANT LEAPS',q:'Such, indeed, is the uncertainty of all human affairs, that security and despair are equal follies.',a:'Samuel Johnson',c:'Uncertainty'},
+{t:'PUSH AWAY FROM SHORE',q:'The realization that life is absurd and cannot be an end, but only a beginning. This is a truth nearly all great minds have taken as their starting point.',a:'Albert Camus',c:'Uncertainty'},
+{t:'THE ACTIONS THAT FOLLOW',q:'In time I began to understand that it\'s when you start writing that you really find out what you don\'t know and need to know.',a:'Da Vid McCullough',c:'Uncertainty'},
+{t:'MEMORY VS. TRUTH',q:'I have to write to discover what I am doing. Like the old lady, I don\'t know so well what I think until I see what I say; then I have to say it again.',a:'Flannery O\'Connor',c:'Uncertainty'},
+{t:'JUST THE BEGINNING',q:'There are years that ask questions and years that answer.',a:'Zora Neale Hurston',c:'Uncertainty'},
+{t:'GET LOST',q:'There are many things that seem impossible only so long as one does not attempt them.',a:'Andre Gide',c:'Uncertainty'},
+{t:'LIKE CLOCKWORK',q:'I will not follow where the path may lead, but I will go where there is no path, and I will leave a trail.',a:'Muriel Strode (Modern)',c:'Uncertainty'},
+{t:'LESS IS MORE',q:'The writer must believe that what he is doing is the most important thing in the world. And he must hold to this illusion even when he knows it is not true.',a:'John Steinbeck',c:'Uncertainty'},
+{t:'YOU\'RE NOT ARROGANT',q:'Your job as a practicing writer is to remember it\'s never going to be perfect on your first pass.',a:'Brandon Sanderson',c:'Uncertainty'},
+{t:'THE POWER OF REVISION',q:'The first problem of any kind of even limited success is the unshakable conviction that you are getting away with something, and that at any moment now they will discover you.',a:'Neil Gaiman',c:'Uncertainty'},
+{t:'YOU BELONG HERE',q:'My many weaknesses are beginning to show their heads. I simply must get this thing out of my system. I\'m not a writer. I\'ve been fooling myself and other people. I wish I were. This success will ruin me as sure as hell. It probably won\'t last, and that will be all right. I\'ll try to go on with work now. Just a stint every day does it. I keep forgetting.',a:'John Steinbeck',c:'Imposter Syndrome'},
+{t:'AMIDST THE STORM',q:'I guess what I meant is that you are better off doing nothing than doing something badly. But the problem is that bad writers tend to have the self-confidence, while the good ones tend to have selfdoubt.',a:'Charles Bukowski',c:'Imposter Syndrome'},
+{t:'IT\'S NOT A WEAKNESS',q:'The greatest sin is to think yourself weak.',a:'Swami Vivekananda',c:'Imposter Syndrome'},
+{t:'YOU DESERVE IT',q:'And if he is a writer wise enough to know it can\'t be done, then he is not a writer at all. A good writer always works at the impossible.',a:'John Steinbeck',c:'Imposter Syndrome'},
+{t:'WHO WANTS TO FAIL',q:'The writer is one who, embarking upon a task, does not know what to do.',a:'Donald Barthelme',c:'Imposter Syndrome'},
+{t:'THE OCCASIONAL MASTERPIECE',q:'All my life, I\'ve been frightened at the moment I sit down to write.',a:'Gabriel Garcia Marquez',c:'Imposter Syndrome'},
+{t:'IT\'S NEVER FATAL',q:'I don\'t think writers are sacred, but words are. They deserve respect. If you get the right ones in the right order, you might nudge the world a little or make a poem that children will speak for you when you are dead.',a:'Tom Stoppard',c:'Imposter Syndrome'},
+{t:'FLYING UPSIDE DOWN',q:'What would you do if the doctor gave you only six months to live? Type faster!',a:'Isaac Asimov',c:'Imposter Syndrome'},
+{t:'SKILL IS MADE',q:'I never excelled academically, and took some pride in',a:'',c:'Imposter Syndrome'},
+{t:'BREAK THE CAGE',q:'But we are not living in eternity. We have only the present moment, sparkling like a star in our hands — and melting like a snowflake.',a:'Marie Beynon Ray',c:'Procrastination'},
+{t:'LIKE A SHADOW',q:'I believe that, more than anything else, this grief of constantly having to face down our own inadequacies is what keeps people from being writers. Forgiveness, therefore, is key. I can\'t write the book I want to write, but I can and will write the book I am capable of writing.',a:'Ann Patchett',c:'Imposter Syndrome'},
+{t:'A PINCH OF DOUBT',q:'In short, every secret of a writer\'s soul, every experience of his life, every quality of his mind is written large in his works.',a:'Virginia Woolf',c:'Imposter Syndrome'},
+{t:'UNFILTERED VOICES',q:'I\'m not obliged to care what they think. I don\'t need anyone else\'s approval or approbation to know what I know about myself. I\'m a writer.',a:'John Scalzi',c:'Imposter Syndrome'},
+{t:'WRITE FOR YOURSELF',q:'Fiction is an act of willfulness, a deliberate effort to reconceive, to rearrange, to reconstitute nothing short of reality itself. Even among the most reluctant and doubtful of writers, this willfulness must emerge. Being a writer means taking the leap from listening to saying, \'Listen to me.\'',a:'Jhumpa Lahiri',c:'Imposter Syndrome'},
+{t:'BEYOND THE VISIBLE',q:'The beauty of the impostor syndrome is you vacillate between extreme egomania, and a complete feeling of: \'I\'m a fraud! Oh god, they\'re on to me! I\'m a fraud!\' So you just try to ride the egomania when it comes and enjoy it, and then slide through the idea of fraud.',a:'Tina Fey',c:'Imposter Syndrome'},
+{t:'BEFORE IMMOLATION',q:'The only end of writing is to enable readers better to enjoy life or better to endure it.',a:'Samuel Johnson',c:'Imposter Syndrome'},
+{t:'ANXIOUS OF EXCELLENCE',q:'As soon as a challenge was overcome, it ceased to be a challenge, becoming the expected and ordinary rather than something I had achieved with difficulty, and could, therefore, be justly proud of. I could not own my own triumphs, nor give myself credit for them.',a:'Audre Lorde',c:'Imposter Syndrome'},
+{t:'HEA VY LIES THE CROWN',q:'If I were a first rate writer, I wouldn\'t mind a bit. What does depress me is this: it is so desperately hard and so obsessive and so lonely to write that, in return for all this work, one would like a little self satisfaction. And that is never going to come, for the simple reason that I do not deserve it. I cannot be a good enough writer. You see?',a:'Martha Gellhorn',c:'Imposter Syndrome'},
+{t:'AT THE EDGE OF COURAGE',q:'I still have a little [bit of] impostor syndrome, it never goes away, that you\'re actually listening to me.',a:'Michelle Obama',c:'Imposter Syndrome'},
+{t:'WRITE WHEN DOUBTFUL',q:'Fear is the thought of admitted inferiority.',a:'Elbert Hubbard',c:'Imposter Syndrome'},
+{t:'DON\'T GIVE UP YOUR POWER',q:'Genius can only breathe freely in an atmosphere of freedom.',a:'John Stuart Mill',c:'Imposter Syndrome'},
+{t:'OCCUPY SPACE',q:'The first start toward success is to be glad you are yourself.',a:'Florence Scovel Shinn',c:'Imposter Syndrome'},
+{t:'RIGHT TO BE HEARD',q:'Here, though, is how I lean into my impostor syndrome rather than suffering from impostor syndrome: I learn to embrace the joy of the forbidden.',a:'Chuck Wendig',c:'Imposter Syndrome'},
+{t:'ENJOY THE FORBIDDEN',q:'The Internet and all its lures are much, much harder than anything I\'ve ever encountered. If you\'re writing on a computer, the very instrument you\'re writing on is already tainted by the world out there in all its permutations.',a:'Dani Shapiro',c:'Imposter Syndrome'},
+{t:'UNMUTED',q:'Being resentful, they say, is like taking poison and waiting for the other person to die.',a:'Susan Cheever',c:'Imposter Syndrome'},
+{t:'REJECT THE POISON',q:'Be miserable. Or motivate yourself. Whatever has to be done, it\'s always your choice.',a:'Dr. Wayne Dyer',c:'Imposter Syndrome'},
+{t:'SET IT FREE',q:'To acquire true self power you have to feel beneath no one, be immune to criticism and be fearless.',a:'Deepak Chopra',c:'Imposter Syndrome'},
+{t:'THE WORLD WILL CATCH UP',q:'All I can do is write my stories for mankind, and rest easy.',a:'William Saroyan',c:'Imposter Syndrome'},
+{t:'NO ONE IS IMMUNE TO FAILURE',q:'I would hope that my writing\'s cleaner than it was when I started.',a:'Nora Roberts',c:'Imposter Syndrome'},
+{t:'ALWAYS A DRAFT',q:'I don\'t believe in writer\'s block. There are good days when you\'re writing and less good days. I\'ve learned that if it\'s not happening to walk away and return later.',a:'Judy Blume',c:'Imposter Syndrome'},
+{t:'EVEN THE BAD DAYS',q:'A friend of mine, for three years he couldn\'t write. And he said that he thought of stories and he knew the stories, could see the stories completely, but he could never find the door. Somehow that first sentence was never there.',a:'Donald E. Westlake',c:'Imposter Syndrome'},
+{t:'MAKE THE FIRST MOVE',q:'The reason you\'re having a hard time writing is because of a conflict between the GOAL of writing well and the FEAR of writing badly.',a:'Dan Harmon',c:'Writer\'s Block'},
+{t:'HUNGRY',q:'It\'s not the writing part that\'s hard. What\'s hard is sitting down to write.',a:'Steven Pressfield',c:'Writer\'s Block'},
+{t:'THE RESISTANCE',q:'There is no such thing as writer\'s block. There is only not enough information. If you can\'t write, learn something.',a:'Nikki Giov Anni',c:'Writer\'s Block'},
+{t:'NO SUBSTITUTE FOR ACTION',q:'I write as an alcoholic drinks, compulsively and for its own sake.',a:'John Ciardi',c:'Writer\'s Block'},
+{t:'GET IN THE RING',q:'I get stuck on things. And I get lazy. And I get tired. But I don\'t believe in \'writer\'s block.\' I try and deal with getting stuck by having more than one thing to work on at a time. And by knowing that even a hundred bad words that didn\'t exist before is forward progress.',a:'Neil Gaiman',c:'Writer\'s Block'},
+{t:'THE RUSTY FAUCET',q:'There\'s no such thing as writer\'s block. That was invented by people in California who couldn\'t write.',a:'Terry Pratchett',c:'Writer\'s Block'},
+{t:'CLUSTER AND COMPETE',q:'Don\'t like to write, but like having written.',a:'Frank Norris',c:'Writer\'s Block'},
+{t:'START DIGGING',q:'Because a writer doesn\'t only need the time when he\'s actually writing — he or she has got to have time to think and time just to let things work out.',a:'Nadine Gordimer',c:'Writer\'s Block'},
+{t:'REAL POWER',q:'All of my life, I\'ve jumped off the cliff and built my wings. It works every single time. It never fails.',a:'Ray Bradbury',c:'Writer\'s Block'},
+{t:'FIRE IN YOUR BELLY',q:'It\'s much more important to write than to be written about.',a:'Gabriel Garcia Marquez',c:'Writer\'s Block'},
+{t:'BE RUTHLESS',q:'If you surrendered to the air, you could ride it.',a:'Toni Morrison',c:'Writer\'s Block'},
+{t:'FIND THE FLOW',q:'So being blocked, being uncertain, sitting there not knowing, waiting, abiding with it: this is the work. If you don\'t have the tolerance for that you\'re in great trouble. If you want to call it a writer\'s block... that doesn\'t seem a very useful name for that kind of abiding that I think is the essence of the work.',a:'Jonathan Lethem',c:'Writer\'s Block'},
+{t:'EMBRACE THE SILENCE',q:'I\'ve often said that there\'s no such thing as writer\'s block; the problem is idea block. When I find myself frozen-whether I\'m working on a brief passage in a novel or brainstorming about an entire book-it\'s usually because I\'m trying to shoehorn an idea into the passage or story where it has no place.',a:'Jeffery Dea Ver',c:'Writer\'s Block'},
+{t:'STEP BACK',q:'If you get stuck, get away from your desk. Take a walk, take a bath, go to sleep, make a pie, draw, listen to music, meditate, exercise; whatever you do, don\'t just stick there scowling at the problem. But don\'t make telephone calls or go to a party; if you do, other people\'s words will pour in where your lost words should be. Open a gap for them, create a space. Be patient.',a:'Hilary Mantel',c:'Writer\'s Block'},
+{t:'OPEN THE GAP',q:'I mean, maybe one of the reasons that I don\'t ever experience myself as having writer\'s block is I don\'t feel that I need to be producing every minute of every day.',a:'Emily Barton',c:'Writer\'s Block'},
+{t:'KEEP THE FLOW ALIVE',q:'One may be preoccupied with shopping and income tax returns and chance conversations, but the stream of the unconscious continues to flow undisturbed, solving problems, planning ahead: one sits down sterile and dispirited at the desk, and suddenly the words come as though from the air: the situations that seemed blocked in a hopeless impasse move forward: the work has been done while one slept or shopped or talked with friends.',a:'Graham Greene',c:'Writer\'s Block'},
+{t:'DON\'T WAIT',q:'Art is not in some far-off place.',a:'Lydia Da Vis',c:'Writer\'s Block'},
+{t:'GET YOUR HEART BROKEN',q:'I\'ve always told my writing students that I think writer\'s block is a misnomer. I don\'t think we get blocked, but rather that we get empty. We need to fill back up.',a:'Anne Lamott',c:'Writer\'s Block'},
+{t:'FILL YOUR BUCKET',q:'You can\'t use up creativity. The more you use, the more you have.',a:'Maya Angelou',c:'Writer\'s Block'},
+{t:'STOKE THE FIRE',q:'We romanticize the creative life as though it should always be the best and most exciting thing in the world, but a lot of the heavylifting of creativity is just tedious, repetitive work. When I get blocked, I call it my blockage by what it is.',a:'Elizabeth Gilbert',c:'Writer\'s Block'},
+{t:'CHOP WOOD',q:'I only write when inspiration strikes. Fortunately it strikes at nine every morning.',a:'William Faulkner',c:'Writer\'s Block'},
+{t:'NO WAITING FOR BRILLIANCE',q:'That famous writer\'s block is a myth as far as I\'m concerned. I think bad writers must have a great difficulty writing. They don\'t want to do it. They have become writers out of reasons of ambition. It must be a great strain to them to make marks on a page when they really have nothing much to say, and don\'t enjoy doing it. I\'m not so sure what I have to say but I certainly enjoy making sentences.',a:'Gore Vidal',c:'Writer\'s Block'},
+{t:'MAKE YOUR SENTENCES',q:'It is that kind of morning when you feel like melting the typewriter into a bar of steel and clubbing yourself to death with it.',a:'Richard Matheson',c:'Writer\'s Block'},
+{t:'RULE NUMBER ONE',q:'One of the most difficult things is the first paragraph. I have spent many months on a first paragraph, and once I get it, the rest just comes out very easily.',a:'Gabriel Garcia Marquez',c:'Writer\'s Block'},
+{t:'IMPERFECT CAN BECOME PERFECT',q:'The writing life isn\'t just filled with predictable uncertainties but with the awareness that we are always starting over again. That everything we ever write will be flawed. We may have written one book, or many, but all we know — if we know anything at all — is how to write the book we\'re writing.',a:'Dani Shapiro',c:'Writer\'s Block'},
+{t:'WRITE YOUR HEART OUT',q:'I don\'t believe in writer\'s block. Think about it — when you were blocked in college and had to write a paper, didn\'t it always manage to fix itself the night before the paper was due? Writer\'s block is having too much time on your hands.',a:'Jodi Picoult',c:'Writer\'s Block'},
+{t:'MAKE IT PUBLIC',q:'Just leave your mind alone; your intuition knows what it wants to write, so get out of the way.',a:'Ray Bradbury',c:'Writer\'s Block'},
+{t:'LET THE WORDS FIND YOU',q:'True originality consists not in a new manner but in a new vision.',a:'Edith Wharton',c:'Writer\'s Block'},
+{t:'CHANGE THE ANGLE',q:'Know the true value of time; snatch, seize, and enjoy every moment of it. No idleness, no laziness, no procrastination: never put off till tomorrow what you can do today.',a:'Lord Chesterfield',c:'Writer\'s Block'},
+{t:'THE POWER OF STOLEN MOMENTS',q:'Procrastination is the thief of time: Year after year it steals, till all are fled, And to the mercies of a moment leaves The vast concerns of an eternal scene.',a:'Edward Young',c:'Procrastination'},
+{t:'PREPARE FOR TOMORROW\'S HARVEST',q:'One day you will wake up and...there won\'t be any more time to do the things you\'ve always wanted. Do it now!',a:'Paulo Coelho',c:'Procrastination'},
+{t:'CLOSE THE GAP',q:'Procrastination is the thief of time, collar him.',a:'Charles Dickens',c:'Procrastination'},
+{t:'YOUR MASTERPIECE IS WAITING',q:'Regret for the things we did can be tempered by time; it is regret for the things we did not do that is inconsolable.',a:'Sydney J. Harris',c:'Procrastination'},
+{t:'UNFINISHED BUSINESS',q:'The greatest thief this world has ever produced is Procrastination, and he is still at large.',a:'Josh Billings',c:'Procrastination'},
+{t:'THE COST IS HIGH',q:'One today is worth two tomorrows.',a:'Benjamin Franklin',c:'Procrastination'},
+{t:'DON\'T WAIT FOR THE BILL',q:'For, if once a man indulges himself in murder, very soon he comes to think little of robbing; and from robbing he comes next to drinking and Sabbath-breaking, and from that to incivility and procrastination.',a:'Thomas De Quincey',c:'Procrastination'},
+{t:'LITTLE BY LITLE',q:'Distractions have never prevented a Writing Writer Who Writes from writing; distractions are an excuse proffered by Non-Writing Non-Writers Who are Not-Writing for why they are not writing.',a:'Merlin Mann',c:'Procrastination'},
+{t:'WHAT DOES IT COST',q:'Most people spend their entire lives on a fantasy island called \'Someday I\'ll\'.',a:'Denis Waitley',c:'Procrastination'},
+{t:'GROUNDHOG DAY',q:'Procrastination is the fear of success. I used to think it was fear of failure, but now I know…that people procrastinate because they are afraid that they don\'t deserve the success that they know will result if they move ahead now.',a:'Denis Waitley',c:'Procrastination'},
+{t:'THE FEAR OF SUCCESS',q:'Procrastination is the soul rebelling against entrapment.',a:'Nassim Nicholas Taleb',c:'Procrastination'},
+{t:'UNMASTER A VOIDANCE',q:'The trouble is that you think you have time.',a:'Jack Kornfield',c:'Procrastination'},
+{t:'LESS THAN YOU THINK',q:'The artist doesn\'t have time to listen to the critics. The ones who want to be writers read the reviews, the ones who want to write don\'t have the time to read reviews.',a:'William Faulkner',c:'Procrastination'},
+{t:'STRETCH',q:'Nothing is so fatiguing as the eternal hanging on of an uncompleted task.',a:'William James',c:'Procrastination'},
+{t:'MOMENTUM MATTERS',q:'Procrastination is the bad habit of putting off until the day after tomorrow what should have been done the day before yesterday.',a:'Napoleon Hill',c:'Procrastination'},
+{t:'ONE LAYER AT A TIME',q:'Don\'t loaf and invite inspiration; light out after it with a club, and if you don\'t get it you will nonetheless get something that looks remarkably like it. Set yourself a \'stint,\' and see that you do that \'stint\' each day; you will have more words to your credit at the end of the year.',a:'Jack London',c:'Procrastination'},
+{t:'ART OF ACTION',q:'You may delay, but time will not.',a:'Benjamin Franklin',c:'Procrastination'},
+{t:'PROCRASTINATION VS. PREPARATION',q:'I like work: it fascinates me. I can sit and look at it for hours.',a:'Jerome K. Jerome',c:'Procrastination'},
+{t:'TO WHAT LENGTHS',q:'But you know if we wait for the moment when everything, absolutely everything, is ready, we shall never begin.',a:'Iv An Turgenev',c:'Procrastination'},
+{t:'KNOW YOUR ENEMY',q:'It\'s the job that\'s never started as takes longest to finish.',a:'J.R.R. Tolkien',c:'Procrastination'},
+{t:'GET COOKING',q:'Procrastination is opportunity\'s assassin.',a:'(Popularized By) Victor Kiam',c:'Procrastination'},
+{t:'THE PERFECT EXCUSE',q:'Hoping drains your energy. Action creates energy.',a:'Robert Kiyosaki',c:'Procrastination'},
+{t:'THE ENEMY OF DONE',q:'Work is the greatest thing in the world, so we should always save some of it for tomorrow.',a:'Don Herold',c:'Procrastination'},
+{t:'EDGE OF TOMORROW',q:'Calvin: You can\'t just turn on creativity like a faucet. You have to be in the right mood. Hobbes: What mood is that? Calvin: Last-minute panic.',a:'Bill Watterson',c:'Procrastination'},
+{t:'FORCE THE FAUCET',q:'Putting off an easy thing makes it hard, and putting off a hard one makes it impossible.',a:'George Horace Lorimer',c:'Procrastination'},
+{t:'THE STRUGGLE OF STARTING',q:'It may be observed, in general, that the future is purchased by the present.',a:'Samuel Johnson',c:'Procrastination'},
+{t:'WHAT ARE YOU WILLING TO PAY',q:'Procrastination is the art of keeping up with yesterday.',a:'Don Marquis',c:'Procrastination'},
+{t:'YOUR READERS ARE WAITING',q:'Quit talking — and start doing it.',a:'Walt Disney',c:'Procrastination'},
+{t:'UNTIL DEATH DO US PART',q:'I don\'t read other writers because I\'m writing all the time. It\'s too disturbing to read a writer with a good style when you\'re in the middle of putting your work together.',a:'Norman Mailer',c:'Procrastination'},
+{t:'PUT BLINDERS ON',q:'By the time I was fourteen…the nail in my wall would no longer support the weight of the rejection slips impaled upon it. I replaced the nail with a spike and went on writing.',a:'Stephen King',c:'Procrastination'},
+{t:'USE IT AS FUEL',q:'Evolution has programmed us to feel rejection in our guts. This is how the tribe enforced obedience, by wielding the threat of expulsion. Fear of rejection isn\'t just psychological; it\'s biological. It\'s in our cells.',a:'Steven Pressfield',c:'Rejection'},
+{t:'POISON TO MEDICINE',q:'I believe that the only difference between successful people and unsuccessful people is extraordinary determination.',a:'Mary Kay Ash',c:'Rejection'},
+{t:'THE HARDEST PART',q:'My books are not nearly as controversial as many, and you can\'t please everybody. A writer has to develop a hide like a rhino. If we allow ourselves to get upset every time a book is challenged we\'d all be basket cases…',a:'Lois Duncan',c:'Rejection'},
+{t:'AS NECESSARY AS REVISION',q:'In my early career I was like a goldfish. Rejection didn\'t affect me; I\'d just forget how bad it was and keep going back for more.',a:'Emily Watson',c:'Rejection'},
+{t:'CAN DANCE A LITTLE',q:'Despite the rejection, and in violation of all the rules, I came back year after year.',a:'Joseph Barbera',c:'Rejection'},
+{t:'YEAR AFTER YEAR',q:'I would advise anyone who aspires to a writing career, that before developing his talent, he would be wise to develop a thick hide.',a:'Harper Lee',c:'Rejection'},
+{t:'STAY IN THE GAME',q:'Life\'s blows cannot break a person whose spirit is warmed at the fire of enthusiasm.',a:'Norman Vincent Peale',c:'Rejection'},
+{t:'A LESSON IN DISGUISE',q:'Another way to put an end to self-rejection is ask yourself whether what you\'re telling yourself is what a friend would say, or what an enemy would.',a:'Mira Kirshenbaum',c:'Rejection'},
+{t:'THRIVE IN ADVERSITY',q:'When a magazine rejects your story or poem, it doesn\'t mean it wasn\'t',a:'',c:'Rejection'},
+{t:'GIVE IT TIME',q:'Reject rejection! If someone says no, just say NEXT!',a:'Jack Canfield',c:'Rejection'},
+{t:'THROW',q:'Perhaps the best way to write is to do so as if one were already dead, afraid of no one\'s reactions, answerable to no one\'s views.',a:'Nadine Gordimer',c:'Rejection'},
+{t:'FORGED IN FIRE',q:'Without art, the crudeness of reality would make the world unbearable.',a:'George Bernard Shaw',c:'Rejection'},
+{t:'DIVE IN ANYWAY',q:'At first I used to feel dreadfully hurt when a story or poem over which I had laboured and agonized came back, with one of those icy little rejection slips … But after a while I got hardened to it and did not mind. I only set my teeth and said, \'I will succeed.\'',a:'L.M. Montgomery',c:'Rejection'},
+{t:'RISE FROM THE ASHES',q:'Hold fast to dreams For if dreams die life is a broken-winged bird that cannot fly.',a:'Langston Hughes',c:'Rejection'},
+{t:'STAYING GROUNDED IS A CHOICE',q:'...and that the refusal to rest content, the willingness to risk excess on behalf of one\'s obsessions, is what distinguishes artists from entertainers, and what makes some artists adventurers on behalf of us all.',a:'John Updike',c:'Rejection'},
+{t:'INTO THE STORM',q:'Do not engage in Rejectomancy. Anything other than \'Yes\' is \'No.\' Send the work out again.',a:'James D. Macdonald',c:'Rejection'},
+{t:'START STOCKING',q:'I discovered that rejections are not altogether a bad thing. They teach a writer to rely on his own judgment and to say in his heart of hearts, \'To hell with you.\'',a:'Saul Bellow',c:'Rejection'},
+{t:'BUILD YOUR SHIELD',q:'Are you discouraged because you keep getting rejected? That\'s OK. I have a file filled with 7 years of rejection letters; that\'s just part of the process. But here is my big question: Are you discouraging yourself?',a:'Elizabeth Gilbert',c:'Rejection'},
+{t:'HOURS BEFORE DAWN',q:'The road to hell is paved with works-in-progress.',a:'Philip Roth',c:'Rejection'},
+{t:'SHAKE THE DUST',q:'Every rejection is incremental payment on your dues that in some way will be translated back into your work.',a:'James Lee Burke',c:'Rejection'},
+{t:'PIXELS',q:'When you get rejected by a publisher, you have not failed. You have actually passed another milestone. This is a really, really hard business to be in.',a:'N.K. Jemisin',c:'Rejection'},
+{t:'PERMISSION NOT REQUIRED',q:'Many days you will want to give up because of rejections and failures. Passion to be an artist will help you prevail where others fail.',a:'Jack White',c:'Rejection'},
+{t:'RISKY BUSINESS',q:'Winning or losing an argument, receiving an acceptance or rejection, is no proof of the validity or value of personal identity. One may be wrong, mistaken, or a poor craftsman, or just ignorant — but this is no indication of the true worth of one\'s total human identity: past, present & future!',a:'Sylvia Plath',c:'Rejection'},
+{t:'ONE AT A TIME',q:'Failure is the condiment that gives success its flavor.',a:'Truman Capote',c:'Rejection'},
+{t:'STRAIGHT TO THE BONE',q:'It does help, to be a writer, to have the sort of crazed ego that doesn\'t allow for failure. The best reaction to a rejection slip is a sort of wild-eyed madness, an evil grin, and sitting yourself in fr ont of the keyboard muttering',a:'',c:'Rejection'},
+{t:'TEN SECONDS',q:'I wrote poems in my corner of the Brooks Street station. I sent them to two editors who rejected them right off. I read those letters of rejection years later and I agreed with those editors.',a:'Carl Sandburg',c:'Rejection'},
+{t:'THEY CAN\'T MAKE WALLS FOREVER',q:'We are all apprentices in a craft where no one ever becomes a master.',a:'Ernest Hemingway',c:'Rejection'},
+{t:'NEVER A MASTER',q:'Almost everything will work again if you unplug it for a few minutes, including you.',a:'Anne Lamott',c:'Rejection'},
+{t:'REST',q:'All great achievements require time.',a:'Maya Angelou',c:'Rejection'},
+{t:'HOW COMMITTED ARE YOU',q:'If you create you will also wait, and while you\'re waiting you will want to be patient but not idle. You need patience, because responses from the world often take a long time.',a:'Eric Maisel',c:'Patience'},
+{t:'KEEP WALKING',q:'In this there is no measuring with time. A year doesn\'t matter; ten years are nothing. To be an artist means not to compute or count; it means to ripen as the tree, which does not force its sap, but stands unshaken in the storms of spring with no fear that summer might not follow. It will come regardless.',a:'Rainer Maria Rilke',c:'Patience'},
+{t:'THE SLOW BURN',q:'Don\'t try to rush things: for the cup to run over, it must first be filled.',a:'Antonio Machado',c:'Patience'},
+{t:'NOTHING LEADS TO NOTHING',q:'For the great doesn\'t happen through impulse alone, and is a succession of little things that are brought together.',a:'Vincent V An Gogh',c:'Patience'},
+{t:'THE WINDING ROAD',q:'Patience is the art of hoping.',a:'Luc De Clapiers',c:'Patience'},
+{t:'DON\'T LOSE IT',q:'Patience is the companion of wisdom.',a:'Saint Augustine',c:'Patience'},
+{t:'LET IT WORK ITS MAGIC',q:'Patience is a necessary ingredient of genius.',a:'Benjamin Disraeli',c:'Patience'},
+{t:'WHAT YOU DO WITH IT',q:'A man who is a master of patience is master of everything else.',a:'George Sa Vile',c:'Patience'},
+{t:'LET IT RISE',q:'Patience is the best remedy for every trouble.',a:'Plautus',c:'Patience'},
+{t:'PEN OR CHISEL',q:'Hold on; hold fast; hold out. Patience is genius.',a:'Georges-Louis Leclerc, Comte De Buffon',c:'Patience'},
+{t:'TRUST THE WHEEL',q:'',a:'',c:'Patience'},
+{t:'PATIENCE IS A TOOL',q:'Whoever has no patience has no wisdom.',a:'Saadi Shirazi (Saadi)',c:'Patience'},
+{t:'LET IT SIT AWHILE',q:'It does not matter how many tumbles you have in this life, so long as you do not get dirty when you tumble; it is only the people who have to stop to be washed and made clean, who must necessarily lose the race.',a:'Thomas Huxley',c:'Patience'},
+{t:'THE FOUNDATION OF MASTERY',q:'The writer\'s secret is not inspiration — for it is never clear where it comes from — it is his stubbornness, his patience.',a:'Orhan Pamuk',c:'Patience'},
+{t:'FROM WAITING TO WINNING',q:'How long does it take to write a good book? All of the years that you\'ve lived.',a:'Edward Abbey',c:'Patience'},
+{t:'ONE BY ONE',q:'He that can have patience can have what he will.',a:'Benjamin Franklin',c:'Patience'},
+{t:'WRITER TO D4',q:'Knowing trees, I understand the meaning of patience. Knowing grass, I can appreciate persistence.',a:'Hal Borland',c:'Patience'},
+{t:'LESSONS FROM THE WOODS',q:'There are as many nights as days, and the one is just as long as the other in the year\'s course. Even a happy life cannot be without a measure of darkness, and the word',a:'',c:'Patience'},
+{t:'SLOW-COOKED SOUL',q:'Patience, is a minor form of despair, disguised as a virtue.',a:'Ambrose Bierce',c:'Patience'},
+{t:'LET IT MARINATE',q:'On the day you reach THE END, put the book aside for six weeks. You\'ll want to clear your palate before you begin to revise. You need to forget the exact words. You need to forget which parts were a struggle to write, which parts came out in a white-hot blaze. Which parts you thought were crud. If you start too soon you won\'t be reading the words on the paper, you\'ll be reading the words you remember being on the paper.',a:'James D. Macdonald',c:'Patience'},
+{t:'FAST THEN SLOW',q:'Patience is bitter, but its fruit is sweet.',a:'John Chardin',c:'Patience'},
+{t:'DON\'T RUSH IT',q:'Endurance is the crowning quality, And patience all the passion of great hearts.',a:'James Russell Lowell',c:'Patience'},
+{t:'BUILD THE FOUNDATION',q:'Have patience and endure; this unhappiness will one day be beneficial.',a:'Ovid',c:'Patience'},
+{t:'MAKE IT PART OF THE PROCESS',q:'Courage and perseverance have a magical talisman, before which difficulties disappear and obstacles vanish into air. These qualities have ever been displayed in their mightiest perfection, as attendants in the retinue of strong passions.',a:'John Quincy Adams',c:'Patience'},
+{t:'MAKE IT COUNT',q:'Patience is a conquering virtue. The learned say that, if it not desert you, It vanquishes what force can never reach.',a:'Geoffrey Chaucer',c:'Patience'},
+{t:'DARE TO TAKE YOUR TIME',q:'All human power is a compound of time and patience.',a:'Honore De Balzac',c:'Patience'},
+{t:'METHODICAL MADNESS',q:'Everything comes in time to him who knows how to wait.',a:'Leo Tolstoy',c:'Patience'},
+{t:'MEASURE TWICE',q:'Sad patience, too near neighbour to despair But none has hope like thine!',a:'Matthew Arnold',c:'Patience'},
+{t:'FLUID IN FREE FALL',q:'Peaceful warriors have the patience to wait until the mud settles and the water clears. They remain unmoving until the right time, so the right action arises by itself.',a:'Dan Millman',c:'Patience'},
+{t:'SETTLE NATURALLY',q:'Courage, then, and patience! Courage for the great sorrows of life and patience for the small ones; and when you have laboriously accomplished your daily task, go to sleep in peace.',a:'Victor Hugo',c:'Patience'},
+{t:'RICHER IN THE DARK',q:'',a:'',c:'Patience'},
+{t:'PLAY THE HAND YOU HAVE',q:'You simply sit down at the typewriter, open your veins, and bleed.',a:'Walter Wellesley "Red" Smith',c:'Writer\'s Block'}
+    ];
+
+    // --- State ---
+    var currentCat = 'all';
+    var deck = [];
+    var pos = 0;
+    var currentPrompt = null;
+
+    function shuffle(arr) {
+      var a = arr.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+      }
+      return a;
+    }
+
+    function buildDeck() {
+      var pool = currentCat === 'all' ? P : P.filter(function(p) { return p.c === currentCat; });
+      deck = shuffle(pool);
+      pos = 0;
+    }
+
+    function nextPrompt() {
+      if (pos >= deck.length) buildDeck();
+      return deck[pos++];
+    }
+
+    // --- DOM ---
+    var titleEl  = document.getElementById('prompt-title');
+    var quoteEl  = document.getElementById('prompt-quote');
+    var authorEl = document.getElementById('prompt-author');
+    var themeEl  = document.getElementById('prompt-theme');
+    var card     = document.getElementById('prompt-card');
+    var countEl  = document.getElementById('prompt-count');
+
+    function display(p) {
+      currentPrompt = p;
+      themeEl.textContent  = p.c;
+      titleEl.textContent  = p.t;
+      quoteEl.textContent  = '\u201C' + p.q + '\u201D';
+      authorEl.textContent = '\u2014 ' + p.a;
+      card.classList.remove('prompt-fade');
+      void card.offsetWidth;
+      card.classList.add('prompt-fade');
+      if (window.plausible) plausible('prompt_generated', { props: { theme: p.c } });
+    }
+
+    function track(evt, props) { if (window.plausible) plausible(evt, { props: props || {} }); }
+
+    // --- Filters ---
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        currentCat = btn.dataset.cat;
+        filterBtns.forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        // Update count
+        var pool = currentCat === 'all' ? P : P.filter(function(p) { return p.c === currentCat; });
+        countEl.textContent = pool.length;
+        buildDeck();
+        display(nextPrompt());
+        track('filter_changed', { theme: currentCat });
+      });
+    });
+
+    // --- Generate ---
+    document.getElementById('btn-generate').addEventListener('click', function() {
+      display(nextPrompt());
+    });
+
+    // --- Copy ---
+    document.getElementById('btn-copy').addEventListener('click', function() {
+      if (!currentPrompt) return;
+      var text = currentPrompt.t + '\n\n' + '\u201C' + currentPrompt.q + '\u201D' + '\n\u2014 ' + currentPrompt.a + '\n\nGet a writing prompt: writersdailypractice.com/writing-prompt-generator/';
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); } catch(e) {}
+        document.body.removeChild(ta);
+      }
+      var toast = document.getElementById('copied-toast');
+      toast.classList.add('show');
+      setTimeout(function() { toast.classList.remove('show'); }, 2000);
+      track('prompt_copied');
+    });
+
+    // --- Share on X ---
+    document.getElementById('btn-twitter').addEventListener('click', function() {
+      if (!currentPrompt) return;
+      var tweet = 'Today\'s writing prompt:\n\n\u201C' + currentPrompt.q + '\u201D \u2014 ' + currentPrompt.a + '\n\nGet a free writing prompt \u2192 writersdailypractice.com/writing-prompt-generator/';
+      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet), '_blank', 'noopener,noreferrer');
+      track('prompt_shared', { platform: 'twitter' });
+    });
+
+    // --- Pinterest ---
+    document.getElementById('btn-pinterest').addEventListener('click', function() {
+      if (!currentPrompt) return;
+      var desc = currentPrompt.t + ' \u2014 \u201C' + currentPrompt.q + '\u201D by ' + currentPrompt.a;
+      var url = 'https://writersdailypractice.com/writing-prompt-generator/';
+      window.open('https://pinterest.com/pin/create/button/?url=' + encodeURIComponent(url) + '&description=' + encodeURIComponent(desc), '_blank', 'noopener,noreferrer');
+      track('prompt_shared', { platform: 'pinterest' });
+    });
+
+    // --- Init ---
+    buildDeck();
+    display(nextPrompt());
+  })();
+  </script>
+
+</body>
+</html>

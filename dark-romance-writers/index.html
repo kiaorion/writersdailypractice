@@ -67,33 +67,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1565C0',
-            primaryDark: '#0D47A1',
-            primaryDeep: '#091B3A',
-            gold: '#E8B931',
-            goldLight: '#F5D060',
-            dark: '#111111',
-            bodyText: '#2a2a2a',
-            lightGray: '#FAFAFA',
-            midGray: '#6B7280',
-            warmWhite: '#FFFDF7',
-          },
-          fontFamily: {
-            serif: ['Playfair Display', 'Georgia', 'serif'],
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  <style>
+  <link rel="stylesheet" href="/css/style.css">
+<style>
     body {
       -webkit-text-size-adjust: 100%;
       box-sizing: border-box;
@@ -291,12 +266,12 @@
         </div>
       </div>
       <div class="text-center mt-10" id="signup">
-        <p class="text-midGray text-base mb-2 font-medium">Here's what lands in your inbox every morning.</p>
+        <p class="text-midGray text-base mb-2 font-medium">A daily practice built for dark romance writers.</p>
         <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
-          Want this in your inbox every morning?
+          Daily craft prompts for dark romance writers.
         </p>
         <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
-          Join The Writer's Daily Practice - a free daily reflection from literary masters, delivered to writers like you every morning.
+          Tension, consent, moral complexity, and the psychology behind characters readers can't stop thinking about. One prompt every morning, free.
         </p>
         <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'dark-romance-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
           <input type="hidden" name="fields[source_page]" value="dark-romance-writers">
@@ -374,10 +349,10 @@
   <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
     <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
       <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
-        Stop staring at the blank page. <span class="gradient-text">Start writing with purpose.</span>
+        Write the anti-hero <span class="gradient-text">readers root for.</span>
       </h2>
       <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
-        Every morning, a reflection built to sharpen the dark romance writer's instincts, for writing the morally grey love interest with conviction, calibrating emotional intensity without tipping into melodrama, and handling steam level and trigger warnings in a way that deepens reader trust rather than breaking it.
+        Daily craft prompts for dark romance writers. Tension, consent, moral complexity, and the psychology behind characters readers can't stop thinking about.
       </p>
       <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'dark-romance-writers'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
         <input type="hidden" name="fields[source_page]" value="dark-romance-writers">
@@ -451,7 +426,7 @@
           <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Paranormal Romance Writers</p>
           <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
         </a>
-        <a href="/psychological-thriller-writers/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+        <a href="/psychological-thriller/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
           <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">For Psychological Thriller Writers</p>
           <p class="font-serif font-bold text-dark text-[15px]">Daily writing practice &rarr;</p>
         </a>
@@ -472,18 +447,8 @@
       <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- AOS Init -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      duration: 700,
-      easing: 'ease-out-cubic',
-      offset: 80,
-    });
-
-    // FAQ Accordion
+<script>
+// FAQ Accordion
     document.querySelectorAll('.faq-toggle').forEach(btn => {
       btn.addEventListener('click', () => {
         const answer = btn.nextElementSibling;

@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Name Generator | Names for Fiction Writers</title>
+  <meta name="description" content="Generate character names by genre, era, and origin. Built for fiction writers. Thousands of name combinations for fantasy, romance, thriller, sci-fi, and literary fiction.">
+  <link rel="canonical" href="https://writersdailypractice.com/character-name-generator/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Character Name Generator | Names for Fiction Writers">
+  <meta property="og:description" content="Generate character names by genre, era, and origin. Built for fiction writers. Thousands of name combinations.">
+  <meta property="og:url" content="https://writersdailypractice.com/character-name-generator/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/writing-dark.jpg">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Character Name Generator | Names for Fiction Writers">
+  <meta name="twitter:description" content="Generate character names by genre, era, and origin. Built for fiction writers. Thousands of name combinations.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/writing-dark.jpg">
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Character Name Generator",
+    "description": "Generate character names by genre, era, and origin. Built for fiction writers.",
+    "url": "https://writersdailypractice.com/character-name-generator/",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion"
+    }
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I pick a good character name?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A good character name fits the era and setting of your story, is distinct from other names in your cast, and carries the right associations for the reader. Avoid names that start with the same letter or sound too similar. Read the name out loud. If it feels wrong in your character's mouth, it's wrong on the page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should character names have meaning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sometimes, but subtlety matters more than cleverness. A villain named 'Mal Evilus' insults the reader. A character named Gatsby, though, carries just the right suggestion of reinvention and false polish. If the meaning is invisible to 95% of readers, it's a nice layer. If it's the first thing they notice, it's a problem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use real names in fiction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common first names and surnames are fine. Millions of people share the name 'James Parker.' What you want to avoid is using the full name of a specific, identifiable real person in a way that could be seen as defamatory or misleading. When in doubt, change enough details that no reasonable reader would confuse your character with a real individual."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many names should I generate before picking one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generate a handful, not hundreds. Analysis paralysis kills more stories than bad names do. Pick a name that feels right, start writing, and change it later if the character outgrows it. Most published authors rename characters during revision. The name matters less than the person attached to it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes a fantasy name feel authentic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Internal consistency. Tolkien's Elvish names work because they follow their own phonetic rules. You don't need to build a language, but the names in your world should sound like they belong together. Pick a few linguistic roots and stick with them. Mix Nordic and Japanese syllables randomly and the reader will feel the seams even if they can't name the problem."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Character Name Generator"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+<style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* Tool-specific styles */
+    .tool-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+
+    .name-display {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: #0D47A1;
+      line-height: 1.15;
+      min-height: 52px;
+    }
+
+    .character-hook {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #6b7280;
+      font-size: 17px;
+      line-height: 1.5;
+      min-height: 26px;
+    }
+
+    .gen-select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: #f9fafb;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      padding: 10px 36px 10px 14px;
+      font-size: 14px;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #374151;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236b7280' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 5.646a.5.5 0 0 1 .708 0L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 16px;
+      width: 100%;
+    }
+    .gen-select:focus {
+      outline: none;
+      border-color: #1565C0;
+      box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.12);
+    }
+
+    .gen-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      margin-bottom: 6px;
+    }
+
+    .gen-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: 'Inter', system-ui, sans-serif;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s;
+    }
+    .gen-btn-primary {
+      background: linear-gradient(135deg, #E8B931, #F5D060);
+      color: #1a1a1a;
+    }
+    .gen-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(232, 185, 49, 0.4);
+    }
+    .gen-btn-secondary {
+      background: #f3f4f6;
+      color: #374151;
+      padding: 10px 20px;
+      font-size: 13px;
+      border-radius: 8px;
+    }
+    .gen-btn-secondary:hover {
+      background: #e5e7eb;
+    }
+
+    .saved-list {
+      max-height: 320px;
+      overflow-y: auto;
+    }
+    .saved-item {
+      padding: 10px 12px;
+      border-bottom: 1px solid #f3f4f6;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .saved-item:last-child { border-bottom: none; }
+    .saved-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #1a1a1a;
+    }
+    .saved-hook {
+      font-size: 12px;
+      color: #9ca3af;
+      font-style: italic;
+    }
+    .saved-remove {
+      color: #d1d5db;
+      cursor: pointer;
+      font-size: 14px;
+      flex-shrink: 0;
+      padding: 2px 4px;
+      border: none;
+      background: none;
+      line-height: 1;
+    }
+    .saved-remove:hover { color: #ef4444; }
+
+    .copy-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #1a1a1a;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0;
+      transition: all 0.3s;
+      pointer-events: none;
+      z-index: 100;
+    }
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .name-display { font-size: 30px; }
+      .tool-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO + TOOL ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[900px] mx-auto px-6 pt-28 pb-8 relative z-10 text-center">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Free Tool</span>
+      <h1 class="font-serif text-[34px] md:text-[50px] leading-[1.08] font-bold mb-4 text-white">
+        Character Name <span class="gradient-text">Generator</span>
+      </h1>
+      <p class="text-white/80 text-lg leading-relaxed mb-2 font-light max-w-[600px] mx-auto">
+        Generate names by genre, era, and origin. Each one comes with a character hook to get you writing.
+      </p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== GENERATOR TOOL ========== -->
+  <section class="relative z-10 -mt-4 pb-20">
+    <div class="max-w-[900px] mx-auto px-6">
+      <div class="tool-card">
+        <!-- Filters -->
+        <div class="tool-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+          <div>
+            <label class="gen-label" for="genre-select">Genre</label>
+            <select id="genre-select" class="gen-select">
+              <option value="any">Any Genre</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="scifi">Sci-Fi</option>
+              <option value="romance">Romance</option>
+              <option value="thriller">Thriller / Mystery</option>
+              <option value="literary">Literary Fiction</option>
+              <option value="historical">Historical</option>
+              <option value="horror">Horror / Gothic</option>
+              <option value="contemporary">Contemporary</option>
+            </select>
+          </div>
+          <div>
+            <label class="gen-label" for="gender-select">Gender</label>
+            <select id="gender-select" class="gen-select">
+              <option value="any">Any</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="neutral">Neutral / Unisex</option>
+            </select>
+          </div>
+          <div>
+            <label class="gen-label" for="era-select">Era / Setting</label>
+            <select id="era-select" class="gen-select">
+              <option value="any">Any Era</option>
+              <option value="modern">Modern</option>
+              <option value="victorian">Victorian</option>
+              <option value="medieval">Medieval</option>
+              <option value="futuristic">Futuristic</option>
+              <option value="midcentury">1920s - 1960s</option>
+            </select>
+          </div>
+          <div>
+            <label class="gen-label" for="origin-select">Origin</label>
+            <select id="origin-select" class="gen-select">
+              <option value="any">Any Origin</option>
+              <option value="western">Western</option>
+              <option value="eastern_european">Eastern European</option>
+              <option value="east_asian">East Asian</option>
+              <option value="south_asian">South Asian</option>
+              <option value="latin_american">Latin American</option>
+              <option value="african">African</option>
+              <option value="middle_eastern">Middle Eastern</option>
+              <option value="nordic">Nordic</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Generate Button -->
+        <div class="text-center mb-8">
+          <button id="generate-btn" class="gen-btn gen-btn-primary" onclick="generateName()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Generate Name
+          </button>
+        </div>
+
+        <!-- Result Display -->
+        <div id="result-area" style="display: none;">
+          <div class="text-center mb-6">
+            <div id="name-output" class="name-display mb-3"></div>
+            <div id="hook-output" class="character-hook"></div>
+          </div>
+          <div class="flex items-center justify-center gap-3 flex-wrap">
+            <button class="gen-btn gen-btn-primary" style="padding: 12px 28px; font-size: 14px;" onclick="generateName()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              Generate Another
+            </button>
+            <button class="gen-btn gen-btn-secondary" onclick="copyName()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              Copy Name
+            </button>
+            <button class="gen-btn gen-btn-secondary" onclick="saveName()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+              Save to List
+            </button>
+          </div>
+        </div>
+
+        <!-- Saved Names Panel -->
+        <div id="saved-panel" style="display: none; margin-top: 32px; border-top: 1px solid #f3f4f6; padding-top: 24px;">
+          <div class="flex items-center justify-between mb-3">
+            <p style="font-size: 13px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em;">Saved Names</p>
+            <button class="gen-btn gen-btn-secondary" style="padding: 6px 12px; font-size: 12px;" onclick="clearSaved()">Clear All</button>
+          </div>
+          <div id="saved-list" class="saved-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NAMING TIPS ========== -->
+  <section class="py-20 md:py-24 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        Tips for naming characters
+      </h2>
+
+      <div class="space-y-6 text-[16px] leading-relaxed text-midGray">
+        <p><strong class="text-dark">Distinctness matters more than meaning.</strong> If your cast includes a James, a Jane, a Jason, and a Janet, the reader will lose track of who's talking by page twelve. Vary the first letters, the syllable counts, the sounds. A story with Marta, Owen, Celia, and Dietrich gives the reader four distinct shapes to hold onto. The eye catches difference faster than similarity.</p>
+
+        <p><strong class="text-dark">Names carry time and place.</strong> A woman named Edith probably wasn't born in 2004. A man named Jayden probably wasn't born in 1932. This works for you. The right name anchors the reader in your setting without you having to explain anything. If you're writing historical fiction, spend twenty minutes with census records or baby name databases from the era. That small investment in accuracy compounds across the whole manuscript.</p>
+
+        <p><strong class="text-dark">Every name has baggage.</strong> Scarlett already belongs to O'Hara. Hannibal belongs to Lecter. Some associations are too strong to override. You can use this to your advantage with subtler names, ones that evoke a feeling without being so famous they pull the reader out of your story. But test it: say the full name out loud. If a real person or character immediately comes to mind, pick something else.</p>
+
+        <p><strong class="text-dark">Placeholder names are fine. Precious names are dangerous.</strong> If you've spent three hours on a name and can't start writing, the name is a stall tactic. Call the character David, start writing, and rename them later when you know who they actually are. Characters earn their names. You don't have to hand one out on page one and live with it forever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EMAIL SIGNUP ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 100%);">
+    <div class="py-20 md:py-24 max-w-[560px] mx-auto px-6 text-center relative z-10">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-tight font-bold text-white mb-4">
+        Get a daily writing prompt with craft insights like these.
+      </h2>
+      <p class="text-white/70 text-[15px] mb-8">One email. Every morning. A quote from a master writer, an original reflection, and a prompt to practice with.</p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'character-name-generator'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="character-name-generator">
+        <input type="hidden" name="fields[genre]" value="Character Writing">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12">
+        Frequently asked questions
+      </h2>
+      <div class="space-y-6">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I pick a good character name?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">A good character name fits the era and setting of your story, is distinct from other names in your cast, and carries the right associations for the reader. Avoid names that start with the same letter or sound too similar. Read the name out loud. If it feels wrong in your character's mouth, it's wrong on the page.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Should character names have meaning?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Sometimes, but subtlety matters more than cleverness. A villain named "Mal Evilus" insults the reader. A character named Gatsby, though, carries just the right suggestion of reinvention and false polish. If the meaning is invisible to 95% of readers, it's a nice layer. If it's the first thing they notice, it's a problem.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Can I use real names in fiction?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Common first names and surnames are fine. Millions of people share the name "James Parker." What you want to avoid is using the full name of a specific, identifiable real person in a way that could be seen as defamatory or misleading. When in doubt, change enough details that no reasonable reader would confuse your character with a real individual.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How many names should I generate before picking one?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Generate a handful, not hundreds. Analysis paralysis kills more stories than bad names do. Pick a name that feels right, start writing, and change it later if the character outgrows it. Most published authors rename characters during revision. The name matters less than the person attached to it.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What makes a fantasy name feel authentic?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Internal consistency. Tolkien's Elvish names work because they follow their own phonetic rules. You don't need to build a language, but the names in your world should sound like they belong together. Pick a few linguistic roots and stick with them. Mix Nordic and Japanese syllables randomly and the reader will feel the seams even if they can't name the problem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MORE FOR WRITERS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="/character-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Character Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Build better characters &rarr;</p>
+        </a>
+        <a href="/character-writing/how-to-write-complex-characters/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Complex Characters</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Contradiction and depth &rarr;</p>
+        </a>
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Creative Writing</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Exercises and tips &rarr;</p>
+        </a>
+        <a href="/worldbuilding/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Worldbuilding</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Build convincing worlds &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div id="copy-toast" class="copy-toast">Copied to clipboard</div>
+
+<script>
+// ============================================================
+// CHARACTER NAME DATABASE
+// ============================================================
+
+const firstNames = [
+  // WESTERN - MALE
+  {name:"James",gender:"male",origins:["western"],eras:["modern","midcentury"],genres:["thriller","literary","contemporary"]},
+  {name:"William",gender:"male",origins:["western"],eras:["victorian","medieval","modern","midcentury"],genres:["literary","historical","fantasy"]},
+  {name:"Thomas",gender:"male",origins:["western"],eras:["victorian","medieval","modern","midcentury"],genres:["literary","historical","thriller"]},
+  {name:"Arthur",gender:"male",origins:["western"],eras:["victorian","medieval"],genres:["fantasy","historical","literary"]},
+  {name:"Edward",gender:"male",origins:["western"],eras:["victorian","medieval","midcentury"],genres:["historical","literary","horror"]},
+  {name:"Henry",gender:"male",origins:["western"],eras:["victorian","medieval","modern"],genres:["literary","historical","romance"]},
+  {name:"George",gender:"male",origins:["western"],eras:["victorian","midcentury"],genres:["literary","historical"]},
+  {name:"Robert",gender:"male",origins:["western"],eras:["modern","midcentury"],genres:["thriller","literary","contemporary"]},
+  {name:"Daniel",gender:"male",origins:["western"],eras:["modern","midcentury"],genres:["contemporary","thriller","literary"]},
+  {name:"Samuel",gender:"male",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","thriller"]},
+  {name:"Charles",gender:"male",origins:["western"],eras:["victorian","midcentury"],genres:["literary","historical","thriller"]},
+  {name:"Benjamin",gender:"male",origins:["western"],eras:["modern","victorian"],genres:["literary","contemporary","thriller"]},
+  {name:"Marcus",gender:"male",origins:["western"],eras:["modern","medieval"],genres:["thriller","literary","fantasy"]},
+  {name:"Gabriel",gender:"male",origins:["western"],eras:["modern","victorian"],genres:["romance","literary","fantasy"]},
+  {name:"Elliot",gender:"male",origins:["western"],eras:["modern","midcentury"],genres:["literary","contemporary","thriller"]},
+  {name:"Hugh",gender:"male",origins:["western"],eras:["victorian","medieval"],genres:["historical","literary"]},
+  {name:"Caleb",gender:"male",origins:["western"],eras:["modern"],genres:["contemporary","thriller","romance"]},
+  {name:"Dominic",gender:"male",origins:["western"],eras:["modern"],genres:["thriller","romance","contemporary"]},
+  {name:"Oliver",gender:"male",origins:["western"],eras:["modern","victorian"],genres:["literary","contemporary","romance"]},
+  {name:"Vincent",gender:"male",origins:["western"],eras:["midcentury","modern"],genres:["thriller","literary","horror"]},
+  {name:"Miles",gender:"male",origins:["western"],eras:["modern","midcentury"],genres:["literary","contemporary","romance"]},
+  {name:"Grant",gender:"male",origins:["western"],eras:["modern","midcentury"],genres:["thriller","contemporary"]},
+  {name:"Wesley",gender:"male",origins:["western"],eras:["modern"],genres:["fantasy","romance","contemporary"]},
+  {name:"Theodore",gender:"male",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","fantasy"]},
+  {name:"Nathaniel",gender:"male",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","horror"]},
+
+  // WESTERN - FEMALE
+  {name:"Eleanor",gender:"female",origins:["western"],eras:["victorian","medieval","modern"],genres:["literary","historical","romance"]},
+  {name:"Catherine",gender:"female",origins:["western"],eras:["victorian","medieval","modern"],genres:["literary","historical","romance","horror"]},
+  {name:"Margaret",gender:"female",origins:["western"],eras:["victorian","midcentury"],genres:["literary","historical"]},
+  {name:"Alice",gender:"female",origins:["western"],eras:["victorian","modern"],genres:["literary","fantasy","horror"]},
+  {name:"Charlotte",gender:"female",origins:["western"],eras:["victorian","modern"],genres:["literary","romance","historical"]},
+  {name:"Vivian",gender:"female",origins:["western"],eras:["midcentury","modern"],genres:["thriller","literary","romance"]},
+  {name:"Clara",gender:"female",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","romance"]},
+  {name:"Helen",gender:"female",origins:["western"],eras:["victorian","midcentury"],genres:["literary","historical"]},
+  {name:"Beatrice",gender:"female",origins:["western"],eras:["victorian","medieval"],genres:["literary","historical","fantasy"]},
+  {name:"Evelyn",gender:"female",origins:["western"],eras:["midcentury","modern"],genres:["literary","thriller","romance"]},
+  {name:"Josephine",gender:"female",origins:["western"],eras:["victorian","midcentury"],genres:["historical","literary"]},
+  {name:"Audrey",gender:"female",origins:["western"],eras:["midcentury","modern"],genres:["romance","literary","contemporary"]},
+  {name:"Nora",gender:"female",origins:["western"],eras:["modern","victorian"],genres:["literary","thriller","contemporary"]},
+  {name:"Ruth",gender:"female",origins:["western"],eras:["midcentury","victorian"],genres:["literary","historical"]},
+  {name:"Maren",gender:"female",origins:["western","nordic"],eras:["modern"],genres:["literary","thriller","contemporary"]},
+  {name:"Isla",gender:"female",origins:["western"],eras:["modern"],genres:["romance","contemporary","literary"]},
+  {name:"Cecilia",gender:"female",origins:["western"],eras:["victorian","modern"],genres:["literary","romance","historical"]},
+  {name:"Louisa",gender:"female",origins:["western"],eras:["victorian"],genres:["historical","literary","romance"]},
+  {name:"Frances",gender:"female",origins:["western"],eras:["victorian","midcentury"],genres:["literary","historical"]},
+  {name:"Wren",gender:"female",origins:["western"],eras:["modern"],genres:["fantasy","contemporary","literary"]},
+  {name:"Thea",gender:"female",origins:["western"],eras:["modern"],genres:["contemporary","literary","romance"]},
+  {name:"Cora",gender:"female",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","thriller"]},
+  {name:"Lydia",gender:"female",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","romance"]},
+  {name:"Rosalind",gender:"female",origins:["western"],eras:["victorian","medieval"],genres:["literary","fantasy","historical"]},
+  {name:"Della",gender:"female",origins:["western"],eras:["midcentury","modern"],genres:["thriller","literary","contemporary"]},
+
+  // EASTERN EUROPEAN - MALE
+  {name:"Dmitri",gender:"male",origins:["eastern_european"],eras:["victorian","modern","medieval"],genres:["literary","thriller","historical"]},
+  {name:"Andrei",gender:"male",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Viktor",gender:"male",origins:["eastern_european"],eras:["midcentury","modern"],genres:["thriller","literary","horror"]},
+  {name:"Sergei",gender:"male",origins:["eastern_european"],eras:["modern","midcentury"],genres:["thriller","literary"]},
+  {name:"Lev",gender:"male",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Mikhail",gender:"male",origins:["eastern_european"],eras:["victorian","modern"],genres:["literary","historical","thriller"]},
+  {name:"Nikolai",gender:"male",origins:["eastern_european"],eras:["victorian","modern"],genres:["literary","historical","fantasy"]},
+  {name:"Pavel",gender:"male",origins:["eastern_european"],eras:["modern","midcentury"],genres:["thriller","literary"]},
+  {name:"Stefan",gender:"male",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","romance","thriller"]},
+  {name:"Aleksei",gender:"male",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Tomas",gender:"male",origins:["eastern_european"],eras:["modern","medieval"],genres:["literary","historical"]},
+  {name:"Kazimir",gender:"male",origins:["eastern_european"],eras:["medieval","victorian"],genres:["fantasy","historical"]},
+
+  // EASTERN EUROPEAN - FEMALE
+  {name:"Katya",gender:"female",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","thriller","romance"]},
+  {name:"Irina",gender:"female",origins:["eastern_european"],eras:["modern","midcentury"],genres:["literary","thriller"]},
+  {name:"Natasha",gender:"female",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","romance","thriller"]},
+  {name:"Mila",gender:"female",origins:["eastern_european"],eras:["modern"],genres:["contemporary","romance","thriller"]},
+  {name:"Anya",gender:"female",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","fantasy","thriller"]},
+  {name:"Daria",gender:"female",origins:["eastern_european"],eras:["modern"],genres:["literary","thriller","contemporary"]},
+  {name:"Zoya",gender:"female",origins:["eastern_european"],eras:["midcentury","modern"],genres:["literary","historical"]},
+  {name:"Vera",gender:"female",origins:["eastern_european"],eras:["victorian","midcentury","modern"],genres:["literary","historical","thriller"]},
+  {name:"Petra",gender:"female",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Ludmila",gender:"female",origins:["eastern_european"],eras:["victorian","midcentury"],genres:["literary","historical"]},
+
+  // EAST ASIAN - MALE
+  {name:"Kenji",gender:"male",origins:["east_asian"],eras:["modern","midcentury"],genres:["literary","thriller","contemporary"]},
+  {name:"Hiro",gender:"male",origins:["east_asian"],eras:["modern","medieval"],genres:["literary","fantasy","contemporary"]},
+  {name:"Jun",gender:"male",origins:["east_asian"],eras:["modern"],genres:["literary","contemporary","scifi"]},
+  {name:"Takashi",gender:"male",origins:["east_asian"],eras:["modern","midcentury"],genres:["literary","thriller"]},
+  {name:"Wei",gender:"male",origins:["east_asian"],eras:["modern","medieval"],genres:["literary","fantasy","historical"]},
+  {name:"Seung",gender:"male",origins:["east_asian"],eras:["modern"],genres:["thriller","contemporary","literary"]},
+  {name:"Haruki",gender:"male",origins:["east_asian"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Min-jun",gender:"male",origins:["east_asian"],eras:["modern"],genres:["contemporary","thriller","literary"]},
+  {name:"Daichi",gender:"male",origins:["east_asian"],eras:["modern","medieval"],genres:["fantasy","literary"]},
+  {name:"Ryo",gender:"male",origins:["east_asian"],eras:["modern"],genres:["thriller","contemporary","scifi"]},
+  {name:"Soren",gender:"male",origins:["east_asian"],eras:["modern","futuristic"],genres:["scifi","fantasy"]},
+  {name:"Tae-won",gender:"male",origins:["east_asian"],eras:["modern"],genres:["thriller","contemporary"]},
+
+  // EAST ASIAN - FEMALE
+  {name:"Yuki",gender:"female",origins:["east_asian"],eras:["modern"],genres:["literary","contemporary","romance"]},
+  {name:"Mei",gender:"female",origins:["east_asian"],eras:["modern","historical"],genres:["literary","romance","historical"]},
+  {name:"Hana",gender:"female",origins:["east_asian"],eras:["modern"],genres:["contemporary","romance","literary"]},
+  {name:"Akiko",gender:"female",origins:["east_asian"],eras:["modern","midcentury"],genres:["literary","historical"]},
+  {name:"Suki",gender:"female",origins:["east_asian"],eras:["modern"],genres:["contemporary","romance"]},
+  {name:"Ji-yeon",gender:"female",origins:["east_asian"],eras:["modern"],genres:["contemporary","thriller","literary"]},
+  {name:"Rin",gender:"female",origins:["east_asian"],eras:["modern","medieval"],genres:["fantasy","literary"]},
+  {name:"Linh",gender:"female",origins:["east_asian"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Nari",gender:"female",origins:["east_asian"],eras:["modern"],genres:["contemporary","romance","literary"]},
+  {name:"Chiyo",gender:"female",origins:["east_asian"],eras:["medieval","midcentury"],genres:["historical","literary"]},
+
+  // SOUTH ASIAN - MALE
+  {name:"Arjun",gender:"male",origins:["south_asian"],eras:["modern","medieval"],genres:["literary","fantasy","contemporary"]},
+  {name:"Rohan",gender:"male",origins:["south_asian"],eras:["modern"],genres:["contemporary","thriller","literary"]},
+  {name:"Vikram",gender:"male",origins:["south_asian"],eras:["modern","medieval"],genres:["literary","fantasy","thriller"]},
+  {name:"Kiran",gender:"male",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary","scifi"]},
+  {name:"Dev",gender:"male",origins:["south_asian"],eras:["modern"],genres:["contemporary","romance","thriller"]},
+  {name:"Ravi",gender:"male",origins:["south_asian"],eras:["modern","midcentury"],genres:["literary","contemporary"]},
+  {name:"Sanjay",gender:"male",origins:["south_asian"],eras:["modern","midcentury"],genres:["literary","contemporary","thriller"]},
+  {name:"Amir",gender:"male",origins:["south_asian","middle_eastern"],eras:["modern","medieval"],genres:["literary","fantasy","contemporary"]},
+  {name:"Nikhil",gender:"male",origins:["south_asian"],eras:["modern"],genres:["contemporary","literary"]},
+  {name:"Kabir",gender:"male",origins:["south_asian"],eras:["modern","medieval"],genres:["literary","fantasy"]},
+
+  // SOUTH ASIAN - FEMALE
+  {name:"Priya",gender:"female",origins:["south_asian"],eras:["modern"],genres:["contemporary","romance","literary"]},
+  {name:"Ananya",gender:"female",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary","romance"]},
+  {name:"Devi",gender:"female",origins:["south_asian"],eras:["modern","medieval"],genres:["literary","fantasy","historical"]},
+  {name:"Meera",gender:"female",origins:["south_asian"],eras:["modern","medieval"],genres:["literary","romance","fantasy"]},
+  {name:"Leela",gender:"female",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary","scifi"]},
+  {name:"Sunita",gender:"female",origins:["south_asian"],eras:["modern","midcentury"],genres:["literary","historical"]},
+  {name:"Kavya",gender:"female",origins:["south_asian"],eras:["modern"],genres:["contemporary","romance"]},
+  {name:"Nalini",gender:"female",origins:["south_asian"],eras:["modern"],genres:["literary","thriller"]},
+  {name:"Asha",gender:"female",origins:["south_asian","african"],eras:["modern"],genres:["literary","contemporary"]},
+
+  // LATIN AMERICAN - MALE
+  {name:"Mateo",gender:"male",origins:["latin_american"],eras:["modern"],genres:["contemporary","literary","romance"]},
+  {name:"Santiago",gender:"male",origins:["latin_american"],eras:["modern","victorian"],genres:["literary","romance","historical"]},
+  {name:"Rafael",gender:"male",origins:["latin_american"],eras:["modern","midcentury"],genres:["literary","thriller","romance"]},
+  {name:"Joaquin",gender:"male",origins:["latin_american"],eras:["modern","midcentury"],genres:["literary","thriller"]},
+  {name:"Esteban",gender:"male",origins:["latin_american"],eras:["modern","victorian"],genres:["literary","historical"]},
+  {name:"Andres",gender:"male",origins:["latin_american"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Luciano",gender:"male",origins:["latin_american"],eras:["modern","midcentury"],genres:["literary","romance","thriller"]},
+  {name:"Felix",gender:"male",origins:["latin_american","western"],eras:["modern","midcentury"],genres:["literary","contemporary","thriller"]},
+  {name:"Dante",gender:"male",origins:["latin_american"],eras:["modern","medieval"],genres:["literary","fantasy","horror"]},
+  {name:"Tomas",gender:"male",origins:["latin_american"],eras:["modern"],genres:["literary","contemporary"]},
+
+  // LATIN AMERICAN - FEMALE
+  {name:"Camila",gender:"female",origins:["latin_american"],eras:["modern"],genres:["contemporary","romance","literary"]},
+  {name:"Valentina",gender:"female",origins:["latin_american"],eras:["modern"],genres:["romance","literary","contemporary"]},
+  {name:"Isabella",gender:"female",origins:["latin_american","western"],eras:["modern","victorian"],genres:["romance","literary","historical"]},
+  {name:"Lucia",gender:"female",origins:["latin_american"],eras:["modern","victorian"],genres:["literary","romance","horror"]},
+  {name:"Elena",gender:"female",origins:["latin_american"],eras:["modern"],genres:["literary","romance","contemporary"]},
+  {name:"Marisol",gender:"female",origins:["latin_american"],eras:["modern","midcentury"],genres:["literary","contemporary"]},
+  {name:"Paloma",gender:"female",origins:["latin_american"],eras:["modern"],genres:["literary","romance"]},
+  {name:"Carmen",gender:"female",origins:["latin_american"],eras:["midcentury","modern"],genres:["literary","historical","thriller"]},
+  {name:"Renata",gender:"female",origins:["latin_american"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+
+  // AFRICAN - MALE
+  {name:"Kwame",gender:"male",origins:["african"],eras:["modern"],genres:["literary","contemporary","scifi"]},
+  {name:"Idris",gender:"male",origins:["african"],eras:["modern","medieval"],genres:["literary","fantasy","contemporary"]},
+  {name:"Kofi",gender:"male",origins:["african"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Tendai",gender:"male",origins:["african"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Amari",gender:"male",origins:["african"],eras:["modern"],genres:["contemporary","literary","scifi"]},
+  {name:"Jelani",gender:"male",origins:["african"],eras:["modern"],genres:["literary","contemporary","fantasy"]},
+  {name:"Emeka",gender:"male",origins:["african"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Sekou",gender:"male",origins:["african"],eras:["modern","medieval"],genres:["literary","fantasy","historical"]},
+  {name:"Obinna",gender:"male",origins:["african"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Zuberi",gender:"male",origins:["african"],eras:["modern","medieval"],genres:["fantasy","literary"]},
+
+  // AFRICAN - FEMALE
+  {name:"Amara",gender:"female",origins:["african"],eras:["modern"],genres:["literary","contemporary","romance"]},
+  {name:"Zuri",gender:"female",origins:["african"],eras:["modern"],genres:["contemporary","romance","scifi"]},
+  {name:"Nia",gender:"female",origins:["african"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Aisha",gender:"female",origins:["african","middle_eastern"],eras:["modern","medieval"],genres:["literary","fantasy","contemporary"]},
+  {name:"Imani",gender:"female",origins:["african"],eras:["modern"],genres:["contemporary","literary","romance"]},
+  {name:"Kaia",gender:"female",origins:["african"],eras:["modern"],genres:["contemporary","fantasy","scifi"]},
+  {name:"Adaeze",gender:"female",origins:["african"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Thandiwe",gender:"female",origins:["african"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Nyala",gender:"female",origins:["african"],eras:["modern","medieval"],genres:["fantasy","literary"]},
+
+  // MIDDLE EASTERN - MALE
+  {name:"Karim",gender:"male",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","thriller","fantasy"]},
+  {name:"Omar",gender:"male",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","contemporary","thriller"]},
+  {name:"Tariq",gender:"male",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","thriller","fantasy"]},
+  {name:"Hassan",gender:"male",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","contemporary","historical"]},
+  {name:"Nasir",gender:"male",origins:["middle_eastern"],eras:["modern","medieval"],genres:["thriller","literary","fantasy"]},
+  {name:"Farid",gender:"male",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","romance","historical"]},
+  {name:"Darius",gender:"male",origins:["middle_eastern"],eras:["medieval","modern"],genres:["fantasy","literary","historical"]},
+  {name:"Rami",gender:"male",origins:["middle_eastern"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Samir",gender:"male",origins:["middle_eastern","south_asian"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Cyrus",gender:"male",origins:["middle_eastern"],eras:["medieval","modern"],genres:["fantasy","literary","historical"]},
+
+  // MIDDLE EASTERN - FEMALE
+  {name:"Layla",gender:"female",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","romance","fantasy"]},
+  {name:"Soraya",gender:"female",origins:["middle_eastern"],eras:["modern"],genres:["literary","romance","thriller"]},
+  {name:"Yasmin",gender:"female",origins:["middle_eastern"],eras:["modern"],genres:["literary","contemporary","romance"]},
+  {name:"Nadia",gender:"female",origins:["middle_eastern","eastern_european"],eras:["modern"],genres:["literary","thriller","romance"]},
+  {name:"Farah",gender:"female",origins:["middle_eastern"],eras:["modern"],genres:["contemporary","literary"]},
+  {name:"Zahra",gender:"female",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","fantasy","contemporary"]},
+  {name:"Mariam",gender:"female",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","historical","contemporary"]},
+  {name:"Dina",gender:"female",origins:["middle_eastern"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+
+  // NORDIC - MALE
+  {name:"Erik",gender:"male",origins:["nordic"],eras:["modern","medieval","victorian"],genres:["literary","fantasy","thriller"]},
+  {name:"Lars",gender:"male",origins:["nordic"],eras:["modern","midcentury"],genres:["literary","thriller"]},
+  {name:"Gunnar",gender:"male",origins:["nordic"],eras:["medieval","modern"],genres:["fantasy","thriller","literary"]},
+  {name:"Bjorn",gender:"male",origins:["nordic"],eras:["medieval","modern"],genres:["fantasy","historical","thriller"]},
+  {name:"Magnus",gender:"male",origins:["nordic"],eras:["medieval","modern"],genres:["fantasy","literary","thriller"]},
+  {name:"Leif",gender:"male",origins:["nordic"],eras:["medieval","modern"],genres:["fantasy","historical"]},
+  {name:"Anders",gender:"male",origins:["nordic"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Sven",gender:"male",origins:["nordic"],eras:["medieval","modern"],genres:["fantasy","historical","literary"]},
+  {name:"Arne",gender:"male",origins:["nordic"],eras:["midcentury","modern"],genres:["literary","thriller"]},
+  {name:"Odin",gender:"male",origins:["nordic"],eras:["medieval"],genres:["fantasy"]},
+
+  // NORDIC - FEMALE
+  {name:"Astrid",gender:"female",origins:["nordic"],eras:["modern","medieval"],genres:["fantasy","literary","thriller"]},
+  {name:"Ingrid",gender:"female",origins:["nordic"],eras:["midcentury","modern"],genres:["literary","thriller"]},
+  {name:"Freya",gender:"female",origins:["nordic"],eras:["medieval","modern"],genres:["fantasy","literary","romance"]},
+  {name:"Sigrid",gender:"female",origins:["nordic"],eras:["medieval","modern"],genres:["fantasy","literary","historical"]},
+  {name:"Elsa",gender:"female",origins:["nordic"],eras:["modern","victorian"],genres:["literary","romance"]},
+  {name:"Solveig",gender:"female",origins:["nordic"],eras:["victorian","modern"],genres:["literary","historical"]},
+  {name:"Brigitte",gender:"female",origins:["nordic","western"],eras:["midcentury","modern"],genres:["literary","thriller"]},
+  {name:"Liv",gender:"female",origins:["nordic"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Signe",gender:"female",origins:["nordic"],eras:["modern","victorian"],genres:["literary","thriller"]},
+
+  // NEUTRAL / UNISEX
+  {name:"Rowan",gender:"neutral",origins:["western","nordic"],eras:["modern","medieval"],genres:["fantasy","literary","contemporary"]},
+  {name:"Morgan",gender:"neutral",origins:["western"],eras:["modern","medieval"],genres:["fantasy","thriller","literary"]},
+  {name:"Quinn",gender:"neutral",origins:["western"],eras:["modern"],genres:["contemporary","thriller","literary"]},
+  {name:"Avery",gender:"neutral",origins:["western"],eras:["modern"],genres:["contemporary","romance","literary"]},
+  {name:"Jordan",gender:"neutral",origins:["western"],eras:["modern"],genres:["contemporary","thriller"]},
+  {name:"Sage",gender:"neutral",origins:["western"],eras:["modern"],genres:["fantasy","contemporary","literary"]},
+  {name:"Riley",gender:"neutral",origins:["western"],eras:["modern"],genres:["contemporary","romance"]},
+  {name:"Finley",gender:"neutral",origins:["western"],eras:["modern"],genres:["contemporary","literary"]},
+  {name:"Emerson",gender:"neutral",origins:["western"],eras:["modern","victorian"],genres:["literary","contemporary"]},
+  {name:"Sasha",gender:"neutral",origins:["eastern_european"],eras:["modern"],genres:["literary","thriller","contemporary"]},
+  {name:"Ren",gender:"neutral",origins:["east_asian"],eras:["modern","futuristic"],genres:["scifi","fantasy","literary"]},
+  {name:"Kai",gender:"neutral",origins:["east_asian","nordic","western"],eras:["modern","futuristic"],genres:["scifi","fantasy","contemporary"]},
+  {name:"Ari",gender:"neutral",origins:["middle_eastern","western","nordic"],eras:["modern"],genres:["literary","contemporary","fantasy"]},
+  {name:"Indigo",gender:"neutral",origins:["western"],eras:["modern","futuristic"],genres:["scifi","fantasy","contemporary"]},
+  {name:"Ellis",gender:"neutral",origins:["western"],eras:["modern","victorian"],genres:["literary","thriller","contemporary"]},
+  {name:"Marlowe",gender:"neutral",origins:["western"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Salem",gender:"neutral",origins:["western","middle_eastern"],eras:["modern"],genres:["horror","fantasy","literary"]},
+  {name:"Noor",gender:"neutral",origins:["middle_eastern","south_asian"],eras:["modern"],genres:["literary","contemporary","romance"]},
+
+  // FANTASY / SCI-FI SPECIFIC
+  {name:"Cael",gender:"male",origins:["western"],eras:["medieval","futuristic"],genres:["fantasy","scifi"]},
+  {name:"Theron",gender:"male",origins:["western"],eras:["medieval"],genres:["fantasy"]},
+  {name:"Corvus",gender:"male",origins:["western"],eras:["medieval","futuristic"],genres:["fantasy","scifi","horror"]},
+  {name:"Orion",gender:"male",origins:["western"],eras:["futuristic","medieval"],genres:["scifi","fantasy"]},
+  {name:"Kael",gender:"male",origins:["western"],eras:["medieval","futuristic"],genres:["fantasy","scifi"]},
+  {name:"Vesper",gender:"female",origins:["western"],eras:["futuristic","modern"],genres:["scifi","fantasy","thriller"]},
+  {name:"Lyra",gender:"female",origins:["western"],eras:["futuristic","medieval"],genres:["scifi","fantasy"]},
+  {name:"Seraphina",gender:"female",origins:["western"],eras:["medieval"],genres:["fantasy","romance"]},
+  {name:"Isolde",gender:"female",origins:["western","nordic"],eras:["medieval"],genres:["fantasy","romance","historical"]},
+  {name:"Sable",gender:"neutral",origins:["western"],eras:["futuristic","modern"],genres:["scifi","fantasy","horror"]},
+  {name:"Zephyr",gender:"neutral",origins:["western"],eras:["futuristic","medieval"],genres:["scifi","fantasy"]},
+  {name:"Rune",gender:"neutral",origins:["nordic"],eras:["medieval","futuristic"],genres:["fantasy","scifi"]},
+  {name:"Cass",gender:"neutral",origins:["western"],eras:["futuristic","modern"],genres:["scifi","thriller"]},
+  {name:"Juno",gender:"female",origins:["western"],eras:["futuristic","modern"],genres:["scifi","literary","fantasy"]},
+  {name:"Zara",gender:"female",origins:["middle_eastern","african"],eras:["modern","futuristic"],genres:["scifi","contemporary","romance"]},
+  {name:"Axton",gender:"male",origins:["western"],eras:["futuristic"],genres:["scifi"]},
+  {name:"Nyx",gender:"neutral",origins:["western"],eras:["futuristic","medieval"],genres:["fantasy","scifi","horror"]},
+];
+
+const lastNames = [
+  // WESTERN
+  {name:"Ashford",origins:["western"],eras:["victorian","modern","midcentury"],genres:["literary","thriller","historical"]},
+  {name:"Blackwood",origins:["western"],eras:["victorian","medieval","modern"],genres:["horror","literary","fantasy"]},
+  {name:"Calloway",origins:["western"],eras:["modern","midcentury"],genres:["thriller","literary","contemporary"]},
+  {name:"Davenport",origins:["western"],eras:["victorian","midcentury"],genres:["literary","historical","thriller"]},
+  {name:"Fairchild",origins:["western"],eras:["victorian","modern"],genres:["romance","literary"]},
+  {name:"Graves",origins:["western"],eras:["modern","victorian"],genres:["horror","thriller","literary"]},
+  {name:"Harlow",origins:["western"],eras:["midcentury","modern"],genres:["thriller","romance","literary"]},
+  {name:"Kessler",origins:["western"],eras:["modern","midcentury"],genres:["thriller","literary"]},
+  {name:"Mercer",origins:["western"],eras:["modern","victorian"],genres:["thriller","literary","contemporary"]},
+  {name:"Prescott",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","thriller"]},
+  {name:"Sinclair",origins:["western"],eras:["victorian","modern"],genres:["literary","thriller","romance"]},
+  {name:"Thornton",origins:["western"],eras:["victorian","modern"],genres:["literary","historical","horror"]},
+  {name:"Waverly",origins:["western"],eras:["victorian","modern"],genres:["literary","romance"]},
+  {name:"Aldrich",origins:["western"],eras:["victorian","modern"],genres:["thriller","literary","horror"]},
+  {name:"Beckett",origins:["western"],eras:["modern","victorian"],genres:["literary","thriller","contemporary"]},
+  {name:"Crane",origins:["western"],eras:["victorian","modern"],genres:["horror","literary","thriller"]},
+  {name:"Donovan",origins:["western"],eras:["modern","midcentury"],genres:["thriller","contemporary","literary"]},
+  {name:"Fletcher",origins:["western"],eras:["modern","medieval"],genres:["fantasy","literary","thriller"]},
+  {name:"Gallagher",origins:["western"],eras:["modern","midcentury"],genres:["thriller","literary","contemporary"]},
+  {name:"Holloway",origins:["western"],eras:["modern","victorian"],genres:["thriller","horror","literary"]},
+  {name:"Langley",origins:["western"],eras:["modern","victorian"],genres:["thriller","literary"]},
+  {name:"Monroe",origins:["western"],eras:["modern","midcentury"],genres:["thriller","romance","literary"]},
+  {name:"Nash",origins:["western"],eras:["modern"],genres:["thriller","contemporary"]},
+  {name:"Pemberton",origins:["western"],eras:["victorian"],genres:["historical","literary"]},
+  {name:"Radcliffe",origins:["western"],eras:["victorian","modern"],genres:["horror","literary","historical"]},
+  {name:"Stratton",origins:["western"],eras:["victorian","modern"],genres:["thriller","literary"]},
+  {name:"Voss",origins:["western"],eras:["modern"],genres:["thriller","scifi","literary"]},
+  {name:"Winslow",origins:["western"],eras:["victorian","modern"],genres:["literary","historical"]},
+  {name:"Cole",origins:["western"],eras:["modern","midcentury"],genres:["thriller","contemporary","literary"]},
+  {name:"Price",origins:["western"],eras:["modern","midcentury"],genres:["thriller","contemporary"]},
+
+  // EASTERN EUROPEAN
+  {name:"Volkov",origins:["eastern_european"],eras:["modern","victorian"],genres:["thriller","literary"]},
+  {name:"Petrov",origins:["eastern_european"],eras:["modern","midcentury"],genres:["thriller","literary"]},
+  {name:"Kovac",origins:["eastern_european"],eras:["modern"],genres:["thriller","literary","contemporary"]},
+  {name:"Novak",origins:["eastern_european"],eras:["modern"],genres:["literary","thriller","contemporary"]},
+  {name:"Reznikov",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Sokolov",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Krasinski",origins:["eastern_european"],eras:["modern","victorian"],genres:["literary","historical"]},
+  {name:"Babic",origins:["eastern_european"],eras:["modern"],genres:["literary","thriller"]},
+  {name:"Lenkov",origins:["eastern_european"],eras:["modern","midcentury"],genres:["thriller","literary"]},
+  {name:"Dragomir",origins:["eastern_european"],eras:["medieval","modern"],genres:["fantasy","horror","literary"]},
+
+  // EAST ASIAN
+  {name:"Tanaka",origins:["east_asian"],eras:["modern","midcentury"],genres:["literary","thriller","contemporary"]},
+  {name:"Nakamura",origins:["east_asian"],eras:["modern","midcentury"],genres:["literary","thriller"]},
+  {name:"Hayashi",origins:["east_asian"],eras:["modern","medieval"],genres:["literary","fantasy"]},
+  {name:"Kim",origins:["east_asian"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Park",origins:["east_asian"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Huang",origins:["east_asian"],eras:["modern","medieval"],genres:["literary","historical","fantasy"]},
+  {name:"Ito",origins:["east_asian"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Suzuki",origins:["east_asian"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Yamamoto",origins:["east_asian"],eras:["modern","midcentury"],genres:["literary","historical"]},
+  {name:"Liang",origins:["east_asian"],eras:["modern","medieval"],genres:["literary","fantasy","historical"]},
+
+  // SOUTH ASIAN
+  {name:"Sharma",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Patel",origins:["south_asian"],eras:["modern"],genres:["contemporary","literary","thriller"]},
+  {name:"Gupta",origins:["south_asian"],eras:["modern"],genres:["contemporary","literary"]},
+  {name:"Mehta",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Rao",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary","scifi"]},
+  {name:"Krishnan",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Basu",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Desai",origins:["south_asian"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+
+  // LATIN AMERICAN
+  {name:"Reyes",origins:["latin_american"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Castillo",origins:["latin_american"],eras:["modern","victorian"],genres:["literary","historical","thriller"]},
+  {name:"Fuentes",origins:["latin_american"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Delgado",origins:["latin_american"],eras:["modern"],genres:["thriller","literary","contemporary"]},
+  {name:"Vega",origins:["latin_american"],eras:["modern","futuristic"],genres:["literary","scifi","contemporary"]},
+  {name:"Morales",origins:["latin_american"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Salazar",origins:["latin_american"],eras:["modern","victorian"],genres:["literary","thriller","horror"]},
+  {name:"Cordova",origins:["latin_american"],eras:["modern","victorian"],genres:["literary","historical"]},
+
+  // AFRICAN
+  {name:"Okafor",origins:["african"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Mensah",origins:["african"],eras:["modern"],genres:["literary","contemporary","scifi"]},
+  {name:"Diallo",origins:["african"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Adeyemi",origins:["african"],eras:["modern"],genres:["literary","contemporary","fantasy"]},
+  {name:"Nwosu",origins:["african"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Mbeki",origins:["african"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+  {name:"Achebe",origins:["african"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Kimathi",origins:["african"],eras:["modern"],genres:["literary","thriller","historical"]},
+
+  // MIDDLE EASTERN
+  {name:"Al-Rashid",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","fantasy","thriller"]},
+  {name:"Khalil",origins:["middle_eastern"],eras:["modern"],genres:["literary","contemporary","romance"]},
+  {name:"Nazari",origins:["middle_eastern"],eras:["modern"],genres:["literary","thriller"]},
+  {name:"Hassani",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","historical","fantasy"]},
+  {name:"Mostafa",origins:["middle_eastern"],eras:["modern"],genres:["literary","contemporary"]},
+  {name:"Safar",origins:["middle_eastern"],eras:["modern","medieval"],genres:["literary","fantasy"]},
+  {name:"Khoury",origins:["middle_eastern"],eras:["modern"],genres:["literary","contemporary","thriller"]},
+
+  // NORDIC
+  {name:"Lindqvist",origins:["nordic"],eras:["modern"],genres:["thriller","literary","horror"]},
+  {name:"Holmberg",origins:["nordic"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Stenberg",origins:["nordic"],eras:["modern"],genres:["thriller","literary"]},
+  {name:"Nystrom",origins:["nordic"],eras:["modern","victorian"],genres:["literary","thriller"]},
+  {name:"Eriksson",origins:["nordic"],eras:["modern"],genres:["thriller","literary","contemporary"]},
+  {name:"Halvorsen",origins:["nordic"],eras:["modern"],genres:["thriller","literary"]},
+  {name:"Thorvald",origins:["nordic"],eras:["medieval"],genres:["fantasy","historical"]},
+  {name:"Greve",origins:["nordic"],eras:["modern","victorian"],genres:["thriller","literary"]},
+];
+
+const characterHooks = {
+  fantasy: [
+    "A mapmaker who draws places that shouldn't exist, but do",
+    "The last surviving member of a disbanded order of scholars",
+    "A blacksmith who forges weapons they've sworn never to use",
+    "Born with the ability to see the moment someone will betray them",
+    "A former court advisor haunted by a prophecy they helped suppress",
+    "Raised by the enemy kingdom as a political hostage, now returned home",
+    "A healer whose power comes at the cost of their own life force",
+    "The second child of a dynasty, never meant to rule, now the only one left",
+    "A wandering merchant who trades in memories, not goods",
+    "An archivist who discovered something in the records that rewrites the kingdom's founding",
+    "A soldier who deserted during the last war and built a new identity in peacetime",
+    "Cursed to speak only the truth in a court built on deception",
+  ],
+  scifi: [
+    "A deep-space navigator who hasn't set foot on a planet in eleven years",
+    "A synthetic linguist designed to translate languages that no longer have living speakers",
+    "An engineer who builds ships they're never allowed to board",
+    "The only survivor of a colony ship that arrived at its destination empty",
+    "A memory archivist who keeps other people's pasts and has started losing their own",
+    "A planetary surveyor who found signs of life where the data said there couldn't be any",
+    "A former military pilot grounded for a decision they'd make again",
+    "A med-tech who can fix anyone's body but not the damage done to their own",
+    "Born on a station, never breathed unfiltered air, about to set foot on Earth for the first time",
+    "An AI ethicist hired to decommission a system that might be conscious",
+    "A smuggler who moves information, not cargo, between disconnected networks",
+    "The youngest person ever exiled from Mars, returning with a different name",
+  ],
+  romance: [
+    "A bookshop owner in a town where everyone knows everyone, trying to keep one secret",
+    "A wedding planner who hasn't been to a wedding as a guest in four years",
+    "An architect renovating a building they used to live in with someone else",
+    "A pastry chef who inherited a restaurant and the rivalry that comes with it",
+    "Returning to their hometown for six months to settle a family estate, no longer and no sooner",
+    "A translator working on a poet's unpublished love letters, starting to feel addressed",
+    "A veterinarian in a small coastal town with no plans to stay past autumn",
+    "A songwriter who wrote a hit about a relationship that never happened, until the person it described showed up",
+    "A florist who communicates better through arrangements than conversation",
+    "A dance instructor who hasn't danced with a partner in two years",
+    "An innkeeper on a remote island where the same guest keeps booking the same week every year",
+    "A librarian who writes anonymous book recommendations that have started changing someone's life",
+  ],
+  thriller: [
+    "A forensic accountant who follows the money where the police won't",
+    "A retired detective called back for a case that mirrors their one unsolved",
+    "A journalist who received a dead colleague's unfinished story in the mail",
+    "A defense attorney who just realized their client isn't lying",
+    "A missing persons investigator who once went missing themselves",
+    "A crime scene photographer who noticed something in a photo no one else has seen",
+    "A parole officer whose newest case was convicted on evidence they helped collect years ago",
+    "A profiler who retired after getting too accurate, and too close to a subject",
+    "A small-town coroner who hasn't had a murder case in twenty years, until now",
+    "An insurance investigator who suspects the beneficiary and the victim are the same person",
+    "A witness protection agent who lost a witness and has forty-eight hours before it matters",
+    "A hacker who intercepted a conversation they were never supposed to hear",
+  ],
+  literary: [
+    "A piano tuner who enters other people's homes and understands them by what's on the walls",
+    "A high school teacher in the same town where they grew up, watching it change",
+    "A hospice nurse who has learned more about living from the dying than from the living",
+    "The adult child who moved back home and found their parent has become someone unrecognizable",
+    "A ghostwriter who has written twelve bestsellers under other people's names",
+    "A translator who realizes the book they're translating is about them",
+    "A retired diplomat quietly writing a memoir that will burn several bridges",
+    "A college professor confronting a student whose thesis plagiarized their unpublished work",
+    "A lighthouse keeper on their last season before the station goes automated",
+    "An art restorer who found a painting beneath a painting, and knows what it means",
+    "A former child prodigy, now forty, working an unremarkable job by choice",
+    "A beekeeper who inherited the craft and the debts from a father who never explained either",
+  ],
+  historical: [
+    "A telegraph operator during wartime who started editing the messages they transmit",
+    "A suffragist publicly composed and privately furious, deciding which mask to drop",
+    "A dockworker who can read five languages but tells no one",
+    "An immigrant who arrived with a borrowed name and built a life on it",
+    "A servant in a grand house who knows every secret and has started keeping a journal",
+    "A photographer documenting a vanishing way of life while their own world shifts beneath them",
+    "A field nurse carrying a letter they promised to deliver, now a thousand miles from the recipient",
+    "A printer during a revolution, choosing which pamphlets to set and which to bury",
+    "A cartographer's apprentice who suspects their master is falsifying borders deliberately",
+    "The youngest member of a traveling theater troupe, the only one who saw what happened that night",
+  ],
+  horror: [
+    "A grief counselor whose new client describes a place that matches the counselor's recurring dream",
+    "A real estate agent who sells houses with histories they're legally required to disclose",
+    "A taxidermist whose latest commission arrived with a note: 'It was alive when I found it'",
+    "A night-shift security guard at a museum that rearranges itself between rounds",
+    "A sleep researcher whose subjects keep drawing the same face during REM studies",
+    "A mortician who noticed the newest body on the slab has a heartbeat",
+    "An archivist at a psychiatric hospital cataloguing patient artwork spanning a hundred years, all depicting the same room",
+    "A lighthouse keeper whose predecessor left mid-shift and was never found",
+    "A folklorist interviewing an elderly woman who knows things about the interviewer she shouldn't",
+    "A radio host on a late-night show who started receiving calls from a number that doesn't exist",
+  ],
+  contemporary: [
+    "A rideshare driver who listens to strangers' conversations all day and has started to notice a pattern",
+    "A social media manager who curates a perfect life for a client while their own falls apart",
+    "A high school guidance counselor who gives better advice than they follow",
+    "A food truck owner who feeds the same neighborhood every day but knows nobody in it",
+    "A physical therapist helping an athlete recover from an injury that ended a career like the one they almost had",
+    "A true crime podcaster who received a package from the subject of their next season",
+    "A dog walker who sees every house on the block from the inside and has opinions about all of them",
+    "A tech worker who quit their job at thirty-two and has told no one, including their spouse",
+    "An ESL teacher whose most difficult student is also the one they understand best",
+    "A stand-up comic who is funnier than they are happy, and the audience can tell",
+  ],
+};
+
+// ============================================================
+// GENERATOR LOGIC
+// ============================================================
+
+let currentName = null;
+let savedNames = JSON.parse(localStorage.getItem('wdp_saved_names') || '[]');
+
+function renderSaved() {
+  const panel = document.getElementById('saved-panel');
+  const list = document.getElementById('saved-list');
+  if (savedNames.length === 0) {
+    panel.style.display = 'none';
+    return;
+  }
+  panel.style.display = 'block';
+  list.innerHTML = savedNames.map((item, i) =>
+    `<div class="saved-item">
+      <div>
+        <div class="saved-name">${item.name}</div>
+        <div class="saved-hook">${item.hook}</div>
+      </div>
+      <button class="saved-remove" onclick="removeSaved(${i})" title="Remove">&times;</button>
+    </div>`
+  ).join('');
+}
+
+function removeSaved(index) {
+  savedNames.splice(index, 1);
+  localStorage.setItem('wdp_saved_names', JSON.stringify(savedNames));
+  renderSaved();
+}
+
+function clearSaved() {
+  savedNames = [];
+  localStorage.setItem('wdp_saved_names', JSON.stringify(savedNames));
+  renderSaved();
+}
+
+function saveName() {
+  if (!currentName) return;
+  const exists = savedNames.some(s => s.name === currentName.name && s.hook === currentName.hook);
+  if (exists) return;
+  savedNames.push({ name: currentName.name, hook: currentName.hook });
+  localStorage.setItem('wdp_saved_names', JSON.stringify(savedNames));
+  renderSaved();
+  showToast('Saved to list');
+}
+
+function copyName() {
+  if (!currentName) return;
+  const text = currentName.name + ' — ' + currentName.hook;
+  navigator.clipboard.writeText(text).then(() => {
+    showToast('Copied to clipboard');
+  });
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('copy-toast');
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2000);
+}
+
+function filterNames(list, gender, origin, era, genre) {
+  return list.filter(item => {
+    if (gender !== 'any') {
+      if (gender === 'neutral' && item.gender !== 'neutral') return false;
+      if (gender === 'male' && item.gender !== 'male' && item.gender !== 'neutral') return false;
+      if (gender === 'female' && item.gender !== 'female' && item.gender !== 'neutral') return false;
+    }
+    if (origin !== 'any' && !item.origins.includes(origin)) return false;
+    if (era !== 'any' && !item.eras.includes(era)) return false;
+    if (genre !== 'any' && !item.genres.includes(genre)) return false;
+    return true;
+  });
+}
+
+function pickRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function generateName() {
+  const genre = document.getElementById('genre-select').value;
+  const gender = document.getElementById('gender-select').value;
+  const era = document.getElementById('era-select').value;
+  const origin = document.getElementById('origin-select').value;
+
+  let filteredFirst = filterNames(firstNames, gender, origin, era, genre);
+  let filteredLast = lastNames.filter(item => {
+    if (origin !== 'any' && !item.origins.includes(origin)) return false;
+    if (era !== 'any' && !item.eras.includes(era)) return false;
+    if (genre !== 'any' && !item.genres.includes(genre)) return false;
+    return true;
+  });
+
+  // Fallback: if filters are too restrictive, relax genre first, then era
+  if (filteredFirst.length === 0) {
+    filteredFirst = filterNames(firstNames, gender, origin, era, 'any');
+  }
+  if (filteredFirst.length === 0) {
+    filteredFirst = filterNames(firstNames, gender, origin, 'any', 'any');
+  }
+  if (filteredFirst.length === 0) {
+    filteredFirst = filterNames(firstNames, gender, 'any', 'any', 'any');
+  }
+  if (filteredFirst.length === 0) {
+    filteredFirst = firstNames; // absolute fallback
+  }
+
+  if (filteredLast.length === 0) {
+    filteredLast = lastNames.filter(item => {
+      if (origin !== 'any' && !item.origins.includes(origin)) return false;
+      return true;
+    });
+  }
+  if (filteredLast.length === 0) {
+    filteredLast = lastNames;
+  }
+
+  const first = pickRandom(filteredFirst);
+  const last = pickRandom(filteredLast);
+  const fullName = first.name + ' ' + last.name;
+
+  // Pick hook based on genre, falling back to a random genre's hooks
+  let hookGenre = genre;
+  if (hookGenre === 'any') {
+    const genreKeys = Object.keys(characterHooks);
+    hookGenre = pickRandom(genreKeys);
+  }
+  const hooks = characterHooks[hookGenre] || characterHooks['literary'];
+  const hook = pickRandom(hooks);
+
+  currentName = { name: fullName, hook: hook };
+
+  document.getElementById('name-output').textContent = fullName;
+  document.getElementById('hook-output').textContent = hook;
+  document.getElementById('result-area').style.display = 'block';
+  document.getElementById('generate-btn').style.display = 'none';
+
+  // Track in Plausible
+  if (typeof plausible === 'function') {
+    plausible('generate-name', { props: { genre: genre, gender: gender } });
+  }
+}
+
+// FAQ accordion
+document.querySelectorAll('.faq-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    answer.classList.toggle('hidden');
+    icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+  });
+});
+
+// Render saved names on load
+renderSaved();
+</script>
+
+</body>
+</html>

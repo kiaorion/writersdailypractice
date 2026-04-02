@@ -18,33 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1565C0',
-            primaryDark: '#0D47A1',
-            primaryDeep: '#091B3A',
-            gold: '#E8B931',
-            goldLight: '#F5D060',
-            dark: '#111111',
-            bodyText: '#2a2a2a',
-            lightGray: '#FAFAFA',
-            midGray: '#6B7280',
-            warmWhite: '#FFFDF7',
-          },
-          fontFamily: {
-            serif: ['Playfair Display', 'Georgia', 'serif'],
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  <style>
+  <link rel="stylesheet" href="/css/style.css">
+<style>
     body {
       -webkit-text-size-adjust: 100%;
       box-sizing: border-box;
@@ -199,6 +174,7 @@
           <a href="#how-it-works" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">How It Works</a>
           <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
           <a href="#reviews" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Reviews</a>
+          <a href="/about/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">About</a>
         </div>
       </div>
       <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
@@ -414,6 +390,80 @@
         </button>
       </form>
       <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- Explore by Topic -->
+  <section class="py-24 md:py-32 bg-warmWhite">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-4">For Writers</p>
+        <h2 class="font-serif text-[32px] md:text-[42px] leading-[1.12] font-bold text-dark mb-4">Explore by Topic</h2>
+        <p class="text-midGray text-base max-w-[520px] mx-auto">Practical guides on the craft, the process, and the problems every writer runs into.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5" data-aos="fade-up" data-aos-delay="100">
+        <a href="/writing-craft/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Writing Craft</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Sentence-level skills, structure, and the mechanics that separate good writing from great.</p>
+        </a>
+        <a href="/character-writing/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Character Writing</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Building people on the page who feel real enough to argue with.</p>
+        </a>
+        <a href="/how-to-write-a-book/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">How to Write a Book</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">From first idea to finished manuscript, step by step.</p>
+        </a>
+        <a href="/creative-writing/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Creative Writing</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Techniques for fiction, nonfiction, and everything in between.</p>
+        </a>
+        <a href="/writers-block/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Writer's Block</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Why you're stuck and what actually works to get moving again.</p>
+        </a>
+        <a href="/worldbuilding/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Worldbuilding</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Creating settings that feel lived-in without burying the reader in lore.</p>
+        </a>
+        <a href="/first-chapter/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Writing Your First Chapter</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">How to open strong and give readers a reason to stay.</p>
+        </a>
+        <a href="/revision-self-editing/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Revision & Self-Editing</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Turning a rough draft into something you're proud to share.</p>
+        </a>
+        <a href="/writing-exercises/" class="card-lift bg-white rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Writing Exercises</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Craft drills that build real skill, not busywork.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Tools -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-4">Interactive</p>
+        <h2 class="font-serif text-[32px] md:text-[42px] leading-[1.12] font-bold text-dark mb-4">Free Writing Tools</h2>
+        <p class="text-midGray text-base max-w-[520px] mx-auto">Generators, quizzes, and exercises you can use right now.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-aos="fade-up" data-aos-delay="100">
+        <a href="/writing-prompt-generator/" class="card-lift bg-warmWhite rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Writing Prompt Generator</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">360+ craft-driven prompts. Click and write.</p>
+        </a>
+        <a href="/character-name-generator/" class="card-lift bg-warmWhite rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">Character Name Generator</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">Names for fiction writers, filtered by genre and era.</p>
+        </a>
+        <a href="/genre-quiz/" class="card-lift bg-warmWhite rounded-xl p-6 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border border-gray-100 block group">
+          <h3 class="font-semibold text-dark text-[16px] mb-2 group-hover:text-primary transition-colors">What Genre Should You Write?</h3>
+          <p class="text-[14px] text-midGray leading-relaxed">A 10-question quiz to find your writing lane.</p>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -1024,21 +1074,12 @@
         <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Start Free</a>
         <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
         <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+        <a href="/about/" class="text-white/50 text-sm hover:text-white transition-colors">About</a>
       </div>
       <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
     </div>
   </section>
 
-  <!-- AOS Init -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      duration: 700,
-      easing: 'ease-out-cubic',
-      offset: 80,
-    });
-  </script>
 
 </body>
 </html>

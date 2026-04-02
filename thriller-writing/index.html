@@ -88,33 +88,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1565C0',
-            primaryDark: '#0D47A1',
-            primaryDeep: '#091B3A',
-            gold: '#E8B931',
-            goldLight: '#F5D060',
-            dark: '#111111',
-            bodyText: '#2a2a2a',
-            lightGray: '#FAFAFA',
-            midGray: '#6B7280',
-            warmWhite: '#FFFDF7',
-          },
-          fontFamily: {
-            serif: ['Playfair Display', 'Georgia', 'serif'],
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  <style>
+  <link rel="stylesheet" href="/css/style.css">
+<style>
     body {
       -webkit-text-size-adjust: 100%;
       box-sizing: border-box;
@@ -375,10 +350,10 @@
       </div>
       <div class="text-center mt-10" id="signup">
         <p class="font-serif text-[22px] md:text-[26px] font-bold text-dark mb-3 leading-tight">
-          Want this in your inbox every morning?
+          One prompt. One craft insight. Every morning.
         </p>
         <p class="text-midGray text-sm leading-relaxed mb-6 max-w-[420px] mx-auto">
-          Join The Writer's Daily Practice, a free daily exercise and reflection from literary masters, delivered to writers like you every morning.
+          Built for writers who want their readers turning pages past midnight. Free, daily, in your inbox.
         </p>
         <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'thriller-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto">
           <input type="hidden" name="fields[source_page]" value="thriller-writing">
@@ -411,10 +386,10 @@
   <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
     <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
       <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">
-        One exercise a day. <span class="gradient-text">Every morning.</span>
+        Your readers should lose sleep. <span class="gradient-text">You shouldn't.</span>
       </h2>
       <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">
-        A free daily writing exercise delivered to writers every morning. Craft context from the writers who figured it out, a quote worth sitting with, and an original reflection. Two minutes to read. A full session to write from.
+        One prompt. One craft insight. Every morning. Built for writers who want their readers turning pages past midnight.
       </p>
       <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'thriller-writing'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
         <input type="hidden" name="fields[source_page]" value="thriller-writing">
@@ -510,18 +485,8 @@
       <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- AOS Init -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      duration: 700,
-      easing: 'ease-out-cubic',
-      offset: 80,
-    });
-
-    // FAQ Accordion
+<script>
+// FAQ Accordion
     document.querySelectorAll('.faq-toggle').forEach(btn => {
       btn.addEventListener('click', () => {
         const answer = btn.nextElementSibling;
