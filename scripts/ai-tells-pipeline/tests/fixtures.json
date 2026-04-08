@@ -1,0 +1,125 @@
+{
+  "_comment": "Test fixtures for the AI tells scanner. Each entry has dirty text (should match the named pattern) and clean text (should NOT match anything). Run with: python3 test_patterns.py",
+
+  "should_match": [
+    {
+      "pattern_id": "wasnt_was_pivot",
+      "text": "The bed wasn't laziness. It was a working arrangement that suited him."
+    },
+    {
+      "pattern_id": "wasnt_was_pivot",
+      "text": "She wasn't a writer of small ambitions. She was after the biggest book she could imagine."
+    },
+    {
+      "pattern_id": "isnt_its_pivot",
+      "text": "The point isn't furniture. It's hierarchy."
+    },
+    {
+      "pattern_id": "isnt_its_pivot",
+      "text": "What's interesting isn't that the rooms were cheap. It's that they were almost empty."
+    },
+    {
+      "pattern_id": "wasnot_was_pivot",
+      "text": "He was not a clerk pushing paper. He was a trained lawyer."
+    },
+    {
+      "pattern_id": "didnt_was_pivot",
+      "text": "She didn't write fast. She was a slow writer."
+    },
+    {
+      "pattern_id": "didnt_was_pivot",
+      "text": "He didn't waste time. He had a system that worked."
+    },
+    {
+      "pattern_id": "lesson_isnt_its_pivot",
+      "text": "The lesson isn't to move to Sussex. It's to be honest about the cost."
+    },
+    {
+      "pattern_id": "em_dash",
+      "text": "She knew the truth—and it terrified her."
+    },
+    {
+      "pattern_id": "word_palpable",
+      "text": "The tension in the room was palpable."
+    },
+    {
+      "pattern_id": "word_visceral",
+      "text": "It was a visceral reaction, not a thought."
+    },
+    {
+      "pattern_id": "word_resonated",
+      "text": "The story resonated with him for years."
+    },
+    {
+      "pattern_id": "word_profound",
+      "text": "She had a profound effect on his work."
+    },
+    {
+      "pattern_id": "word_unwavering",
+      "text": "Her commitment was unwavering."
+    },
+    {
+      "pattern_id": "word_utterly",
+      "text": "He was utterly exhausted by the end."
+    },
+    {
+      "pattern_id": "word_navigated",
+      "text": "She navigated the complexities of publishing with care."
+    },
+    {
+      "pattern_id": "word_moreover",
+      "text": "Moreover, the schedule was nonnegotiable."
+    },
+    {
+      "pattern_id": "throat_heres_the_thing",
+      "text": "Here's the thing about Hemingway. He stood while he wrote."
+    },
+    {
+      "pattern_id": "throat_the_reality_is",
+      "text": "The reality is most writers procrastinate."
+    },
+    {
+      "pattern_id": "throat_truth_is",
+      "text": "The truth is his routine is learnable."
+    }
+  ],
+
+  "should_not_match": [
+    {
+      "description": "Clean rewrite of wasnt_was_pivot",
+      "text": "The bed was a working arrangement that suited him, even though Twain played it as laziness."
+    },
+    {
+      "description": "Clean rewrite of isnt_its_pivot",
+      "text": "The point is hierarchy more than furniture."
+    },
+    {
+      "description": "Clean rewrite of em_dash",
+      "text": "She knew the truth, and it terrified her."
+    },
+    {
+      "description": "Hemingway's actual prose, no tells",
+      "text": "He sat at the bookshelf and wrote five hundred words. Then he stopped, mid-sentence, and walked outside."
+    },
+    {
+      "description": "Negative statement without a pivot follow-up",
+      "text": "She didn't write fast, and she didn't apologize for it."
+    },
+    {
+      "description": "The truth is followed by 'that' or 'in/out' (clause continuation, not pivot)",
+      "text": "The truth is that most writers don't read enough."
+    },
+    {
+      "description": "Negative statement inside a single sentence (not followed by period+positive)",
+      "text": "He wasn't trying to be productive in the modern sense, just trying to make his daily target so achievable that there was no reason to skip it."
+    },
+    {
+      "description": "Sequential narrative actions are NOT a pivot",
+      "text": "She didn't start writing immediately. She made coffee."
+    },
+    {
+      "description": "Sequential factual statement is NOT a pivot",
+      "text": "She didn't write at home. She rented a hotel room."
+    }
+  ]
+}

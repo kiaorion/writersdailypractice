@@ -1,0 +1,347 @@
+# AI TELLS PATTERN LIBRARY
+#
+# Single source of truth for what counts as an AI writing tell on writersdailypractice.com.
+# Edit this file to add new patterns. The scanner, rewriter, drafting prompt, and test
+# suite all read from here.
+#
+# Pattern structure:
+#   id: unique slug (used in test fixtures and rewriter examples)
+#   name: human-readable name
+#   category: pivots | triplets | em_dashes | ai_words | throat_clearing
+#   regex: a Python regex (raw string, escaped properly for YAML)
+#   severity: critical | high | medium  (critical = always fix, medium = flag and review)
+#   description: what this pattern is and why it's banned
+#   fix_strategy: how to rewrite (used in rewriter prompt)
+#   examples:
+#     - bad: an example of the pattern
+#       good: a clean rewrite
+
+patterns:
+
+  # =====================================================================
+  # CATEGORY 1: PIVOT CONSTRUCTIONS (the #1 AI tell)
+  # =====================================================================
+
+  - id: wasnt_was_pivot
+    name: "wasn't X. It/He/She was Y"
+    category: pivots
+    regex: "wasn't[^.]*\\.\\s+(It|He|She|They)\\s+(was|were)"
+    severity: critical
+    description: |
+      The classic AI pivot. Negative statement immediately followed by positive
+      "correction." Defines the AI voice more than any other single pattern.
+    fix_strategy: |
+      Combine the two clauses into one sentence. Lead with the positive,
+      let the negative trail. Or restructure entirely so the contrast is
+      embedded rather than staged.
+    examples:
+      - bad: "The bed wasn't laziness. It was a working arrangement."
+        good: "The bed was a working arrangement, even though Twain played it as laziness."
+      - bad: "He wasn't a recluse. He was the opposite of a recluse."
+        good: "The image of the brooding recluse has it backwards. His house was full of people constantly."
+      - bad: "Hemingway's standing desk wasn't a productivity hack. It was a stance."
+        good: "Hemingway's standing desk worked because the posture made his sentences sharper."
+
+  - id: isnt_its_pivot
+    name: "isn't X. It's Y"
+    category: pivots
+    regex: "isn't[^.]*\\.\\s+It's"
+    severity: critical
+    description: |
+      Present-tense variant of the wasn't_was pivot. Same problem, same fix.
+    fix_strategy: |
+      Combine the clauses. Replace with a direct positive statement.
+    examples:
+      - bad: "The point isn't furniture. It's hierarchy."
+        good: "The point is hierarchy more than furniture."
+      - bad: "What's interesting isn't that the rooms were cheap. It's that they were almost empty."
+        good: "The cheapness is the obvious thing, but the more interesting fact is how empty the rooms were."
+
+  - id: wasnot_was_pivot
+    name: "was not X. It/He/She was Y"
+    category: pivots
+    regex: "was not [a-z\\s]+\\.\\s+(It|He|She|They)\\s+(was|were)"
+    severity: critical
+    description: |
+      Spelled-out version of the wasn't_was pivot. Same structural failure.
+    fix_strategy: |
+      Same as wasnt_was_pivot. Combine, embed, or restructure.
+    examples:
+      - bad: "He was not a clerk. He was a trained lawyer."
+        good: "He was a trained lawyer, not a clerk pushing paper."
+
+  - id: didnt_was_pivot
+    name: "didn't X. He/She was/did/had Y"
+    category: pivots
+    regex: "didn't[^.]*\\.\\s+(He|She|They)\\s+(was|were|did|had|is|are|has)"
+    severity: critical
+    description: |
+      Verb-form pivot where the second sentence "corrects" with was/did/had.
+      The corrective verbs are the tell - sequential narrative actions
+      ("She didn't start writing. She made coffee.") aren't pivots.
+    fix_strategy: |
+      Combine into one sentence with "instead of" or "rather than."
+    examples:
+      - bad: "She didn't write fast. She was a slow writer."
+        good: "She was a slow writer, with no interest in speed."
+      - bad: "He didn't waste time. He had a system."
+        good: "He had a system that wasted no time."
+
+  - id: not_x_y_fragment_pivot
+    name: "Not X. Something Y-er."
+    category: pivots
+    regex: "(?<![a-zA-Z])Not\\s+[a-z]+\\.\\s+[A-Z][a-z]+"
+    severity: high
+    description: |
+      Fragment-style pivot. Two-word fragment setting up a "deeper" thing.
+      Common AI rhetorical move.
+    fix_strategy: |
+      Land on the specific. Cut the runway. Just describe the actual thing.
+    examples:
+      - bad: "Not anger. Something darker."
+        good: "Something colder than anger, with grief running underneath it."
+
+  - id: lesson_isnt_its_pivot
+    name: "The lesson/point/answer isn't X. It's Y"
+    category: pivots
+    regex: "(lesson|point|answer|question|truth|problem|issue)\\s+(is|isn't|was|wasn't)\\s+[^.]+\\.\\s+(It|It's)\\s+"
+    severity: critical
+    description: |
+      Specific high-frequency variant where AI sets up a "real lesson."
+      Almost always a pivot.
+    fix_strategy: |
+      Lead with the actual lesson. Leave the contrast implicit or in a
+      trailing clause.
+    examples:
+      - bad: "The lesson isn't to move to Sussex. It's to be honest about the cost."
+        good: "The lesson is to be honest about what the hours cost. Nobody is asking you to move to Sussex."
+
+  # =====================================================================
+  # CATEGORY 2: EM-DASHES
+  # =====================================================================
+
+  - id: em_dash
+    name: "Em-dash"
+    category: em_dashes
+    regex: "—"
+    severity: critical
+    description: |
+      Banned across the entire site per global rules. AI uses em-dashes
+      for dramatic reveals and pivots constantly.
+    fix_strategy: |
+      Replace with comma, period, parentheses, or rewrite the sentence.
+    examples:
+      - bad: "She knew the truth—and it terrified her."
+        good: "She knew the truth, and it terrified her."
+
+  # =====================================================================
+  # CATEGORY 3: AI WORD TELLS
+  # =====================================================================
+
+  - id: word_palpable
+    name: "palpable"
+    category: ai_words
+    regex: "\\bpalpable\\b"
+    severity: critical
+    description: "AI's #1 atmosphere adjective. Banned outright."
+    fix_strategy: "Cut entirely or replace with a concrete sensory detail."
+
+  - id: word_visceral
+    name: "visceral"
+    category: ai_words
+    regex: "\\bvisceral\\b"
+    severity: critical
+    description: "AI overuses this for any strong emotion."
+    fix_strategy: "Replace with the specific physical sensation or cut."
+
+  - id: word_resonated
+    name: "resonated"
+    category: ai_words
+    regex: "\\bresonate(d|s)?\\b"
+    severity: critical
+    description: "AI's default for 'meant something to me.'"
+    fix_strategy: "Use 'stuck with,' 'meant something to,' or be specific."
+
+  - id: word_etched
+    name: "etched (non-physical)"
+    category: ai_words
+    regex: "\\betched\\b"
+    severity: high
+    description: "Almost always used metaphorically as an AI flourish."
+    fix_strategy: "Replace with 'carved,' 'cut into,' or describe the actual mark."
+
+  - id: word_profound
+    name: "profound"
+    category: ai_words
+    regex: "\\bprofound(ly)?\\b"
+    severity: critical
+    description: "AI reaches for this whenever it wants to sound deep."
+    fix_strategy: "Cut. If the thing is profound, the reader will see it."
+
+  - id: word_primal
+    name: "primal"
+    category: ai_words
+    regex: "\\bprimal\\b"
+    severity: critical
+    description: "Same problem as profound. Vague intensifier."
+    fix_strategy: "Cut or replace with the specific."
+
+  - id: word_fierce
+    name: "fierce"
+    category: ai_words
+    regex: "\\bfierce(ly)?\\b"
+    severity: high
+    description: "Especially when describing women. AI shorthand."
+    fix_strategy: "Replace with a specific behavior or trait."
+
+  - id: word_unwavering
+    name: "unwavering"
+    category: ai_words
+    regex: "\\bunwavering(ly)?\\b"
+    severity: critical
+    description: "AI default for steady commitment. Almost always cuttable."
+    fix_strategy: "Cut. If she's steady, show her being steady."
+
+  - id: word_relentless
+    name: "relentless"
+    category: ai_words
+    regex: "\\brelentless(ly)?\\b"
+    severity: high
+    description: "Overused in AI prose for any sustained effort."
+    fix_strategy: "Replace with the specific behavior or duration."
+
+  - id: word_utterly
+    name: "utterly"
+    category: ai_words
+    regex: "\\butterly\\b"
+    severity: critical
+    description: "Empty intensifier. Adds nothing."
+    fix_strategy: "Cut. The base word is almost always enough."
+
+  - id: word_absolutely
+    name: "absolutely"
+    category: ai_words
+    regex: "\\babsolutely\\b"
+    severity: medium
+    description: |
+      Empty intensifier in most contexts. Allowed in dialogue or rare
+      cases of genuine emphasis.
+    fix_strategy: "Cut. If you need emphasis, restructure the sentence."
+
+  - id: word_navigated
+    name: "navigated (non-physical)"
+    category: ai_words
+    regex: "\\bnavigat(ed|ing|es)\\b"
+    severity: high
+    description: |
+      AI metaphor word. People navigate boats, not 'navigate complexities.'
+    fix_strategy: "Replace with 'figured out,' 'worked through,' or be specific."
+
+  - id: word_tapestry
+    name: "tapestry (non-textile)"
+    category: ai_words
+    regex: "\\btapestry\\b"
+    severity: critical
+    description: "Banned metaphor word. AI loves it."
+    fix_strategy: "Cut or use a concrete image."
+
+  - id: word_labyrinth
+    name: "labyrinth (non-physical)"
+    category: ai_words
+    regex: "\\blabyrinth(ine)?\\b"
+    severity: critical
+    description: "Same problem. AI metaphor reach."
+    fix_strategy: "Cut or use a concrete image."
+
+  - id: word_kaleidoscope
+    name: "kaleidoscope"
+    category: ai_words
+    regex: "\\bkaleidoscop(e|ic)\\b"
+    severity: critical
+    description: "AI metaphor word. Always cuttable."
+    fix_strategy: "Cut or use a concrete image."
+
+  - id: word_unfurled
+    name: "unfurled"
+    category: ai_words
+    regex: "\\bunfurl(ed|ing|s)?\\b"
+    severity: high
+    description: "AI's go-to verb for revealing things."
+    fix_strategy: "Use 'opened,' 'spread,' or describe the action."
+
+  - id: word_nestled
+    name: "nestled"
+    category: ai_words
+    regex: "\\bnestled\\b"
+    severity: high
+    description: "AI's preferred verb for 'located.'"
+    fix_strategy: "Use 'sat,' 'was,' or describe the position."
+
+  - id: word_moreover
+    name: "moreover"
+    category: ai_words
+    regex: "\\b[Mm]oreover\\b"
+    severity: critical
+    description: "Academic connector. No place in prose."
+    fix_strategy: "Cut, or use 'and' or a period."
+
+  - id: word_furthermore
+    name: "furthermore"
+    category: ai_words
+    regex: "\\b[Ff]urthermore\\b"
+    severity: critical
+    description: "Same problem as moreover."
+    fix_strategy: "Cut, or use 'and' or a period."
+
+  # =====================================================================
+  # CATEGORY 4: THROAT-CLEARING OPENERS
+  # =====================================================================
+
+  - id: throat_heres_the_thing
+    name: "Here's the thing"
+    category: throat_clearing
+    regex: "[Hh]ere's the thing"
+    severity: high
+    description: "AI throat-clearing opener. Just say the thing."
+    fix_strategy: "Cut the phrase. Start with the actual point."
+
+  - id: throat_the_reality_is
+    name: "The reality is"
+    category: throat_clearing
+    regex: "[Tt]he reality is"
+    severity: high
+    description: "Same problem. Filler before the point."
+    fix_strategy: "Cut. Say the reality directly."
+
+  - id: throat_lets_be_honest
+    name: "Let's be honest"
+    category: throat_clearing
+    regex: "[Ll]et's be honest"
+    severity: medium
+    description: "Filler. Implies the previous statement was dishonest."
+    fix_strategy: "Cut."
+
+  - id: throat_truth_is
+    name: "Truth is / The truth is"
+    category: throat_clearing
+    regex: "[Tt]he truth is(?!\\s+(that|in|out|always))"
+    severity: medium
+    description: "Filler opener. Same family as 'reality is.'"
+    fix_strategy: "Cut. State the truth directly."
+
+# =====================================================================
+# CONFIGURATION
+# =====================================================================
+
+config:
+  # Maximum number of rewrite iterations before escalating to manual review
+  max_iterations: 3
+
+  # Token budget per page (approximate)
+  max_tokens_per_page: 50000
+
+  # Files matching this glob get scanned
+  scan_glob: "writers-routines/*/index.html"
+
+  # Files matching this regex are excluded (e.g., the hub page itself)
+  exclude_pattern: "writers-routines/index.html"

@@ -120,15 +120,38 @@ These are immediate fails. If any of these appear in a draft, rewrite before com
 
 ## The Anti-AI Scan (Required)
 
-Before committing any new routine page, run a scan for:
+The anti-AI scan is now automated via the AI Tells Pipeline at `/scripts/ai-tells-pipeline/`. The pipeline reads from a single YAML pattern library and runs three layers: deterministic regex scanner, structured rewriter prompt builder, and constrained Sonnet rewriter agent.
 
-1. Pivot constructions (grep: `wasn't.*\. It was|isn't.*\. It's|wasn't.*\. He was|wasn't.*\. She was|didn't.*\. He was|didn't.*\. She was`)
-2. Em-dashes (grep: `—`)
-3. AI word tells (grep for the banned word list)
-4. Three consecutive sentences with the same opening structure
-5. Triplet fragments
+### Workflow when building a new routine page
 
-Every match must be addressed before commit. The Hemingway and Morrison pages are the gold standard. New pages should match their voice and structure exactly.
+1. Draft the page using the rules above (Layer 1: prevention).
+2. Save the file.
+3. Run the scanner:
+   ```
+   python3 scripts/ai-tells-pipeline/scan.py writers-routines/[slug]/index.html
+   ```
+4. If clean, you're done.
+5. If dirty, build the rewriter prompt:
+   ```
+   python3 scripts/ai-tells-pipeline/orchestrate.py --build-prompt writers-routines/[slug]/index.html
+   ```
+6. Pass the printed prompt to a Sonnet rewriter agent (`subagent_type: general-purpose`, `model: sonnet`). The agent rewrites only the flagged sentences.
+7. Re-run the scanner. Repeat until clean (max 3 iterations).
+8. If still dirty after 3 iterations, escalate to manual review.
+
+### Sitewide check before commit
+
+```
+python3 scripts/ai-tells-pipeline/orchestrate.py --check --all
+```
+
+Exits 0 if clean, 1 if any critical/high findings exist. Wire this into git pre-commit if desired.
+
+### Adding a new pattern
+
+When you catch a new AI tell the scanner missed, add it to `scripts/ai-tells-pipeline/patterns.yaml` with a regex, severity, fix strategy, and at least one before/after example. Add a fixture to `scripts/ai-tells-pipeline/tests/fixtures.json`. Run `python3 tests/test_patterns.py` to validate. The pattern library is git-versioned, so changes are auditable and reversible.
+
+The Hemingway and Morrison pages are the gold standard. New pages should match their voice and structure exactly.
 
 ## Reference Pages
 
