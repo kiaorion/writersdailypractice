@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Premise Generator | Random Story Ideas for Writers</title>
+  <meta name="description" content="Generate random story premises by genre. Combines characters, settings, conflicts, and twists into one-line story ideas you can start writing today. Free tool for fiction writers.">
+  <link rel="canonical" href="https://writersdailypractice.com/story-premise-generator/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Story Premise Generator | Random Story Ideas for Writers">
+  <meta property="og:description" content="Generate random story premises by genre. Combines characters, settings, conflicts, and twists into one-line story ideas you can start writing today.">
+  <meta property="og:url" content="https://writersdailypractice.com/story-premise-generator/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/writing-dark.jpg">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Story Premise Generator | Random Story Ideas for Writers">
+  <meta name="twitter:description" content="Generate random story premises by genre. Combines characters, settings, conflicts, and twists into one-line story ideas you can start writing today.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/writing-dark.jpg">
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Story Premise Generator",
+    "description": "Generate random story premises by genre. Combines characters, settings, conflicts, and twists into one-line story ideas for fiction writers.",
+    "url": "https://writersdailypractice.com/story-premise-generator/",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Kia Orion"
+    }
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I turn a premise into a plot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A premise gives you a character, a situation, and a tension. The plot comes from asking what the character does next and what goes wrong when they try. Take the premise, write down the three worst things that could happen to this person in this situation, and pick the one that forces them to change. That's your first act. The rest follows from the character's decisions under pressure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes a strong story premise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A strong premise has a specific character in a specific situation with something at stake. 'A woman discovers a secret' is weak. 'A combat medic in a hospital during a pandemic finds evidence that could destroy her family' is strong. The difference is specificity. The more concrete details you pack into one sentence, the more directions the story can go."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I outline before writing from a premise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depends on you. Some writers need a full outline before they'll write a word. Others freeze up when they plan too much. If you're not sure, try this: write the first scene without an outline. Just follow the premise and see where the character takes you. If you hit a wall after 2,000 words, outline the next three scenes. You don't have to commit to one method for every project."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many premises should I generate before starting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generate five, pick the one that won't leave you alone, and start writing. The premise that keeps pulling your attention back is the one with legs. If none of them grab you, generate five more. But don't generate fifty. At some point you're shopping for ideas to avoid the harder work of actually writing one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I combine elements from different generated premises?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. That's one of the best ways to use this tool. If you love the character from one premise and the twist from another, smash them together. The collision between elements that weren't designed to fit often produces the most interesting stories. Constraint breeds creativity, and a mismatched combination is just another constraint to solve."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://writersdailypractice.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Story Premise Generator"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+<style>
+    body {
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      color: #2a2a2a;
+      background-color: #fff;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4);
+    }
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s;
+    }
+    .btn-premium:hover::after { left: 100%; }
+
+    .card-lift {
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* Tool-specific styles */
+    .tool-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+
+    .premise-display {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #1a1a1a;
+      line-height: 1.55;
+      min-height: 60px;
+    }
+    .premise-display .premise-character {
+      color: #0D47A1;
+      font-weight: 600;
+    }
+    .premise-display .premise-twist {
+      color: #6b7280;
+      font-style: italic;
+    }
+
+    .gen-select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: #f9fafb;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      padding: 10px 36px 10px 14px;
+      font-size: 14px;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #374151;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236b7280' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 5.646a.5.5 0 0 1 .708 0L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 16px;
+      width: 100%;
+    }
+    .gen-select:focus {
+      outline: none;
+      border-color: #1565C0;
+      box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.12);
+    }
+
+    .gen-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      margin-bottom: 6px;
+    }
+
+    .gen-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: 'Inter', system-ui, sans-serif;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s;
+    }
+    .gen-btn-primary {
+      background: linear-gradient(135deg, #E8B931, #F5D060);
+      color: #1a1a1a;
+    }
+    .gen-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(232, 185, 49, 0.4);
+    }
+    .gen-btn-secondary {
+      background: #f3f4f6;
+      color: #374151;
+      padding: 10px 20px;
+      font-size: 13px;
+      border-radius: 8px;
+    }
+    .gen-btn-secondary:hover {
+      background: #e5e7eb;
+    }
+
+    .saved-list {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .saved-item {
+      padding: 12px;
+      border-bottom: 1px solid #f3f4f6;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .saved-item:last-child { border-bottom: none; }
+    .saved-premise-text {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 14px;
+      color: #1a1a1a;
+      line-height: 1.5;
+    }
+    .saved-premise-genre {
+      font-size: 11px;
+      color: #9ca3af;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 4px;
+    }
+    .saved-remove {
+      color: #d1d5db;
+      cursor: pointer;
+      font-size: 14px;
+      flex-shrink: 0;
+      padding: 2px 4px;
+      border: none;
+      background: none;
+      line-height: 1;
+    }
+    .saved-remove:hover { color: #ef4444; }
+
+    .copy-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #1a1a1a;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0;
+      transition: all 0.3s;
+      pointer-events: none;
+      z-index: 100;
+    }
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .premise-display { font-size: 18px; }
+      .tool-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+  <!-- Plausible Analytics -->
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">
+        Start Free
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO + TOOL ========== -->
+  <section class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 40%, #1976D2 100%);">
+    <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 50% 50%, rgba(232,185,49,0.3) 0%, transparent 60%);"></div>
+    <div class="max-w-[900px] mx-auto px-6 pt-28 pb-8 relative z-10 text-center">
+      <span class="inline-block text-gold/90 text-xs font-semibold uppercase tracking-[0.2em] mb-6 border border-gold/30 rounded-full px-4 py-1.5">Free Tool</span>
+      <h1 class="font-serif text-[34px] md:text-[50px] leading-[1.08] font-bold mb-4 text-white">
+        Story Premise <span class="gradient-text">Generator</span>
+      </h1>
+      <p class="text-white/80 text-lg leading-relaxed mb-2 font-light max-w-[600px] mx-auto">
+        Generate complete story premises by genre. Each one combines a character, setting, conflict, and twist you can start writing today.
+      </p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- ========== GENERATOR TOOL ========== -->
+  <section class="relative z-10 -mt-4 pb-20">
+    <div class="max-w-[900px] mx-auto px-6">
+      <div class="tool-card">
+        <!-- Filter -->
+        <div style="max-width: 240px; margin-bottom: 24px;">
+          <label class="gen-label" for="genre-select">Genre</label>
+          <select id="genre-select" class="gen-select">
+            <option value="any">Any Genre</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="scifi">Sci-Fi</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller / Mystery</option>
+            <option value="horror">Horror</option>
+            <option value="literary">Literary Fiction</option>
+            <option value="historical">Historical Fiction</option>
+          </select>
+        </div>
+
+        <!-- Generate Button -->
+        <div class="text-center mb-8">
+          <button id="generate-btn" class="gen-btn gen-btn-primary" onclick="generatePremise()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Generate Premise
+          </button>
+        </div>
+
+        <!-- Result Display -->
+        <div id="result-area" style="display: none;">
+          <div class="text-center mb-6" style="max-width: 680px; margin-left: auto; margin-right: auto;">
+            <div id="premise-output" class="premise-display mb-4"></div>
+          </div>
+          <div class="flex items-center justify-center gap-3 flex-wrap">
+            <button class="gen-btn gen-btn-primary" style="padding: 12px 28px; font-size: 14px;" onclick="generatePremise()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              Generate Another
+            </button>
+            <button class="gen-btn gen-btn-secondary" onclick="copyPremise()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              Copy Premise
+            </button>
+            <button class="gen-btn gen-btn-secondary" onclick="savePremise()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+              Save to List
+            </button>
+          </div>
+        </div>
+
+        <!-- Saved Premises Panel -->
+        <div id="saved-panel" style="display: none; margin-top: 32px; border-top: 1px solid #f3f4f6; padding-top: 24px;">
+          <div class="flex items-center justify-between mb-3">
+            <p style="font-size: 13px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em;">Saved Premises</p>
+            <button class="gen-btn gen-btn-secondary" style="padding: 6px 12px; font-size: 12px;" onclick="clearSaved()">Clear All</button>
+          </div>
+          <div id="saved-list" class="saved-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW TO USE ========== -->
+  <section class="py-20 md:py-24 bg-warmWhite">
+    <div class="max-w-[700px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        How to use a story premise generator
+      </h2>
+
+      <div class="space-y-6 text-[16px] leading-relaxed text-midGray">
+        <p><strong class="text-dark">Don't wait for the perfect premise. Start with a good-enough one.</strong> The premise is a starting point, not a contract. You're going to change half of it once you start writing anyway. The character will surprise you. The setting will evolve. The conflict will shift as you discover what the story is actually about. The goal here is to get something on the page that's specific enough to write toward.</p>
+
+        <p><strong class="text-dark">If a premise doesn't grab you, figure out which piece is wrong.</strong> Maybe you love the character but the setting feels flat. Swap the setting and keep everything else. Or maybe the twist is too predictable. Generate a new one. The best premises often come from mixing pieces of two or three generated results. You're building with blocks, not accepting a finished product.</p>
+
+        <p><strong class="text-dark">Use the genre filter loosely, not literally.</strong> A thriller premise can become literary fiction if you slow it down and focus on interiority. A romance premise can turn into horror if you push the stakes in a darker direction. Genre is a starting lens, not a cage. Some of the most interesting novels happen when a writer takes a premise from one genre and tells it with the tools of another.</p>
+
+        <p><strong class="text-dark">Write the first scene within an hour of finding a premise you like.</strong> Premises go stale. The excitement you feel when you read a great combination fades fast if you let it sit in a notes app for three weeks. Even a rough, messy 500-word opening is worth more than a premise you keep "meaning to start." The writing itself will tell you whether this story has legs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY RANDOM PREMISES WORK ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[700px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-10 leading-tight">
+        Why random premises work
+      </h2>
+
+      <div class="space-y-6 text-[16px] leading-relaxed text-midGray">
+        <p>Stephen King famously builds novels from a single "What if?" question. <em>What if a hotel was haunted and the caretaker went mad?</em> That's a premise. The entire plot of <em>The Shining</em> grew from that seed. But King doesn't just sit around waiting for those questions to arrive. He collides ideas. He takes two unrelated things and forces them into the same sentence to see what happens. A randomized premise generator does the same thing, just faster.</p>
+
+        <p>Octavia Butler kept a notebook where she'd write premises and constraints for herself. Some of them were strange, even to her. She'd combine a character she'd never normally write with a situation that felt uncomfortable, and the discomfort itself became the energy of the story. Constraints don't limit creativity. They redirect it. When you can write about anything, you often write about nothing. When you're given a disgraced surgeon in a coastal town who finds evidence that could destroy their family, you've got a problem to solve. And problem-solving is where stories come from.</p>
+
+        <p>The randomness matters because your brain has grooves. You tend to reach for the same character types, the same conflicts, the same emotional territory. That's natural. It's also why your fourth story can start to feel like a remix of your second. A random combination pushes you out of those grooves. You might not love every premise this tool generates. But the ones that make you uncomfortable or curious in equal measure are probably the ones worth writing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EMAIL SIGNUP ========== -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 100%);">
+    <div class="py-20 md:py-24 max-w-[560px] mx-auto px-6 text-center relative z-10">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-tight font-bold text-white mb-4">
+        Get a daily writing prompt with craft insights like these.
+      </h2>
+      <p class="text-white/70 text-[15px] mb-8">One email. Every morning. A quote from a master writer, an original reflection, and a prompt to practice with.</p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'story-premise-generator'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+        <input type="hidden" name="fields[source_page]" value="story-premise-generator">
+        <input type="hidden" name="fields[genre]" value="Story Premises">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
+          Get Your Daily Prompt &rarr;
+        </button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FAQ SECTION ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] leading-[1.12] font-bold text-dark mb-12">
+        Frequently asked questions
+      </h2>
+      <div class="space-y-6">
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How do I turn a premise into a plot?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">A premise gives you a character, a situation, and a tension. The plot comes from asking what the character does next and what goes wrong when they try. Take the premise, write down the three worst things that could happen to this person in this situation, and pick the one that forces them to change. That's your first act. The rest follows from the character's decisions under pressure.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">What makes a strong story premise?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">A strong premise has a specific character in a specific situation with something at stake. "A woman discovers a secret" is weak. "A combat medic in a hospital during a pandemic finds evidence that could destroy her family" is strong. The difference is specificity. The more concrete details you pack into one sentence, the more directions the story can go.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Should I outline before writing from a premise?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Depends on you. Some writers need a full outline before they'll write a word. Others freeze up when they plan too much. If you're not sure, try this: write the first scene without an outline. Just follow the premise and see where the character takes you. If you hit a wall after 2,000 words, outline the next three scenes. You don't have to commit to one method for every project.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">How many premises should I generate before starting?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Generate five, pick the one that won't leave you alone, and start writing. The premise that keeps pulling your attention back is the one with legs. If none of them grab you, generate five more. But don't generate fifty. At some point you're shopping for ideas to avoid the harder work of actually writing one.</p>
+          </div>
+        </div>
+        <div class="border-b border-gray-100 pb-6">
+          <button class="faq-toggle w-full text-left flex justify-between items-center gap-4 cursor-pointer">
+            <h3 class="font-semibold text-dark text-[16px]">Can I combine elements from different generated premises?</h3>
+            <span class="faq-icon text-primary text-xl font-bold flex-shrink-0">+</span>
+          </button>
+          <div class="hidden mt-4">
+            <p class="text-midGray text-[15px] leading-relaxed">Absolutely. That's one of the best ways to use this tool. If you love the character from one premise and the twist from another, smash them together. The collision between elements that weren't designed to fit often produces the most interesting stories. Constraint breeds creativity, and a mismatched combination is just another constraint to solve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RELATED TOOLS ========== -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More for writers</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <a href="/character-name-generator/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Names</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Character Name Generator &rarr;</p>
+        </a>
+        <a href="/writing-prompt-generator/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Prompts</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Writing Prompt Generator &rarr;</p>
+        </a>
+        <a href="/creative-writing/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Craft</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Creative Writing Tips &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#signup" class="text-white/50 text-sm hover:text-white transition-colors">Join Free</a>
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div id="copy-toast" class="copy-toast">Copied to clipboard</div>
+
+<script>
+// ============================================================
+// STORY PREMISE DATA
+// ============================================================
+
+const characters = [
+  // THRILLER / MYSTERY
+  {text: "A retired detective", genres: ["thriller", "literary"]},
+  {text: "A forensic accountant", genres: ["thriller"]},
+  {text: "A defense attorney", genres: ["thriller", "literary"]},
+  {text: "A corporate whistleblower", genres: ["thriller", "literary"]},
+  {text: "A small-town sheriff", genres: ["thriller", "literary", "horror"]},
+  {text: "A crime scene photographer", genres: ["thriller"]},
+  {text: "A parole officer", genres: ["thriller", "literary"]},
+  {text: "A missing persons investigator", genres: ["thriller"]},
+  {text: "An insurance fraud analyst", genres: ["thriller"]},
+  {text: "A true crime podcaster", genres: ["thriller", "horror"]},
+
+  // LITERARY / CONTEMPORARY
+  {text: "A single mother", genres: ["literary", "romance", "thriller"]},
+  {text: "A burnt-out teacher", genres: ["literary", "romance"]},
+  {text: "A ghostwriter", genres: ["literary", "thriller"]},
+  {text: "A hospice nurse", genres: ["literary"]},
+  {text: "A piano tuner", genres: ["literary"]},
+  {text: "A beekeeper", genres: ["literary", "romance"]},
+  {text: "A college professor", genres: ["literary", "thriller"]},
+  {text: "A retired diplomat", genres: ["literary", "thriller"]},
+  {text: "A former child prodigy", genres: ["literary"]},
+  {text: "An art restorer", genres: ["literary", "historical"]},
+
+  // ROMANCE
+  {text: "A bookshop owner", genres: ["romance", "literary"]},
+  {text: "A wedding planner", genres: ["romance"]},
+  {text: "A veterinarian", genres: ["romance", "literary"]},
+  {text: "A pastry chef", genres: ["romance"]},
+  {text: "A songwriter", genres: ["romance", "literary"]},
+  {text: "An architect", genres: ["romance", "literary"]},
+
+  // HORROR
+  {text: "A grief counselor", genres: ["horror", "literary", "thriller"]},
+  {text: "A mortician", genres: ["horror", "literary"]},
+  {text: "A taxidermist", genres: ["horror"]},
+  {text: "A sleep researcher", genres: ["horror", "scifi"]},
+  {text: "A night-shift security guard", genres: ["horror", "thriller"]},
+  {text: "A folklorist", genres: ["horror", "literary", "historical"]},
+
+  // SCI-FI
+  {text: "A deep-space navigator", genres: ["scifi"]},
+  {text: "A memory archivist", genres: ["scifi", "literary"]},
+  {text: "A planetary surveyor", genres: ["scifi"]},
+  {text: "An AI ethicist", genres: ["scifi", "literary"]},
+  {text: "A synthetic linguist", genres: ["scifi"]},
+  {text: "A med-tech specialist", genres: ["scifi"]},
+
+  // FANTASY
+  {text: "A disgraced court advisor", genres: ["fantasy"]},
+  {text: "A wandering cartographer", genres: ["fantasy", "historical"]},
+  {text: "A blacksmith who forges weapons they've sworn never to use", genres: ["fantasy"]},
+  {text: "A healer on the run", genres: ["fantasy", "historical"]},
+  {text: "The second child of a dying dynasty", genres: ["fantasy", "historical"]},
+  {text: "An archivist guarding a forbidden library", genres: ["fantasy"]},
+
+  // HISTORICAL
+  {text: "A telegraph operator during wartime", genres: ["historical", "literary"]},
+  {text: "An immigrant with a borrowed name", genres: ["historical", "literary"]},
+  {text: "A field nurse behind enemy lines", genres: ["historical"]},
+  {text: "A printer in a revolutionary city", genres: ["historical", "literary"]},
+  {text: "A servant in a grand estate", genres: ["historical", "literary", "romance"]},
+  {text: "A dockworker who speaks five languages but tells no one", genres: ["historical", "literary"]},
+
+  // CROSS-GENRE
+  {text: "A disgraced surgeon", genres: ["thriller", "literary", "horror"]},
+  {text: "A teenage hacker", genres: ["thriller", "scifi"]},
+  {text: "A combat medic", genres: ["thriller", "literary", "historical"]},
+  {text: "An art forger", genres: ["thriller", "literary", "historical"]},
+  {text: "An immigration lawyer", genres: ["literary", "thriller"]},
+  {text: "A war correspondent", genres: ["literary", "thriller", "historical"]},
+  {text: "A stand-up comedian", genres: ["literary", "romance"]},
+  {text: "A widowed rancher", genres: ["literary", "romance", "thriller"]},
+  {text: "An unlicensed private investigator", genres: ["thriller", "literary"]},
+  {text: "A marine biologist", genres: ["literary", "scifi", "romance"]},
+  {text: "A disbarred judge", genres: ["thriller", "literary"]},
+  {text: "A runaway heir", genres: ["literary", "romance", "thriller", "fantasy"]},
+  {text: "A deaf translator", genres: ["literary", "romance", "historical"]},
+  {text: "A retired smuggler", genres: ["thriller", "scifi", "fantasy"]},
+];
+
+const settings = [
+  // THRILLER / MYSTERY
+  {text: "a coastal town hiding a secret", genres: ["thriller", "literary", "romance", "horror"]},
+  {text: "a crumbling apartment complex where the tenants don't talk", genres: ["thriller", "literary", "horror"]},
+  {text: "a border town at night", genres: ["thriller", "literary"]},
+  {text: "a corporate headquarters during a merger", genres: ["thriller", "literary"]},
+  {text: "a remote motel with only two other guests", genres: ["thriller", "horror"]},
+  {text: "a courthouse the week before a high-profile trial", genres: ["thriller", "literary"]},
+  {text: "a small island with one ferry per day", genres: ["thriller", "horror", "literary", "romance"]},
+
+  // LITERARY / CONTEMPORARY
+  {text: "a family estate during a funeral", genres: ["literary", "thriller", "romance"]},
+  {text: "a hospital during a pandemic", genres: ["literary", "thriller", "romance"]},
+  {text: "a small college in winter", genres: ["literary", "romance", "thriller"]},
+  {text: "a fading Rust Belt town with one factory left", genres: ["literary", "thriller"]},
+  {text: "a lakehouse rented for the wrong reasons", genres: ["literary", "romance", "thriller"]},
+  {text: "a neighborhood where three families share a secret", genres: ["literary", "thriller"]},
+  {text: "a road trip with no fixed destination", genres: ["literary", "romance"]},
+
+  // ROMANCE
+  {text: "a vineyard in the off-season", genres: ["romance", "literary"]},
+  {text: "a bookshop in a town too small for one", genres: ["romance", "literary"]},
+  {text: "a remote mountain lodge during a blizzard", genres: ["romance", "thriller", "horror"]},
+  {text: "a beach town on the last week of summer", genres: ["romance", "literary"]},
+  {text: "a renovated farmhouse with a guest cottage", genres: ["romance", "literary"]},
+
+  // HORROR
+  {text: "an abandoned psychiatric hospital being converted into apartments", genres: ["horror", "thriller"]},
+  {text: "a house that was sold three times in two years", genres: ["horror", "thriller", "literary"]},
+  {text: "a lighthouse on a coast nobody visits", genres: ["horror", "literary"]},
+  {text: "a town where people have started sleepwalking", genres: ["horror", "thriller", "scifi"]},
+  {text: "a forest preserve that was closed and then quietly reopened", genres: ["horror", "thriller"]},
+
+  // SCI-FI
+  {text: "a space station losing orbit", genres: ["scifi"]},
+  {text: "a colony ship three generations into a voyage", genres: ["scifi"]},
+  {text: "Earth in the first year after contact", genres: ["scifi", "literary"]},
+  {text: "a Mars settlement running low on water", genres: ["scifi", "thriller"]},
+  {text: "an underwater research station on a moon of Jupiter", genres: ["scifi"]},
+  {text: "a city where memories can be bought and sold", genres: ["scifi", "literary"]},
+
+  // FANTASY
+  {text: "a kingdom in the first year of peace after a century of war", genres: ["fantasy"]},
+  {text: "a city built on the ruins of another city", genres: ["fantasy", "historical"]},
+  {text: "a border between two lands where magic works differently", genres: ["fantasy"]},
+  {text: "an academy for the children of exiled rulers", genres: ["fantasy"]},
+  {text: "a desert trade route where caravans have started disappearing", genres: ["fantasy", "thriller"]},
+
+  // HISTORICAL
+  {text: "a speakeasy in 1920s Chicago", genres: ["historical", "thriller", "romance"]},
+  {text: "a ship crossing the Atlantic in 1912", genres: ["historical", "literary", "romance"]},
+  {text: "a plantation in the final year of the Civil War", genres: ["historical", "literary"]},
+  {text: "occupied Paris in 1942", genres: ["historical", "thriller", "literary"]},
+  {text: "a mining town during the Gold Rush", genres: ["historical", "literary", "thriller"]},
+  {text: "a convent in medieval Spain", genres: ["historical", "literary", "fantasy"]},
+];
+
+const conflicts = [
+  // THRILLER / MYSTERY
+  {text: "discovers their mentor has been lying for years", genres: ["thriller", "literary", "fantasy"]},
+  {text: "receives a letter from someone presumed dead", genres: ["thriller", "horror", "literary"]},
+  {text: "witnesses something they can't report", genres: ["thriller", "literary"]},
+  {text: "finds evidence that could destroy their family", genres: ["thriller", "literary"]},
+  {text: "realizes the person they trust most has been surveilling them", genres: ["thriller", "scifi"]},
+  {text: "is asked to do a favor that turns out to be a crime", genres: ["thriller", "literary"]},
+  {text: "stumbles on a pattern no one else has noticed", genres: ["thriller", "scifi"]},
+
+  // LITERARY / CONTEMPORARY
+  {text: "inherits a house with a locked room", genres: ["literary", "thriller", "horror"]},
+  {text: "gets a call from the child they gave up for adoption twenty years ago", genres: ["literary", "romance"]},
+  {text: "finds out their parent has been living a double life", genres: ["literary", "thriller"]},
+  {text: "is forced to work alongside the person who ruined their career", genres: ["literary", "romance", "thriller"]},
+  {text: "learns that the version of a family story they grew up with was a lie", genres: ["literary", "thriller"]},
+  {text: "must choose between saving their marriage and telling the truth", genres: ["literary", "romance"]},
+  {text: "returns to a town they swore they'd never go back to", genres: ["literary", "romance", "thriller"]},
+
+  // ROMANCE
+  {text: "is forced to share a cabin with someone they have unfinished business with", genres: ["romance", "literary"]},
+  {text: "keeps running into the same stranger in a city of eight million people", genres: ["romance"]},
+  {text: "discovers their anonymous pen pal is someone they already know", genres: ["romance", "literary"]},
+  {text: "falls for the one person who could blow the whistle on their secret", genres: ["romance", "thriller"]},
+
+  // HORROR
+  {text: "starts having memories that don't belong to them", genres: ["horror", "scifi", "thriller"]},
+  {text: "realizes the house they bought has a history the agent didn't disclose", genres: ["horror", "thriller"]},
+  {text: "begins receiving photographs of themselves taken from inside their home", genres: ["horror", "thriller"]},
+  {text: "hears their dead sibling's voice on an old answering machine", genres: ["horror", "literary"]},
+
+  // SCI-FI
+  {text: "is ordered to shut down a system that might be conscious", genres: ["scifi", "literary"]},
+  {text: "receives a transmission from a ship that was declared lost fifty years ago", genres: ["scifi", "thriller"]},
+  {text: "discovers their memories were altered without consent", genres: ["scifi", "thriller"]},
+  {text: "is the only person who remembers what the world was like before the change", genres: ["scifi", "literary"]},
+
+  // FANTASY
+  {text: "discovers a prophecy that names them as the enemy, not the hero", genres: ["fantasy"]},
+  {text: "is tasked with guarding the one person who could expose their past", genres: ["fantasy", "thriller"]},
+  {text: "learns that the magic sustaining their kingdom is dying", genres: ["fantasy"]},
+  {text: "breaks a treaty that has held the peace for a generation", genres: ["fantasy", "historical"]},
+
+  // HISTORICAL
+  {text: "intercepts a message that could change the outcome of a war", genres: ["historical", "thriller"]},
+  {text: "is ordered to betray someone who saved their life", genres: ["historical", "thriller", "fantasy"]},
+  {text: "discovers their employer has been profiting from both sides of a conflict", genres: ["historical", "literary", "thriller"]},
+  {text: "must forge documents to save a group of refugees", genres: ["historical", "literary", "thriller"]},
+
+  // CROSS-GENRE
+  {text: "is given an impossible deadline to solve a problem they didn't create", genres: ["thriller", "scifi", "literary"]},
+  {text: "wakes up in a place they don't recognize with a key they can't identify", genres: ["thriller", "horror", "scifi"]},
+  {text: "gets a second chance at something they failed at catastrophically the first time", genres: ["literary", "romance", "fantasy"]},
+  {text: "is blackmailed with information only they should know", genres: ["thriller", "literary"]},
+  {text: "realizes they've been unknowingly helping the wrong side", genres: ["thriller", "fantasy", "scifi", "historical"]},
+];
+
+const twists = [
+  {text: "but the person they're protecting is the real threat", genres: ["thriller", "fantasy", "horror"]},
+  {text: "but they've been unknowingly complicit the entire time", genres: ["thriller", "literary", "scifi"]},
+  {text: "but the evidence points back to them", genres: ["thriller", "literary"]},
+  {text: "but the deadline is a lie designed to force a mistake", genres: ["thriller", "scifi"]},
+  {text: "but the only witness is someone nobody will believe", genres: ["thriller", "literary", "historical"]},
+  {text: "but the person who sent them is already dead", genres: ["thriller", "horror", "scifi"]},
+  {text: "but their ally has the same secret they do", genres: ["thriller", "literary", "romance"]},
+  {text: "but the truth will hurt the people they're trying to save", genres: ["literary", "thriller", "romance"]},
+  {text: "but they can't fix it without becoming the thing they despise", genres: ["literary", "fantasy", "thriller"]},
+  {text: "but the thing they're searching for has already been destroyed", genres: ["thriller", "fantasy", "scifi"]},
+  {text: "but the escape route leads back to where they started", genres: ["thriller", "horror", "fantasy"]},
+  {text: "but the real story isn't the one they were told to investigate", genres: ["thriller", "literary"]},
+  {text: "but the only cure requires a sacrifice no one has agreed to", genres: ["scifi", "fantasy", "horror"]},
+  {text: "but the enemy turns out to be the only person telling the truth", genres: ["fantasy", "thriller", "literary"]},
+  {text: "but the reward for succeeding is worse than the punishment for failing", genres: ["literary", "fantasy", "thriller"]},
+  {text: "but the person they fell for has been sent to stop them", genres: ["romance", "thriller", "fantasy"]},
+  {text: "but the child they're protecting knows more than anyone suspects", genres: ["thriller", "horror", "literary"]},
+  {text: "but the solution requires trusting the one person who betrayed them before", genres: ["literary", "thriller", "romance"]},
+  {text: "but they've already made the same mistake twice and can't afford a third", genres: ["literary", "thriller"]},
+  {text: "but the place they've been running from is the only place they can survive", genres: ["literary", "horror", "fantasy"]},
+  {text: "but the proof they need is locked inside their own erased memories", genres: ["scifi", "thriller", "horror"]},
+  {text: "but the person they replaced was murdered for the same reason", genres: ["thriller", "horror"]},
+  {text: "but the message was meant for someone else entirely", genres: ["thriller", "romance", "literary"]},
+  {text: "but the favor they owe is about to come due at the worst possible moment", genres: ["thriller", "literary", "fantasy"]},
+  {text: "but the map they're following was drawn by the person who wants them lost", genres: ["fantasy", "thriller", "historical"]},
+];
+
+// ============================================================
+// GENERATOR LOGIC
+// ============================================================
+
+let currentPremise = null;
+let savedPremises = JSON.parse(localStorage.getItem('wdp_saved_premises') || '[]');
+
+function pickRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function filterByGenre(pool, genre) {
+  if (genre === 'any') return pool;
+  return pool.filter(item => item.genres.includes(genre));
+}
+
+function generatePremise() {
+  const genre = document.getElementById('genre-select').value;
+
+  let charPool = filterByGenre(characters, genre);
+  let settPool = filterByGenre(settings, genre);
+  let confPool = filterByGenre(conflicts, genre);
+  let twstPool = filterByGenre(twists, genre);
+
+  // Fallback to full pools if genre filter yields too few
+  if (charPool.length < 3) charPool = characters;
+  if (settPool.length < 3) settPool = settings;
+  if (confPool.length < 3) confPool = conflicts;
+  if (twstPool.length < 3) twstPool = twists;
+
+  const character = pickRandom(charPool);
+  const setting = pickRandom(settPool);
+  const conflict = pickRandom(confPool);
+  const twist = pickRandom(twstPool);
+
+  const premiseText = `${character.text} in ${setting.text} ${conflict.text} ... ${twist.text}.`;
+  const premiseHTML = `<span class="premise-character">${character.text}</span> in ${setting.text} ${conflict.text} ... <span class="premise-twist">${twist.text}.</span>`;
+
+  currentPremise = {
+    text: premiseText,
+    html: premiseHTML,
+    genre: genre === 'any' ? 'Any' : document.getElementById('genre-select').options[document.getElementById('genre-select').selectedIndex].text
+  };
+
+  document.getElementById('premise-output').innerHTML = premiseHTML;
+  document.getElementById('result-area').style.display = 'block';
+  document.getElementById('generate-btn').style.display = 'none';
+
+  // Track in Plausible
+  if (typeof plausible === 'function') {
+    plausible('generate-premise', { props: { genre: genre } });
+  }
+}
+
+function copyPremise() {
+  if (!currentPremise) return;
+  navigator.clipboard.writeText(currentPremise.text).then(() => {
+    showToast('Copied to clipboard');
+  });
+}
+
+function savePremise() {
+  if (!currentPremise) return;
+  const exists = savedPremises.some(s => s.text === currentPremise.text);
+  if (exists) return;
+  savedPremises.push({ text: currentPremise.text, html: currentPremise.html, genre: currentPremise.genre });
+  localStorage.setItem('wdp_saved_premises', JSON.stringify(savedPremises));
+  renderSaved();
+  showToast('Saved to list');
+}
+
+function renderSaved() {
+  const panel = document.getElementById('saved-panel');
+  const list = document.getElementById('saved-list');
+  if (savedPremises.length === 0) {
+    panel.style.display = 'none';
+    return;
+  }
+  panel.style.display = 'block';
+  list.innerHTML = savedPremises.map((item, i) =>
+    `<div class="saved-item">
+      <div>
+        <div class="saved-premise-text">${item.html || item.text}</div>
+        <div class="saved-premise-genre">${item.genre}</div>
+      </div>
+      <button class="saved-remove" onclick="removeSaved(${i})" title="Remove">&times;</button>
+    </div>`
+  ).join('');
+}
+
+function removeSaved(index) {
+  savedPremises.splice(index, 1);
+  localStorage.setItem('wdp_saved_premises', JSON.stringify(savedPremises));
+  renderSaved();
+}
+
+function clearSaved() {
+  savedPremises = [];
+  localStorage.setItem('wdp_saved_premises', JSON.stringify(savedPremises));
+  renderSaved();
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('copy-toast');
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2000);
+}
+
+// FAQ accordion
+document.querySelectorAll('.faq-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    answer.classList.toggle('hidden');
+    icon.textContent = answer.classList.contains('hidden') ? '+' : '\u2212';
+  });
+});
+
+// Render saved premises on load
+renderSaved();
+</script>
+
+</body>
+</html>
