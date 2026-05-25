@@ -982,13 +982,13 @@ function renderResult() {
       </div>
 
       <div class="result-signup">
-        <h3>Get daily writing prompts matched to your genre.</h3>
-        <p>One email every morning. A quote, a reflection, and a prompt.</p>
+        <h3>Want daily writing prompts for ${genre.name} writers?</h3>
+        <p>Every morning, one prompt with craft context. Free.</p>
         <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'genre-quiz', genre: '${genre.name}'}})">
           <input type="hidden" name="fields[source_page]" value="genre-quiz">
           <input type="hidden" name="fields[genre]" value="${genre.name}">
           <input type="email" name="email_address" placeholder="Your email address" required>
-          <button type="submit">Get Your Daily Prompt &rarr;</button>
+          <button type="submit">Send me the prompts</button>
         </form>
       </div>
 
