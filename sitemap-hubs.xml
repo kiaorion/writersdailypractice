@@ -428,4 +428,10 @@
     <priority>0.8</priority>
   </url>
 
-</urlset>
+  <url>
+    <loc>https://writersdailypractice.com/creative-writing/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
