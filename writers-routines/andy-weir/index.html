@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy Weir's Writing Routine | The Programmer Who Serialized The Martian for Free</title>
+  <meta name="description" content="Andy Weir held a software engineering day job while writing The Martian chapter by chapter on his website. He posted it for free, sold it for 99 cents on Kindle, and wrote custom C++ code to check his orbital mechanics. Here's the full routine.">
+  <link rel="canonical" href="https://writersdailypractice.com/writers-routines/andy-weir/">
+
+  <meta property="og:title" content="Andy Weir's Writing Routine">
+  <meta property="og:description" content="How Andy Weir wrote The Martian: evenings after a programming day job, serialized free on his website, with a custom orbital mechanics simulator to check the math.">
+  <meta property="og:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+  <meta property="og:url" content="https://writersdailypractice.com/writers-routines/andy-weir/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Writer's Daily Practice">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Andy Weir's Writing Routine">
+  <meta name="twitter:description" content="How Andy Weir wrote The Martian: evenings after a programming day job, serialized free on his website, with a custom orbital mechanics simulator to check the math.">
+  <meta name="twitter:image" content="https://writersdailypractice.com/images/og/warm.jpg">
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Andy Weir's Writing Routine",
+    "author": { "@type": "Person", "name": "Kia Orion", "url": "https://writersdailypractice.com/" },
+    "publisher": { "@type": "Organization", "name": "The Writer's Daily Practice", "url": "https://writersdailypractice.com/" },
+    "datePublished": "2026-06-23",
+    "dateModified": "2026-06-23",
+    "description": "How Andy Weir wrote The Martian: evenings after a programming day job, serialized free on his website, with a custom orbital mechanics simulator to check the math.",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://writersdailypractice.com/writers-routines/andy-weir/" }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://writersdailypractice.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Writers' Routines", "item": "https://writersdailypractice.com/writers-routines/" },
+      { "@type": "ListItem", "position": 3, "name": "Andy Weir" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body { -webkit-text-size-adjust: 100%; box-sizing: border-box; color: #2a2a2a; background-color: #fff; min-height: 100%; margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    *, *::before, *::after { box-sizing: border-box; }
+    .gradient-text { background: linear-gradient(135deg, #E8B931 0%, #F5D060 50%, #E8B931 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .btn-premium { position: relative; overflow: hidden; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .btn-premium:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(232, 185, 49, 0.4); }
+    .btn-premium::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: left 0.6s; }
+    .btn-premium:hover::after { left: 100%; }
+    .card-lift { transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .card-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+    .nav-blur { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    .font-review { font-family: 'Lora', Georgia, serif; }
+    .noise-overlay { position: relative; }
+    .noise-overlay::before { content: ''; position: absolute; inset: 0; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); pointer-events: none; }
+
+    .article-body p { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.8; color: #2a2a2a; margin-bottom: 1.5em; }
+    .article-body h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #111111; margin-top: 3em; margin-bottom: 1em; line-height: 1.2; }
+    @media (min-width: 768px) { .article-body h2 { font-size: 28px; } }
+    .article-body blockquote { border-left: 4px solid #E8B931; padding-left: 1.5em; margin: 2em 0; }
+    .article-body blockquote p { font-family: 'Lora', Georgia, serif; font-style: italic; color: #4a4a4a; }
+    .article-body strong { font-weight: 600; color: #111111; }
+    .article-body em { font-style: italic; }
+    .article-body hr { border: none; border-top: 1px solid #e5e7eb; margin: 2.5em 0; }
+    .article-body a { color: #1565C0; text-decoration: underline; text-underline-offset: 2px; }
+    .article-body a:hover { color: #0D47A1; }
+    .article-body ul { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.8; color: #2a2a2a; margin-bottom: 1.5em; padding-left: 1.5em; }
+    .article-body ul li { margin-bottom: 0.5em; }
+
+    .profile-card { background: #fbf9f4; border: 1px solid #eee4c8; border-left: 4px solid #E8B931; border-radius: 12px; padding: 2em; margin: 2.5em 0; }
+    .profile-card h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; color: #111; margin: 0 0 1em 0; letter-spacing: 0.02em; }
+    .profile-card dl { margin: 0; font-family: 'Inter', system-ui, sans-serif; }
+    .profile-card dt { font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: #8a7a3a; font-weight: 600; margin-top: 1.1em; }
+    .profile-card dt:first-of-type { margin-top: 0; }
+    .profile-card dd { margin: 0.3em 0 0 0; font-size: 15px; line-height: 1.65; color: #2a2a2a; }
+
+    .profile-flourish { display: flex; align-items: center; gap: 12px; margin-bottom: 1em; }
+    .profile-rule { display: inline-block; width: 32px; height: 2px; background: #E8B931; }
+    .profile-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: #8a7a3a; font-weight: 600; }
+
+    .pull-quote { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-style: italic; text-align: center; color: #111; margin: 3em auto; padding: 1.2em 1em 0 1em; max-width: 560px; line-height: 1.35; border-top: 2px solid #E8B931; border-bottom: 2px solid #E8B931; padding-bottom: 1.2em; }
+  </style>
+  <script async src="https://plausible.io/js/pa-ZOk4diA46SHVDfHBy61SQ.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-primaryDeep/90 border-b border-white/5">
+    <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
+          <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+          <a href="/about/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">About</a>
+        </div>
+      </div>
+      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">Start Free</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="pt-28 md:pt-36 pb-12 md:pb-16">
+    <div class="max-w-[680px] mx-auto px-6">
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-midGray">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li class="text-midGray/50">/</li>
+          <li><a href="/writers-routines/" class="hover:text-primary transition-colors">Writers' Routines</a></li>
+          <li class="text-midGray/50">/</li>
+          <li class="text-bodyText font-medium">Andy Weir</li>
+        </ol>
+      </nav>
+
+      <span class="inline-block text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4">Writers' Routines</span>
+
+      <h1 class="font-serif text-[32px] md:text-[44px] leading-[1.12] font-bold text-dark mb-6">Andy Weir's Writing Routine</h1>
+
+      <div class="flex items-center gap-4 text-sm text-midGray">
+        <span class="font-medium text-bodyText">Kia Orion</span>
+        <span class="text-midGray/40">|</span>
+        <time datetime="2026-06-23">June 23, 2026</time>
+        <span class="text-midGray/40">|</span>
+        <span>9 min read</span>
+      </div>
+
+      <div class="mt-10 h-px bg-gradient-to-r from-primary/30 via-gold/30 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ARTICLE BODY PART 1 -->
+  <article class="pb-8">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <p>Andy Weir spent twenty-five years as a software engineer. He worked at Blizzard Entertainment in the nineties, contributed to <em>Warcraft II: Tides of Darkness</em>, then cycled through AOL, Palm, and MobileIron. During those same years, he was also writing fiction. Serials, short stories, whatever he could post to his bare-bones personal website. Most of it went nowhere. His mailing list took ten years to reach 3,000 subscribers, which is a long time to stay interested in something that appears, by almost every external measure, to be failing.</p>
+
+      <p>The Martian was one of three serials running simultaneously on that website when he started posting it in 2011. He put up a chapter every couple of months. By the time the last chapter went up, readers were asking for a Kindle version, so he put one together and priced it at 99 cents. By December 2012 it was on the Kindle bestseller list. Crown Publishing called. A film adaptation followed. The whole arc from obscure freeware to bestseller to Ridley Scott production took roughly eighteen months. What made it possible was a decade and a half of writing evenings and weekends while holding down a programming job that paid the bills.</p>
+
+      <div class="profile-card">
+        <div class="profile-flourish">
+          <span class="profile-rule"></span>
+          <span class="profile-label">Profile</span>
+        </div>
+        <h3>The Routine at a Glance</h3>
+        <dl>
+          <dt>Wake Time</dt>
+          <dd>No documented early-morning ritual. Weir writes in the evenings, a habit formed during the years he held a software engineering day job and the mornings belonged to the employer.</dd>
+
+          <dt>Writing Location</dt>
+          <dd>At his computer, in OpenOffice Writer during <em>The Martian</em> years. Once he signed with Crown Publishing, the editorial process moved him to MS Word. The setup has always been spare: a programmer's desk, not a writer's studio.</dd>
+
+          <dt>Daily Output</dt>
+          <dd>Weir has described writing as a slog most days. He doesn't fetishize word counts. During the serial years, the pace was roughly one chapter every two months, fitting the work around a full-time job.</dd>
+
+          <dt>Tools</dt>
+          <dd>Word processor for drafts. Custom C++ code for fact-checking orbital mechanics and trajectory math. Research runs as deep as it needs to, which is often deeper than the book requires.</dd>
+
+          <dt>Famous Ritual</dt>
+          <dd>Publishing serially to a public audience and using reader feedback from scientists and engineers to correct errors before the next chapter went up. The audience was part of the editing process.</dd>
+
+          <dt>Books Written This Way</dt>
+          <dd><em>The Martian</em>, <em>Artemis</em>, <em>Project Hail Mary</em>.</dd>
+        </dl>
+      </div>
+
+      <h2>The Programmer Who Kept Writing</h2>
+
+      <p>In his twenties, Weir took three years off from software engineering to try writing full-time. It didn't work. He went back to tech, took a job, and kept writing on the side. That second attempt is the interesting part of the story, because most people in that position conclude they're not really writers, fold the hobby, and move on. Weir folded the full-time-writer experiment but kept the writing, just relocating it to evenings and weekends where a day job couldn't reach it.</p>
+
+      <p>This is the part of his biography that tends to get compressed into a single sentence about self-publishing, but it deserves more attention. For roughly fifteen years after he went back to programming, Weir was building a catalog of online fiction with almost no commercial result. The mailing list grew slowly. A few thousand readers by the time he started <em>The Martian</em>. Nothing that would register as success by any conventional publishing measure. He kept going anyway, partly because he genuinely loved science and wanted to write about it, partly because the internet gave him a direct line to the readers who cared about the same things he did.</p>
+
+      <p>The day-job discipline shaped his approach in ways that are worth examining. A software engineer doesn't wait for inspiration to show up before opening the code editor. The work gets done because it's scheduled and because the job depends on it. Weir transferred the same logic to his fiction. He told <em>Writer's Digest</em> that if you wait for inspiration, you'll never get anything done. The writing was just work, subject to the same habits that made professional programming possible: show up, open the file, make progress. He also noted that when he looked back at pages he'd written weeks earlier, he couldn't distinguish the inspired days from the slogs. The output quality was more consistent than the process felt.</p>
+
+      <h2>Getting the Science Right</h2>
+
+      <p>The thing that separates Weir from most <a href="/science-fiction-writing/">science fiction writers</a> isn't the ambition to be accurate. Plenty of writers want that. It's the specific method he uses to get there. When he was writing <em>The Martian</em>, he wanted to calculate the trajectory of the Hermes spacecraft using constant-thrust mechanics. Rather than estimate or approximate, he wrote his own orbital simulator in C++. He ran the numbers. The trajectory in the novel is mathematically correct, not plausibly fictional.</p>
+
+      <p>Weir has described being terrified that someone like Neil deGrasse Tyson would read the book and publicly call out an error. That fear was productive. It pushed him past the level of research that would satisfy most writers and into territory that required original computation. His twenty-five years as a software engineer meant he had the skills to do it himself rather than ask a consultant. The novel and the code were made by the same person using the same habits of mind.</p>
+
+      <p>The research process runs similarly deep across all his work. For <em>Project Hail Mary</em>, Weir has described going way down the rabbit hole on relativistic travel, time dilation, fuel consumption, and the behavior of specific stars. The book's premise requires only one departure from real physics, which is a lifeform capable of storing neutrinos. Everything else in the novel follows from rules that actually exist. That constraint is the entire point of hard SF as a genre, and Weir treats it the way a programmer treats a spec: as a set of requirements the story must satisfy, not as a loose guideline to gesture at when convenient.</p>
+
+      <p>There's a particular approach to research embedded in his process that comes directly from engineering culture. He doesn't just look up what he needs for the current scene and move on. He reads until he understands the system well enough to notice when something is wrong. That extra depth is what allowed serial readers, who included actual chemists and physicists, to send corrections that he could evaluate himself rather than take on faith. He'd fix the errors before the next chapter posted. The book got more accurate in real time, with a distributed technical review team who were also the audience.</p>
+
+      <h2>Writing for an Audience You Can See</h2>
+
+      <p>Most writers submit a manuscript to an agent, then an editor, and eventually to readers they'll never meet. Weir worked in the opposite direction. He posted each chapter as he finished it, received immediate feedback, and incorporated corrections into the chapters that followed. The audience was present during the writing, not waiting at the end of it.</p>
+
+      <p>This changes the psychology of the work in ways that are genuinely unusual. Serialization creates a deadline that has nothing to do with publishing contracts. If you said you'd post a chapter in two months, the readers know it. They're on your mailing list. They'll notice if you don't show up. That kind of low-stakes accountability is actually quite effective, especially for a writer who has no agent, no advance, and no formal obligation to finish. Weir finished because he'd told people he would, and they were watching.</p>
+
+      <p>The feedback loop also changed what the book became. Weir has said that he resists describing story ideas to friends and family because talking about a project saps the need to write it down. The serial model solved that problem neatly. The only way his readers could experience the story was to read it. He wasn't describing it over dinner; he was posting it, chapter by chapter, on a schedule, and the act of posting created a record that couldn't be revised by memory or enthusiasm. The work was the work, visible to anyone who wanted to see it.</p>
+
+      <p>What this meant in practice was that Weir was writing for an audience he knew cared about accuracy as much as he did. His readers weren't passive consumers catching a plot summary. They were engaged enough to email corrections. That expectation ran in both directions: Weir delivered the science because his readers would check it, and his readers kept reading because Weir kept delivering. The relationship between writer and audience for hard SF is different from most genres, and Weir understood it from the inside before he ever had a publishing contract. Take the <a href="/genre-quiz/">genre quiz</a> if you're trying to figure out whether the same reader dynamic applies to your own work.</p>
+
+      <h2>Discipline from a Day-Job Mindset</h2>
+
+      <p>Weir's writing advice tends to land harder than most, because it comes from someone who spent fifteen years doing the thing under conditions that offered no external reward. His standard advice is blunt: sit down and write even when it feels like a slog, because inspiration is unreliable and the work looks the same either way when you read it back weeks later. That's not the advice of someone who found writing easy. It's the conclusion of a programmer who's been debugging the same problem since his twenties.</p>
+
+      <p>One practical note from his process worth keeping: he sets rules for himself about what he can and can't do during working hours. Browsing the internet for non-research purposes is off the table. TV is off the table. The writing window has a structure to it that looks less like artistic ritual and more like an office policy. This is the day-job mindset applied to fiction, and it works for the same reason it works in software development. Clear constraints remove the decision about what to do next. During work hours, you work. The question of whether to open the file never comes up because the rules already answered it.</p>
+
+      <p>There's something instructive in the gap between how Weir describes writing and how the publishing story gets told. The publishing story is cinematic: free serial, 99-cent Kindle ebook, bestseller list, Ridley Scott, Matt Damon. The writing story is considerably less dramatic. A guy in the evenings, at a desk, posting chapters to a website that almost nobody read, for a decade, getting incrementally better at something he loved. The cinematic version happened because the boring version happened first and kept happening long after most people would have stopped.</p>
+
+    </div>
+  </article>
+
+  <!-- MID-ARTICLE CTA -->
+  <section class="py-10">
+    <div class="max-w-[620px] mx-auto px-6">
+      <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
+        <p class="font-review text-lg text-bodyText leading-relaxed mb-5">One reflection on writing, every morning. Something to sit with before you open the draft.</p>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'writers-routines-andy-weir'}})">
+          <input type="hidden" name="fields[source_page]" value="writers-routines/andy-weir">
+          <input type="hidden" name="fields[genre]" value="Writing Routines">
+          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">Start My Daily Practice</button>
+        </form>
+        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE BODY PART 2 -->
+  <article class="pt-4 pb-16">
+    <div class="max-w-[680px] mx-auto px-6 article-body">
+
+      <p class="pull-quote">Most of the time writing is a slog. But when you look back at it weeks later, you can't tell the difference between when you were inspired and when you weren't.</p>
+
+      <h2>Andy Weir's Writing Routine</h2>
+
+      <p>The Andy Weir writing routine doesn't fit the template of a literary novelist's carefully guarded mornings. He writes in the evenings, as he always has, and the reason is simple: mornings belonged to the employer for most of his adult life. Twenty-five years of programming jobs create habits that don't dissolve immediately once the writing becomes the main work. By the time <em>The Martian</em> made full-time fiction financially possible, the evening schedule was already built in.</p>
+
+      <p>During the serialization years, the pace was slow by design. One chapter every two months is not a sprint. It allowed for the depth of research his approach required, including writing simulation code to verify plot-critical physics, reading deep into astrophysics and chemistry, and absorbing reader corrections between chapters. The serial format didn't just publish the book; it stress-tested it. Readers who knew orbital mechanics, chemistry, and botany were reading each installment and sending emails. Weir was running a public beta, not a private draft.</p>
+
+      <p>What the Andy Weir writing routine actually looks like day to day is a programmer's desk, a word processor, a browser full of research tabs, and sometimes a code editor open alongside the manuscript. The prose and the calculations are not separate activities. When a scene requires a precise answer about whether a particular chemical reaction will produce enough energy to matter, he finds the answer before he writes the scene, not after. This is not the approach of a writer who trusts that readers won't notice. It's the approach of someone who knows exactly what his readers will check.</p>
+
+      <h2>Sources</h2>
+
+      <p>The primary sources for Weir's writing habits and publication history are his interviews with <a href="https://www.writersdigest.com/be-inspired/writing-tips-and-advice-from-andy-weir-author-of-the-martian" target="_blank" rel="noopener noreferrer"><em>Writer's Digest</em></a>, where he discusses his approach to inspiration, discipline, and the serial publication of <em>The Martian</em>. His 2014 interview with <a href="https://www.sfsignal.com/archives/2014/03/interview-andy-weir-talks-about-the-martian-mars-space-travel-and-orbital-simulators/" target="_blank" rel="noopener noreferrer">SF Signal</a> covers the C++ orbital simulator he wrote to check the trajectory math in the novel. The <a href="https://www.cnbc.com/2017/12/11/before-the-martian-andy-weir-thought-hed-failed-as-a-writer.html" target="_blank" rel="noopener noreferrer">CNBC profile from 2017</a> covers the three-year attempt at full-time writing, his return to software engineering, and the serial publication timeline that led to the Kindle bestseller. For research process and hard SF philosophy, the <a href="https://www.nae.edu/313223/An-Interview-with-Andy-Weir-New-York-Times-bestselling-author-of-The-Martian-Artemis-Project-Hail-Mary-and-Cheshire-Crossing" target="_blank" rel="noopener noreferrer">National Academy of Engineering interview</a> covers his approach to scientific accuracy across all three novels. Background on the serialization and mailing list history also appears in the <a href="https://gwuwi.com/2018/02/08/writing-process-of-bestselling-author-andy-weir-the-martian/" target="_blank" rel="noopener noreferrer">GWU Writing Institute profile from 2018</a>.</p>
+
+      <h2>What You Can Steal</h2>
+
+      <p>Weir's routine is one of the clearest cases we have of a writer who succeeded not because conditions were ideal but because he kept going when they weren't. A few things worth taking from it:</p>
+
+      <ul>
+        <li><strong>Keep the writing even when the writing career stalls.</strong> Weir went back to programming after a failed attempt at full-time fiction and kept writing anyway. The fifteen years of evening work were what made the eventual success possible. Stopping would have guaranteed nothing happened.</li>
+        <li><strong>Use the tools you already have.</strong> Weir didn't hire a physics consultant. He wrote his own orbital simulator because he was a programmer and that was the fastest path to a correct answer. Whatever your professional skills are, they likely have applications to your writing that aren't obvious until you need them.</li>
+        <li><strong>Treat the slog as neutral data, not a warning sign.</strong> Weir's observation that inspired writing and slog writing look the same weeks later is worth taking seriously. The feeling of difficulty during a session is not a reliable signal about the quality of what you're producing.</li>
+        <li><strong>Find a small, real audience and write for them.</strong> Weir's mailing list never exceeded 3,000 people before <em>The Martian</em> broke out. That was enough to create accountability and real feedback. A small audience that actually reads your work is worth more than a large theoretical one.</li>
+        <li><strong>Don't summarize the story before you write it.</strong> Weir's rule about not describing his ideas to friends and family is a practical one. The need to tell the story gets partially satisfied by talking about it, and the will to write it down weakens. Keep the idea pressurized until it has to come out as writing.</li>
+      </ul>
+
+    </div>
+  </article>
+
+  <!-- MORE ROUTINES -->
+  <section class="py-16 bg-warmWhite">
+    <div class="max-w-[680px] mx-auto px-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6">More routines</p>
+      <a href="/genre-quiz/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors mb-4">
+        <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Find your lane</p>
+        <p class="font-serif font-bold text-dark text-[15px]">Take the 2-minute genre quiz &rarr;</p>
+      </a>
+      <a href="/writers-routines/" class="card-lift block bg-gradient-to-br from-primaryDeep to-primary text-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all mb-4">
+        <p class="text-gold font-bold text-xs uppercase tracking-wider mb-2">The full archive</p>
+        <p class="font-serif font-bold text-[17px] mb-1">See all 92 writer routines &rarr;</p>
+        <p class="text-white/70 text-[13px] leading-relaxed">A side-by-side comparison of famous authors' daily writing practices, with patterns across the archive.</p>
+      </a>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="/writers-routines/isaac-asimov/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writers' Routines</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Isaac Asimov's Writing Routine &rarr;</p>
+        </a>
+        <a href="/writers-routines/frank-herbert/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">Writers' Routines</p>
+          <p class="font-serif font-bold text-dark text-[15px]">Frank Herbert's Writing Routine &rarr;</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10">
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">Stop staring at the blank page. <span class="gradient-text">Start writing with purpose.</span></h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">A free daily reflection for writers. Quotes from literary masters, an original reflection, and a prompt to get you writing.</p>
+      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {props: {source: 'writers-routines-andy-weir'}})">
+        <input type="hidden" name="fields[source_page]" value="writers-routines/andy-weir">
+        <input type="hidden" name="fields[genre]" value="Writing Routines">
+        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
+        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Start My Daily Practice &rarr;</button>
+      </form>
+      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
+    <div class="py-16 max-w-[800px] mx-auto px-6 text-center relative z-10">
+      <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
+      <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; A free daily reflection for writers</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
+        <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
+        <a href="/about/" class="text-white/50 text-sm hover:text-white transition-colors">About</a>
+      </div>
+      <p class="text-white/20 text-xs">&copy; 2026 Kia Orion. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
