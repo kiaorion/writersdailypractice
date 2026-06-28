@@ -4,3 +4,4 @@ node_modules/
 screenshot*.png
 .claude/
 reports/
+__pycache__/
