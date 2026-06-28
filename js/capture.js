@@ -77,6 +77,7 @@
   }
 
   function injectTopCapture(forms) {
+    if (document.querySelector('.wdc-topcap')) return null;
     var profile = document.querySelector('.profile-card');
     if (!profile || !forms.length) return null;
     var clone = forms[0].cloneNode(true);
@@ -93,12 +94,15 @@
     return clone;
   }
 
-  ready(function () {
+  function scan() {
     var forms = Array.prototype.slice.call(document.querySelectorAll(FORM_SELECTOR));
     if (!forms.length) return;
     injectStyles();
     var top = injectTopCapture(forms);
     if (top) forms.push(top);
     forms.forEach(enhance);
-  });
+  }
+  // Exposed so dynamically-rendered forms (e.g. the genre-quiz result) can be enhanced on demand.
+  window.wdcEnhanceForms = scan;
+  ready(scan);
 })();

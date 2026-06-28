@@ -468,6 +468,18 @@
               Save to List
             </button>
           </div>
+
+          <!-- inline capture at the payoff moment -->
+          <div style="margin-top:30px;padding:22px 24px;border:1px solid #eee4c8;background:#fbf9f4;border-radius:14px;max-width:520px;margin-left:auto;margin-right:auto;text-align:center;">
+            <p style="font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:700;color:#111;margin:0 0 6px;">Get the free Writer's Field Guide</p>
+            <p style="font-size:13px;color:#6b7280;margin:0 0 14px;line-height:1.5;">The daily writing routines of 90+ famous authors, plus one prompt a day to put them to work. Enter your email and it's yours.</p>
+            <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'character-name-generator-result'}})" class="flex flex-col sm:flex-row gap-2" style="max-width:460px;margin:0 auto;">
+              <input type="hidden" name="fields[source_page]" value="character-name-generator/result">
+              <input type="hidden" name="fields[genre]" value="Character Writing">
+              <input type="email" name="email_address" placeholder="Your email address" required style="flex:1;padding:11px 18px;border-radius:9999px;border:1px solid #e5e7eb;font-size:14px;outline:none;">
+              <button type="submit" class="gen-btn gen-btn-primary" style="padding:11px 22px;font-size:14px;white-space:nowrap;">Get the guide &rarr;</button>
+            </form>
+          </div>
         </div>
 
         <!-- Saved Names Panel -->
@@ -1260,5 +1272,6 @@ document.querySelectorAll('.faq-toggle').forEach(btn => {
 renderSaved();
 </script>
 
+<script defer src="/js/capture.js"></script>
 </body>
 </html>

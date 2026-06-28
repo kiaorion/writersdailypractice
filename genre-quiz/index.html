@@ -1008,6 +1008,9 @@ function renderResult() {
 
   body.innerHTML = html;
 
+  // Enhance the freshly-injected capture form (AJAX submit, Field Guide delivery, signup event)
+  if (window.wdcEnhanceForms) window.wdcEnhanceForms();
+
   // Scroll to top of quiz container
   document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -1050,5 +1053,6 @@ initScores();
 renderQuestion(0);
 </script>
 
+<script defer src="/js/capture.js"></script>
 </body>
 </html>
