@@ -947,6 +947,7 @@ function renderResult() {
   const quizUrl = 'https://writersdailypractice.com/genre-quiz/';
   const tweetText = encodeURIComponent(`I took the Writer's Daily Practice genre quiz and got ${genre.name}! Take it here:`);
   const pinterestDesc = encodeURIComponent(`What genre should you write? I got ${genre.name}! Take the free quiz for writers.`);
+  const starterPrompt = `Set a timer for ten minutes and write without stopping. Open a ${genre.name} scene in the middle of trouble: someone wants something they shouldn't, and the first thing they do is lie about it. Don't outline it. Just start.`;
 
   // Build explore links (exclude current genre)
   let exploreHtml = '';
@@ -959,9 +960,16 @@ function renderResult() {
     <div class="result-container">
       <div class="result-label">You should write</div>
       <div class="result-genre">${genre.name}</div>
-      <div class="result-description">${genre.description}</div>
+      <p class="result-teaser" style="color:#6B7280;font-size:0.95rem;line-height:1.6;margin:10px auto 4px;max-width:440px;">That's your match. Enter your email below to unlock the full breakdown, your ${genre.name} writing guide, and your first prompt.</p>
 
-      <a href="${genre.hub}" class="result-cta-link">Your ${genre.name} writing guide &rarr;</a>
+      <div id="gated-result" class="wdc-locked" style="display:none;">
+        <div class="result-description">${genre.description}</div>
+        <a href="${genre.hub}" class="result-cta-link">Your ${genre.name} writing guide &rarr;</a>
+        <div class="starter-prompt" style="background:#fbf9f4;border:1px solid #eee4c8;border-left:4px solid #E8B931;border-radius:12px;padding:1.2em 1.4em;margin:1.4em auto;max-width:520px;text-align:left;">
+          <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8a7a3a;margin:0 0 0.5em;">Your first ${genre.name} prompt</p>
+          <p style="font-family:'Lora',Georgia,serif;font-size:1.05rem;line-height:1.65;color:#2a2a2a;margin:0;">${starterPrompt}</p>
+        </div>
+      </div>
 
       <div style="margin-bottom: 8px;">
         <p style="font-size: 0.75rem; font-weight: 600; color: #9CA3AF; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 12px;">Share your result</p>
@@ -981,14 +989,16 @@ function renderResult() {
         </div>
       </div>
 
-      <div class="result-signup">
-        <h3>Want daily writing prompts for ${genre.name} writers?</h3>
-        <p>Every morning, one prompt with craft context. Free.</p>
-        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'genre-quiz', genre: '${genre.name}'}})">
+      <div class="result-signup" id="quiz-gate">
+        <div id="quiz-gate-copy">
+          <h3>Unlock your full ${genre.name} result</h3>
+          <p>Enter your email to reveal the full breakdown, your ${genre.name} writing guide, and your first prompt. Plus one short writing prompt each morning. Free, and you can unsubscribe anytime.</p>
+        </div>
+        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" data-wdc-unlock="quiz" data-wdc-unlock-target="#gated-result">
           <input type="hidden" name="fields[source_page]" value="genre-quiz">
           <input type="hidden" name="fields[genre]" value="${genre.name}">
           <input type="email" name="email_address" placeholder="Your email address" required>
-          <button type="submit">Send me the prompts</button>
+          <button type="submit">Unlock my result &rarr;</button>
         </form>
       </div>
 
@@ -1008,8 +1018,19 @@ function renderResult() {
 
   body.innerHTML = html;
 
-  // Enhance the freshly-injected capture form (AJAX submit, Field Guide delivery, signup event)
+  // Enhance the freshly-injected unlock form (AJAX submit, unlock, signup event)
   if (window.wdcEnhanceForms) window.wdcEnhanceForms();
+
+  // Returning visitor who already unlocked: reveal the full result, hide the gate
+  if (window.wdcUnlocked && window.wdcUnlocked('quiz')) {
+    var _gr = document.getElementById('gated-result'); if (_gr) _gr.style.display = '';
+    var _qg = document.getElementById('quiz-gate'); if (_qg) _qg.style.display = 'none';
+  }
+  // On unlock, tidy the gate copy (capture.js swaps the form itself for a success note)
+  window.addEventListener('wdc:unlocked', function (ev) {
+    if (!ev.detail || ev.detail.key !== 'quiz') return;
+    var c = document.getElementById('quiz-gate-copy'); if (c) c.style.display = 'none';
+  });
 
   // Scroll to top of quiz container
   document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
