@@ -96,26 +96,44 @@ def gsc_section():
     return "\n".join(out)
 
 
-# ---------- Plausible ----------
+# ---------- Plausible (official Stats API v2) ----------
+# NOTE: Plausible removed the undocumented public-dashboard endpoints we used to
+# scrape (they 404 as of 2026-07-05). Historical stats now live behind the official
+# /api/v2/query API, which needs a key. current-visitors still works, proving the
+# dashboard is public and collecting; only the free historical route closed.
+def _plausible_key():
+    try:
+        txt = open(KEYS).read()
+    except Exception:
+        return None
+    m = re.search(r"PLAUSIBLE_API_KEY[`*:=\s]+([A-Za-z0-9_\-./+=]{20,})", txt)
+    return m.group(1) if m else None
+
 def plausible_section():
-    ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36"
-    H = {"User-Agent": ua, "Referer": f"https://plausible.io/{DOMAIN}"}
-    r = http_json(f"https://plausible.io/api/stats/{DOMAIN}/conversions/?period=30d", headers=H)
-    if "results" not in r:
-        return f"_Plausible unavailable: {r}._", None
-    results = r["results"]
-    # back-solve total visitors from any goal with a rate
-    visitors = None
-    for g in results:
-        if g.get("conversion_rate") and g.get("visitors"):
-            visitors = round(g["visitors"] / (g["conversion_rate"]/100)); break
-    out = [f"### Plausible (all traffic, 30d — {r.get('meta',{}).get('date_range_label','')})\n"]
-    if visitors: out.append(f"**Estimated unique visitors (30d): ~{visitors:,}**  (~{round(visitors/30)}/day)\n")
+    key = _plausible_key()
+    if not key:
+        return ("### Plausible\n\n_Unavailable: Plausible retired the old public-dashboard endpoints "
+                "(they 404 now). The site is still collecting data and the dashboard is still public; "
+                "only the free scrape route closed. Fix: add `PLAUSIBLE_API_KEY: <key>` to "
+                "~/.claude/api-keys.md (Plausible > Settings > API Keys, included in the plan) and this "
+                "section switches to the official v2 API._"), None
+    H = {"Authorization": "Bearer " + key}
+    def query(body):
+        return http_json("https://plausible.io/api/v2/query", data={**body, "site_id": DOMAIN}, headers=H)
+    tot = query({"metrics": ["visitors", "pageviews", "bounce_rate", "visit_duration"], "date_range": "30d"})
+    if not (isinstance(tot, dict) and tot.get("results")):
+        return f"_Plausible v2 API error: {tot}._", None
+    v, pv, bounce, dur = tot["results"][0]["metrics"]
+    goals = query({"metrics": ["visitors", "events"], "date_range": "30d", "dimensions": ["event:goal"]})
+    out = ["### Plausible (all traffic, last 30d)\n"]
+    out.append(f"**Unique visitors: {v:,}** (~{round(v/30)}/day) | Pageviews: {pv:,} | "
+               f"Bounce: {round(bounce)}% | Avg visit: {int(dur//60)}m{int(dur%60):02d}s\n")
     out.append("| Goal | Visitors | Events | Conv. rate |")
     out.append("|---|---|---|---|")
-    for g in results:
-        out.append(f"| {g['name']} | {g.get('visitors',0)} | {g.get('events',0)} | {g.get('conversion_rate',0)}% |")
-    return "\n".join(out), visitors
+    for row in sorted(goals.get("results", []), key=lambda r: -r["metrics"][0]):
+        name = row["dimensions"][0]; gv, ge = row["metrics"]
+        out.append(f"| {name} | {gv} | {ge} | {(gv/v*100 if v else 0):.1f}% |")
+    return "\n".join(out), v
 
 
 # ---------- ConvertKit ----------
