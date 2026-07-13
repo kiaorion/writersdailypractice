@@ -26,7 +26,7 @@
       '.wdc-success-s{font-family:"Inter",system-ui,sans-serif;font-size:15px;line-height:1.55;color:#555;margin:0 0 1.2em;}' +
       '.wdc-success-btn{display:inline-block;background:linear-gradient(to right,#E8B931,#F5D060);color:#1a1a1a;font-weight:700;padding:.75em 1.5em;border-radius:9999px;text-decoration:none;font-family:"Inter",system-ui,sans-serif;font-size:14px;}' +
       '.wdc-unlocked-note{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1em 1.2em;font-family:"Inter",system-ui,sans-serif;font-size:14px;line-height:1.5;color:#166534;text-align:center;}' +
-      '.wdc-err{font-family:"Inter",system-ui,sans-serif;font-size:13px;color:#b4232a;margin-top:.6em;}';
+      '.wdc-err{font-family:"Inter",system-ui,sans-serif;font-size:13px;color:#b4232a;margin-top:.6em;text-align:center;}';
     document.head.appendChild(s);
   }
 
@@ -69,6 +69,16 @@
       if (!email) return;
       if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
 
+      function showError(msg) {
+        if (btn) { btn.disabled = false; btn.textContent = unlockKey ? 'Try again' : 'Send me the Field Guide'; }
+        var existing = form.querySelector('.wdc-err');
+        if (existing) existing.remove();
+        var err = document.createElement('p');
+        err.className = 'wdc-err';
+        err.textContent = msg || 'Something went wrong. Please try again.';
+        form.appendChild(err);
+      }
+
       function finish() {
         try { if (window.plausible) plausible('signup', { props: { source: source } }); } catch (_) {}
         if (unlockKey) {
@@ -91,8 +101,19 @@
       }
 
       fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: data })
-        .then(function () { finish(); })
-        .catch(function () { finish(); }); // request still reaches ConvertKit; show success either way
+        .then(function (response) {
+          if (response.ok) { finish(); return; }
+          // ConvertKit returns real error bodies (e.g. invalid email, rate limit); surface them
+          // instead of silently declaring success, which is what this used to do unconditionally.
+          response.json().then(function (j) {
+            showError(j && j.message ? j.message : 'Signup failed (' + response.status + '). Please try again.');
+          }).catch(function () {
+            showError('Signup failed (' + response.status + '). Please try again.');
+          });
+        })
+        .catch(function () {
+          showError('Network error. Check your connection and try again.');
+        });
     });
   }
 

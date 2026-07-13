@@ -558,6 +558,51 @@
     </div>
   </section>
 
+  <!-- ========== THE 8 GENRES ========== -->
+  <section class="py-20 md:py-24 bg-warmWhite">
+    <div class="max-w-[800px] mx-auto px-6">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-4 leading-tight text-center">
+        The 8 genres this quiz can match you to
+      </h2>
+      <p class="text-[16px] leading-relaxed text-midGray mb-10 text-center max-w-[560px] mx-auto">Not sure which one fits? Here's what each genre actually asks of a writer.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <a href="/fantasy-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Fantasy</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You think in worlds. Your instinct is to build systems, invent histories, and drop readers into places that feel real even when they're impossible.</p>
+        </a>
+        <a href="/science-fiction-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Science Fiction</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You're drawn to the question behind the question. You take something real, a technology, a social trend, and follow it to its most interesting conclusion.</p>
+        </a>
+        <a href="/thriller-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Thriller / Suspense</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You see the gears turning underneath the surface. Your stories run on tension, pacing, and the reader's desperate need to know what happens next.</p>
+        </a>
+        <a href="/mystery-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Mystery / Crime</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You think backward. Every story starts with the answer and works its way to the question. You love structure, misdirection, and a reader who missed the clues.</p>
+        </a>
+        <a href="/romance-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Romance</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You write toward connection. Your instincts track the emotional distance between two people, and you know exactly how to close it in a way that feels earned.</p>
+        </a>
+        <a href="/dark-romance-writers/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Dark Romance</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You're drawn to the place where desire and danger overlap. You write about people who want things they shouldn't, without apology or moralizing.</p>
+        </a>
+        <a href="/horror-writing/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Horror / Gothic</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You feel the wrongness in things. Real fear isn't about monsters. It's the moment a character realizes the rules they trusted no longer apply.</p>
+        </a>
+        <a href="/literary-fiction/" class="card-lift block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="font-serif font-bold text-dark text-[18px] mb-2">Literary Fiction</p>
+          <p class="text-[14px] text-midGray leading-relaxed">You write to understand. Your stories don't chase plot points, they chase meaning. Your instinct is to slow down where other writers speed up.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== FAQ SECTION ========== -->
   <section class="py-24 md:py-32" id="faq-section">
     <div class="max-w-[800px] mx-auto px-6">
@@ -637,7 +682,7 @@
         Get a daily writing prompt with craft insights.
       </h2>
       <p class="text-white/70 text-[15px] mb-8">One email. Every morning. A quote from a master writer, an original reflection, and a prompt to practice with.</p>
-      <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'genre-quiz'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
+      <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'genre-quiz'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
         <input type="hidden" name="fields[source_page]" value="genre-quiz">
         <input type="hidden" name="fields[genre]" value="Genre Quiz">
         <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
@@ -994,7 +1039,7 @@ function renderResult() {
           <h3>Unlock your full ${genre.name} result</h3>
           <p>Enter your email to reveal the full breakdown, your ${genre.name} writing guide, and your first prompt. Plus one short writing prompt each morning. Free, and you can unsubscribe anytime.</p>
         </div>
-        <form action="https://app.convertkit.com/forms/9155962/subscriptions" method="post" data-wdc-unlock="quiz" data-wdc-unlock-target="#gated-result">
+        <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" data-wdc-unlock="quiz" data-wdc-unlock-target="#gated-result">
           <input type="hidden" name="fields[source_page]" value="genre-quiz">
           <input type="hidden" name="fields[genre]" value="${genre.name}">
           <input type="email" name="email_address" placeholder="Your email address" required>
