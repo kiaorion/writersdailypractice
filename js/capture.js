@@ -25,7 +25,6 @@
       '.wdc-success-h{font-family:"Playfair Display",Georgia,serif;font-size:22px;font-weight:700;color:#111;margin:0 0 .35em;}' +
       '.wdc-success-s{font-family:"Inter",system-ui,sans-serif;font-size:15px;line-height:1.55;color:#555;margin:0 0 1.2em;}' +
       '.wdc-success-btn{display:inline-block;background:linear-gradient(to right,#E8B931,#F5D060);color:#1a1a1a;font-weight:700;padding:.75em 1.5em;border-radius:9999px;text-decoration:none;font-family:"Inter",system-ui,sans-serif;font-size:14px;}' +
-      '.wdc-unlocked-note{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1em 1.2em;font-family:"Inter",system-ui,sans-serif;font-size:14px;line-height:1.5;color:#166534;text-align:center;}' +
       '.wdc-err{font-family:"Inter",system-ui,sans-serif;font-size:13px;color:#b4232a;margin-top:.6em;text-align:center;}';
     document.head.appendChild(s);
   }
@@ -50,14 +49,10 @@
     if (form.getAttribute('data-wdc') === '1') return;
     form.setAttribute('data-wdc', '1');
     form.removeAttribute('onsubmit'); // we fire the signup event ourselves, on success
-    // Gated forms (data-wdc-unlock) unlock a payoff instead of showing the Field Guide panel,
-    // and keep their own button label + their own signup source.
-    var unlockKey = form.getAttribute('data-wdc-unlock');
-    var unlockTarget = form.getAttribute('data-wdc-unlock-target');
     var srcEl = form.querySelector('[name="fields[source_page]"]');
     var source = (srcEl && srcEl.value) || 'field-guide';
     var btn = form.querySelector('button[type="submit"], button');
-    if (btn && !unlockKey && !btn.getAttribute('data-wdc-label')) {
+    if (btn && !btn.getAttribute('data-wdc-label')) {
       btn.textContent = 'Send me the Field Guide';
       btn.setAttribute('data-wdc-label', '1');
     }
@@ -70,7 +65,7 @@
       if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
 
       function showError(msg) {
-        if (btn) { btn.disabled = false; btn.textContent = unlockKey ? 'Try again' : 'Send me the Field Guide'; }
+        if (btn) { btn.disabled = false; btn.textContent = 'Send me the Field Guide'; }
         var existing = form.querySelector('.wdc-err');
         if (existing) existing.remove();
         var err = document.createElement('p');
@@ -81,19 +76,6 @@
 
       function finish() {
         try { if (window.plausible) plausible('signup', { props: { source: source } }); } catch (_) {}
-        if (unlockKey) {
-          try { localStorage.setItem('wdc_unlock_' + unlockKey, '1'); } catch (_) {}
-          if (unlockTarget) {
-            var t = document.querySelector(unlockTarget);
-            if (t) { t.style.display = ''; t.classList.remove('wdc-locked'); }
-          }
-          var note = document.createElement('div');
-          note.className = 'wdc-unlocked-note';
-          note.innerHTML = '<strong>You’re in.</strong> Unlocked. Your free Writer’s Field Guide is on its way to your inbox.';
-          if (form.parentNode) form.parentNode.replaceChild(note, form);
-          try { window.dispatchEvent(new CustomEvent('wdc:unlocked', { detail: { key: unlockKey } })); } catch (_) {}
-          return;
-        }
         var card = form.closest('.bg-warmWhite, .wdc-topcap');
         var panel = successPanel(email);
         if (card) { card.innerHTML = ''; card.appendChild(panel); }
@@ -116,11 +98,6 @@
         });
     });
   }
-
-  // Exposed so tools/quiz can check unlock state (survives reloads via localStorage).
-  window.wdcUnlocked = function (key) {
-    try { return localStorage.getItem('wdc_unlock_' + key) === '1'; } catch (_) { return false; }
-  };
 
   function injectTopCapture(forms) {
     if (document.querySelector('.wdc-topcap')) return null;

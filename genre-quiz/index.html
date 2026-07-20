@@ -1005,9 +1005,9 @@ function renderResult() {
     <div class="result-container">
       <div class="result-label">You should write</div>
       <div class="result-genre">${genre.name}</div>
-      <p class="result-teaser" style="color:#6B7280;font-size:0.95rem;line-height:1.6;margin:10px auto 4px;max-width:440px;">That's your match. Enter your email below to unlock the full breakdown, your ${genre.name} writing guide, and your first prompt.</p>
+      <p class="result-teaser" style="color:#6B7280;font-size:0.95rem;line-height:1.6;margin:10px auto 4px;max-width:440px;">That's your match. Here's the full breakdown, your ${genre.name} writing guide, and your first prompt.</p>
 
-      <div id="gated-result" class="wdc-locked" style="display:none;">
+      <div id="gated-result">
         <div class="result-description">${genre.description}</div>
         <a href="${genre.hub}" class="result-cta-link">Your ${genre.name} writing guide &rarr;</a>
         <div class="starter-prompt" style="background:#fbf9f4;border:1px solid #eee4c8;border-left:4px solid #E8B931;border-radius:12px;padding:1.2em 1.4em;margin:1.4em auto;max-width:520px;text-align:left;">
@@ -1036,14 +1036,14 @@ function renderResult() {
 
       <div class="result-signup" id="quiz-gate">
         <div id="quiz-gate-copy">
-          <h3>Unlock your full ${genre.name} result</h3>
-          <p>Enter your email to reveal the full breakdown, your ${genre.name} writing guide, and your first prompt. Plus one short writing prompt each morning. Free, and you can unsubscribe anytime.</p>
+          <h3>Get the free Writer's Field Guide</h3>
+          <p>The daily writing routines of 90+ famous authors, plus one short writing prompt every morning. Free, and you can unsubscribe anytime.</p>
         </div>
-        <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" data-wdc-unlock="quiz" data-wdc-unlock-target="#gated-result">
+        <form action="https://app.kit.com/forms/9155962/subscriptions" method="post">
           <input type="hidden" name="fields[source_page]" value="genre-quiz">
           <input type="hidden" name="fields[genre]" value="${genre.name}">
           <input type="email" name="email_address" placeholder="Your email address" required>
-          <button type="submit">Unlock my result &rarr;</button>
+          <button type="submit">Send me the guide &rarr;</button>
         </form>
       </div>
 
@@ -1063,19 +1063,8 @@ function renderResult() {
 
   body.innerHTML = html;
 
-  // Enhance the freshly-injected unlock form (AJAX submit, unlock, signup event)
+  // Enhance the freshly-injected capture form (AJAX submit, signup event)
   if (window.wdcEnhanceForms) window.wdcEnhanceForms();
-
-  // Returning visitor who already unlocked: reveal the full result, hide the gate
-  if (window.wdcUnlocked && window.wdcUnlocked('quiz')) {
-    var _gr = document.getElementById('gated-result'); if (_gr) _gr.style.display = '';
-    var _qg = document.getElementById('quiz-gate'); if (_qg) _qg.style.display = 'none';
-  }
-  // On unlock, tidy the gate copy (capture.js swaps the form itself for a success note)
-  window.addEventListener('wdc:unlocked', function (ev) {
-    if (!ev.detail || ev.detail.key !== 'quiz') return;
-    var c = document.getElementById('quiz-gate-copy'); if (c) c.style.display = 'none';
-  });
 
   // Scroll to top of quiz container
   document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
