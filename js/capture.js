@@ -84,13 +84,19 @@
 
       fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: data })
         .then(function (response) {
-          if (response.ok) { finish(); return; }
-          // ConvertKit returns real error bodies (e.g. invalid email, rate limit); surface them
-          // instead of silently declaring success, which is what this used to do unconditionally.
-          response.json().then(function (j) {
-            showError(j && j.message ? j.message : 'Signup failed (' + response.status + '). Please try again.');
-          }).catch(function () {
-            showError('Signup failed (' + response.status + '). Please try again.');
+          return response.json().catch(function () { return null; }).then(function (body) {
+            if (!response.ok) {
+              showError(body && body.message ? body.message : 'Signup failed (' + response.status + '). Please try again.');
+              return;
+            }
+            // Kit answers 200 with status "quarantined" when it wants the reader to pass a
+            // human check first, and creates no subscriber until that page is completed.
+            // Treating it as success is what silently dropped every gated-tool signup.
+            if (body && body.status === 'quarantined' && body.url) {
+              window.location.href = body.url;
+              return;
+            }
+            finish();
           });
         })
         .catch(function () {

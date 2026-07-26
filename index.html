@@ -555,21 +555,6 @@
         </div>
         <p class="text-center text-[11px] text-midGray mb-2">Blank page &rarr; Spark &nbsp;&middot;&nbsp; Hollow writing &rarr; Voice &nbsp;&middot;&nbsp; Mid-draft &rarr; Craft &nbsp;&middot;&nbsp; Editing &rarr; Revision</p>
 
-        <!-- Already subscribed link -->
-        <p class="text-center mb-7">
-          <button id="pg-already-link" class="text-[11px] text-midGray hover:text-primary underline underline-offset-2 transition-colors">Already get the daily email? Unlock here</button>
-        </p>
-
-        <!-- Already subscribed inline panel (hidden) -->
-        <div id="pg-already-panel" class="hidden mb-7 bg-white rounded-xl border border-gray-200 p-4 max-w-[440px] mx-auto">
-          <p class="text-sm text-bodyText mb-3 font-medium">Enter your email to unlock:</p>
-          <form id="pg-already-form" class="flex gap-2">
-            <input type="email" id="pg-already-email" placeholder="your@email.com" required
-              class="flex-1 px-4 py-2.5 rounded-full border border-gray-200 text-bodyText text-sm placeholder-midGray focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
-            <button type="submit"
-              class="bg-primary text-white font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-primaryDark transition-colors whitespace-nowrap">Unlock</button>
-          </form>
-        </div>
       </div>
 
       <!-- Prompt card -->
@@ -582,26 +567,6 @@
           <p id="pg-instruction" class="text-bodyText text-[16px] leading-relaxed"></p>
         </div>
 
-        <!-- Gate view (hidden) -->
-        <div id="pg-gate-view" class="hidden">
-          <h3 class="font-serif text-[24px] md:text-[28px] font-bold text-dark mb-2 leading-tight">You've got the hang of it.</h3>
-          <p class="text-midGray text-base leading-relaxed mb-6">Get a fresh prompt every morning, free. That's the whole deal.</p>
-          <form id="pg-gate-form" class="flex flex-col sm:flex-row gap-3">
-            <input type="email" id="pg-email" placeholder="Your email address" required
-              class="flex-1 px-5 py-3.5 rounded-full border border-gray-200 text-bodyText text-sm placeholder-midGray focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
-            <button type="submit" id="pg-gate-submit"
-              class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-7 py-3.5 rounded-full text-sm whitespace-nowrap">Send me today's prompt &rarr;</button>
-          </form>
-        </div>
-
-        <!-- Success view (hidden) -->
-        <div id="pg-success-view" class="hidden text-center py-4">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center mx-auto mb-4">
-            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-          </div>
-          <p class="font-semibold text-dark text-lg mb-1">Check your inbox.</p>
-          <p class="text-midGray text-sm">Your first prompt is on its way.</p>
-        </div>
       </div>
 
       <!-- Action buttons -->
@@ -611,6 +576,28 @@
         <button id="pg-share" class="text-sm text-midGray border border-gray-200 bg-white px-5 py-3.5 rounded-full hover:border-primary hover:text-primary transition-all font-medium">Share on X</button>
       </div>
 
+      <!-- Non-blocking capture: the prompts stay free and unlimited above this. -->
+      <div id="pg-capture" class="bg-warmWhite border border-gold/30 rounded-2xl p-6 md:p-7 max-w-[520px] mx-auto text-center mb-6">
+        <div id="pg-gate-view">
+          <h3 class="font-serif text-[21px] md:text-[23px] font-bold text-dark mb-2 leading-tight">Get a fresh prompt every morning</h3>
+          <p class="text-midGray text-[14px] leading-relaxed mb-5">One short writing prompt in your inbox daily, free. Unsubscribe anytime.</p>
+          <form id="pg-gate-form" class="flex flex-col sm:flex-row gap-3">
+            <input type="email" id="pg-email" placeholder="Your email address" required
+              class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-bodyText text-sm placeholder-midGray focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+            <button type="submit" id="pg-gate-submit"
+              class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">Send me the prompts &rarr;</button>
+          </form>
+        </div>
+
+        <div id="pg-success-view" class="hidden text-center py-2">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center mx-auto mb-4">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </div>
+          <p class="font-semibold text-dark text-lg mb-1">Check your inbox.</p>
+          <p class="text-midGray text-sm">Your first prompt is on its way.</p>
+        </div>
+      </div>
+
       <!-- The Chain cross-mention -->
       <p class="text-center text-[12px] text-midGray">
         Want a daily prompt in your inbox? &rarr; <a href="#signup" class="text-primary hover:underline font-medium">Start free</a>
@@ -618,7 +605,6 @@
     </div>
 
     <!-- Hidden iframe for silent ConvertKit submission (avoids CORS redirect) -->
-    <iframe name="pg-submit-frame" style="display:none;" aria-hidden="true"></iframe>
 
     <script>
     (function () {
@@ -681,16 +667,6 @@
         { mode: 'revision', modeLabel: 'REVISION', name: 'The Final Pass', instruction: 'Read your entire manuscript purely for pleasure. Make no edits as you go. Just mark the moments where you stop believing. Those are the only things left to fix.' }
       ];
 
-      // --- Cookie helpers ---
-      function getCookie(name) {
-        var m = document.cookie.match('(?:^|;\\s*)' + name + '=([^;]*)');
-        return m ? decodeURIComponent(m[1]) : null;
-      }
-      function setCookie(name, val, days) {
-        var d = new Date(); d.setDate(d.getDate() + days);
-        document.cookie = name + '=' + encodeURIComponent(val) + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
-      }
-
       // --- State ---
       var currentMode = 'spark';
       var shuffleState = {};
@@ -721,15 +697,10 @@
       var gateForm     = document.getElementById('pg-gate-form');
       var gateEmail    = document.getElementById('pg-email');
       var gateSubmit   = document.getElementById('pg-gate-submit');
-      var alreadyLink  = document.getElementById('pg-already-link');
-      var alreadyPanel = document.getElementById('pg-already-panel');
-      var alreadyForm  = document.getElementById('pg-already-form');
       var modeBtns     = document.querySelectorAll('.pg-mode-btn');
 
       var currentPromptData = null;
 
-      function isUnlocked() { return getCookie('wdp_unlocked') === '1'; }
-      function getUses()    { return parseInt(getCookie('wdp_uses') || '0', 10); }
       function track(evt, props) { if (window.plausible) window.plausible(evt, { props: props || {} }); }
 
       function displayPrompt(p) {
@@ -739,38 +710,30 @@
         instr.textContent     = p.instruction;
         promptView.classList.remove('hidden');
         promptView.classList.add('pg-fade');
-        gateView.classList.add('hidden');
-        successView.classList.add('hidden');
         actionsDiv.classList.remove('hidden');
         track('prompt_generated', { mode: p.mode });
       }
 
-      function displayGate() {
-        promptView.classList.add('hidden');
-        gateView.classList.remove('hidden');
-        gateView.classList.add('pg-fade');
-        successView.classList.add('hidden');
-        actionsDiv.classList.add('hidden');
-        track('gate_shown');
-      }
-
-      // --- Silent ConvertKit submit via hidden iframe ---
+      // --- ConvertKit submit. Kit answers 200 with status "quarantined" when it wants the
+      // reader to pass a human check, and creates no subscriber until that page is done, so
+      // the outcome has to be inspected rather than assumed. ---
       function submitToConvertKit(email) {
-        var f = document.createElement('form');
-        f.action = 'https://app.kit.com/forms/9155962/subscriptions';
-        f.method = 'POST';
-        f.target = 'pg-submit-frame';
-        f.style.display = 'none';
-        var addField = function(name, val) {
-          var i = document.createElement('input');
-          i.type = 'hidden'; i.name = name; i.value = val;
-          f.appendChild(i);
-        };
-        addField('email_address', email);
-        addField('fields[source_page]', 'prompt-generator');
-        document.body.appendChild(f);
-        f.submit();
-        document.body.removeChild(f);
+        var body = new FormData();
+        body.append('email_address', email);
+        body.append('fields[source_page]', 'prompt-generator');
+        return fetch('https://app.kit.com/forms/9155962/subscriptions', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: body
+        }).then(function (response) {
+          return response.json().catch(function () { return null; }).then(function (json) {
+            if (response.ok && json && json.status === 'quarantined' && json.url) {
+              window.location.href = json.url;
+              return false;
+            }
+            return response.ok;
+          });
+        });
       }
 
       // --- Init: show first prompt ---
@@ -783,16 +746,13 @@
           modeBtns.forEach(function(b) { b.classList.remove('active'); });
           btn.classList.add('active');
           track('prompt_mode_changed', { mode: currentMode });
-          if (!isUnlocked() && getUses() >= 3) { displayGate(); }
-          else { displayPrompt(nextPrompt()); }
+          displayPrompt(nextPrompt());
         });
       });
 
       // --- Generate button ---
       generateBtn.addEventListener('click', function() {
-        if (!isUnlocked() && getUses() >= 3) { displayGate(); return; }
         displayPrompt(nextPrompt());
-        if (!isUnlocked()) setCookie('wdp_uses', getUses() + 1, 7);
       });
 
       // --- Gate form ---
@@ -802,29 +762,21 @@
         if (!email) return;
         gateSubmit.textContent = 'Sending...';
         gateSubmit.disabled = true;
-        submitToConvertKit(email);
-        setCookie('wdp_unlocked', '1', 30);
-        track('gate_subscribed');
-        gateView.classList.add('hidden');
-        successView.classList.remove('hidden');
-        successView.classList.add('pg-fade');
-        setTimeout(function() {
-          successView.classList.add('hidden');
-          actionsDiv.classList.remove('hidden');
-          displayPrompt(nextPrompt());
-        }, 2200);
-      });
-
-      // --- Already subscribed ---
-      alreadyLink.addEventListener('click', function() {
-        alreadyPanel.classList.toggle('hidden');
-      });
-      alreadyForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        setCookie('wdp_unlocked', '1', 30);
-        alreadyPanel.classList.add('hidden');
-        track('gate_already_subscribed');
-        displayPrompt(nextPrompt());
+        submitToConvertKit(email).then(function (ok) {
+          if (!ok) {
+            // Either an error, or Kit redirected this reader to its human check.
+            gateSubmit.textContent = 'Try again';
+            gateSubmit.disabled = false;
+            return;
+          }
+          track('gate_subscribed');
+          gateView.classList.add('hidden');
+          successView.classList.remove('hidden');
+          successView.classList.add('pg-fade');
+        }).catch(function () {
+          gateSubmit.textContent = 'Try again';
+          gateSubmit.disabled = false;
+        });
       });
 
       // --- Copy ---
@@ -1024,8 +976,7 @@
           </h2>
         </div>
         <div class="flex-1 flex justify-center" data-aos="fade-left" data-aos-delay="200">
-          <img src="images/banner-words-matter.png" alt="Your Words Matter" class="w-full max-w-[420px] rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.1)]" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="w-full max-w-[400px] rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] p-10 hidden flex-col items-center text-center" style="background: linear-gradient(135deg, #1565C0 0%, #1976D2 100%);">
+          <div class="w-full max-w-[400px] rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] p-10 flex flex-col items-center text-center" style="background: linear-gradient(135deg, #1565C0 0%, #1976D2 100%);">
             <h4 class="text-white text-2xl font-bold mb-5 font-serif">YOUR WORDS MATTER</h4>
             <p class="text-white/70 text-sm mb-4 font-light">And this daily practice will help you find them:</p>
             <p class="gradient-text font-bold mb-1.5 text-lg">One INSIGHT</p>
