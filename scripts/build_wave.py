@@ -8,6 +8,7 @@ Build a wave of author sub-pages from agent JSON outputs.
 Usage: python3 scripts/build_wave.py <wave_dir>
 """
 import os, re, sys, json, glob
+from datetime import date
 from gen_subpage import build, ROOT
 
 WAVE_DIR = sys.argv[1] if len(sys.argv) > 1 else "."
@@ -39,18 +40,53 @@ def quick_answers_block(author_name, items):
 
 '''
 
+def card_html(it):
+    return f'''        <a href="/writers-routines/{it['slug']}/{it['subslug']}/" class="card-lift block bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/20 transition-colors">
+          <p class="text-primary font-bold text-xs uppercase tracking-wider mb-1">{it['crumb']}</p>
+          <p class="font-serif font-bold text-dark text-[15px]">{it['q']} &rarr;</p>
+        </a>'''
+
+
 def insert_parent(slug, author_name, items):
+    """Link new sub-pages from the author hub.
+
+    A hub that already has a quick-answers grid gets the new cards appended to it.
+    The old behaviour skipped those hubs outright, which silently orphaned every
+    page in the wave: built, in the sitemap, and linked from nowhere.
+    """
     p = os.path.join(ROOT, "writers-routines", slug, "index.html")
     if not os.path.exists(p): return f"  ! parent missing: {slug}"
     html = open(p).read()
-    if "WDC-QUICK-ANSWERS" in html: return f"  = {slug} parent already linked (skip)"
-    block = quick_answers_block(author_name, items)
+
+    # Don't re-add a card that's already on the page (idempotent per sub-page).
+    fresh = [it for it in items
+             if f'href="/writers-routines/{it["slug"]}/{it["subslug"]}/"' not in html]
+    if not fresh:
+        return f"  = {slug} all {len(items)} card(s) already present"
+
+    # Append into an existing grid if there is one. Matches both the generated
+    # block and the hand-written "Quick answers about ..." sections.
+    marker = html.find("<!-- WDC-QUICK-ANSWERS -->")
+    if marker == -1:
+        m = re.search(r'Quick answers about [^<]*</p>', html)
+        marker = m.start() if m else -1
+    if marker != -1:
+        g = html.find('class="grid grid-cols-1 sm:grid-cols-2 gap-4">', marker)
+        if g != -1:
+            close = html.find("\n      </div>", g)
+            if close != -1:
+                add = "\n" + "\n".join(card_html(it) for it in fresh)
+                html = html[:close] + add + html[close:]
+                open(p, "w").write(html)
+                return f"  + {slug} appended {len(fresh)} card(s) to existing grid"
+
+    block = quick_answers_block(author_name, fresh)
     for anchor in ["  <!-- MORE ROUTINES -->", "  <!-- BOTTOM CTA -->", '  <section id="signup"', "  <!-- FOOTER -->"]:
         i = html.find(anchor)
         if i != -1:
             html = html[:i] + block + html[i:]
             open(p, "w").write(html)
-            return f"  + {slug} parent linked (before {anchor.strip()})"
+            return f"  + {slug} new block, {len(fresh)} card(s) (before {anchor.strip()})"
     return f"  ! {slug} no anchor found, parent NOT linked"
 
 def update_sitemap(urls):
@@ -58,8 +94,12 @@ def update_sitemap(urls):
     existing = set(re.findall(r"<loc>(.*?)</loc>", xml))
     new = [u for u in urls if u not in existing]
     if not new: return 0
+    # Stamp today, not a hardcoded date. A stale lastmod tells Google the page
+    # hasn't changed and suppresses recrawl, which is what left 1041 URLs
+    # claiming an April date on July content.
+    stamp = date.today().isoformat()
     entries = "".join(
-        f"  <url>\n    <loc>{u}</loc>\n    <lastmod>2026-06-28</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n"
+        f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{stamp}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n"
         for u in new)
     xml = xml.replace("</urlset>", entries + "</urlset>")
     open(SITEMAP, "w").write(xml)
