@@ -205,13 +205,8 @@
     <div class="max-w-[620px] mx-auto px-6">
       <div class="bg-warmWhite rounded-2xl p-8 text-center border border-gray-100">
         <p class="font-review text-lg text-bodyText leading-relaxed mb-5">Want all of these routines in one place? Get the free Writer's Field Guide to how 90+ famous authors actually write.</p>
-        <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[420px] mx-auto mb-3" onsubmit="plausible('signup', {props: {source: 'writers-routines-orhan-pamuk'}})">
-          <input type="hidden" name="fields[source_page]" value="writers-routines/orhan-pamuk">
-          <input type="hidden" name="fields[genre]" value="Writing Routines">
-          <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
-          <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">Send me the Field Guide</button>
-        </form>
-        <p class="text-midGray text-xs">Free. Every morning. Unsubscribe anytime.</p>
+        <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('book-click', {props: {source: 'writers-routines/orhan-pamuk'}})">Get the Book on Amazon &rarr;</a>
+        <p class="text-midGray text-xs">365 daily reflections. Amazon #1 Bestseller.</p>
       </div>
     </div>
   </section>
@@ -339,6 +334,5 @@
     </div>
   </footer>
 
-  <script defer src="/js/capture.js"></script>
 </body>
 </html>

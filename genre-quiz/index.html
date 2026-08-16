@@ -682,15 +682,8 @@
         Get a daily writing prompt with craft insights.
       </h2>
       <p class="text-white/70 text-[15px] mb-8">One email. Every morning. A quote from a master writer, an original reflection, and a prompt to practice with.</p>
-      <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'genre-quiz'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
-        <input type="hidden" name="fields[source_page]" value="genre-quiz">
-        <input type="hidden" name="fields[genre]" value="Genre Quiz">
-        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
-        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
-          Get Your Daily Prompt &rarr;
-        </button>
-      </form>
-      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('book-click', {props: {source: 'genre-quiz'}})">Get the Book on Amazon &rarr;</a>
+      <p class="text-white/40 text-xs font-medium">Paperback $16.99 &middot; Kindle $9.99 &middot; 200+ five-star reviews</p>
     </div>
   </section>
 
@@ -1036,15 +1029,10 @@ function renderResult() {
 
       <div class="result-signup" id="quiz-gate">
         <div id="quiz-gate-copy">
-          <h3>Get the free Writer's Field Guide</h3>
-          <p>The daily writing routines of 90+ famous authors, plus one short writing prompt every morning. Free, and you can unsubscribe anytime.</p>
+          <h3>Now build the habit</h3>
+          <p>The Writer's Daily Practice has 365 reflections, one for every morning, each with a quote from a literary master and a prompt to get you writing.</p>
         </div>
-        <form action="https://app.kit.com/forms/9155962/subscriptions" method="post">
-          <input type="hidden" name="fields[source_page]" value="genre-quiz">
-          <input type="hidden" name="fields[genre]" value="${genre.name}">
-          <input type="email" name="email_address" placeholder="Your email address" required>
-          <button type="submit">Send me the guide &rarr;</button>
-        </form>
+        <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('book-click', {props: {source: 'genre-quiz'}})">Get the Book on Amazon &rarr;</a>
       </div>
 
       <div class="divider-line"></div>
@@ -1108,6 +1096,5 @@ initScores();
 renderQuestion(0);
 </script>
 
-<script defer src="/js/capture.js"></script>
 </body>
 </html>

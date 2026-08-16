@@ -436,13 +436,8 @@
           <!-- non-blocking capture card: shown alongside the free, unlimited tool -->
           <div id="tool-gate" style="margin-top:30px;padding:24px;border:1px solid #eee4c8;background:#fbf9f4;border-radius:14px;max-width:520px;margin-left:auto;margin-right:auto;text-align:center;">
             <p style="font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;color:#111;margin:0 0 6px;">Get the free Writer's Field Guide</p>
-            <p style="font-size:13px;color:#6b7280;margin:0 0 14px;line-height:1.5;">The daily writing routines of 90+ famous authors, plus one story prompt each morning. Enter your email, no strings attached. Unsubscribe anytime.</p>
-            <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-2" style="max-width:460px;margin:0 auto;">
-              <input type="hidden" name="fields[source_page]" value="story-premise-generator/result">
-              <input type="hidden" name="fields[genre]" value="Story Ideas">
-              <input type="email" name="email_address" placeholder="Your email address" required style="flex:1;padding:11px 18px;border-radius:9999px;border:1px solid #e5e7eb;font-size:14px;outline:none;">
-              <button type="submit" class="gen-btn gen-btn-primary" style="padding:11px 22px;font-size:14px;white-space:nowrap;">Send me the guide &rarr;</button>
-            </form>
+            <p style="font-size:13px;color:#6b7280;margin:0 0 14px;line-height:1.5;">The Writer's Daily Practice collects 365 of them, one for every morning of the year, each with a reflection and a prompt.</p>
+            <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('book-click', {props: {source: 'story-premise-generator'}})">Get the Book on Amazon &rarr;</a>
           </div>
         </div>
 
@@ -501,15 +496,8 @@
         Get a daily writing prompt with craft insights like these.
       </h2>
       <p class="text-white/70 text-[15px] mb-8">One email. Every morning. A quote from a master writer, an original reflection, and a prompt to practice with.</p>
-      <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'story-premise-generator'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
-        <input type="hidden" name="fields[source_page]" value="story-premise-generator">
-        <input type="hidden" name="fields[genre]" value="Story Premises">
-        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
-        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">
-          Get Your Daily Prompt &rarr;
-        </button>
-      </form>
-      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('book-click', {props: {source: 'story-premise-generator'}})">Get the Book on Amazon &rarr;</a>
+      <p class="text-white/40 text-xs font-medium">Paperback $16.99 &middot; Kindle $9.99 &middot; 200+ five-star reviews</p>
     </div>
   </section>
 
@@ -960,6 +948,5 @@ document.querySelectorAll('.faq-toggle').forEach(btn => {
 renderSaved();
 </script>
 
-<script defer src="/js/capture.js"></script>
 </body>
 </html>

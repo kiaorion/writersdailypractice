@@ -254,13 +254,8 @@
       <p class="text-white/85 text-lg leading-relaxed mb-8 font-light">
         The daily routines of working writers, sourced from real interviews, letters, and biographies. No inspiration porn. Just the small, stubborn systems they built to get words on the page.
       </p>
-      <form id="signup" action="https://app.kit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'writers-routines'}})" class="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto mb-4">
-        <input type="hidden" name="fields[source_page]" value="writers-routines">
-        <input type="hidden" name="fields[genre]" value="Writing Routines">
-        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
-        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Start My Daily Practice &rarr;</button>
-      </form>
-      <p class="text-white/60 text-sm font-medium">Free. Every morning. Join 1,000+ writers.</p>
+      <a id="signup" href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap mb-4" onclick="plausible('book-click', {props: {source: 'writers-routines-hero'}})">Get the Book on Amazon &rarr;</a>
+      <p class="text-white/60 text-sm font-medium">365 daily reflections &middot; Amazon #1 Bestseller</p>
     </div>
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
   </section>
@@ -1597,13 +1592,8 @@
     <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10">
       <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">Build the practice <span class="gradient-text">that fits your life.</span></h2>
       <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">The routines of 90+ famous authors, in one free Field Guide. </p>
-      <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" onsubmit="plausible('signup', {props: {source: 'writers-routines'}})" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4">
-        <input type="hidden" name="fields[source_page]" value="writers-routines">
-        <input type="hidden" name="fields[genre]" value="Writing Routines">
-        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
-        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Start My Daily Practice &rarr;</button>
-      </form>
-      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('book-click', {props: {source: 'writers-routines'}})">Get the Book on Amazon &rarr;</a>
+      <p class="text-white/40 text-xs font-medium">Paperback $16.99 &middot; Kindle $9.99 &middot; 200+ five-star reviews</p>
     </div>
   </section>
 
@@ -1622,6 +1612,5 @@
     </div>
   </footer>
 
-<script defer src="/js/capture.js"></script>
 </body>
 </html>
