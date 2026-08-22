@@ -5,3 +5,5 @@ screenshot*.png
 .claude/
 reports/
 __pycache__/
+.playwright-mcp/
+*.playwright-mcp
