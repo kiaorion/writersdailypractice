@@ -469,6 +469,9 @@
 
     /* FAQ */
     .faq-toggle { background: none; border: none; padding: 0; }
+    .article-body p { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.8; color: #2a2a2a; margin-bottom: 1.4em; }
+    .article-body a { color: #1565C0; text-decoration: underline; text-underline-offset: 2px; }
+    .article-body a:hover { color: #0D47A1; }
   </style>
 
   <!-- Plausible Analytics -->
@@ -488,9 +491,10 @@
         <div class="hidden md:flex items-center gap-8">
           <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
           <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+          <a href="/genre-quiz/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Genre Quiz</a>
         </div>
       </div>
-      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full" onclick="plausible('Outbound Link: Click', {props: {url: 'https://a.co/d/0aZhyb86', source: 'nav-genre-quiz'}})">Get the Book</a>
+      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">Get the Book</a>
     </div>
   </nav>
 
@@ -566,6 +570,31 @@
     </div>
   </section>
 
+  <!-- ========== HOW TO CHOOSE ========== -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-[720px] mx-auto px-6 article-body">
+      <h2 class="font-serif text-[28px] md:text-[34px] font-bold text-dark mb-6 leading-tight">How to figure out what genre you should write</h2>
+
+      <p>The quiz gives you an answer in two minutes. What follows is the longer version, drawn from the working routines of the authors on this site, because the question of what to write turns out to be answerable from evidence rather than instinct alone.</p>
+
+      <h3 class="font-serif text-[21px] font-bold text-dark mt-10 mb-3">Start with what you reread, not what you admire</h3>
+      <p>Most writers can name the books they think are important. That list is usually a poor guide. The more useful list is the one you return to when nothing is at stake: the books you have read three times, the ones you finish at two in the morning knowing you have work tomorrow. Admiration points at the writer you think you should be. Rereading points at the machinery your brain actually enjoys running.</p>
+      <p>If those two lists disagree, the rereading list is the one to trust. Plenty of literary writers privately reread crime novels, and the tension usually shows up as a strength once they stop resisting it.</p>
+
+      <h3 class="font-serif text-[21px] font-bold text-dark mt-10 mb-3">Notice which problems you find interesting</h3>
+      <p>Genre is less about subject matter than about the kind of problem you want to spend a year solving. <a href="/writers-routines/agatha-christie/">Agatha Christie</a> was solving a construction problem: how to hide a fact in plain sight and still play fair. <a href="/writers-routines/toni-morrison/">Toni Morrison</a> was solving a problem of interiority and history, and how much a reader can be trusted to carry. Neither would have enjoyed the other's puzzle.</p>
+      <p>Ask what you find yourself explaining to people at length. That subject is usually where your attention already lives, and attention is the resource a book actually costs.</p>
+
+      <h3 class="font-serif text-[21px] font-bold text-dark mt-10 mb-3">Your genre has to survive a bad week</h3>
+      <p>Every routine documented on this site was built to keep working when the writer felt terrible. <a href="/writers-routines/stephen-king/">Stephen King</a> writes 2,000 words a day including holidays. <a href="/writers-routines/lee-child/">Lee Child</a> starts a Reacher novel every September the first. That kind of consistency is far easier when the material itself pulls you back to the desk.</p>
+      <p>So the honest test is not which genre sounds most impressive at a party. It is which one you would still open on a Tuesday in February when the draft is going badly and nobody is waiting for it.</p>
+
+      <h3 class="font-serif text-[21px] font-bold text-dark mt-10 mb-3">The result is a starting point, not a verdict</h3>
+      <p>Writers move. <a href="/writers-routines/kazuo-ishiguro/">Kazuo Ishiguro</a> has written a butler's memoir, a detective novel and a fantasy quest. <a href="/writers-routines/ursula-k-le-guin/">Ursula K. Le Guin</a> worked across science fiction, fantasy, poetry and essays for six decades. Learning one genre deeply is what makes crossing into another possible later, because conventions stop being rules and start being tools.</p>
+      <p>Treat your result as the place to build the habit first. Once the routine holds, the genre can change around it.</p>
+    </div>
+  </section>
+
   <!-- ========== FAQ SECTION ========== -->
   <section class="py-24 md:py-32" id="faq-section">
     <div class="max-w-[800px] mx-auto px-6">
@@ -638,14 +667,14 @@
     </div>
   </section>
 
-  <!-- ========== EMAIL SIGNUP ========== -->
+  <!-- ========== BOOK CTA ========== -->
   <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #0D47A1 0%, #1565C0 100%);">
     <div class="py-20 md:py-24 max-w-[560px] mx-auto px-6 text-center relative z-10">
       <h2 class="font-serif text-[28px] md:text-[34px] leading-tight font-bold text-white mb-4">
-        Get a daily writing prompt with craft insights.
+        Now go write it, one morning at a time.
       </h2>
-      <p class="text-white/70 text-[15px] mb-8">One email. Every morning. A quote from a master writer, an original reflection, and a prompt to practice with.</p>
-      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('book-click', {props: {source: 'genre-quiz'}})">Get the Book on Amazon &rarr;</a>
+      <p class="text-white/70 text-[15px] mb-8">365 mornings of practice. A quote from a master writer, an original reflection, and a prompt to work with.</p>
+      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Get the Book on Amazon &rarr;</a>
       <p class="text-white/40 text-xs font-medium">Paperback $16.99 &middot; Kindle $9.99 &middot; 200+ five-star reviews</p>
     </div>
   </section>
@@ -656,7 +685,7 @@
       <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
       <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; 365 reflections for writers, by Kia Orion</p>
       <div class="flex justify-center gap-6 mb-6">
-        <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="text-white/50 text-sm hover:text-white transition-colors" onclick="plausible('Outbound Link: Click', {props: {url: 'https://a.co/d/0aZhyb86', source: 'nav-genre-quiz'}})">Get the Book</a>
+        <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="text-white/50 text-sm hover:text-white transition-colors">Get the Book</a>
         <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
         <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
         <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
@@ -995,7 +1024,7 @@ function renderResult() {
           <h3>Now write it every morning</h3>
           <p>Knowing your genre is the easy part. The Writer's Daily Practice gives you 365 mornings of it: a quote from a literary master, a reflection, and a prompt. Start your ${genre.name} habit tomorrow.</p>
         </div>
-        <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap" onclick="plausible('Outbound Link: Click', {props: {url: 'https://a.co/d/0aZhyb86', source: 'genre-quiz-result-' + '${resultGenre}'}})">Get the Book on Amazon &rarr;</a>
+        <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Get the Book on Amazon &rarr;</a>
         <p style="font-size:0.75rem;color:#9CA3AF;margin-top:12px;">Paperback $16.99 &middot; Kindle $9.99 &middot; Amazon #1 Bestseller</p>
       </div>
 
