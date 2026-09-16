@@ -52,10 +52,20 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
-def render_blocks(blocks):
+MID_CTA = """      <!-- MID-ARTICLE BOOK CTA -->
+      <div class="wdc-mid-cta" style="margin:2.75em 0;padding:28px 24px;background:#FFFDF7;border:1px solid #eee4c8;border-radius:16px;text-align:center;">
+        <p style="font-family:'Lora',Georgia,serif;font-size:17px;line-height:1.7;color:#2a2a2a;margin:0 0 18px;">Reading how {name} worked is the easy part. The Writer's Daily Practice gives you a page for every morning of the year, and each one ends with a prompt to get you writing.</p>
+        <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium" style="display:inline-block;background:linear-gradient(90deg,#E8B931,#F5D060);color:#111;font-family:'Inter',system-ui,sans-serif;font-weight:700;font-size:14px;padding:14px 32px;border-radius:9999px;text-decoration:none;white-space:nowrap;">Get the Book on Amazon &rarr;</a>
+        <p style="font-family:'Inter',system-ui,sans-serif;font-size:12px;color:#6B7280;margin:12px 0 0;">365 mornings, in paperback and Kindle.</p>
+      </div>"""
+
+
+def render_blocks(blocks, author_name=""):
     out = []
     for b in blocks:
         if "h2" in b:
+            if author_name and b["h2"].strip().lower() == "what you can steal":
+                out.append(MID_CTA.replace("{name}", esc(author_name)))
             out.append(f'      <h2>{b["h2"]}</h2>')
         elif "p" in b:
             out.append(f'      <p>{b["p"]}</p>')
@@ -100,6 +110,9 @@ def render(d):
   <title>{esc(d["title"])}</title>
   <meta name="description" content="{esc(d["meta_desc"])}">
   <link rel="canonical" href="{url}">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <meta property="og:title" content="{esc(d["og_title"])}">
   <meta property="og:description" content="{esc(d["og_desc"])}">
@@ -173,10 +186,19 @@ def render(d):
         <div class="hidden md:flex items-center gap-8">
           <a href="/book/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">The Book</a>
           <a href="/genres/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">For Writers</a>
+          <a href="/genre-quiz/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">Genre Quiz</a>
           <a href="/about/" class="text-white/50 text-sm font-medium hover:text-white transition-colors duration-300">About</a>
         </div>
       </div>
-      <a href="#signup" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">Start Free</a>
+      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark text-sm font-bold px-6 py-2.5 rounded-full">Get the Book</a>
+    </div>
+      <div id="wdc-mobile-nav" class="md:hidden border-t border-white/10">
+      <div class="max-w-[1200px] mx-auto px-6 py-2.5 flex items-center gap-5 overflow-x-auto">
+        <a href="/book/" class="text-white/60 text-[13px] font-medium whitespace-nowrap hover:text-white transition-colors">The Book</a>
+        <a href="/genres/" class="text-white/60 text-[13px] font-medium whitespace-nowrap hover:text-white transition-colors">For Writers</a>
+        <a href="/genre-quiz/" class="text-white/60 text-[13px] font-medium whitespace-nowrap hover:text-white transition-colors">Genre Quiz</a>
+        <a href="/about/" class="text-white/60 text-[13px] font-medium whitespace-nowrap hover:text-white transition-colors">About</a>
+      </div>
     </div>
   </nav>
 
@@ -223,7 +245,7 @@ def render(d):
         <div class="subtext">{d["answer_sub"]}</div>
       </div>
 
-{render_blocks(d["blocks"])}
+{render_blocks(d["blocks"], d["author_name"])}
 
     </div>
   </article>
@@ -257,15 +279,10 @@ def render(d):
   <!-- BOTTOM CTA -->
   <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
     <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10">
-      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">Stop staring at the blank page. <span class="gradient-text">Start writing with purpose.</span></h2>
-      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">A free daily reflection for writers. Quotes from literary masters, an original reflection, and a prompt to get you writing.</p>
-      <form action="https://app.kit.com/forms/9155962/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto mb-4" onsubmit="plausible('signup', {{props: {{source: '{d["author_slug"]}-{d["subslug"]}'}}}})">
-        <input type="hidden" name="fields[source_page]" value="writers-routines/{d["author_slug"]}/{d["subslug"]}">
-        <input type="hidden" name="fields[genre]" value="Writing Routines">
-        <input type="email" name="email_address" placeholder="Your email address" required class="flex-1 px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all">
-        <button type="submit" class="btn-premium bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Start My Daily Practice &rarr;</button>
-      </form>
-      <p class="text-white/40 text-xs font-medium">Join 1,000+ writers. No spam. Unsubscribe anytime.</p>
+      <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-6">You just read how {esc(d["author_name"])} did it. <span class="gradient-text">Now build yours.</span></h2>
+      <p class="text-white/50 text-base leading-relaxed max-w-[520px] mx-auto font-light mb-8">The Writer's Daily Practice gives you 365 mornings of the same thing: a quote from a literary master, an original reflection, and a prompt to get you writing.</p>
+      <a href="https://a.co/d/0aZhyb86" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-10 py-4 rounded-full text-base mb-5">Get The Writer's Daily Practice &rarr;</a>
+      <p class="text-white/40 text-xs font-medium">Paperback $16.99 &middot; Kindle $9.99</p>
     </div>
   </section>
 
