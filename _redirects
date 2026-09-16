@@ -1,3 +1,8 @@
 # The page at this URL shipped with an empty body. The real article lives under
 # horror-writers/, so send readers and any accumulated link equity there.
 /horror-writing/how-to-write-horror/  /horror-writers/how-to-write-horror/  301
+
+# Two pairs of word-count pages answered the same question and split the signal.
+# Keeping the one the data favours in each case and sending the other to it.
+/writers-routines/jk-rowling/harry-potter-word-count/  /writers-routines/jk-rowling/word-count/  301
+/writers-routines/james-joyce/word-count/  /writers-routines/james-joyce/ulysses-word-count/  301
