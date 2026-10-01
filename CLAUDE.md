@@ -38,3 +38,17 @@ Do NOT stop after one pass. Always do at least 2 comparison rounds. Only stop wh
 - Use placeholder images from `https://placehold.co/` when source images aren't provided
 - Mobile-first responsive design
 - Single `index.html` file unless the user requests otherwise
+
+
+
+## Lab Notes (writersdailypractice.com)
+
+Lessons from working on the live site. Read before editing it.
+
+- **The live site does NOT load Tailwind from the CDN**, whatever the defaults above say. It ships a pre-compiled `/css/style.css` that only contains classes present at build time, so a new utility class silently does nothing. Grep `css/style.css` before using one, or style inline. The `.article-body a` rule will turn any button inside an article into blue underlined text unless it has inline styles.
+- **Every book link carries `?p=<slot>`** (nav, inline, mid, bottom, body, archive, home, bookpage). Plausible's automatic outbound-link goal records the href, so this is how placement gets measured. Keep the tag on any new CTA. Amazon ignores the parameter.
+- **After any deploy, push changed pages to Bing:** `python3 scripts/indexnow.py --changed <previous-commit>`. Bing-powered engines are roughly half the search traffic and there is no Bing Webmaster Tools account; the key file at the repo root is what makes IndexNow work. Don't delete it.
+- **When removing a retired offer, search for the product, not one phrase.** The August cleanup searched for "free Field Guide" and left 237 email promises behind ("delivered every morning", "your inbox", "subscribers", "sample from your daily email"). Search for the mechanism (email, inbox, subscribe, deliver, free) and check `<head>` too: titles and meta descriptions carried the same promise into search results.
+- **Insert blocks between cards, never inside them.** On the archive hub each author card is an `<a>`; inserting before its `<h3>` nested one link inside another. Insert before the card's opening `<a>` and give the block `grid-column:1/-1`.
+- **Verify before claiming something is missing or wrong.** Blocked crawlers, rate limits, paywalls and partial pages (the Paris Review shows only part of an interview) look exactly like absence. Run a control that should succeed first.
+- **`scripts/gen_subpage.py` drifts from the live pages.** Diff its output against a live page before generating anything.
