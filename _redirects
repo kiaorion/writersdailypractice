@@ -6,3 +6,8 @@
 # Keeping the one the data favours in each case and sending the other to it.
 /writers-routines/jk-rowling/harry-potter-word-count/  /writers-routines/jk-rowling/word-count/  301
 /writers-routines/james-joyce/word-count/  /writers-routines/james-joyce/ulysses-word-count/  301
+
+# The old ConvertKit thank-you page. The email capture is retired, so any old
+# form or link that still points here goes to the page that sells the book.
+/welcome/  /book/  301
+/welcome   /book/  301
