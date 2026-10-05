@@ -352,7 +352,7 @@
   <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(135deg, #091B3A 0%, #0D47A1 100%);">
     <div class="py-20 md:py-28 max-w-[560px] mx-auto px-6 text-center relative z-10">
       <h2 class="font-serif text-[30px] md:text-[40px] leading-[1.1] font-bold text-white mb-4">
-        Get a prompt like this every morning, free.
+        Get a prompt like this for every morning of the year.
       </h2>
       <p class="text-white/50 text-base leading-relaxed max-w-[460px] mx-auto font-light mb-8">
         A quote from a literary master, an original reflection, and a writing prompt. In the book, before you sit down to write.
@@ -857,7 +857,7 @@
       themeEl.textContent  = p.c;
       titleEl.textContent  = p.t;
       quoteEl.textContent  = '\u201C' + p.q + '\u201D';
-      authorEl.textContent = '\u2014 ' + p.a;
+      authorEl.textContent = p.a;
       card.classList.remove('prompt-fade');
       void card.offsetWidth;
       card.classList.add('prompt-fade');
@@ -890,7 +890,7 @@
     // --- Copy ---
     document.getElementById('btn-copy').addEventListener('click', function() {
       if (!currentPrompt) return;
-      var text = currentPrompt.t + '\n\n' + '\u201C' + currentPrompt.q + '\u201D' + '\n\u2014 ' + currentPrompt.a + '\n\nGet a writing prompt: writersdailypractice.com/writing-prompt-generator/';
+      var text = currentPrompt.t + '\n\n' + '\u201C' + currentPrompt.q + '\u201D' + '\n' + currentPrompt.a + '\n\nGet a writing prompt: writersdailypractice.com/writing-prompt-generator/';
       if (navigator.clipboard) {
         navigator.clipboard.writeText(text);
       } else {
@@ -909,7 +909,7 @@
     // --- Share on X ---
     document.getElementById('btn-twitter').addEventListener('click', function() {
       if (!currentPrompt) return;
-      var tweet = 'Today\'s writing prompt:\n\n\u201C' + currentPrompt.q + '\u201D \u2014 ' + currentPrompt.a + '\n\nGet a free writing prompt \u2192 writersdailypractice.com/writing-prompt-generator/';
+      var tweet = 'Today\'s writing prompt:\n\n\u201C' + currentPrompt.q + '\u201D (' + currentPrompt.a + ')' + '\n\nGet a free writing prompt \u2192 writersdailypractice.com/writing-prompt-generator/';
       window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet), '_blank', 'noopener,noreferrer');
       track('prompt_shared', { platform: 'twitter' });
     });
@@ -917,7 +917,7 @@
     // --- Pinterest ---
     document.getElementById('btn-pinterest').addEventListener('click', function() {
       if (!currentPrompt) return;
-      var desc = currentPrompt.t + ' \u2014 \u201C' + currentPrompt.q + '\u201D by ' + currentPrompt.a;
+      var desc = currentPrompt.t + ': \u201C' + currentPrompt.q + '\u201D by ' + currentPrompt.a;
       var url = 'https://writersdailypractice.com/writing-prompt-generator/';
       window.open('https://pinterest.com/pin/create/button/?url=' + encodeURIComponent(url) + '&description=' + encodeURIComponent(desc), '_blank', 'noopener,noreferrer');
       track('prompt_shared', { platform: 'pinterest' });

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Writer's Daily Practice | 365 Reflections for Writers</title>
+  <title>The Writer's Daily Practice by Kia Orion | 365 Reflections</title>
   <meta name="description" content="A daily writing reflection and prompt for every morning of the year, collected in the book. Quotes from literary masters + original reflections for writers.">
   <link rel="canonical" href="https://writersdailypractice.com/">
 
@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <!-- Open Graph -->
   <meta property="og:title" content="The Writer's Daily Practice by Kia Orion | Daily Writing Reflections">
-  <meta property="og:description" content="A quote from a literary master + an original reflection to start your writing day. Free. Every morning.">
+  <meta property="og:description" content="A quote from a literary master and an original reflection to start your writing day, for every morning of the year.">
   <meta property="og:url" content="https://writersdailypractice.com/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://writersdailypractice.com/images/og-homepage.jpg">
@@ -146,24 +146,36 @@
 
   <!-- Schema Markup -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "name": "The Writer's Daily Practice",
-        "url": "https://writersdailypractice.com/",
-        "description": "365 daily writing reflections and prompts for writers, one for every morning of the year."
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "The Writer's Daily Practice",
+      "url": "https://writersdailypractice.com/",
+      "description": "365 daily writing reflections and prompts for writers, one for every morning of the year.",
+      "author": {
+        "@id": "https://writersdailypractice.com/#kia-orion"
       },
-      {
-        "@type": "Person",
-        "name": "Kia Orion",
-        "url": "https://writersdailypractice.com/",
-        "jobTitle": "Author",
-        "description": "Author of The Writer's Daily Practice, the #1 Bestselling book in Journal Writing and Writing Skills."
+      "publisher": {
+        "@id": "https://writersdailypractice.com/#kia-orion"
       }
-    ]
-  }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://writersdailypractice.com/#kia-orion",
+      "name": "Kia Orion",
+      "url": "https://writersdailypractice.com/about/",
+      "jobTitle": "Author",
+      "description": "Author of The Writer's Daily Practice: 365 Reflections to Build Your Writing Habit and Strengthen Your Craft. Novelist writing psychological thrillers and crime fiction.",
+      "sameAs": [
+        "https://www.amazon.com/stores/author/B0CQTRN14K",
+        "https://www.goodreads.com/author/show/47504605.Kia_Orion",
+        "https://kiaorion.com/"
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -380,12 +392,12 @@
   <!-- ========== FIRST EMAIL SIGNUP FORM ========== -->
   <section id="signup" class="relative overflow-hidden noise-overlay" style="background: linear-gradient(160deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%);">
     <div class="py-24 md:py-32 max-w-[600px] mx-auto px-6 text-center relative z-10" data-aos="fade-up">
-      <p class="text-gold/80 text-xs font-semibold uppercase tracking-[0.2em] mb-6">Join The Writer's Daily Practice</p>
+      <p class="text-gold/80 text-xs font-semibold uppercase tracking-[0.2em] mb-6">The Writer's Daily Practice</p>
       <h2 class="font-serif text-[32px] md:text-[44px] leading-[1.1] font-bold text-white mb-5">
-        One reflection.<br>One prompt.<br><span class="gradient-text">Every morning. Free.</span>
+        One reflection.<br>One prompt.<br><span class="gradient-text">Every morning of the year.</span>
       </h2>
       <p class="text-white/60 text-base leading-relaxed max-w-[480px] mx-auto font-light mb-8">
-        A quote from a literary master, an original reflection, and a writing prompt to get you on the page. Based on the #1 Bestselling book in Journal Writing &amp; Writing Skills.
+        A quote from a literary master, an original reflection, and a writing prompt to get you on the page. Collected in The Writer's Daily Practice, #1 Bestselling in Journal Writing &amp; Writing Skills.
       </p>
       <a href="https://a.co/d/0aZhyb86?p=bottom" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Get the Book on Amazon &rarr;</a>
       <p class="text-white/40 text-xs font-medium">Paperback $16.99 &middot; Kindle $9.99 &middot; 200+ five-star reviews</p>
@@ -714,7 +726,7 @@
       // --- Share ---
       shareBtn.addEventListener('click', function() {
         if (!currentPromptData) return;
-        var tweet = 'Today\'s writing prompt:\n\n"' + currentPromptData.instruction + '"\n\nGet a free prompt every morning \u2192 writersdailypractice.com';
+        var tweet = 'Today\'s writing prompt:\n\n"' + currentPromptData.instruction + '"\n\nMore at writersdailypractice.com';
         window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet), '_blank', 'noopener,noreferrer');
         track('prompt_shared');
       });

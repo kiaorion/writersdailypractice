@@ -11,3 +11,8 @@
 # form or link that still points here goes to the page that sells the book.
 /welcome/  /book/  301
 /welcome   /book/  301
+
+# A duplicate space opera hub whose canonical already pointed at the real one,
+# and whose relative links to the subpages 404ed.
+/space-opera/  /space-opera-writers/  301
+/space-opera   /space-opera-writers/  301
