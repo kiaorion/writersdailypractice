@@ -194,6 +194,10 @@
       max-width: 680px;
       margin: 0 auto;
     }
+    @media (max-width: 480px) {
+      .quiz-container { padding: 32px 18px; }
+      .book-sample-card { padding: 22px 16px !important; }
+    }
 
     .progress-bar-track {
       width: 100%;
@@ -694,7 +698,7 @@
       <a href="/" class="text-white font-serif font-bold text-xl tracking-tight">Kia Orion</a>
       <p class="text-white/40 text-sm mt-3 mb-6">The Writer's Daily Practice &middot; 365 reflections for writers, by Kia Orion</p>
       <div class="flex justify-center gap-6 mb-6">
-        <a href="https://a.co/d/0aZhyb86?p=bottom" target="_blank" rel="noopener" class="text-white/50 text-sm hover:text-white transition-colors">Get the Book</a>
+        <a href="https://a.co/d/0aZhyb86?p=footer" target="_blank" rel="noopener" class="text-white/50 text-sm hover:text-white transition-colors">Get the Book</a>
         <a href="/" class="text-white/50 text-sm hover:text-white transition-colors">Home</a>
         <a href="/book/" class="text-white/50 text-sm hover:text-white transition-colors">The Book</a>
         <a href="/genres/" class="text-white/50 text-sm hover:text-white transition-colors">For Writers</a>
@@ -809,31 +813,31 @@ const genreData = {
   fantasy: {
     name: "Fantasy",
     hub: "/fantasy-writing/",
-    description: "You think in worlds. Your instinct is to build systems, invent histories, and drop readers into places that feel real even when they're impossible. The best fantasy writers don't just create settings; they create rules, then find the most human stories that can only exist inside those rules. Your imagination isn't decoration. It's architecture.",
+    description: "You think in worlds. Your instinct is to invent histories and drop readers into places that feel real even when they're impossible. The best fantasy writers set the rules first, then find the most human stories that could only happen inside them. Your imagination does structural work, and the whole building rests on it.",
     explore: ["scifi", "literary", "horror"]
   },
   scifi: {
     name: "Science Fiction",
     hub: "/science-fiction-writing/",
-    description: "You're drawn to the question behind the question. Where fantasy builds inward, you build forward. You take something real, a technology, a social trend, a scientific principle, and you follow it to its most interesting conclusion. Your stories aren't about the future. They're about right now, wearing a different mask.",
+    description: "You're drawn to the question behind the question. Where fantasy builds inward, you build forward. You take something real, a technology or a social trend, and follow it to its most interesting conclusion. The future in your stories is usually right now, wearing a different mask.",
     explore: ["fantasy", "thriller", "literary"]
   },
   thriller: {
     name: "Thriller / Suspense",
     hub: "/thriller-writing/",
-    description: "You see the gears turning underneath the surface. While other people watch a conversation, you're watching what's not being said. Your stories run on tension, pacing, and the reader's desperate need to know what happens next. You understand that the most dangerous thing in any scene isn't the weapon. It's the secret.",
+    description: "You see the gears turning underneath the surface. While other people watch a conversation, you're watching what's not being said. Your stories run on tension and the reader's desperate need to know what happens next. You know the most dangerous thing in any scene is usually the secret, and the weapon comes second.",
     explore: ["mystery", "horror", "dark_romance"]
   },
   mystery: {
     name: "Mystery / Crime",
     hub: "/mystery-writing/",
-    description: "You think backward. Every story you tell starts with the answer and works its way to the question. You love structure, misdirection, and the satisfaction of a reader realizing they had the clues all along. Your strength isn't hiding information. It's placing it in plain sight where nobody thinks to look.",
+    description: "You think backward. Every story you tell starts with the answer and works its way to the question. You love misdirection and the moment a reader realizes they had the clues all along. Your real gift is putting information in plain sight, right where nobody thinks to look.",
     explore: ["thriller", "literary", "horror"]
   },
   romance: {
     name: "Romance",
     hub: "/romance-writing/",
-    description: "You write toward connection. Your instincts track the emotional distance between two people, and you know exactly how to close it in a way that feels earned. The best romance isn't about attraction. It's about vulnerability, about two people who scare each other in the best possible way. You understand that tension.",
+    description: "You write toward connection. Your instincts track the emotional distance between two people, and you know how to close it in a way that feels earned. Attraction gets readers in the door. Vulnerability keeps them there: two people who scare each other in the best possible way. You understand that tension.",
     explore: ["dark_romance", "literary", "thriller"]
   },
   dark_romance: {
@@ -845,15 +849,112 @@ const genreData = {
   horror: {
     name: "Horror / Gothic",
     hub: "/horror-writing/",
-    description: "You feel the wrongness in things. Where other writers see a room, you see what's hiding in the corner of it. Your stories work because you understand that real fear isn't about monsters. It's about the moment a character realizes the rules they trusted no longer apply. You write the silence before the scream.",
+    description: "You feel the wrongness in things. Where other writers see a room, you see what's hiding in the corner of it. Your stories work because you know where real fear lives: in the moment a character realizes the rules they trusted no longer apply. You write the silence before the scream.",
     explore: ["thriller", "dark_romance", "literary"]
   },
   literary: {
     name: "Literary Fiction",
     hub: "/literary-fiction/",
-    description: "You write to understand. Your stories don't chase plot points; they chase meaning. You notice the things most people walk past: the way someone folds a napkin when they're nervous, the specific shade of light in a room where something ended. Your instinct is to slow down where other writers speed up, and that's where the truth lives.",
+    description: "You write to understand. Your stories chase meaning more than plot. You notice the things most people walk past: the way someone folds a napkin when they're nervous, the specific shade of light in a room where something ended. Your instinct is to slow down where other writers speed up, and that's where the truth lives.",
     explore: ["horror", "mystery", "romance"]
   }
+};
+
+
+// One page from the book per genre, the same page each genre hub shows
+const bookSamples = {
+ "fantasy": {
+  "date": "January 27th",
+  "title": "YOUR STORY IS WAITING",
+  "quote": "\"To accomplish great things, we must not only act, but also dream; not only plan, but also believe.\"",
+  "by": "- Anatole France",
+  "paras": [
+   "J.R.R. Tolkien didn't set out to write <em>The Lord of the Rings</em>. There was no initial plan for a secondary world that would shape every fantasy novel written after it. The whole thing started as a way to entertain his children, stories told at bedtime about hobbits and dragons and a world that felt old because Tolkien had spent years making it so.",
+   "It was only through the act of writing, of weaving those threads across years, that Middle-earth took its full shape. The histories came first. The languages before the stories. And then, one small story at a time, the world that readers still live inside nearly a century later.",
+   "Your story doesn't need to begin as something grand. It can start small, stay small for a long time, and grow into something you didn't plan. The world you're building is waiting for you to show up to it. Start with a page today, and see where it goes."
+  ]
+ },
+ "scifi": {
+  "date": "April 22nd",
+  "title": "FIND YOUR GOMBE",
+  "quote": "\"Miracles come in moments. Be ready and willing.\"",
+  "by": "- Dr. Wayne Dyer",
+  "paras": [
+   "The initial concept for E.T. was simple. A boy befriends an alien. Early drafts were reportedly darker, tinged with horror. It was far from the heartwarming tale we know today. But Spielberg saw the potential at its core. He nurtured it. Reworked it. Collaborated with countless others for years to refine the story. And E.T. became a blockbuster that captured the hearts of millions.",
+   "Reminding us that even the most iconic stories start as fragile ideas. Seeds of potential that need time, attention, and a relentless belief they'll become what they're meant to be. The journey will be long. Filled with doubt and setbacks. But the reward is work that resonates deeply.",
+   "Your story is out there, somewhere in the stars. Imperfect. Unfinished. But glowing with potential. All it needs is your finger pointing the way."
+  ]
+ },
+ "thriller": {
+  "date": "May 24th",
+  "title": "LET IT CHASE YOU",
+  "quote": "\"Attention and activity lead to mistakes as well as to successes; but a life spent in making mistakes is not only more honorable but more useful than a life spent doing nothing.\"",
+  "by": "- George Bernard Shaw",
+  "paras": [
+   "As a writer, you face a specific terror. The page demanding truth you're not sure you can deliver.",
+   "When Kurt Vonnegut began Slaughterhouse-Five, he confronted the impossible. How to transform the nightmare of Dresden into meaningful fiction? For twenty years, he started, stopped, started again. The trauma resisted language. The words refused to come. Yet with each abandoned draft, he inched forward.",
+   "Today's exercise: write a scene where your character is being followed. Don't let the follower appear directly. Let your character notice small things, a coat seen twice, a pause in the wrong place. Stay inside the accumulation of small wrong details, and resist the urge to confirm or deny whether the threat is real."
+  ]
+ },
+ "mystery": {
+  "date": "July 12th",
+  "title": "LOW VISIBILITY WRITING",
+  "quote": "\"Writers don't always know what they mean - that's why they write. Their work stands in for them. On the page, the reader meets the authoritative, perfected self; in life, the writer is lumbered with the uncertain, imperfect one.\"",
+  "by": "- John Lahr",
+  "paras": [
+   "It's easy to wish for certainty. To know all the answers before starting. To have every chapter meticulously mapped out before the first word goes down. But there's something that sets the heart racing about the unknown, a sort of exciting adventure full of possibilities that always comes with a bit of dread.",
+   "Writing a mystery can feel like being dropped into the Upside Down from Stranger Things. Just like those kids in the series, you don't get a full map. Or a clear escape route. You can't slam on the brakes. All you can do is trust the next clue. The next word. And the one after that.",
+   "Instead of forcing clarity, make peace with the mystery. You may not know the full story or where it'll take you. But each sentence will reveal the path ahead. Uncertainty is part of the process. Take it one line at a time."
+  ]
+ },
+ "romance": {
+  "date": "March 31st",
+  "title": "BATTLE-SCARRED FROM THE HEART",
+  "quote": "\"Writing is a conviction before it is a craft.\"",
+  "by": "- Joshua Cohen",
+  "paras": [
+   "The best artistic pursuits are born from someone's deep belief that they've got a story worth telling. Before the first line is drawn, they have a vision in their mind. A strong belief in the idea's purpose and potential. A fire in the belly. And that conviction drives the work.",
+   "Imagine the architect standing in an empty lot. Envisioning the space as a thriving community center or a cozy caf&eacute;. To them, it's not just a bunch of potential stacks of bricks and mortar. They can see the potential customers engaging with the space. Your writing is no different. It starts with a belief in your story.",
+   "So you put pen to paper or fingers to keys. Not because you have it figured out. But because you're convinced that what you want to say deserves to be known. Write from that burning conviction that someone, somewhere, needs to hear exactly what only you can say."
+  ]
+ },
+ "dark_romance": {
+  "date": "April 1st",
+  "title": "CONVICTION DRIVES THE WORK",
+  "quote": "\"The purpose of a writer is to keep civilization from destroying itself.\"",
+  "by": "- Bernard Malamud",
+  "paras": [
+   "Miles Davis was one of the most influential jazz musicians of the 20th century. Known for constantly reinventing his sound. Never settling into a single style for too long.",
+   "In the late 1960s, when traditional jazz was declining in popularity, Davis faced a choice: Continue playing the bebop and hard bop styles he was known for&hellip; Or explore new musical territories.",
+   "Fortunately, he chose the latter. Diving into the world of rock and funk. He created a fusion that would redefine jazz.",
+   "What about you? Are you where you want to be?",
+   "If not, what's one thing you can change today to align your life more closely with your passions and goals?",
+   "If you're dissatisfied with where you are. Change something.",
+   "Life is too short to live it slowly dying."
+  ]
+ },
+ "horror": {
+  "date": "May 5th",
+  "title": "THE HONEST PLACE",
+  "quote": "\"Writing is a form of therapy; sometimes I wonder how all those who do not write, compose or paint can manage to escape the madness, the melancholia, the panic fear which is inherent in the human condition.\"",
+  "by": "- Graham Greene",
+  "paras": [
+   "What does writing have in common with a horror movie?",
+   "Quite a lot, actually. Writing begins with a protagonist (you) who steps into the unknown armed with nothing but hope and a few vague ideas. The first draft is often like a dark, creaky house where every corner hides an unexpected threat. Where self-doubt lurks behind the curtains. Where eerie drafts whisper of inadequacy, sending shivers down your spine.",
+   "Today's exercise: write a scene set in an ordinary place (a kitchen, a parking garage, a waiting room) where something is wrong. Don't name the wrongness. Don't explain it. Just describe what your character notices, and let the reader feel the gap between what's observed and what it means."
+  ]
+ },
+ "literary": {
+  "date": "May 1st",
+  "title": "SHARE YOUR LIGHT",
+  "quote": "\"The greater the artist the greater the doubt; perfect confidence is granted to the less talented as a consolation prize.\"",
+  "by": "- Robert Hughes",
+  "paras": [
+   "Harper Lee, the author of the timeless classic <em>To Kill a Mockingbird</em>, published little else after her masterpiece. The fame burned too bright. The spotlight too hot. Was it the overwhelming success of her debut? Or the fear of never again living up to its brilliance?",
+   "Her silence speaks volumes of the crippling self-doubt that accompanies the life of a creative. There's the dread that what you're writing isn't as great as you think it is. The quiet, nagging voice that whispers: this is garbage. Who are you to try?",
+   "Whether we're facing doubt working on our first manuscript or dealing with the weight of expectations from our last, there's no escaping fear. No matter how successful we are. Lee's silence is a reminder that even the most celebrated artists can fall prey to their inner critic. The question is whether you'll let it hold the pen."
+  ]
+ }
 };
 
 // ============================================================
@@ -988,6 +1089,9 @@ function renderResult() {
   const pinterestDesc = encodeURIComponent(`What genre should you write? I got ${genre.name}! Take the free quiz for writers.`);
   const starterPrompt = `Set a timer for ten minutes and write without stopping. Open a ${genre.name} scene in the middle of trouble: someone wants something they shouldn't, and the first thing they do is lie about it. Don't outline it. Just start.`;
 
+  const sample = bookSamples[resultGenre];
+  const sampleParas = sample.paras.map(p => `<p style="margin:0 0 1em;">${p}</p>`).join('');
+
   // Build explore links (exclude current genre)
   let exploreHtml = '';
   genre.explore.forEach(g => {
@@ -1010,7 +1114,27 @@ function renderResult() {
         </div>
       </div>
 
-      <div style="margin-bottom: 8px;">
+      <div class="book-sample" style="max-width:520px;margin:8px auto 0;text-align:left;">
+        <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#1565C0;margin:0 0 14px;text-align:center;">A page from the book</p>
+        <div class="book-sample-card" style="background:#fff;border:1px solid #f0f0f0;border-radius:16px;box-shadow:0 4px 40px rgba(0,0,0,0.06);padding:28px 24px;">
+          <p style="font-size:0.8rem;color:#6B7280;font-weight:500;margin:0 0 6px;">${sample.date}</p>
+          <p style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#111;line-height:1.2;margin:0 0 20px;padding-bottom:18px;border-bottom:1px solid #f0f0f0;">${sample.title}</p>
+          <div style="border-left:4px solid #E8B931;padding-left:18px;margin:0 0 20px;">
+            <p style="font-family:'Lora',Georgia,serif;font-style:italic;font-size:1.02rem;line-height:1.65;color:#2a2a2a;margin:0;">${sample.quote}</p>
+            <p style="font-size:0.8rem;color:#6B7280;font-weight:500;margin:8px 0 0;">${sample.by}</p>
+          </div>
+          <div style="font-family:'Lora',Georgia,serif;font-size:1rem;line-height:1.75;color:#2a2a2a;">${sampleParas}</div>
+        </div>
+      </div>
+
+      <div class="result-signup" id="quiz-gate" style="margin-top:20px;">
+        <h3>There are 364 more like this</h3>
+        <p>The Writer's Daily Practice has one for every morning of the year, each with a quote from a literary master, a short reflection and a prompt. Start your ${genre.name} habit tomorrow.</p>
+        <a href="https://a.co/d/0aZhyb86?p=quiz" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Get the Book on Amazon &rarr;</a>
+        <p style="font-size:0.75rem;color:#9CA3AF;margin:12px 0 0;">Paperback $16.99 &middot; Kindle $9.99 &middot; Amazon #1 Bestseller</p>
+      </div>
+
+      <div style="margin:28px 0 8px;">
         <p style="font-size: 0.75rem; font-weight: 600; color: #9CA3AF; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 12px;">Share your result</p>
         <div class="share-buttons">
           <a href="https://twitter.com/intent/tweet?text=${tweetText}&url=${encodeURIComponent(quizUrl)}" target="_blank" rel="noopener" class="share-btn">
@@ -1028,15 +1152,6 @@ function renderResult() {
         </div>
       </div>
 
-      <div class="result-signup" id="quiz-gate">
-        <div id="quiz-gate-copy">
-          <h3>Now write it every morning</h3>
-          <p>Knowing your genre is the easy part. The Writer's Daily Practice gives you 365 mornings of it: a quote from a literary master, a reflection, and a prompt. Start your ${genre.name} habit tomorrow.</p>
-        </div>
-        <a href="https://a.co/d/0aZhyb86?p=bottom" target="_blank" rel="noopener" class="btn-premium inline-block bg-gradient-to-r from-gold to-goldLight text-dark font-bold px-8 py-3.5 rounded-full text-sm whitespace-nowrap">Get the Book on Amazon &rarr;</a>
-        <p style="font-size:0.75rem;color:#9CA3AF;margin-top:12px;">Paperback $16.99 &middot; Kindle $9.99 &middot; Amazon #1 Bestseller</p>
-      </div>
-
       <div class="divider-line"></div>
 
       <p style="font-size: 0.75rem; font-weight: 600; color: #9CA3AF; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 14px;">Explore other genres</p>
@@ -1052,9 +1167,6 @@ function renderResult() {
   `;
 
   body.innerHTML = html;
-
-  // Enhance the freshly-injected capture form (AJAX submit, signup event)
-  if (window.wdcEnhanceForms) window.wdcEnhanceForms();
 
   // Scroll to top of quiz container
   document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
